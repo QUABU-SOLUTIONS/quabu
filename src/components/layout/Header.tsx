@@ -12,6 +12,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import quabuLogo from "@/assets/quabu-logo.svg";
 
 const acceleratorCategories = [
   { name: "Marketing", href: "/accelerators/marketing", description: "Automate campaigns & analytics" },
@@ -62,13 +63,12 @@ export function Header() {
       <div className="container-wide">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-white font-bold text-xl">Q</span>
-            </div>
-            <span className="font-display font-bold text-xl text-foreground group-hover:text-primary transition-colors">
-              Quabu
-            </span>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src={quabuLogo} 
+              alt="Quabu" 
+              className="h-8 lg:h-10 w-auto transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
