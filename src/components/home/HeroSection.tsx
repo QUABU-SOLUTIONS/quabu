@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, Zap, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import quabuIcon from "@/assets/quabu-icon.png";
 
 export function HeroSection() {
   return (
@@ -10,6 +11,15 @@ export function HeroSection() {
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+      </div>
+      
+      {/* Quabu Icon Watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img 
+          src={quabuIcon} 
+          alt="" 
+          className="w-[500px] h-[500px] lg:w-[700px] lg:h-[700px] opacity-[0.04] object-contain"
+        />
       </div>
 
       <div className="container-wide section-padding relative">
