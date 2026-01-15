@@ -14,6 +14,7 @@ import {
 import { cn } from "@/lib/utils";
 import quabuLogo from "@/assets/quabu-logo.svg";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
+import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 
 const acceleratorCategories = [
   { name: "Marketing", href: "/accelerators/marketing", description: "Automate campaigns & analytics" },
@@ -131,13 +132,20 @@ export function Header() {
             </NavigationMenu>
           </div>
 
-          {/* CTA & Partner Badge */}
-          <div className="hidden lg:flex items-center gap-4">
-            <img 
-              src={atlassianGoldPartner} 
-              alt="Atlassian Gold Solution Partner" 
-              className="h-8 w-auto"
-            />
+          {/* CTA & Partner Badges */}
+          <div className="hidden lg:flex items-center gap-3">
+            <div className="flex items-center gap-2">
+              <img 
+                src={atlassianGoldPartner} 
+                alt="Atlassian Gold Solution Partner" 
+                className="h-10 w-auto"
+              />
+              <img 
+                src={atlassianMarketplacePartner} 
+                alt="Atlassian Marketplace Partner" 
+                className="h-10 w-auto"
+              />
+            </div>
             <Button asChild>
               <Link to="/contact">Get Started</Link>
             </Button>

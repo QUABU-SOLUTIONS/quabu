@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles, Zap, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import quabuIcon from "@/assets/quabu-icon.png";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
+import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 
 export function HeroSection() {
   return (
@@ -32,17 +33,22 @@ export function HeroSection() {
             transition={{ duration: 0.6 }}
             className="text-center lg:text-left"
           >
-            {/* Partner Badge */}
+            {/* Partner Badges */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-block mb-6"
+              className="flex flex-wrap items-center gap-4 mb-6 justify-center lg:justify-start"
             >
               <img 
                 src={atlassianGoldPartner} 
                 alt="Atlassian Gold Solution Partner" 
-                className="h-10 md:h-12 w-auto"
+                className="h-12 md:h-14 w-auto"
+              />
+              <img 
+                src={atlassianMarketplacePartner} 
+                alt="Atlassian Marketplace Partner" 
+                className="h-12 md:h-14 w-auto"
               />
             </motion.div>
 
