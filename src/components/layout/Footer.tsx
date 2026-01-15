@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import quabuLogo from "@/assets/quabu-logo.svg";
+import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
+import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 
 const footerLinks = {
   solutions: [
@@ -34,26 +37,30 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-white font-bold text-xl">Q</span>
-              </div>
-              <span className="font-display font-bold text-xl">Quabu</span>
+            <Link to="/" className="inline-block mb-6">
+              <img 
+                src={quabuLogo} 
+                alt="Quabu" 
+                className="h-10 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="text-background/70 mb-6 max-w-sm">
               Atlassian Gold Solution Partner helping businesses accelerate their 
               digital transformation with pre-built, customizable solutions.
             </p>
             
-            {/* Partner Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-white/10 mb-6">
-              <div className="w-8 h-8 rounded bg-[#0052CC] flex items-center justify-center">
-                <span className="text-white font-bold">A</span>
-              </div>
-              <div>
-                <div className="text-xs text-background/60">Atlassian</div>
-                <div className="text-sm font-semibold">Gold Solution Partner</div>
-              </div>
+            {/* Partner Badges */}
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <img 
+                src={atlassianGoldPartner} 
+                alt="Atlassian Gold Solution Partner" 
+                className="h-10 w-auto brightness-0 invert"
+              />
+              <img 
+                src={atlassianMarketplacePartner} 
+                alt="Atlassian Marketplace Partner" 
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
 
             {/* Contact Info */}
