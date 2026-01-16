@@ -94,6 +94,193 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+function NetworkBackground() {
+  // Connection lines between cards (grid positions)
+  const connections = [
+    { from: 0, to: 1 }, { from: 1, to: 2 }, { from: 2, to: 3 },
+    { from: 0, to: 4 }, { from: 1, to: 5 }, { from: 2, to: 6 }, { from: 3, to: 7 },
+    { from: 4, to: 5 }, { from: 5, to: 6 }, { from: 6, to: 7 },
+  ];
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none hidden lg:block">
+      <svg className="absolute inset-0 w-full h-full">
+        <defs>
+          <linearGradient id="networkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.2" />
+            <stop offset="50%" stopColor="hsl(var(--accent))" stopOpacity="0.4" />
+            <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.2" />
+          </linearGradient>
+        </defs>
+        
+        {/* Horizontal connections row 1 */}
+        {[0, 1, 2].map((i) => (
+          <motion.line
+            key={`h1-${i}`}
+            x1={`${12.5 + i * 25}%`}
+            y1="25%"
+            x2={`${37.5 + i * 25}%`}
+            y2="25%"
+            stroke="url(#networkGradient)"
+            strokeWidth="2"
+            initial={{ pathLength: 0, opacity: 0 }}
+            whileInView={{ pathLength: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.3 + i * 0.1 }}
+          />
+        ))}
+        
+        {/* Horizontal connections row 2 */}
+        {[0, 1, 2].map((i) => (
+          <motion.line
+            key={`h2-${i}`}
+            x1={`${12.5 + i * 25}%`}
+            y1="75%"
+            x2={`${37.5 + i * 25}%`}
+            y2="75%"
+            stroke="url(#networkGradient)"
+            strokeWidth="2"
+            initial={{ pathLength: 0, opacity: 0 }}
+            whileInView={{ pathLength: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 + i * 0.1 }}
+          />
+        ))}
+        
+        {/* Vertical connections */}
+        {[0, 1, 2, 3].map((i) => (
+          <motion.line
+            key={`v-${i}`}
+            x1={`${12.5 + i * 25}%`}
+            y1="30%"
+            x2={`${12.5 + i * 25}%`}
+            y2="70%"
+            stroke="url(#networkGradient)"
+            strokeWidth="2"
+            initial={{ pathLength: 0, opacity: 0 }}
+            whileInView={{ pathLength: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.7 + i * 0.1 }}
+          />
+        ))}
+        
+        {/* Animated traveling dots */}
+        {[0, 1, 2].map((i) => (
+          <motion.circle
+            key={`dot-h1-${i}`}
+            r="4"
+            fill="hsl(var(--primary))"
+            animate={{
+              cx: [`${12.5 + i * 25}%`, `${37.5 + i * 25}%`],
+              opacity: [0, 1, 1, 0],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatDelay: 2,
+              delay: i * 0.5,
+              ease: "easeInOut",
+            }}
+            cy="25%"
+          />
+        ))}
+        
+        {[0, 1, 2].map((i) => (
+          <motion.circle
+            key={`dot-h2-${i}`}
+            r="4"
+            fill="hsl(var(--accent))"
+            animate={{
+              cx: [`${37.5 + i * 25}%`, `${12.5 + i * 25}%`],
+              opacity: [0, 1, 1, 0],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatDelay: 2,
+              delay: 1 + i * 0.5,
+              ease: "easeInOut",
+            }}
+            cy="75%"
+          />
+        ))}
+        
+        {[0, 1, 2, 3].map((i) => (
+          <motion.circle
+            key={`dot-v-${i}`}
+            r="3"
+            fill="hsl(var(--primary))"
+            animate={{
+              cy: ["30%", "70%"],
+              opacity: [0, 1, 1, 0],
+            }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              repeatDelay: 1.5,
+              delay: i * 0.4,
+              ease: "easeInOut",
+            }}
+            cx={`${12.5 + i * 25}%`}
+          />
+        ))}
+      </svg>
+    </div>
+  );
+}
+
+function PulsingCardIcon({ icon: Icon, color, index }: { icon: typeof Megaphone; color: string; index: number }) {
+  return (
+    <div className="relative w-12 h-12 mb-4">
+      {/* Pulsing rings */}
+      <motion.div
+        className={`absolute inset-0 rounded-lg ${color.split(' ')[0]}`}
+        animate={{
+          scale: [1, 1.4, 1],
+          opacity: [0.4, 0, 0.4],
+        }}
+        transition={{
+          duration: 2.5,
+          repeat: Infinity,
+          delay: index * 0.2,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.div
+        className={`absolute inset-0 rounded-lg ${color.split(' ')[0]}`}
+        animate={{
+          scale: [1, 1.6, 1],
+          opacity: [0.2, 0, 0.2],
+        }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          delay: index * 0.2 + 0.3,
+          ease: "easeInOut",
+        }}
+      />
+      {/* Icon container */}
+      <motion.div
+        className={`relative w-12 h-12 rounded-lg ${color} flex items-center justify-center group-hover:scale-110 transition-transform`}
+        animate={{
+          boxShadow: [
+            "0 0 0 0 transparent",
+            "0 0 20px 5px hsl(var(--primary) / 0.2)",
+            "0 0 0 0 transparent",
+          ],
+        }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          delay: index * 0.3,
+        }}
+      >
+        <Icon className="w-6 h-6" />
+      </motion.div>
+    </div>
+  );
+}
+
 export function AcceleratorsSection() {
   return (
     <section className="section-padding bg-secondary/30">
@@ -117,39 +304,49 @@ export function AcceleratorsSection() {
           </p>
         </motion.div>
 
-        {/* Accelerator Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-        >
-          {accelerators.map((accelerator) => (
-            <motion.div key={accelerator.id} variants={itemVariants}>
-              <Link
-                to={accelerator.href}
-                className="group block p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-soft transition-all duration-300"
+        {/* Accelerator Grid with Network Background */}
+        <div className="relative">
+          <NetworkBackground />
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10"
+          >
+            {accelerators.map((accelerator, index) => (
+              <motion.div 
+                key={accelerator.id} 
+                variants={itemVariants}
+                whileHover={{ 
+                  y: -8,
+                  transition: { type: "spring", stiffness: 300 }
+                }}
               >
-                <div
-                  className={`w-12 h-12 rounded-lg ${accelerator.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                <Link
+                  to={accelerator.href}
+                  className="group block p-6 rounded-xl bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
                 >
-                  <accelerator.icon className="w-6 h-6" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                  {accelerator.name}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {accelerator.description}
-                </p>
-                <div className="flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>Learn more</span>
-                  <ArrowRight className="w-4 h-4" />
-                </div>
-              </Link>
-            </motion.div>
-          ))}
-        </motion.div>
+                  <PulsingCardIcon icon={accelerator.icon} color={accelerator.color} index={index} />
+                  <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                    {accelerator.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {accelerator.description}
+                  </p>
+                  <motion.div 
+                    className="flex items-center gap-1 text-sm font-medium text-primary"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileHover={{ opacity: 1, x: 0 }}
+                  >
+                    <span>Learn more</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </motion.div>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
 
         {/* CTA */}
         <motion.div
