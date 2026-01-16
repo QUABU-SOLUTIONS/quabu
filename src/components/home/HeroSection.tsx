@@ -99,21 +99,39 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-              <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center" asChild>
-                <Link to="/accelerators">
-                  Explore Accelerators
-                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
-                </Link>
-              </Button>
-              <Button size="lg" className="text-base h-auto py-3 whitespace-normal text-center" asChild>
-                <Link to="/contact">Schedule a Demo</Link>
-              </Button>
-              <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center" asChild>
-                <Link to="/cloud">
-                  Ascend to the Cloud
-                  <Sparkles className="w-4 h-4 flex-shrink-0" />
-                </Link>
-              </Button>
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center shadow-lg hover:shadow-primary/40 transition-shadow duration-300" asChild>
+                  <Link to="/accelerators">
+                    Explore Accelerators
+                    <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                  </Link>
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button size="lg" className="text-base h-auto py-3 whitespace-normal text-center shadow-lg hover:shadow-primary/40 transition-shadow duration-300" asChild>
+                  <Link to="/contact">Schedule a Demo</Link>
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center shadow-lg hover:shadow-accent/40 transition-shadow duration-300 bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary" asChild>
+                  <Link to="/cloud">
+                    Ascend to the Cloud
+                    <Sparkles className="w-4 h-4 flex-shrink-0 animate-pulse" />
+                  </Link>
+                </Button>
+              </motion.div>
             </div>
 
             {/* Trust Signals */}
