@@ -14,12 +14,12 @@ export function HeroSection() {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
       </div>
-      
+
       {/* Quabu Icon Watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <img 
-          src={quabuIcon} 
-          alt="" 
+        <img
+          src={quabuIcon}
+          alt=""
           className="w-[500px] h-[500px] lg:w-[700px] lg:h-[700px] opacity-[0.04] object-contain"
         />
       </div>
@@ -40,27 +40,21 @@ export function HeroSection() {
               transition={{ delay: 0.2 }}
               className="flex flex-wrap items-center gap-4 mb-6 justify-center lg:justify-start"
             >
-              <img 
-                src={atlassianGoldPartner} 
-                alt="Atlassian Gold Solution Partner" 
-                className="h-12 md:h-14 w-auto"
-              />
-              <img 
-                src={atlassianMarketplacePartner} 
-                alt="Atlassian Marketplace Partner" 
+              <img src={atlassianGoldPartner} alt="Atlassian Gold Solution Partner" className="h-12 md:h-14 w-auto" />
+              <img
+                src={atlassianMarketplacePartner}
+                alt="Atlassian Marketplace Partner"
                 className="h-12 md:h-14 w-auto"
               />
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-balance">
-              Accelerate Your{" "}
-              <span className="gradient-text">Digital Transformation</span>{" "}
-              with Atlassian
+              Accelerate Your <span className="gradient-text">Digital Transformation</span> with Atlassian
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Pre-built, customizable solutions that get you from zero to production 
-              in weeks, not months. Built by Atlassian experts for growing enterprises.
+              Pre-built, customizable solutions that get you from zero to production in weeks, not months. Built by
+              Atlassian experts for growing enterprises.
             </p>
 
             {/* CTAs */}
@@ -114,14 +108,10 @@ export function HeroSection() {
                     <div className="w-3 h-3 rounded-full bg-warning" />
                     <div className="w-3 h-3 rounded-full bg-success" />
                   </div>
-                  
+
                   {/* Quabu Icon Center */}
                   <div className="flex-1 flex items-center justify-center">
-                    <img 
-                      src={quabuIcon} 
-                      alt="Quabu" 
-                      className="w-24 h-24 md:w-32 md:h-32 opacity-90 drop-shadow-lg"
-                    />
+                    <img src={quabuIcon} alt="Quabu" className="w-24 h-24 md:w-64 md:h-64 opacity-90 drop-shadow-lg" />
                   </div>
                 </div>
               </div>
@@ -134,7 +124,7 @@ export function HeroSection() {
               >
                 <Sparkles className="w-6 h-6 text-accent" />
               </motion.div>
-              
+
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
