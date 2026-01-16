@@ -105,10 +105,10 @@ export function HeroSection() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="text-base" asChild>
+              <Button size="lg" className="text-base" asChild>
                 <Link to="/contact">Schedule a Demo</Link>
               </Button>
-              <Button size="lg" variant="secondary" className="gap-2 text-base" asChild>
+              <Button size="lg" className="gap-2 text-base" asChild>
                 <Link to="/cloud">
                   Ascend to the Cloud
                   <Sparkles className="w-4 h-4" />
