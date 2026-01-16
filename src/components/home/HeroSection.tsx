@@ -109,9 +109,24 @@ export function HeroSection() {
                     <div className="w-3 h-3 rounded-full bg-success" />
                   </div>
 
-                  {/* Quabu Icon Center */}
-                  <div className="flex-1 flex items-center justify-center">
-                    <img src={quabuIcon} alt="Quabu" className="w-24 h-24 md:w-64 md:h-64 opacity-90 drop-shadow-lg" />
+                  {/* Quabu Icon Center - Animated */}
+                  <div className="flex-1 flex items-center justify-center overflow-hidden">
+                    <motion.img 
+                      src={quabuIcon} 
+                      alt="Quabu" 
+                      className="w-24 h-24 md:w-64 md:h-64 opacity-90 drop-shadow-lg"
+                      animate={{ 
+                        x: [0, 15, -10, 20, -15, 0],
+                        y: [0, -20, 15, -10, 20, 0],
+                        rotate: [0, 5, -5, 3, -3, 0],
+                        scale: [1, 1.05, 0.98, 1.02, 0.99, 1]
+                      }}
+                      transition={{ 
+                        duration: 12,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                    />
                   </div>
                 </div>
               </div>
