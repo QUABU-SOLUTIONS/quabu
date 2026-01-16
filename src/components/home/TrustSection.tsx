@@ -1,28 +1,33 @@
-import { motion } from "framer-motion";
+import { motion, animate } from "framer-motion";
 import { Users, Award, Clock, Globe } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 const stats = [
   {
     icon: Users,
-    value: "200+",
+    numericValue: 200,
+    suffix: "+",
     label: "Enterprise Clients",
     description: "Across USA and Europe",
   },
   {
     icon: Award,
-    value: "15+",
+    numericValue: 15,
+    suffix: "+",
     label: "Years Experience",
     description: "Atlassian expertise",
   },
   {
     icon: Clock,
-    value: "50%",
+    numericValue: 50,
+    suffix: "%",
     label: "Faster Deployment",
     description: "With Digital Accelerators",
   },
   {
     icon: Globe,
-    value: "24/7",
+    numericValue: 24,
+    suffix: "/7",
     label: "Support Coverage",
     description: "Miami & Madrid offices",
   },
@@ -36,6 +41,45 @@ const clientLogos = [
   "Digital Systems",
   "Cloud Partners",
 ];
+
+function AnimatedCounter({ value, suffix, duration = 2 }: { value: number; suffix: string; duration?: number }) {
+  const [displayValue, setDisplayValue] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            const controls = animate(0, value, {
+              duration,
+              ease: "easeOut",
+              onUpdate: (latest) => {
+                setDisplayValue(Math.round(latest));
+              },
+            });
+            return () => controls.stop();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [value, duration, hasAnimated]);
+
+  return (
+    <div ref={ref} className="text-3xl md:text-4xl font-display font-bold text-foreground mb-1">
+      {displayValue}{suffix}
+    </div>
+  );
+}
 
 export function TrustSection() {
   return (
@@ -60,9 +104,7 @@ export function TrustSection() {
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <stat.icon className="w-7 h-7 text-primary" />
               </div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-foreground mb-1">
-                {stat.value}
-              </div>
+              <AnimatedCounter value={stat.numericValue} suffix={stat.suffix} />
               <div className="font-medium text-foreground">{stat.label}</div>
               <div className="text-sm text-muted-foreground">{stat.description}</div>
             </motion.div>
