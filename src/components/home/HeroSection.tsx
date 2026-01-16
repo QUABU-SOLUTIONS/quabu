@@ -49,7 +49,14 @@ export function HeroSection() {
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-balance">
-              Accelerate Your <span className="gradient-text">Digital Transformation</span> with Atlassian
+              Accelerate Your <span className="gradient-text">Digital Transformation</span> with{" "}
+              <motion.span
+                className="bg-gradient-to-r from-[#0052CC] via-[#2684FF] to-[#0052CC] bg-clip-text text-transparent bg-[length:200%_auto]"
+                animate={{ backgroundPosition: ["0% center", "200% center"] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+              >
+                Atlassian
+              </motion.span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
