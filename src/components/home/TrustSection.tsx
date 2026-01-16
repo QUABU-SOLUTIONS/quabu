@@ -51,12 +51,12 @@ export function TrustSection() {
           className="rounded-2xl gradient-primary p-8 md:p-12 text-white text-center"
         >
           <div className="flex justify-center mb-6">
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center p-2">
+            <div className="flex items-center gap-6">
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-2xl bg-white/20 flex items-center justify-center p-4">
                 <img src={quabuIcon} alt="Quabu" className="w-full h-full object-contain" />
               </div>
-              <span className="text-2xl font-bold">×</span>
-              <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center p-3">
+              <span className="text-3xl md:text-4xl font-bold">×</span>
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-2xl bg-white flex items-center justify-center p-4">
                 <img src={atlassianIcon} alt="Atlassian" className="w-full h-full object-contain" />
               </div>
             </div>
