@@ -11,6 +11,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import quabuLogo from "@/assets/quabu-logo.svg";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
@@ -120,50 +127,52 @@ export function Header() {
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                   ) : item.hasAboutDropdown ? (
-                    <NavigationMenuItem key={item.name}>
-                      <NavigationMenuTrigger className="bg-transparent hover:bg-muted/50">
-                        {item.name}
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent className="right-0 left-auto">
-                        <div className="p-4 w-[220px]">
-                          <Link
-                            to="/about"
-                            className="block p-3 rounded-lg hover:bg-muted transition-colors mb-2"
-                          >
-                            <div className="font-semibold text-primary">About Quabu</div>
-                            <p className="text-sm text-muted-foreground">
-                              Learn about our team and mission
-                            </p>
-                          </Link>
-                          <div className="border-t border-border pt-2">
-                            {aboutSubmenu.map((subItem) => (
-                              subItem.isExternal ? (
+                    <div key={item.name} className="relative">
+                      <DropdownMenu>
+                        <DropdownMenuTrigger className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50 inline-flex items-center gap-1 outline-none">
+                          {item.name}
+                          <ChevronDown className="h-3 w-3 transition-transform duration-200" />
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="end" className="w-[220px] bg-popover">
+                          <DropdownMenuItem asChild>
+                            <Link
+                              to="/about"
+                              className="flex flex-col items-start gap-1 p-3"
+                            >
+                              <span className="font-semibold text-primary">About Quabu</span>
+                              <span className="text-xs text-muted-foreground">
+                                Learn about our team and mission
+                              </span>
+                            </Link>
+                          </DropdownMenuItem>
+                          <DropdownMenuSeparator />
+                          {aboutSubmenu.map((subItem) => (
+                            <DropdownMenuItem key={subItem.name} asChild>
+                              {subItem.isExternal ? (
                                 <a
-                                  key={subItem.name}
                                   href={subItem.href}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex items-center gap-2 p-3 rounded-lg hover:bg-muted transition-colors"
+                                  className="flex items-center gap-2"
                                 >
                                   {subItem.icon === "linkedin" && <Linkedin className="w-4 h-4 text-primary" />}
                                   {subItem.icon === "twitter" && <Twitter className="w-4 h-4 text-primary" />}
-                                  <span className="text-sm font-medium">{subItem.name}</span>
+                                  <span>{subItem.name}</span>
                                 </a>
                               ) : (
                                 <Link
-                                  key={subItem.name}
                                   to={subItem.href}
-                                  className="flex items-center gap-2 p-3 rounded-lg hover:bg-muted transition-colors"
+                                  className="flex items-center gap-2"
                                 >
                                   {subItem.icon === "mail" && <Mail className="w-4 h-4 text-primary" />}
-                                  <span className="text-sm font-medium">{subItem.name}</span>
+                                  <span>{subItem.name}</span>
                                 </Link>
-                              )
-                            ))}
-                          </div>
-                        </div>
-                      </NavigationMenuContent>
-                    </NavigationMenuItem>
+                              )}
+                            </DropdownMenuItem>
+                          ))}
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    </div>
                   ) : item.isExternal ? (
                     <NavigationMenuItem key={item.name}>
                       <a
