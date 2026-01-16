@@ -98,7 +98,7 @@ export function HeroSection() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start flex-wrap">
               <Button size="lg" className="gap-2 text-base" asChild>
                 <Link to="/accelerators">
                   Explore Accelerators
@@ -107,6 +107,12 @@ export function HeroSection() {
               </Button>
               <Button size="lg" variant="outline" className="text-base" asChild>
                 <Link to="/contact">Schedule a Demo</Link>
+              </Button>
+              <Button size="lg" variant="secondary" className="gap-2 text-base" asChild>
+                <Link to="/cloud">
+                  Ascend to the Cloud
+                  <Sparkles className="w-4 h-4" />
+                </Link>
               </Button>
             </div>
 
