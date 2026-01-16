@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, FileText, Shield, Globe, CheckSquare, ExternalLink } from "lucide-react";
+import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, FileText, Shield, Globe, CheckSquare, ExternalLink, Cloud, Code, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -61,6 +61,27 @@ const appsSubmenu = [
   },
 ];
 
+const servicesSubmenu = [
+  {
+    name: "Atlassian Services",
+    description: "Expert consulting & implementation",
+    icon: Cog,
+    href: "/services/atlassian",
+  },
+  {
+    name: "Cloud Migration",
+    description: "Seamless migration to cloud platforms",
+    icon: Cloud,
+    href: "/services/cloud-migration",
+  },
+  {
+    name: "Custom Development",
+    description: "Tailored solutions for your needs",
+    icon: Code,
+    href: "/services/custom-development",
+  },
+];
+
 const aboutSubmenu = [
   { name: "LinkedIn", href: "https://www.linkedin.com/company/quabu-solutions", isExternal: true, icon: "linkedin" },
   { name: "Twitter / X", href: "https://x.com/quabusolutions", isExternal: true, icon: "twitter" },
@@ -72,7 +93,7 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "Accelerators", href: "/accelerators", hasDropdown: true },
   { name: "Apps", href: "/apps", hasAppsDropdown: true },
-  { name: "Services", href: "/services" },
+  { name: "Services", href: "/services", hasServicesDropdown: true },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
   { name: "About", href: "/about", hasAboutDropdown: true },
@@ -194,6 +215,34 @@ export function Header() {
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
+                  ) : item.hasServicesDropdown ? (
+                    <NavigationMenuItem key={item.name}>
+                      <NavigationMenuTrigger className="bg-transparent hover:bg-muted/50">
+                        {item.name}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="p-4 w-[320px]">
+                          <div className="space-y-1">
+                            {servicesSubmenu.map((service) => (
+                              <NavigationMenuLink key={service.name} asChild>
+                                <Link
+                                  to={service.href}
+                                  className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                                >
+                                  <service.icon className="w-5 h-5 text-primary mt-0.5" />
+                                  <div>
+                                    <div className="font-medium text-sm">{service.name}</div>
+                                    <p className="text-xs text-muted-foreground">
+                                      {service.description}
+                                    </p>
+                                  </div>
+                                </Link>
+                              </NavigationMenuLink>
+                            ))}
+                          </div>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
                   ) : item.hasAboutDropdown ? (
                     <div key={item.name} className="relative">
                       <DropdownMenu>
@@ -304,7 +353,7 @@ export function Header() {
             <div className="container-wide py-4 space-y-2">
               {navItems.map((item) => (
                 <div key={item.name}>
-                  {(item.hasDropdown || item.hasAppsDropdown || item.hasAboutDropdown) ? (
+                  {(item.hasDropdown || item.hasAppsDropdown || item.hasAboutDropdown || item.hasServicesDropdown) ? (
                     <button
                       onClick={() => setExpandedMobileMenu(expandedMobileMenu === item.name ? null : item.name)}
                       className={cn(
@@ -359,6 +408,20 @@ export function Header() {
                           <app.icon className="w-4 h-4" />
                           {app.name}
                         </a>
+                      ))}
+                    </div>
+                  )}
+                  {item.hasServicesDropdown && expandedMobileMenu === item.name && (
+                    <div className="ml-4 mt-2 space-y-1">
+                      {servicesSubmenu.map((service) => (
+                        <Link
+                          key={service.name}
+                          to={service.href}
+                          className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                        >
+                          <service.icon className="w-4 h-4" />
+                          {service.name}
+                        </Link>
                       ))}
                     </div>
                   )}
