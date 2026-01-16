@@ -302,8 +302,8 @@ export function CTASection() {
               >
                 <p className="text-background/60 text-sm">
                   Or email us directly at{" "}
-                  <a href="mailto:hello@quabu.com" className="text-background underline hover:no-underline">
-                    hello@quabu.com
+                  <a href="mailto:info@quabu.eu" className="text-background underline hover:no-underline">
+                    info@quabu.eu
                   </a>
                 </p>
               </motion.div>
