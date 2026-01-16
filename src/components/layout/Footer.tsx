@@ -66,11 +66,11 @@ export function Footer() {
             {/* Contact Info */}
             <div className="space-y-3">
               <a
-                href="mailto:hello@quabu.com"
+                href="mailto:info@quabu.eu"
                 className="flex items-center gap-2 text-sm text-background/70 hover:text-background transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                hello@quabu.com
+                info@quabu.eu
               </a>
               <div className="flex items-center gap-2 text-sm text-background/70">
                 <MapPin className="w-4 h-4" />
