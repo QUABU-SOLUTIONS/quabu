@@ -98,7 +98,7 @@ export function HeroSection() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start flex-wrap">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <Button size="lg" className="gap-2 text-base" asChild>
                 <Link to="/accelerators">
                   Explore Accelerators
