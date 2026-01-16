@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import quabuIcon from "@/assets/quabu-icon.png";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
+import { FuturisticRobotBackground } from "./FuturisticRobotBackground";
 
 export function HeroSection() {
   return (
@@ -107,8 +108,11 @@ export function HeroSection() {
             <div className="relative aspect-square max-w-lg mx-auto">
               {/* Main Card */}
               <div className="absolute inset-4 rounded-2xl gradient-primary shadow-glow animate-pulse-glow" />
-              <div className="absolute inset-8 rounded-xl bg-card shadow-soft border border-border">
-                <div className="p-6 h-full flex flex-col">
+              <div className="absolute inset-8 rounded-xl bg-card shadow-soft border border-border overflow-hidden">
+                {/* Futuristic Robot Background */}
+                <FuturisticRobotBackground />
+                
+                <div className="relative p-6 h-full flex flex-col z-10">
                   {/* Fake Dashboard Header */}
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-3 h-3 rounded-full bg-destructive" />
@@ -121,7 +125,7 @@ export function HeroSection() {
                     <motion.img 
                       src={quabuIcon} 
                       alt="Quabu" 
-                      className="w-24 h-24 md:w-64 md:h-64 opacity-90 drop-shadow-lg"
+                      className="w-24 h-24 md:w-64 md:h-64 opacity-95 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]"
                       animate={{ 
                         x: [0, 15, -10, 20, -15, 0],
                         y: [0, -20, 15, -10, 20, 0],
