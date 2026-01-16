@@ -94,7 +94,6 @@ const navItems = [
   { name: "Accelerators", href: "/accelerators", hasDropdown: true },
   { name: "Apps", href: "/apps", hasAppsDropdown: true },
   { name: "Services", href: "/services", hasServicesDropdown: true },
-  { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
   { name: "About", href: "/about", hasAboutDropdown: true },
 ];
