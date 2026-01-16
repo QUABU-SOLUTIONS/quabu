@@ -140,7 +140,7 @@ export function Footer() {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
-              href="https://linkedin.com/company/quabu"
+              href="https://www.linkedin.com/company/quabu-solutions"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-white/10 transition-colors"
@@ -149,7 +149,7 @@ export function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://twitter.com/quabu"
+              href="https://x.com/quabusolutions"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-white/10 transition-colors"

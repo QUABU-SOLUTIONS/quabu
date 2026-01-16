@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Linkedin, Twitter, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -27,6 +27,12 @@ const acceleratorCategories = [
   { name: "R&D", href: "/accelerators/rd", description: "Product development" },
 ];
 
+const aboutSubmenu = [
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/quabu-solutions", isExternal: true, icon: "linkedin" },
+  { name: "Twitter / X", href: "https://x.com/quabusolutions", isExternal: true, icon: "twitter" },
+  { name: "Contact", href: "/contact", isExternal: false, icon: "mail" },
+];
+
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Accelerators", href: "/accelerators", hasDropdown: true },
@@ -34,7 +40,7 @@ const navItems = [
   { name: "Services", href: "/services" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
-  { name: "About", href: "/about" },
+  { name: "About", href: "/about", hasAboutDropdown: true },
 ];
 
 export function Header() {
@@ -110,6 +116,51 @@ export function Header() {
                               </Link>
                             </NavigationMenuLink>
                           ))}
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  ) : item.hasAboutDropdown ? (
+                    <NavigationMenuItem key={item.name}>
+                      <NavigationMenuTrigger className="bg-transparent hover:bg-muted/50">
+                        {item.name}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="p-4 w-[220px]">
+                          <Link
+                            to="/about"
+                            className="block p-3 rounded-lg hover:bg-muted transition-colors mb-2"
+                          >
+                            <div className="font-semibold text-primary">About Quabu</div>
+                            <p className="text-sm text-muted-foreground">
+                              Learn about our team and mission
+                            </p>
+                          </Link>
+                          <div className="border-t border-border pt-2">
+                            {aboutSubmenu.map((subItem) => (
+                              subItem.isExternal ? (
+                                <a
+                                  key={subItem.name}
+                                  href={subItem.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center gap-2 p-3 rounded-lg hover:bg-muted transition-colors"
+                                >
+                                  {subItem.icon === "linkedin" && <Linkedin className="w-4 h-4 text-primary" />}
+                                  {subItem.icon === "twitter" && <Twitter className="w-4 h-4 text-primary" />}
+                                  <span className="text-sm font-medium">{subItem.name}</span>
+                                </a>
+                              ) : (
+                                <Link
+                                  key={subItem.name}
+                                  to={subItem.href}
+                                  className="flex items-center gap-2 p-3 rounded-lg hover:bg-muted transition-colors"
+                                >
+                                  {subItem.icon === "mail" && <Mail className="w-4 h-4 text-primary" />}
+                                  <span className="text-sm font-medium">{subItem.name}</span>
+                                </Link>
+                              )
+                            ))}
+                          </div>
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -218,6 +269,34 @@ export function Header() {
                         >
                           {category.name}
                         </Link>
+                      ))}
+                    </div>
+                  )}
+                  {item.hasAboutDropdown && (
+                    <div className="ml-4 mt-2 space-y-1">
+                      {aboutSubmenu.map((subItem) => (
+                        subItem.isExternal ? (
+                          <a
+                            key={subItem.name}
+                            href={subItem.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {subItem.icon === "linkedin" && <Linkedin className="w-4 h-4" />}
+                            {subItem.icon === "twitter" && <Twitter className="w-4 h-4" />}
+                            {subItem.name}
+                          </a>
+                        ) : (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.href}
+                            className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {subItem.icon === "mail" && <Mail className="w-4 h-4" />}
+                            {subItem.name}
+                          </Link>
+                        )
                       ))}
                     </div>
                   )}
