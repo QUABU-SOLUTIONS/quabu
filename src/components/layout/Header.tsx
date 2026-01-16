@@ -30,6 +30,7 @@ const acceleratorCategories = [
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Accelerators", href: "/accelerators", hasDropdown: true },
+  { name: "Apps", href: "/apps", isExternal: true, externalUrl: "https://marketplace.atlassian.com/vendors/1220154/quabu" },
   { name: "Services", href: "/services" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
@@ -112,6 +113,17 @@ export function Header() {
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
+                  ) : item.isExternal ? (
+                    <NavigationMenuItem key={item.name}>
+                      <a
+                        href={item.externalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50"
+                      >
+                        {item.name}
+                      </a>
+                    </NavigationMenuItem>
                   ) : (
                     <NavigationMenuItem key={item.name}>
                       <Link
@@ -174,17 +186,28 @@ export function Header() {
             <div className="container-wide py-4 space-y-2">
               {navItems.map((item) => (
                 <div key={item.name}>
-                  <Link
-                    to={item.href}
-                    className={cn(
-                      "block px-4 py-3 rounded-lg font-medium transition-colors",
-                      location.pathname === item.href
-                        ? "bg-primary text-primary-foreground"
-                        : "hover:bg-muted"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
+                  {item.isExternal ? (
+                    <a
+                      href={item.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-3 rounded-lg font-medium transition-colors hover:bg-muted"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className={cn(
+                        "block px-4 py-3 rounded-lg font-medium transition-colors",
+                        location.pathname === item.href
+                          ? "bg-primary text-primary-foreground"
+                          : "hover:bg-muted"
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                   {item.hasDropdown && (
                     <div className="ml-4 mt-2 space-y-1">
                       {acceleratorCategories.map((category) => (
