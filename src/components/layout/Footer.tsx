@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Youtube } from "lucide-react";
 import quabuLogo from "@/assets/quabu-logo.svg";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
@@ -156,6 +156,15 @@ export function Footer() {
               aria-label="Twitter"
             >
               <Twitter className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.youtube.com/@quabusolutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg hover:bg-white/10 transition-colors"
+              aria-label="YouTube"
+            >
+              <Youtube className="w-5 h-5" />
             </a>
           </div>
 
