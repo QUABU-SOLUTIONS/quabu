@@ -16,6 +16,7 @@ import RDAccelerator from "./pages/accelerators/RD";
 import About from "./pages/About";
 import AtlassianServices from "./pages/services/AtlassianServices";
 import CustomDevelopment from "./pages/services/CustomDevelopment";
+import CloudMigration from "./pages/services/CloudMigration";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/services/atlassian" element={<AtlassianServices />} />
           <Route path="/services/custom-development" element={<CustomDevelopment />} />
+          <Route path="/services/cloud-migration" element={<CloudMigration />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
