@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube } from "lucide-react";
+import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, FileText, Shield, Globe, CheckSquare, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -34,6 +34,33 @@ const acceleratorCategories = [
   { name: "R&D", href: "/accelerators/rd", description: "Product development" },
 ];
 
+const appsSubmenu = [
+  {
+    name: "Custom Templates",
+    description: "Predefined templates for faster workflows",
+    icon: FileText,
+    href: "https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud",
+  },
+  {
+    name: "Backup Manager",
+    description: "Automated Jira backups with AWS",
+    icon: Shield,
+    href: "https://marketplace.atlassian.com/apps/1235836/backup-manager-for-jira-cloud",
+  },
+  {
+    name: "Custom Language",
+    description: "Translate Jira to Catalan",
+    icon: Globe,
+    href: "https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud",
+  },
+  {
+    name: "Task Lists",
+    description: "Granular task management",
+    icon: CheckSquare,
+    href: "https://marketplace.atlassian.com/apps/1230805/task-lists-for-jira-cloud",
+  },
+];
+
 const aboutSubmenu = [
   { name: "LinkedIn", href: "https://www.linkedin.com/company/quabu-solutions", isExternal: true, icon: "linkedin" },
   { name: "Twitter / X", href: "https://x.com/quabusolutions", isExternal: true, icon: "twitter" },
@@ -44,7 +71,7 @@ const aboutSubmenu = [
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Accelerators", href: "/accelerators", hasDropdown: true },
-  { name: "Apps", href: "/apps", isExternal: true, externalUrl: "https://marketplace.atlassian.com/vendors/1220154/quabu" },
+  { name: "Apps", href: "/apps", hasAppsDropdown: true },
   { name: "Services", href: "/services" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
@@ -127,6 +154,45 @@ export function Header() {
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
+                  ) : item.hasAppsDropdown ? (
+                    <NavigationMenuItem key={item.name}>
+                      <NavigationMenuTrigger className="bg-transparent hover:bg-muted/50">
+                        {item.name}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="p-4 w-[320px]">
+                          <a
+                            href="https://marketplace.atlassian.com/vendors/1220154/quabu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 p-3 rounded-lg hover:bg-muted transition-colors mb-2"
+                          >
+                            <div className="font-semibold text-primary">All Apps on Marketplace</div>
+                            <ExternalLink className="w-3 h-3 text-muted-foreground" />
+                          </a>
+                          <div className="border-t border-border pt-2 space-y-1">
+                            {appsSubmenu.map((app) => (
+                              <NavigationMenuLink key={app.name} asChild>
+                                <a
+                                  href={app.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                                >
+                                  <app.icon className="w-5 h-5 text-primary mt-0.5" />
+                                  <div>
+                                    <div className="font-medium text-sm">{app.name}</div>
+                                    <p className="text-xs text-muted-foreground">
+                                      {app.description}
+                                    </p>
+                                  </div>
+                                </a>
+                              </NavigationMenuLink>
+                            ))}
+                          </div>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
                   ) : item.hasAboutDropdown ? (
                     <div key={item.name} className="relative">
                       <DropdownMenu>
@@ -175,17 +241,6 @@ export function Header() {
                         </DropdownMenuContent>
                       </DropdownMenu>
                     </div>
-                  ) : item.isExternal ? (
-                    <NavigationMenuItem key={item.name}>
-                      <a
-                        href={item.externalUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50"
-                      >
-                        {item.name}
-                      </a>
-                    </NavigationMenuItem>
                   ) : (
                     <NavigationMenuItem key={item.name}>
                       <Link
@@ -248,28 +303,17 @@ export function Header() {
             <div className="container-wide py-4 space-y-2">
               {navItems.map((item) => (
                 <div key={item.name}>
-                  {item.isExternal ? (
-                    <a
-                      href={item.externalUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-4 py-3 rounded-lg font-medium transition-colors hover:bg-muted"
-                    >
-                      {item.name}
-                    </a>
-                  ) : (
-                    <Link
-                      to={item.href}
-                      className={cn(
-                        "block px-4 py-3 rounded-lg font-medium transition-colors",
-                        location.pathname === item.href
-                          ? "bg-primary text-primary-foreground"
-                          : "hover:bg-muted"
-                      )}
-                    >
-                      {item.name}
-                    </Link>
-                  )}
+                  <Link
+                    to={item.href}
+                    className={cn(
+                      "block px-4 py-3 rounded-lg font-medium transition-colors",
+                      location.pathname === item.href
+                        ? "bg-primary text-primary-foreground"
+                        : "hover:bg-muted"
+                    )}
+                  >
+                    {item.name}
+                  </Link>
                   {item.hasDropdown && (
                     <div className="ml-4 mt-2 space-y-1">
                       {acceleratorCategories.map((category) => (
@@ -280,6 +324,22 @@ export function Header() {
                         >
                           {category.name}
                         </Link>
+                      ))}
+                    </div>
+                  )}
+                  {item.hasAppsDropdown && (
+                    <div className="ml-4 mt-2 space-y-1">
+                      {appsSubmenu.map((app) => (
+                        <a
+                          key={app.name}
+                          href={app.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                        >
+                          <app.icon className="w-4 h-4" />
+                          {app.name}
+                        </a>
                       ))}
                     </div>
                   )}
