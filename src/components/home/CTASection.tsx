@@ -282,7 +282,7 @@ export function CTASection() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="gap-2 text-base border-background/30 text-background hover:bg-background/10"
+                    className="gap-2 text-base border-white/50 text-white hover:bg-white/10 hover:border-white"
                     asChild
                   >
                     <Link to="/contact">
