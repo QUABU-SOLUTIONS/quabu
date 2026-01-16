@@ -14,6 +14,7 @@ import ITAccelerator from "./pages/accelerators/IT";
 import CustomerServiceAccelerator from "./pages/accelerators/CustomerService";
 import RDAccelerator from "./pages/accelerators/RD";
 import About from "./pages/About";
+import AtlassianServices from "./pages/services/AtlassianServices";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/accelerators/customer-service" element={<CustomerServiceAccelerator />} />
           <Route path="/accelerators/rd" element={<RDAccelerator />} />
           <Route path="/about" element={<About />} />
+          <Route path="/services/atlassian" element={<AtlassianServices />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
