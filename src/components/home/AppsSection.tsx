@@ -72,7 +72,7 @@ const cardVariants = {
 
 export function AppsSection() {
   return (
-    <section className="py-20 lg:py-32 relative overflow-hidden bg-gradient-to-b from-muted/30 to-background">
+    <section className="section-padding relative overflow-hidden bg-gradient-to-b from-muted/30 to-background">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Grid pattern */}
