@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import quabuIcon from "@/assets/quabu-icon.png";
+import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 
 const clientLogos = [
   "Enterprise Corp",
@@ -50,12 +52,12 @@ export function TrustSection() {
         >
           <div className="flex justify-center mb-6">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center">
-                <span className="text-3xl font-bold">Q</span>
+              <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center p-2">
+                <img src={quabuIcon} alt="Quabu" className="w-full h-full object-contain" />
               </div>
               <span className="text-2xl font-bold">×</span>
-              <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center">
-                <span className="text-3xl font-bold text-[#0052CC]">A</span>
+              <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center p-2">
+                <img src={atlassianGoldPartner} alt="Atlassian" className="w-full h-full object-contain" />
               </div>
             </div>
           </div>
