@@ -81,6 +81,7 @@ const navItems = [
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -298,23 +299,41 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background border-t border-border"
+            className="lg:hidden bg-background border-t border-border max-h-[70vh] overflow-y-auto"
           >
             <div className="container-wide py-4 space-y-2">
               {navItems.map((item) => (
                 <div key={item.name}>
-                  <Link
-                    to={item.href}
-                    className={cn(
-                      "block px-4 py-3 rounded-lg font-medium transition-colors",
-                      location.pathname === item.href
-                        ? "bg-primary text-primary-foreground"
-                        : "hover:bg-muted"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                  {item.hasDropdown && (
+                  {(item.hasDropdown || item.hasAppsDropdown || item.hasAboutDropdown) ? (
+                    <button
+                      onClick={() => setExpandedMobileMenu(expandedMobileMenu === item.name ? null : item.name)}
+                      className={cn(
+                        "w-full flex items-center justify-between px-4 py-3 rounded-lg font-medium transition-colors",
+                        location.pathname === item.href
+                          ? "bg-primary text-primary-foreground"
+                          : "hover:bg-muted"
+                      )}
+                    >
+                      {item.name}
+                      <ChevronDown className={cn(
+                        "w-4 h-4 transition-transform",
+                        expandedMobileMenu === item.name && "rotate-180"
+                      )} />
+                    </button>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className={cn(
+                        "block px-4 py-3 rounded-lg font-medium transition-colors",
+                        location.pathname === item.href
+                          ? "bg-primary text-primary-foreground"
+                          : "hover:bg-muted"
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                  {item.hasDropdown && expandedMobileMenu === item.name && (
                     <div className="ml-4 mt-2 space-y-1">
                       {acceleratorCategories.map((category) => (
                         <Link
@@ -327,7 +346,7 @@ export function Header() {
                       ))}
                     </div>
                   )}
-                  {item.hasAppsDropdown && (
+                  {item.hasAppsDropdown && expandedMobileMenu === item.name && (
                     <div className="ml-4 mt-2 space-y-1">
                       {appsSubmenu.map((app) => (
                         <a
@@ -343,8 +362,14 @@ export function Header() {
                       ))}
                     </div>
                   )}
-                  {item.hasAboutDropdown && (
+                  {item.hasAboutDropdown && expandedMobileMenu === item.name && (
                     <div className="ml-4 mt-2 space-y-1">
+                      <Link
+                        to="/about"
+                        className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                      >
+                        About Quabu
+                      </Link>
                       {aboutSubmenu.map((subItem) => (
                         subItem.isExternal ? (
                           <a
@@ -356,6 +381,7 @@ export function Header() {
                           >
                             {subItem.icon === "linkedin" && <Linkedin className="w-4 h-4" />}
                             {subItem.icon === "twitter" && <Twitter className="w-4 h-4" />}
+                            {subItem.icon === "youtube" && <Youtube className="w-4 h-4" />}
                             {subItem.name}
                           </a>
                         ) : (
