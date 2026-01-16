@@ -1,0 +1,862 @@
+import { Layout } from "@/components/layout/Layout";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Link, useParams, Navigate } from "react-router-dom";
+import { 
+  ArrowLeft, 
+  ArrowRight, 
+  Calendar, 
+  Clock, 
+  Share2,
+  Linkedin,
+  Twitter,
+  Facebook,
+  BookOpen,
+  Tag,
+  User
+} from "lucide-react";
+
+// Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
+const blogPosts = [
+  {
+    id: "quabu-jmwe-success-story",
+    title: "Quabu and JMWE: A Success Story Transforming Workflow Management",
+    excerpt: "We're excited to share our recent success story, featured by Appfire, highlighting how our collaboration with JMWE has revolutionized workflow automation for enterprise clients.",
+    content: `
+## Introduction
+
+We're thrilled to share our recent success story, featured by Appfire, highlighting how our collaboration with JMWE (Jira Misc Workflow Extensions) has transformed workflow management for enterprise clients worldwide.
+
+## The Challenge
+
+Many organizations struggle with complex workflow automation in Jira. Standard functionality often falls short when dealing with:
+
+- **Multi-step approval processes** that require conditional routing
+- **Cross-project dependencies** that need seamless integration
+- **Custom field calculations** that update automatically
+- **Time-based triggers** for SLA management
+
+## Our Solution
+
+Working closely with JMWE, we developed a comprehensive workflow automation strategy that addressed these challenges head-on. Our approach included:
+
+### 1. Workflow Analysis & Design
+
+We conducted a thorough analysis of existing workflows, identifying bottlenecks and opportunities for automation. This involved mapping out every transition, condition, and validator to create an optimized flow.
+
+### 2. Custom Post Functions
+
+Leveraging JMWE's powerful post functions, we created custom automation rules that:
+
+- Automatically assign issues based on project, priority, and team capacity
+- Update related issues when parent tasks change status
+- Send targeted notifications to stakeholders at critical workflow stages
+- Calculate and set field values based on complex business logic
+
+### 3. Integration & Testing
+
+Rigorous testing ensured that all automations worked flawlessly across different scenarios. We implemented comprehensive logging and monitoring to track automation performance.
+
+## Results
+
+The implementation delivered remarkable results:
+
+- **75% reduction** in manual workflow steps
+- **50% faster** issue resolution times
+- **90% improvement** in SLA compliance
+- **Significant cost savings** from reduced manual intervention
+
+## Conclusion
+
+This collaboration demonstrates the power of combining Quabu's Atlassian expertise with JMWE's robust automation capabilities. Together, we're helping organizations unlock the full potential of their Jira workflows.
+
+Interested in transforming your workflow management? Contact us to learn how we can help optimize your Atlassian environment.
+    `,
+    category: "Success Stories",
+    date: "June 10, 2025",
+    readTime: "5 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop",
+    tags: ["JMWE", "Workflow Automation", "Jira", "Case Study"],
+  },
+  {
+    id: "assets-emancipates-platform",
+    title: "Assets Emancipates: More Than a Functionality, a Platform with Its Own Identity",
+    excerpt: "In the Atlassian ecosystem, some tools are born discreetly while others mature to become essential. Assets belongs to the latter category, evolving into a full-fledged platform.",
+    content: `
+## The Evolution of Assets
+
+In the Atlassian ecosystem, there are tools that emerge quietly, almost unnoticed, and others that mature over time to become absolutely essential. Assets definitively belongs to the second category.
+
+## What is Assets?
+
+Originally known as Insight, Assets has transformed from a simple CMDB (Configuration Management Database) feature into a comprehensive asset management platform within Jira Service Management.
+
+### Key Capabilities
+
+- **Object Schemas**: Define custom object types and relationships
+- **Automation Integration**: Trigger workflows based on asset changes
+- **Discovery & Import**: Automatically discover and import assets from various sources
+- **Reporting & Insights**: Gain visibility into your entire asset landscape
+
+## The Platform Identity
+
+What makes Assets special is its evolution beyond being just a feature:
+
+### 1. Standalone Value
+
+Assets now provides value independent of Jira Service Management's core ticketing functionality. Organizations use it purely for IT Asset Management (ITAM), even before integrating with service desk workflows.
+
+### 2. Ecosystem Integration
+
+Assets integrates seamlessly with:
+- **Jira Service Management** for incident and change management
+- **Confluence** for documentation and knowledge management
+- **Third-party discovery tools** for automated asset discovery
+
+### 3. Data-Centric Approach
+
+The platform treats assets as first-class citizens, not just metadata attached to tickets. This fundamental shift enables:
+
+- Better asset lifecycle management
+- Improved compliance tracking
+- More accurate cost allocation
+- Enhanced security visibility
+
+## Why This Matters
+
+For IT teams, this evolution means:
+
+1. **Centralized Asset Repository**: One source of truth for all assets
+2. **Reduced Complexity**: Less need for external CMDB solutions
+3. **Better Integration**: Seamless connection with existing Atlassian workflows
+4. **Future-Proof**: Continuous improvements from Atlassian's investment
+
+## Conclusion
+
+Assets has truly emancipated from its origins as a simple database feature. It now stands as a robust platform with its own identity, ready to serve as the foundation for comprehensive IT asset management.
+
+The question is no longer whether to use Assets, but how to best leverage its capabilities for your organization's needs.
+    `,
+    category: "News",
+    date: "May 22, 2025",
+    readTime: "4 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop",
+    tags: ["Assets", "ITSM", "Atlassian", "CMDB"],
+  },
+  {
+    id: "assets-data-manager-guide",
+    title: "What is Assets Data Manager and Why Should You Pay Attention to It?",
+    excerpt: "In enterprise asset management (ITAM), most organizations face the same challenge: asset data is scattered everywhere. Learn how Assets Data Manager solves this.",
+    content: `
+## The Asset Data Challenge
+
+In enterprise asset management (ITAM), most organizations face the same fundamental problem: asset data is scattered everywhere.
+
+- Spreadsheets in different departments
+- Multiple discovery tools with conflicting data
+- Manual updates that quickly become outdated
+- Siloed systems that don't communicate
+
+## Enter Assets Data Manager
+
+Assets Data Manager is Atlassian's answer to this data chaos. It's a powerful feature within Assets that enables organizations to:
+
+### Centralize Data Collection
+
+Connect to multiple data sources and bring all asset information into a single, authoritative repository. Supported sources include:
+
+- Network discovery tools
+- Cloud providers (AWS, Azure, GCP)
+- HR systems
+- Financial applications
+- Custom databases
+
+### Automate Data Quality
+
+Set up rules to:
+- Validate incoming data
+- Identify duplicates
+- Flag inconsistencies
+- Maintain data freshness
+
+### Enable Self-Service
+
+Empower teams to:
+- Request new assets
+- Update asset information
+- Track asset status
+- Generate compliance reports
+
+## Key Features to Watch
+
+### 1. Discovery Integration
+
+Seamlessly connect with popular discovery tools to automatically populate and update your asset database.
+
+### 2. Reconciliation Engine
+
+Intelligently match and merge data from multiple sources, resolving conflicts based on configurable rules.
+
+### 3. Data Quality Dashboard
+
+Monitor the health of your asset data with real-time metrics and alerts for data quality issues.
+
+### 4. API-First Architecture
+
+Build custom integrations and workflows using the comprehensive REST API.
+
+## Why You Should Pay Attention
+
+The shift to cloud and remote work has made IT asset management more critical—and more challenging—than ever. Assets Data Manager addresses these challenges by:
+
+1. **Reducing Manual Effort**: Automate data collection and maintenance
+2. **Improving Accuracy**: Single source of truth eliminates discrepancies
+3. **Enabling Compliance**: Always-current data for audits and reports
+4. **Supporting Decisions**: Better data leads to better IT decisions
+
+## Getting Started
+
+If you're already using Jira Service Management, Assets Data Manager is available as part of your Premium or Enterprise subscription. Here's how to begin:
+
+1. Review your current asset data sources
+2. Identify the most critical gaps in your asset inventory
+3. Start with a pilot project focusing on one asset type
+4. Iterate and expand based on lessons learned
+
+## Conclusion
+
+Assets Data Manager represents a significant step forward in IT asset management. By centralizing, automating, and improving the quality of asset data, it enables organizations to finally get a handle on their ever-growing IT estates.
+
+The question isn't whether you need better asset data management—it's how quickly you can get started.
+    `,
+    category: "Articles",
+    date: "April 22, 2025",
+    readTime: "6 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
+    tags: ["Assets", "ITAM", "Data Management", "Automation"],
+  },
+  {
+    id: "rovo-dev-agents-atlassian-ai",
+    title: "Rovo Dev Agents Arrives: Atlassian's AI for Developers",
+    excerpt: "Atlassian introduces Rovo Dev Agents, a powerful AI assistant designed specifically for development teams. Discover how it can transform your coding workflow.",
+    content: `
+## The AI Revolution in Development
+
+Atlassian has entered the AI coding assistant arena with Rovo Dev Agents, a purpose-built AI solution designed to transform how development teams work within the Atlassian ecosystem.
+
+## What is Rovo Dev Agents?
+
+Rovo Dev Agents is an AI-powered assistant that integrates directly with Atlassian development tools to help developers:
+
+- Write code faster
+- Understand complex codebases
+- Automate repetitive tasks
+- Stay in flow while coding
+
+## Key Capabilities
+
+### 1. Code Generation & Completion
+
+Rovo Dev Agents can generate code snippets based on natural language descriptions, understanding context from:
+- Your current file
+- Related files in the repository
+- Jira issue details
+- Confluence documentation
+
+### 2. Code Understanding
+
+Ask questions about your codebase in plain English:
+- "How does the authentication flow work?"
+- "What files are related to the payment module?"
+- "Explain this function's purpose"
+
+### 3. Jira Integration
+
+Seamlessly connected with Jira issues, Rovo Dev Agents can:
+- Suggest implementation approaches based on issue descriptions
+- Auto-generate commit messages linked to issues
+- Update issue status based on code changes
+
+### 4. Bitbucket Integration
+
+Within Bitbucket, developers can:
+- Get AI-powered code review suggestions
+- Generate PR descriptions automatically
+- Identify potential issues before merging
+
+## What Sets It Apart
+
+Unlike generic AI coding assistants, Rovo Dev Agents is designed specifically for the Atlassian ecosystem:
+
+### Contextual Awareness
+
+The agent understands your entire project context, including:
+- Project documentation in Confluence
+- Issue history in Jira
+- Code history in Bitbucket
+- Team conventions and patterns
+
+### Enterprise-Ready
+
+Built with enterprise security and compliance in mind:
+- Data never leaves your instance for training
+- Compliant with major security frameworks
+- Configurable access controls
+
+### Team-Oriented
+
+Designed for teams, not just individuals:
+- Share prompts and templates across the team
+- Learn from team-wide patterns
+- Maintain consistency in code style
+
+## Getting Started
+
+Rovo Dev Agents is available for Atlassian Cloud customers. To get started:
+
+1. Enable Rovo in your Atlassian admin console
+2. Install the IDE extension (VS Code, IntelliJ supported)
+3. Connect your Bitbucket repositories
+4. Start coding with AI assistance
+
+## The Future of Development
+
+AI assistance in development is no longer optional—it's becoming essential for staying competitive. With Rovo Dev Agents, Atlassian is making a strong statement about the future of software development within their ecosystem.
+
+The combination of deep integration, enterprise security, and team-oriented features makes Rovo Dev Agents a compelling choice for organizations already invested in Atlassian tools.
+    `,
+    category: "News",
+    date: "April 15, 2025",
+    readTime: "5 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
+    tags: ["AI", "Rovo", "Development", "Automation"],
+  },
+  {
+    id: "atlassian-products-to-apps",
+    title: "Atlassian: From 'Products' to 'Apps' - Vision or Error?",
+    excerpt: "A deep analysis of Atlassian's recent admin panel changes and the strategic implications of rebranding 'Products' as 'Apps' in their ecosystem.",
+    content: `
+## The Terminology Shift
+
+Atlassian recently made a subtle but significant change to their admin panel: what was once called "Products" is now labeled "Apps." This seemingly minor terminology shift has sparked considerable discussion in the Atlassian community.
+
+## The Change in Context
+
+### Before
+- "Products" included Jira, Confluence, Bitbucket, etc.
+- Clear distinction between Atlassian products and third-party apps
+- Products had their own dedicated section in admin
+
+### After
+- Everything is now under "Apps"
+- First-party and third-party apps share the same space
+- Unified management interface
+
+## Arguments for the Change
+
+### 1. Platform Thinking
+
+The shift reflects Atlassian's evolution into a platform company:
+- Core products are now "first-party apps"
+- Equal footing with marketplace apps
+- Encourages ecosystem development
+
+### 2. Consistency
+
+Users now have:
+- One place to manage all applications
+- Unified settings and permissions
+- Consistent user experience
+
+### 3. Future Flexibility
+
+The change allows Atlassian to:
+- Easily add new capabilities as apps
+- Bundle and unbundle features
+- Offer more flexible licensing
+
+## Arguments Against the Change
+
+### 1. Brand Dilution
+
+Critics argue:
+- Jira isn't just an "app"—it's a platform
+- The term "app" diminishes perceived value
+- Enterprise customers expect "products"
+
+### 2. Confusion
+
+The change has caused:
+- Uncertainty about what's included in licenses
+- Questions about support levels
+- Difficulty distinguishing core vs. optional
+
+### 3. Market Perception
+
+There are concerns about:
+- How competitors might leverage this messaging
+- Customer confusion during sales processes
+- Perceived commoditization
+
+## Our Analysis
+
+After careful consideration, we believe this change reflects a broader industry trend and Atlassian's strategic vision:
+
+### The Platform Strategy
+
+Atlassian is positioning itself as a platform for work management, not just a product vendor. This means:
+- Core capabilities (Jira, Confluence) become foundational layers
+- Additional functionality comes from apps (internal and external)
+- The ecosystem becomes the differentiator
+
+### Customer Impact
+
+For most customers, the practical impact is minimal:
+- Same functionality, different label
+- Better unified management
+- More integration possibilities
+
+### Long-Term Vision
+
+We expect Atlassian to:
+- Continue investing in platform capabilities
+- Make it easier for customers to customize with apps
+- Potentially offer more modular licensing
+
+## Conclusion
+
+Is it a vision or an error? We lean toward vision—but with caveats.
+
+The change makes strategic sense for Atlassian's platform ambitions. However, the execution could have been smoother with better communication about what hasn't changed (licensing, support, commitment to core functionality).
+
+Time will tell whether customers embrace this new mental model or continue to think in traditional product terms. Either way, the underlying value proposition remains strong.
+    `,
+    category: "Articles",
+    date: "April 15, 2025",
+    readTime: "7 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=600&fit=crop",
+    tags: ["Atlassian", "Strategy", "Analysis", "Opinion"],
+  },
+  {
+    id: "kanban-work-method",
+    title: "Kanban: The Work Method of the Moment",
+    excerpt: "Discover why Kanban has become the preferred methodology for visual workflow management and how to implement it effectively in your organization.",
+    content: `
+## What is Kanban?
+
+Kanban is a visual workflow management method that originated in Japanese manufacturing (specifically at Toyota) and has since been adapted for knowledge work, software development, and general project management.
+
+The word "Kanban" literally means "signboard" or "billboard" in Japanese, referring to the visual nature of the system.
+
+## Core Principles
+
+### 1. Visualize Work
+
+Everything starts with making work visible:
+- Create a board with columns representing stages
+- Use cards to represent work items
+- Anyone can see the state of work at a glance
+
+### 2. Limit Work in Progress (WIP)
+
+The key insight of Kanban is that limiting concurrent work improves flow:
+- Set explicit limits on each column
+- Stop starting, start finishing
+- Reduce context switching
+
+### 3. Manage Flow
+
+Focus on the smooth movement of work:
+- Identify and eliminate bottlenecks
+- Measure lead time and cycle time
+- Optimize for throughput, not busyness
+
+### 4. Make Policies Explicit
+
+Everyone should understand the rules:
+- Definition of "done" for each column
+- Criteria for pulling work
+- How to handle blockers
+
+### 5. Implement Feedback Loops
+
+Regular review and improvement:
+- Daily standups
+- Delivery reviews
+- Regular retrospectives
+
+### 6. Improve Collaboratively
+
+Evolve the system together:
+- Small, incremental changes
+- Data-driven decisions
+- Team-owned process
+
+## Why Kanban Now?
+
+Several factors make Kanban particularly relevant today:
+
+### Remote Work Compatibility
+
+Kanban boards work seamlessly in digital form:
+- Real-time visibility for distributed teams
+- Asynchronous updates
+- Clear status without meetings
+
+### Flexibility
+
+Unlike more prescriptive methodologies:
+- Start where you are
+- No required roles or meetings
+- Evolve at your own pace
+
+### Focus on Flow
+
+In a world of constant interruption:
+- WIP limits protect focus
+- Visual queues prevent overload
+- Flow metrics guide improvement
+
+## Implementing Kanban with Jira
+
+Jira provides excellent Kanban support:
+
+### 1. Create a Kanban Board
+
+Start with a simple board:
+- To Do
+- In Progress
+- Done
+
+### 2. Set WIP Limits
+
+Configure column limits:
+- Start conservative (2-3 per person)
+- Adjust based on experience
+- Respect the limits!
+
+### 3. Add Swimlanes
+
+Organize work by:
+- Priority
+- Team member
+- Work type
+
+### 4. Configure Filters
+
+Show only relevant work:
+- Active sprint items
+- Specific labels or components
+- Current user's assignments
+
+### 5. Use Automation
+
+Automate routine tasks:
+- Auto-assign on transition
+- Notify on SLA breach
+- Update linked issues
+
+## Common Pitfalls
+
+### 1. Ignoring WIP Limits
+
+"Just this once" becomes always. Respect the limits.
+
+### 2. Too Many Columns
+
+Complexity creeps in. Start simple.
+
+### 3. No Metrics
+
+Without measurement, improvement is guesswork.
+
+### 4. Forgetting to Pull
+
+Teams push work instead of pulling. Focus on finishing.
+
+## Conclusion
+
+Kanban's simplicity is its strength. By visualizing work, limiting WIP, and focusing on flow, teams can achieve remarkable improvements in delivery and satisfaction.
+
+The best time to start is now—begin with your current workflow, make it visible, and evolve from there.
+
+Ready to implement Kanban in your organization? Contact us for expert guidance on optimizing your workflow with Jira and Kanban best practices.
+    `,
+    category: "Articles",
+    date: "March 4, 2025",
+    readTime: "8 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop",
+    tags: ["Kanban", "Agile", "Methodology", "Productivity"],
+  },
+];
+
+export default function BlogPost() {
+  const { id } = useParams<{ id: string }>();
+  const post = blogPosts.find(p => p.id === id);
+
+  if (!post) {
+    return <Navigate to="/blog" replace />;
+  }
+
+  const currentIndex = blogPosts.findIndex(p => p.id === id);
+  const prevPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
+  const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
+
+  return (
+    <Layout>
+      {/* Hero */}
+      <section className="relative">
+        <div className="absolute inset-0 h-[50vh]">
+          <img 
+            src={post.image} 
+            alt={post.title} 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+        </div>
+
+        <div className="container relative z-10 pt-32 pb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Link 
+              to="/blog" 
+              className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
+
+            <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full mb-4">
+              {post.category}
+            </span>
+
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 max-w-4xl">
+              {post.title}
+            </h1>
+
+            <div className="flex flex-wrap items-center gap-6 text-white/80">
+              <span className="flex items-center gap-2">
+                <User className="w-4 h-4" />
+                {post.author}
+              </span>
+              <span className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                {post.date}
+              </span>
+              <span className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                {post.readTime}
+              </span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Content */}
+      <section className="py-12">
+        <div className="container">
+          <div className="grid lg:grid-cols-12 gap-12">
+            {/* Main Content */}
+            <motion.article
+              className="lg:col-span-8"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground">
+                {post.content.split('\n').map((paragraph, i) => {
+                  if (paragraph.startsWith('## ')) {
+                    return <h2 key={i} className="text-2xl font-bold mt-8 mb-4 text-foreground">{paragraph.replace('## ', '')}</h2>;
+                  }
+                  if (paragraph.startsWith('### ')) {
+                    return <h3 key={i} className="text-xl font-semibold mt-6 mb-3 text-foreground">{paragraph.replace('### ', '')}</h3>;
+                  }
+                  if (paragraph.startsWith('- **')) {
+                    const match = paragraph.match(/- \*\*(.+)\*\*:? ?(.*)/)
+                    if (match) {
+                      return (
+                        <li key={i} className="ml-4 mb-2">
+                          <strong className="text-foreground">{match[1]}</strong>
+                          {match[2] && `: ${match[2]}`}
+                        </li>
+                      );
+                    }
+                  }
+                  if (paragraph.startsWith('- ')) {
+                    return <li key={i} className="ml-4 mb-2">{paragraph.replace('- ', '')}</li>;
+                  }
+                  if (paragraph.match(/^\d+\. /)) {
+                    return <li key={i} className="ml-4 mb-2">{paragraph.replace(/^\d+\. /, '')}</li>;
+                  }
+                  if (paragraph.trim() === '') return null;
+                  return <p key={i} className="mb-4">{paragraph}</p>;
+                })}
+              </div>
+
+              {/* Tags */}
+              <div className="mt-12 pt-8 border-t border-border">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <Tag className="w-4 h-4 text-muted-foreground" />
+                  {post.tags.map(tag => (
+                    <span 
+                      key={tag} 
+                      className="px-3 py-1 bg-muted rounded-full text-sm text-muted-foreground"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Share */}
+              <div className="mt-8 p-6 bg-muted/50 rounded-xl">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div className="flex items-center gap-2">
+                    <Share2 className="w-5 h-5 text-muted-foreground" />
+                    <span className="font-medium">Share this article</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Button variant="outline" size="icon" asChild>
+                      <a 
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(post.title)}`}
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <Linkedin className="w-4 h-4" />
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <a 
+                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`}
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="Share on Twitter"
+                      >
+                        <Twitter className="w-4 h-4" />
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <a 
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="Share on Facebook"
+                      >
+                        <Facebook className="w-4 h-4" />
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </motion.article>
+
+            {/* Sidebar */}
+            <aside className="lg:col-span-4">
+              <motion.div
+                className="sticky top-24 space-y-8"
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
+              >
+                {/* Author */}
+                <div className="p-6 bg-muted/50 rounded-xl">
+                  <h3 className="font-semibold mb-4">About the Author</h3>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                      <User className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <p className="font-medium">{post.author}</p>
+                      <p className="text-sm text-muted-foreground">Atlassian Experts</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Related Posts */}
+                <div className="p-6 bg-muted/50 rounded-xl">
+                  <h3 className="font-semibold mb-4 flex items-center gap-2">
+                    <BookOpen className="w-4 h-4" />
+                    Related Articles
+                  </h3>
+                  <div className="space-y-4">
+                    {blogPosts
+                      .filter(p => p.id !== post.id && p.category === post.category)
+                      .slice(0, 3)
+                      .map(relatedPost => (
+                        <Link
+                          key={relatedPost.id}
+                          to={`/blog/${relatedPost.id}`}
+                          className="block group"
+                        >
+                          <h4 className="font-medium text-sm group-hover:text-primary transition-colors line-clamp-2">
+                            {relatedPost.title}
+                          </h4>
+                          <p className="text-xs text-muted-foreground mt-1">{relatedPost.date}</p>
+                        </Link>
+                      ))
+                    }
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <div className="p-6 bg-primary rounded-xl text-primary-foreground">
+                  <h3 className="font-semibold mb-2">Need Help?</h3>
+                  <p className="text-sm text-primary-foreground/80 mb-4">
+                    Our Atlassian experts are ready to help you optimize your workflows.
+                  </p>
+                  <Button variant="secondary" size="sm" className="w-full" asChild>
+                    <Link to="/contact">Contact Us</Link>
+                  </Button>
+                </div>
+              </motion.div>
+            </aside>
+          </div>
+
+          {/* Navigation */}
+          <div className="mt-16 pt-8 border-t border-border">
+            <div className="grid md:grid-cols-2 gap-6">
+              {prevPost && (
+                <Link 
+                  to={`/blog/${prevPost.id}`}
+                  className="group p-6 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors"
+                >
+                  <span className="text-sm text-muted-foreground flex items-center gap-2 mb-2">
+                    <ArrowLeft className="w-4 h-4" />
+                    Previous Article
+                  </span>
+                  <h4 className="font-medium group-hover:text-primary transition-colors line-clamp-2">
+                    {prevPost.title}
+                  </h4>
+                </Link>
+              )}
+              {nextPost && (
+                <Link 
+                  to={`/blog/${nextPost.id}`}
+                  className="group p-6 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors md:text-right md:ml-auto"
+                >
+                  <span className="text-sm text-muted-foreground flex items-center gap-2 mb-2 md:justify-end">
+                    Next Article
+                    <ArrowRight className="w-4 h-4" />
+                  </span>
+                  <h4 className="font-medium group-hover:text-primary transition-colors line-clamp-2">
+                    {nextPost.title}
+                  </h4>
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
