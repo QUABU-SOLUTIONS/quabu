@@ -124,7 +124,7 @@ export function Header() {
                       <NavigationMenuTrigger className="bg-transparent hover:bg-muted/50">
                         {item.name}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent>
+                      <NavigationMenuContent className="right-0 left-auto">
                         <div className="p-4 w-[220px]">
                           <Link
                             to="/about"
