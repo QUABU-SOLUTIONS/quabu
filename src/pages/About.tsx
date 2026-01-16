@@ -330,6 +330,7 @@ const team = [
   { name: "Joan Sanchez", role: "Atlassian Specialist" },
   { name: "Jesús Del Campo", role: "DevOps Engineer" },
   { name: "Adrià Cirujeda", role: "UX Designer" },
+  { name: "Raul Pelaez", role: "Atlassian Champion" },
 ];
 
 const containerVariants = {
