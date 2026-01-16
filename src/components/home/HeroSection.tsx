@@ -99,19 +99,19 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-              <Button size="lg" className="gap-2 text-base" asChild>
+              <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center" asChild>
                 <Link to="/accelerators">
                   Explore Accelerators
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
                 </Link>
               </Button>
-              <Button size="lg" className="text-base" asChild>
+              <Button size="lg" className="text-base h-auto py-3 whitespace-normal text-center" asChild>
                 <Link to="/contact">Schedule a Demo</Link>
               </Button>
-              <Button size="lg" className="gap-2 text-base" asChild>
+              <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center" asChild>
                 <Link to="/cloud">
                   Ascend to the Cloud
-                  <Sparkles className="w-4 h-4" />
+                  <Sparkles className="w-4 h-4 flex-shrink-0" />
                 </Link>
               </Button>
             </div>
