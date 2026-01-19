@@ -364,7 +364,7 @@ export default function CloudMigration() {
                 
                 <div className="grid grid-cols-3 gap-4 mt-8">
                   {[
-                    { label: "Migrations", value: "100+" },
+                    { label: "Migrations", value: "80+" },
                     { label: "Uptime", value: "99.9%" },
                     { label: "Data Integrity", value: "100%" },
                   ].map((stat, i) => (
