@@ -508,8 +508,10 @@ export default function AtlassianServices() {
                 Get Started
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                View Our Apps
+              <Button size="lg" className="bg-white text-blue-700 hover:bg-white/90" asChild>
+                <a href="https://marketplace.atlassian.com/vendors/1225498/quabu" target="_blank" rel="noopener noreferrer">
+                  View Our Apps
+                </a>
               </Button>
             </motion.div>
 
