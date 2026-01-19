@@ -521,7 +521,7 @@ export default function AtlassianServices() {
               transition={{ delay: 0.7 }}
             >
               {[
-                { value: "10+", label: "Years Experience" },
+                { value: "15+", label: "Years Experience" },
                 { value: "500+", label: "Projects Delivered" },
                 { value: "100%", label: "Client Satisfaction" },
               ].map((stat, i) => (
