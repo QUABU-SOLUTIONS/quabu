@@ -25,50 +25,50 @@ import { Button } from "@/components/ui/button";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 
-// Animated Happy Person Character (Comic Style)
-function AnimatedPerson({ 
+// Animated Cat Character (Cute Style)
+function AnimatedCat({ 
   style, 
   delay = 0,
-  variant = "developer"
+  variant = "orange"
 }: { 
   style?: React.CSSProperties; 
   delay?: number;
-  variant?: "developer" | "manager" | "designer" | "support" | "analyst";
+  variant?: "orange" | "gray" | "black" | "white" | "calico";
 }) {
-  const personStyles = {
-    developer: { 
-      skinTone: "#FFDBB4", 
-      hair: "#4A3728", 
-      shirt: "#3B82F6",
-      accessory: "glasses"
+  const catStyles = {
+    orange: { 
+      body: "#F59E0B", 
+      stripes: "#D97706",
+      nose: "#EC4899",
+      eyes: "#22C55E"
     },
-    manager: { 
-      skinTone: "#E8BEAC", 
-      hair: "#2C1810", 
-      shirt: "#10B981",
-      accessory: "tie"
+    gray: { 
+      body: "#6B7280", 
+      stripes: "#4B5563",
+      nose: "#F472B6",
+      eyes: "#3B82F6"
     },
-    designer: { 
-      skinTone: "#FFDBB4", 
-      hair: "#FF6B6B", 
-      shirt: "#8B5CF6",
-      accessory: "headphones"
+    black: { 
+      body: "#1F2937", 
+      stripes: "#111827",
+      nose: "#F472B6",
+      eyes: "#FBBF24"
     },
-    support: { 
-      skinTone: "#D4A574", 
-      hair: "#1A1A1A", 
-      shirt: "#F59E0B",
-      accessory: "headset"
+    white: { 
+      body: "#F3F4F6", 
+      stripes: "#E5E7EB",
+      nose: "#F472B6",
+      eyes: "#3B82F6"
     },
-    analyst: { 
-      skinTone: "#FFDBB4", 
-      hair: "#6B4423", 
-      shirt: "#EC4899",
-      accessory: "none"
+    calico: { 
+      body: "#FEF3C7", 
+      stripes: "#F59E0B",
+      nose: "#EC4899",
+      eyes: "#10B981"
     },
   };
 
-  const colors = personStyles[variant];
+  const colors = catStyles[variant];
 
   return (
     <motion.div
@@ -79,158 +79,184 @@ function AnimatedPerson({
       transition={{ delay, duration: 0.5, type: "spring" }}
     >
       <motion.svg
-        width="70"
+        width="80"
         height="90"
-        viewBox="0 0 70 90"
+        viewBox="0 0 80 90"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         animate={{ y: [0, -8, 0] }}
         transition={{ duration: 3 + delay, repeat: Infinity, ease: "easeInOut" }}
       >
-        {/* Hair */}
-        <ellipse cx="35" cy="18" rx="18" ry="16" fill={colors.hair} />
+        {/* Ears */}
+        <motion.path
+          d="M 15 25 L 22 5 L 30 22 Z"
+          fill={colors.body}
+          animate={{ rotate: [-5, 5, -5] }}
+          style={{ transformOrigin: "22px 15px" }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        />
+        <motion.path
+          d="M 50 22 L 58 5 L 65 25 Z"
+          fill={colors.body}
+          animate={{ rotate: [5, -5, 5] }}
+          style={{ transformOrigin: "58px 15px" }}
+          transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}
+        />
+        {/* Inner ears */}
+        <path d="M 18 22 L 22 10 L 27 20 Z" fill="#FFB6C1" />
+        <path d="M 53 20 L 58 10 L 62 22 Z" fill="#FFB6C1" />
         
-        {/* Face */}
-        <ellipse cx="35" cy="25" rx="15" ry="14" fill={colors.skinTone} />
+        {/* Head */}
+        <ellipse cx="40" cy="35" rx="25" ry="22" fill={colors.body} />
+        
+        {/* Stripes on forehead */}
+        <path d="M 35 18 L 40 28 L 45 18" stroke={colors.stripes} strokeWidth="2" fill="none" />
+        <path d="M 32 22 L 35 30" stroke={colors.stripes} strokeWidth="1.5" fill="none" />
+        <path d="M 48 22 L 45 30" stroke={colors.stripes} strokeWidth="1.5" fill="none" />
         
         {/* Eyes */}
         <motion.ellipse
-          cx="29"
-          cy="23"
-          rx="3"
-          ry="3"
+          cx="30"
+          cy="35"
+          rx="6"
+          ry="7"
           fill="white"
         />
         <motion.ellipse
-          cx="41"
-          cy="23"
-          rx="3"
-          ry="3"
+          cx="50"
+          cy="35"
+          rx="6"
+          ry="7"
           fill="white"
         />
-        <motion.circle
-          cx="29"
-          cy="23"
-          r="1.5"
-          fill="#2C1810"
+        {/* Pupils */}
+        <motion.ellipse
+          cx="30"
+          cy="35"
+          rx="3"
+          ry="5"
+          fill={colors.eyes}
           animate={{ 
-            x: [0, 1, 0, -1, 0],
+            scaleY: [1, 0.3, 1],
           }}
-          transition={{ duration: 3, repeat: Infinity }}
+          transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
         />
-        <motion.circle
-          cx="41"
-          cy="23"
-          r="1.5"
-          fill="#2C1810"
+        <motion.ellipse
+          cx="50"
+          cy="35"
+          rx="3"
+          ry="5"
+          fill={colors.eyes}
           animate={{ 
-            x: [0, 1, 0, -1, 0],
+            scaleY: [1, 0.3, 1],
           }}
-          transition={{ duration: 3, repeat: Infinity }}
+          transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
         />
+        {/* Eye shine */}
+        <circle cx="28" cy="33" r="1.5" fill="white" />
+        <circle cx="48" cy="33" r="1.5" fill="white" />
         
-        {/* Glasses (for developer) */}
-        {colors.accessory === "glasses" && (
-          <>
-            <circle cx="29" cy="23" r="5" stroke="#333" strokeWidth="1.5" fill="none" />
-            <circle cx="41" cy="23" r="5" stroke="#333" strokeWidth="1.5" fill="none" />
-            <line x1="34" y1="23" x2="36" y2="23" stroke="#333" strokeWidth="1.5" />
-          </>
-        )}
-        
-        {/* Smile */}
+        {/* Nose */}
         <motion.path
-          d="M 28 30 Q 35 36 42 30"
-          stroke="#C4846C"
-          strokeWidth="2"
+          d="M 37 42 L 40 46 L 43 42 Z"
+          fill={colors.nose}
+          animate={{ scale: [1, 1.1, 1] }}
+          style={{ transformOrigin: "40px 44px" }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
+        
+        {/* Mouth */}
+        <motion.path
+          d="M 40 46 L 40 50 M 35 52 Q 40 56 45 52"
+          stroke="#333"
+          strokeWidth="1.5"
           fill="none"
           strokeLinecap="round"
+        />
+        
+        {/* Whiskers */}
+        <motion.g
+          animate={{ rotate: [-3, 3, -3] }}
+          style={{ transformOrigin: "40px 45px" }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          <line x1="18" y1="40" x2="8" y2="38" stroke="#333" strokeWidth="1" />
+          <line x1="18" y1="45" x2="5" y2="45" stroke="#333" strokeWidth="1" />
+          <line x1="18" y1="50" x2="8" y2="52" stroke="#333" strokeWidth="1" />
+          <line x1="62" y1="40" x2="72" y2="38" stroke="#333" strokeWidth="1" />
+          <line x1="62" y1="45" x2="75" y2="45" stroke="#333" strokeWidth="1" />
+          <line x1="62" y1="50" x2="72" y2="52" stroke="#333" strokeWidth="1" />
+        </motion.g>
+        
+        {/* Body */}
+        <ellipse cx="40" cy="70" rx="18" ry="15" fill={colors.body} />
+        
+        {/* Body stripes */}
+        <path d="M 30 62 Q 32 70 30 78" stroke={colors.stripes} strokeWidth="2" fill="none" />
+        <path d="M 40 60 Q 42 70 40 80" stroke={colors.stripes} strokeWidth="2" fill="none" />
+        <path d="M 50 62 Q 48 70 50 78" stroke={colors.stripes} strokeWidth="2" fill="none" />
+        
+        {/* Front paws */}
+        <ellipse cx="28" cy="82" rx="6" ry="4" fill={colors.body} />
+        <ellipse cx="52" cy="82" rx="6" ry="4" fill={colors.body} />
+        {/* Paw details */}
+        <circle cx="26" cy="83" r="1" fill="#FFB6C1" />
+        <circle cx="28" cy="84" r="1" fill="#FFB6C1" />
+        <circle cx="30" cy="83" r="1" fill="#FFB6C1" />
+        <circle cx="50" cy="83" r="1" fill="#FFB6C1" />
+        <circle cx="52" cy="84" r="1" fill="#FFB6C1" />
+        <circle cx="54" cy="83" r="1" fill="#FFB6C1" />
+        
+        {/* Tail */}
+        <motion.path
+          d="M 58 70 Q 75 65 78 50 Q 80 40 75 35"
+          stroke={colors.body}
+          strokeWidth="8"
+          strokeLinecap="round"
+          fill="none"
           animate={{
-            d: ["M 28 30 Q 35 36 42 30", "M 28 30 Q 35 38 42 30", "M 28 30 Q 35 36 42 30"]
+            d: [
+              "M 58 70 Q 75 65 78 50 Q 80 40 75 35",
+              "M 58 70 Q 70 60 75 45 Q 82 35 80 25",
+              "M 58 70 Q 75 65 78 50 Q 80 40 75 35"
+            ]
           }}
           transition={{ duration: 2, repeat: Infinity }}
         />
         
-        {/* Cheeks (blush) */}
-        <circle cx="23" cy="28" r="3" fill="#FFB6C1" opacity="0.5" />
-        <circle cx="47" cy="28" r="3" fill="#FFB6C1" opacity="0.5" />
-        
-        {/* Body/Shirt */}
-        <path
-          d="M 15 45 Q 35 40 55 45 L 58 80 Q 35 85 12 80 Z"
-          fill={colors.shirt}
-        />
-        
-        {/* Tie (for manager) */}
-        {colors.accessory === "tie" && (
-          <path
-            d="M 33 45 L 35 55 L 37 45 L 38 70 L 35 75 L 32 70 Z"
-            fill="#1E40AF"
-          />
-        )}
-        
-        {/* Headphones/Headset */}
-        {(colors.accessory === "headphones" || colors.accessory === "headset") && (
-          <>
-            <path
-              d="M 15 20 Q 15 5 35 5 Q 55 5 55 20"
-              stroke="#333"
-              strokeWidth="3"
-              fill="none"
-            />
-            <ellipse cx="15" cy="22" rx="4" ry="6" fill="#333" />
-            <ellipse cx="55" cy="22" rx="4" ry="6" fill="#333" />
-            {colors.accessory === "headset" && (
-              <path
-                d="M 15 28 Q 10 35 20 38"
-                stroke="#333"
-                strokeWidth="2"
-                fill="none"
-              />
-            )}
-          </>
-        )}
-        
-        {/* Arms waving */}
-        <motion.path
-          d="M 12 50 Q 0 45 -5 35"
-          stroke={colors.skinTone}
-          strokeWidth="8"
-          strokeLinecap="round"
-          fill="none"
+        {/* Hearts floating (happy effect) */}
+        <motion.text
+          x="65"
+          y="20"
+          fontSize="10"
           animate={{
-            d: ["M 12 50 Q 0 45 -5 35", "M 12 50 Q -5 40 -8 30", "M 12 50 Q 0 45 -5 35"]
+            y: [20, 10, 20],
+            opacity: [0, 1, 0],
+            scale: [0.5, 1, 0.5]
           }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        />
-        <motion.path
-          d="M 58 50 Q 70 45 75 35"
-          stroke={colors.skinTone}
-          strokeWidth="8"
-          strokeLinecap="round"
-          fill="none"
+          transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
+        >
+          ❤️
+        </motion.text>
+        <motion.text
+          x="5"
+          y="25"
+          fontSize="8"
           animate={{
-            d: ["M 58 50 Q 70 45 75 35", "M 58 50 Q 75 40 78 30", "M 58 50 Q 70 45 75 35"]
+            y: [25, 15, 25],
+            opacity: [0, 1, 0],
+            scale: [0.5, 1, 0.5]
           }}
-          transition={{ duration: 1.5, repeat: Infinity, delay: 0.3 }}
-        />
+          transition={{ duration: 2, repeat: Infinity, delay: 0.8 }}
+        >
+          💕
+        </motion.text>
         
-        {/* Sparkles around (happy effect) */}
+        {/* Sparkles */}
         <motion.circle
-          cx="60"
-          cy="10"
+          cx="70"
+          cy="30"
           r="2"
-          fill="#FFD700"
-          animate={{
-            scale: [0, 1, 0],
-            opacity: [0, 1, 0]
-          }}
-          transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}
-        />
-        <motion.circle
-          cx="10"
-          cy="15"
-          r="1.5"
           fill="#FFD700"
           animate={{
             scale: [0, 1, 0],
@@ -239,13 +265,13 @@ function AnimatedPerson({
           transition={{ duration: 1.5, repeat: Infinity, delay: 0.5 }}
         />
         <motion.path
-          d="M 65 25 L 68 22 M 66 25 L 66 20"
+          d="M 5 40 L 8 37 M 6 40 L 6 35"
           stroke="#FFD700"
           strokeWidth="2"
           animate={{
             opacity: [0, 1, 0]
           }}
-          transition={{ duration: 1, repeat: Infinity, delay: 0.8 }}
+          transition={{ duration: 1, repeat: Infinity, delay: 1 }}
         />
       </motion.svg>
     </motion.div>
@@ -414,12 +440,12 @@ export default function AtlassianServices() {
         <AnimatedGridBackground />
         <FloatingAtlassianElements />
         
-        {/* Happy People */}
-        <AnimatedPerson style={{ left: '3%', top: '15%' }} delay={0.2} variant="developer" />
-        <AnimatedPerson style={{ right: '5%', top: '20%' }} delay={0.4} variant="manager" />
-        <AnimatedPerson style={{ left: '8%', bottom: '20%' }} delay={0.6} variant="designer" />
-        <AnimatedPerson style={{ right: '3%', bottom: '25%' }} delay={0.8} variant="support" />
-        <AnimatedPerson style={{ left: '15%', top: '40%' }} delay={1} variant="analyst" />
+        {/* Happy Cats */}
+        <AnimatedCat style={{ left: '3%', top: '15%' }} delay={0.2} variant="orange" />
+        <AnimatedCat style={{ right: '5%', top: '20%' }} delay={0.4} variant="gray" />
+        <AnimatedCat style={{ left: '8%', bottom: '20%' }} delay={0.6} variant="calico" />
+        <AnimatedCat style={{ right: '3%', bottom: '25%' }} delay={0.8} variant="black" />
+        <AnimatedCat style={{ left: '15%', top: '40%' }} delay={1} variant="white" />
 
         {/* Animated gradient orbs */}
         <motion.div
@@ -565,7 +591,7 @@ export default function AtlassianServices() {
 
       {/* Core Services Section */}
       <section className="section-padding bg-secondary/30 relative overflow-hidden">
-        <AnimatedPerson style={{ right: '2%', top: '10%' }} delay={0.3} variant="support" />
+        <AnimatedCat style={{ right: '2%', top: '10%' }} delay={0.3} variant="orange" />
         
         <div className="container-wide relative z-10">
           <motion.div
@@ -734,7 +760,7 @@ export default function AtlassianServices() {
       {/* Specialized Solutions Section */}
       <section className="section-padding relative overflow-hidden">
         <AnimatedGridBackground />
-        <AnimatedPerson style={{ left: '3%', bottom: '20%' }} delay={0.4} variant="developer" />
+        <AnimatedCat style={{ left: '3%', bottom: '20%' }} delay={0.4} variant="gray" />
         
         <div className="container-wide relative z-10">
           <motion.div
@@ -812,8 +838,8 @@ export default function AtlassianServices() {
       <section className="section-padding bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 relative overflow-hidden">
         <FloatingAtlassianElements />
         
-        <AnimatedPerson style={{ right: '5%', top: '15%' }} delay={0.3} variant="manager" />
-        <AnimatedPerson style={{ left: '5%', bottom: '15%' }} delay={0.5} variant="analyst" />
+        <AnimatedCat style={{ right: '5%', top: '15%' }} delay={0.3} variant="calico" />
+        <AnimatedCat style={{ left: '5%', bottom: '15%' }} delay={0.5} variant="black" />
 
         <div className="container-wide relative z-10 text-white">
           <motion.div
