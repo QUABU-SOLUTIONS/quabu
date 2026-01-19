@@ -23,20 +23,157 @@ Be helpful, professional, and concise. If users want to schedule a demo or conta
 
 Always respond in English.`;
 
+// Rate limiting configuration
+const RATE_LIMIT_WINDOW_MS = 60000; // 1 minute
+const MAX_REQUESTS_PER_WINDOW = 15;
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+
+// Validation constants
+const MAX_MESSAGE_LENGTH = 4000;
+const MAX_MESSAGES_COUNT = 50;
+const VALID_ROLES = ["user", "assistant", "system"];
+
+interface Message {
+  role: string;
+  content: string;
+}
+
+function getClientIdentifier(req: Request): string {
+  // Use IP from headers or a fallback
+  const forwarded = req.headers.get("x-forwarded-for");
+  const realIp = req.headers.get("x-real-ip");
+  const cfConnectingIp = req.headers.get("cf-connecting-ip");
+  return cfConnectingIp || realIp || forwarded?.split(",")[0]?.trim() || "unknown";
+}
+
+function checkRateLimit(clientId: string): { allowed: boolean; retryAfter?: number } {
+  const now = Date.now();
+  const record = rateLimitMap.get(clientId);
+
+  // Clean up expired entries periodically
+  if (rateLimitMap.size > 1000) {
+    for (const [key, value] of rateLimitMap.entries()) {
+      if (now > value.resetTime) {
+        rateLimitMap.delete(key);
+      }
+    }
+  }
+
+  if (!record || now > record.resetTime) {
+    rateLimitMap.set(clientId, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    return { allowed: true };
+  }
+
+  if (record.count >= MAX_REQUESTS_PER_WINDOW) {
+    const retryAfter = Math.ceil((record.resetTime - now) / 1000);
+    return { allowed: false, retryAfter };
+  }
+
+  record.count++;
+  return { allowed: true };
+}
+
+function validateMessages(messages: unknown): { valid: boolean; error?: string; sanitized?: Message[] } {
+  // Check if messages is an array
+  if (!Array.isArray(messages)) {
+    return { valid: false, error: "Messages must be an array" };
+  }
+
+  // Check message count
+  if (messages.length === 0) {
+    return { valid: false, error: "At least one message is required" };
+  }
+
+  if (messages.length > MAX_MESSAGES_COUNT) {
+    return { valid: false, error: `Maximum ${MAX_MESSAGES_COUNT} messages allowed` };
+  }
+
+  const sanitized: Message[] = [];
+
+  for (let i = 0; i < messages.length; i++) {
+    const msg = messages[i];
+
+    // Check message structure
+    if (typeof msg !== "object" || msg === null) {
+      return { valid: false, error: `Message at index ${i} must be an object` };
+    }
+
+    const { role, content } = msg as Record<string, unknown>;
+
+    // Validate role
+    if (typeof role !== "string" || !VALID_ROLES.includes(role)) {
+      return { valid: false, error: `Invalid role at index ${i}. Must be one of: ${VALID_ROLES.join(", ")}` };
+    }
+
+    // Validate content
+    if (typeof content !== "string") {
+      return { valid: false, error: `Content at index ${i} must be a string` };
+    }
+
+    // Check content length
+    if (content.length > MAX_MESSAGE_LENGTH) {
+      return { valid: false, error: `Message at index ${i} exceeds maximum length of ${MAX_MESSAGE_LENGTH} characters` };
+    }
+
+    // Sanitize content - remove control characters except newlines/tabs
+    const sanitizedContent = content
+      .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, "") // Remove control chars except \t \n \r
+      .trim();
+
+    if (sanitizedContent.length === 0) {
+      return { valid: false, error: `Message at index ${i} cannot be empty` };
+    }
+
+    sanitized.push({ role, content: sanitizedContent });
+  }
+
+  return { valid: true, sanitized };
+}
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
 
   try {
-    const { messages } = await req.json();
+    // Rate limiting check
+    const clientId = getClientIdentifier(req);
+    const rateLimitResult = checkRateLimit(clientId);
+
+    if (!rateLimitResult.allowed) {
+      console.log(`Rate limit exceeded for client: ${clientId}`);
+      return new Response(
+        JSON.stringify({ error: "Too many requests. Please wait before sending more messages." }),
+        { 
+          status: 429, 
+          headers: { 
+            ...corsHeaders, 
+            "Content-Type": "application/json",
+            "Retry-After": String(rateLimitResult.retryAfter || 60)
+          } 
+        }
+      );
+    }
+
+    const body = await req.json();
+    
+    // Validate and sanitize messages
+    const validation = validateMessages(body.messages);
+    if (!validation.valid) {
+      console.log(`Validation failed: ${validation.error}`);
+      return new Response(
+        JSON.stringify({ error: validation.error }),
+        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     
     if (!LOVABLE_API_KEY) {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
-    console.log("Chat assistant request received with", messages.length, "messages");
+    console.log(`Chat request from ${clientId} with ${validation.sanitized!.length} messages`);
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
@@ -48,7 +185,7 @@ serve(async (req) => {
         model: "google/gemini-3-flash-preview",
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
-          ...messages,
+          ...validation.sanitized!,
         ],
         stream: true,
       }),
