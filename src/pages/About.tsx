@@ -610,11 +610,10 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="section-padding bg-gradient-to-br from-primary to-accent relative overflow-hidden">
+      {/* Team Section - Hidden for now */}
+      {/* <section className="section-padding bg-gradient-to-br from-primary to-accent relative overflow-hidden">
         <FloatingTechElements />
         
-        {/* Happy robots */}
         <AnimatedRobot style={{ left: '5%', top: '10%' }} delay={0.2} variant="friendly" />
         <AnimatedRobot style={{ right: '5%', bottom: '10%' }} delay={0.4} variant="wave" />
 
@@ -652,7 +651,6 @@ export default function About() {
                 className="group relative"
               >
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all">
-                  {/* Avatar placeholder with initials */}
                   <motion.div
                     className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4 text-xl font-bold"
                     whileHover={{ rotate: 10 }}
@@ -666,7 +664,7 @@ export default function About() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact CTA Section */}
       <section className="section-padding relative overflow-hidden">
