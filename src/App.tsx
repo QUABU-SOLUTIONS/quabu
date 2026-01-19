@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { CookieConsent } from "@/components/CookieConsent";
 import Index from "./pages/Index";
 import Accelerators from "./pages/Accelerators";
 import MarketingAccelerator from "./pages/accelerators/Marketing";
@@ -21,6 +22,9 @@ import Contact from "./pages/Contact";
 import AtlassianServices from "./pages/services/AtlassianServices";
 import CustomDevelopment from "./pages/services/CustomDevelopment";
 import CloudMigration from "./pages/services/CloudMigration";
+import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
+import TermsOfService from "./pages/legal/TermsOfService";
+import CookiesPolicy from "./pages/legal/CookiesPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -50,9 +54,13 @@ const App = () => (
           <Route path="/services/atlassian" element={<AtlassianServices />} />
           <Route path="/services/custom-development" element={<CustomDevelopment />} />
           <Route path="/services/cloud-migration" element={<CloudMigration />} />
+          <Route path="/legal/privacy" element={<PrivacyPolicy />} />
+          <Route path="/legal/terms" element={<TermsOfService />} />
+          <Route path="/legal/cookies" element={<CookiesPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
