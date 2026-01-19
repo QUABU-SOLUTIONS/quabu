@@ -87,6 +87,7 @@ const handler = async (req: Request): Promise<Response> => {
       await client.send({
         from: GMAIL_USER,
         to: "hello@quabusolutions.com",
+        bcc: "raul.pelaez@quabu.eu",
         subject: `New Contact Form: ${subject}`,
         content: "auto",
         html: `
