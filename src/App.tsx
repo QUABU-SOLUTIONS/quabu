@@ -17,6 +17,7 @@ import RDAccelerator from "./pages/accelerators/RD";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Contact from "./pages/Contact";
 import AtlassianServices from "./pages/services/AtlassianServices";
 import CustomDevelopment from "./pages/services/CustomDevelopment";
 import CloudMigration from "./pages/services/CloudMigration";
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/services/atlassian" element={<AtlassianServices />} />
           <Route path="/services/custom-development" element={<CustomDevelopment />} />
           <Route path="/services/cloud-migration" element={<CloudMigration />} />
