@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, FileText, Shield, Globe, CheckSquare, ExternalLink, Cloud, Code, Cog } from "lucide-react";
+import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, Instagram, FileText, Shield, Globe, CheckSquare, ExternalLink, Cloud, Code, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -86,6 +86,7 @@ const aboutSubmenu = [
   { name: "LinkedIn", href: "https://www.linkedin.com/company/quabu-solutions", isExternal: true, icon: "linkedin" },
   { name: "Twitter / X", href: "https://x.com/quabusolutions", isExternal: true, icon: "twitter" },
   { name: "YouTube", href: "https://www.youtube.com/@quabusolutions", isExternal: true, icon: "youtube" },
+  { name: "Instagram", href: "https://www.instagram.com/quabusolutions", isExternal: true, icon: "instagram" },
   { name: "Contact", href: "/contact", isExternal: false, icon: "mail" },
 ];
 
@@ -274,6 +275,7 @@ export function Header() {
                                   {subItem.icon === "linkedin" && <Linkedin className="w-4 h-4 text-primary" />}
                                   {subItem.icon === "twitter" && <Twitter className="w-4 h-4 text-primary" />}
                                   {subItem.icon === "youtube" && <Youtube className="w-4 h-4 text-primary" />}
+                                  {subItem.icon === "instagram" && <Instagram className="w-4 h-4 text-primary" />}
                                   <span>{subItem.name}</span>
                                 </a>
                               ) : (
