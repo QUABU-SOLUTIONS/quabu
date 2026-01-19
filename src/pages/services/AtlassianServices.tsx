@@ -778,7 +778,7 @@ export default function AtlassianServices() {
                 <motion.img
                   src={atlassianMarketplacePartner}
                   alt="Atlassian Marketplace Partner"
-                  className="h-32 md:h-40 w-auto"
+                  className="h-32 md:h-40 w-auto object-contain"
                   whileHover={{ scale: 1.05, rotate: 5 }}
                 />
               </div>
