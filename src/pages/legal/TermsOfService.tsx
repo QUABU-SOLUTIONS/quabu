@@ -16,7 +16,7 @@ export default function TermsOfService() {
               Last updated: January 2025
             </p>
 
-            <div className="prose prose-lg max-w-none dark:prose-invert">
+            <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:mt-8 prose-headings:mb-4 prose-p:my-4 prose-ul:my-4 prose-li:my-1">
               <h2>1. Legal Information</h2>
               <p>
                 In compliance with Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI-CE), we provide the following information:
@@ -25,7 +25,7 @@ export default function TermsOfService() {
                 <strong>Company Name:</strong> QUABU SOLUTIONS S.L.<br />
                 <strong>Tax ID (CIF):</strong> B66407966<br />
                 <strong>Registered Office:</strong> Vilanova i la Geltrú, Barcelona, Spain<br />
-                <strong>Email:</strong> hello@quabu.com<br />
+                <strong>Email:</strong> hello@quabusolutions.com<br />
                 <strong>Commercial Registry:</strong> Registered in the Commercial Registry of Barcelona
               </p>
 
@@ -179,7 +179,7 @@ export default function TermsOfService() {
               </p>
               <p>
                 <strong>QUABU SOLUTIONS S.L.</strong><br />
-                Email: <a href="mailto:hello@quabu.com">hello@quabu.com</a><br />
+                Email: <a href="mailto:hello@quabusolutions.com">hello@quabusolutions.com</a><br />
                 Address: Vilanova i la Geltrú, Barcelona, Spain
               </p>
             </div>
