@@ -1,10 +1,21 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+// Allowed origins for CORS
+const allowedOrigins = [
+  "https://quabu.lovable.app",
+  "https://id-preview--f4890869-8187-4595-b931-ac27f753c6e5.lovable.app",
+  "http://localhost:8080",
+  "http://localhost:5173",
+];
+
+function getCorsHeaders(origin: string | null): Record<string, string> {
+  const isAllowed = origin && allowedOrigins.some(allowed => origin === allowed || origin.endsWith('.lovable.app'));
+  return {
+    "Access-Control-Allow-Origin": isAllowed ? origin : "",
+    "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  };
+}
 
 interface ContactEmailRequest {
   name: string;
@@ -15,6 +26,9 @@ interface ContactEmailRequest {
 }
 
 const handler = async (req: Request): Promise<Response> => {
+  const origin = req.headers.get("origin");
+  const corsHeaders = getCorsHeaders(origin);
+
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
@@ -40,13 +54,8 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Log the contact request
-    console.log("Contact form submission received:");
-    console.log(`Name: ${name}`);
-    console.log(`Email: ${email}`);
-    console.log(`Company: ${company || "Not provided"}`);
-    console.log(`Subject: ${subject}`);
-    console.log(`Message: ${message}`);
+    // Log minimal contact form info (no PII)
+    console.log("Contact form submission received");
 
     // Get Gmail credentials
     const GMAIL_USER = Deno.env.get("GMAIL_USER");
@@ -90,7 +99,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p>${message.replace(/\n/g, "<br>")}</p>
         `,
       });
-      console.log("Notification email sent to hello@quabusolutions.com");
+      console.log("Notification email sent successfully");
 
       // Send confirmation email to user
       await client.send({
@@ -104,7 +113,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p>Best regards,<br>The Quabu Team</p>
         `,
       });
-      console.log("Confirmation email sent to user");
+      console.log("Confirmation email sent successfully");
 
       await client.close();
     } catch (smtpError) {

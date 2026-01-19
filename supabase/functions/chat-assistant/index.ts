@@ -1,9 +1,20 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+// Allowed origins for CORS
+const allowedOrigins = [
+  "https://quabu.lovable.app",
+  "https://id-preview--f4890869-8187-4595-b931-ac27f753c6e5.lovable.app",
+  "http://localhost:8080",
+  "http://localhost:5173",
+];
+
+function getCorsHeaders(origin: string | null): Record<string, string> {
+  const isAllowed = origin && allowedOrigins.some(allowed => origin === allowed || origin.endsWith('.lovable.app'));
+  return {
+    "Access-Control-Allow-Origin": isAllowed ? origin : "",
+    "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  };
+}
 
 const SYSTEM_PROMPT = `You are Quabu's helpful AI assistant. Quabu is an Atlassian Gold Solution Partner that helps businesses accelerate their digital transformation with pre-built, customizable solutions.
 
@@ -131,6 +142,9 @@ function validateMessages(messages: unknown): { valid: boolean; error?: string; 
 }
 
 serve(async (req) => {
+  const origin = req.headers.get("origin");
+  const corsHeaders = getCorsHeaders(origin);
+
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
@@ -141,7 +155,7 @@ serve(async (req) => {
     const rateLimitResult = checkRateLimit(clientId);
 
     if (!rateLimitResult.allowed) {
-      console.log(`Rate limit exceeded for client: ${clientId}`);
+      console.log(`Rate limit exceeded for client`);
       return new Response(
         JSON.stringify({ error: "Too many requests. Please wait before sending more messages." }),
         { 
@@ -173,7 +187,7 @@ serve(async (req) => {
       throw new Error("LOVABLE_API_KEY is not configured");
     }
 
-    console.log(`Chat request from ${clientId} with ${validation.sanitized!.length} messages`);
+    console.log(`Chat request with ${validation.sanitized!.length} messages`);
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
