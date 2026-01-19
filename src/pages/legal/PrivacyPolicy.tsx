@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
               </div>
             </div>
 
-            <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:mt-8 prose-headings:mb-4 prose-p:my-4 prose-ul:my-4 prose-li:my-1">
+            <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:mt-10 prose-headings:mb-6 prose-p:my-6 prose-ul:my-6 prose-li:my-2">
               <h2>1. Data Controller</h2>
               <p>
                 <strong>Identity:</strong> QUABU SOLUTIONS S.L.<br />
