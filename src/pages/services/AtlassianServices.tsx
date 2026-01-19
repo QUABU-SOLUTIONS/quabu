@@ -456,7 +456,7 @@ export default function AtlassianServices() {
               <motion.img 
                 src={atlassianGoldPartner} 
                 alt="Atlassian Gold Solution Partner" 
-                className="h-16 md:h-20 w-auto"
+                className="h-16 md:h-20 w-auto bg-white rounded-lg p-2"
                 whileHover={{ scale: 1.05 }}
               />
               <motion.img 
