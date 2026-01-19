@@ -586,43 +586,148 @@ export default function AtlassianServices() {
             </p>
           </motion.div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {coreServices.map((service, index) => (
-              <motion.div
-                key={service.title}
-                variants={itemVariants}
-                whileHover={{ y: -5, scale: 1.02 }}
-                className="group relative bg-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all overflow-hidden"
-              >
-                {/* Glow effect */}
-                <motion.div
-                  className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity`}
+          {/* Network connections background */}
+          <div className="relative">
+            {/* SVG Connection Lines */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" style={{ minHeight: '100%' }}>
+              <defs>
+                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0" />
+                  <stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+              
+              {/* Horizontal connecting lines */}
+              <motion.line
+                x1="33%" y1="25%" x2="66%" y2="25%"
+                stroke="url(#lineGradient)"
+                strokeWidth="2"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+              />
+              <motion.line
+                x1="33%" y1="75%" x2="66%" y2="75%"
+                stroke="url(#lineGradient)"
+                strokeWidth="2"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1.5, delay: 0.7 }}
+              />
+              
+              {/* Vertical connecting lines */}
+              <motion.line
+                x1="16.5%" y1="45%" x2="16.5%" y2="55%"
+                stroke="url(#lineGradient)"
+                strokeWidth="2"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1, delay: 0.9 }}
+              />
+              <motion.line
+                x1="50%" y1="45%" x2="50%" y2="55%"
+                stroke="url(#lineGradient)"
+                strokeWidth="2"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1, delay: 1.1 }}
+              />
+              <motion.line
+                x1="83.5%" y1="45%" x2="83.5%" y2="55%"
+                stroke="url(#lineGradient)"
+                strokeWidth="2"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1, delay: 1.3 }}
+              />
+              
+              {/* Traveling dots */}
+              {[0, 1, 2, 3, 4].map((i) => (
+                <motion.circle
+                  key={`dot-${i}`}
+                  r="4"
+                  fill="hsl(var(--primary))"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: [0, 1, 1, 0],
+                    cx: i < 2 ? ["33%", "66%"] : ["16.5%", "16.5%"],
+                    cy: i === 0 ? ["25%", "25%"] : i === 1 ? ["75%", "75%"] : i === 2 ? ["45%", "55%"] : i === 3 ? ["45%", "55%"] : ["45%", "55%"],
+                  }}
+                  transition={{
+                    duration: 2,
+                    delay: i * 0.4,
+                    repeat: Infinity,
+                    repeatDelay: 1,
+                  }}
                 />
-                
-                <div className="relative z-10">
+              ))}
+            </svg>
+
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10"
+            >
+              {coreServices.map((service, index) => (
+                <motion.div
+                  key={service.title}
+                  variants={itemVariants}
+                  whileHover={{ y: -5, scale: 1.02 }}
+                  className="group relative bg-card rounded-2xl p-8 border border-border hover:border-primary/50 transition-all overflow-hidden"
+                >
+                  {/* Connection node indicator */}
                   <motion.div
-                    className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6`}
-                    whileHover={{ rotate: 5, scale: 1.1 }}
-                  >
-                    <service.icon className="w-7 h-7 text-white" />
-                  </motion.div>
+                    className="absolute -top-1 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-primary/30"
+                    animate={{
+                      scale: [1, 1.5, 1],
+                      opacity: [0.3, 0.6, 0.3],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: index * 0.2,
+                    }}
+                  />
+                  <motion.div
+                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-primary/30"
+                    animate={{
+                      scale: [1, 1.5, 1],
+                      opacity: [0.3, 0.6, 0.3],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: index * 0.2 + 0.5,
+                    }}
+                  />
                   
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+                  {/* Glow effect */}
+                  <motion.div
+                    className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity`}
+                  />
+                  
+                  <div className="relative z-10">
+                    <motion.div
+                      className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6`}
+                      whileHover={{ rotate: 5, scale: 1.1 }}
+                    >
+                      <service.icon className="w-7 h-7 text-white" />
+                    </motion.div>
+                    
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {service.description}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </section>
 
