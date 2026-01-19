@@ -521,7 +521,7 @@ export default function AtlassianServices() {
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button size="lg" className="bg-white text-blue-700 hover:bg-white/90" asChild>
-                <a href="https://marketplace.atlassian.com/vendors/1225498/quabu" target="_blank" rel="noopener noreferrer">
+                <a href="https://marketplace.atlassian.com/vendors/1220154/quabu" target="_blank" rel="noopener noreferrer">
                   View Our Apps
                 </a>
               </Button>
