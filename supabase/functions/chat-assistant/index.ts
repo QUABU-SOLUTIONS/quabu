@@ -3,6 +3,8 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 // Allowed origins for CORS
 const allowedOrigins = [
   "https://quabu.lovable.app",
+  "https://quabusolutions.com",
+  "https://www.quabusolutions.com",
   "https://id-preview--f4890869-8187-4595-b931-ac27f753c6e5.lovable.app",
   "http://localhost:8080",
   "http://localhost:5173",
