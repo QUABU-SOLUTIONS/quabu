@@ -739,7 +739,7 @@ export default function CloudMigration() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                <a href="mailto:info@quabu.eu">
+                <a href="mailto:hello@quabusolutions.com">
                   Contact Sales
                 </a>
               </Button>
