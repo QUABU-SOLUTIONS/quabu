@@ -73,7 +73,7 @@ export function Footer() {
               </a>
               <div className="flex items-center gap-2 text-sm text-background/70">
                 <MapPin className="w-4 h-4" />
-                Miami, FL & Madrid, Spain
+                Miami, FL & Barcelona, Spain
               </div>
             </div>
           </div>

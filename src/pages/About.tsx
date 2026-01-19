@@ -711,9 +711,11 @@ export default function About() {
               <p className="text-muted-foreground mb-6">
                 Discover how we can help transform your business
               </p>
-              <Button className="w-full group">
-                Contact Us
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button className="w-full group" asChild>
+                <Link to="/contact">
+                  Contact Us
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
             </motion.div>
 
@@ -753,9 +755,11 @@ export default function About() {
               <p className="text-muted-foreground mb-6">
                 Schedule a casual chat about your needs
               </p>
-              <Button variant="outline" className="w-full group">
-                Book a Call
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button variant="outline" className="w-full group" asChild>
+                <Link to="/contact">
+                  Book a Call
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
             </motion.div>
           </motion.div>

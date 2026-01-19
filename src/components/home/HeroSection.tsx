@@ -126,7 +126,7 @@ export function HeroSection() {
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center shadow-lg hover:shadow-accent/40 transition-shadow duration-300 bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary" asChild>
-                  <Link to="/cloud">
+                  <Link to="/services/cloud-migration">
                     Ascend to the Cloud
                     <Sparkles className="w-4 h-4 flex-shrink-0 animate-pulse" />
                   </Link>
