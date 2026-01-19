@@ -16,7 +16,7 @@ export default function CookiesPolicy() {
               Last updated: January 2025
             </p>
 
-            <div className="prose prose-lg max-w-none dark:prose-invert">
+            <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:mt-8 prose-headings:mb-4 prose-p:my-4 prose-ul:my-4 prose-li:my-1 prose-table:my-6">
               <h2>1. What Are Cookies?</h2>
               <p>
                 Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to website owners.
@@ -30,7 +30,7 @@ export default function CookiesPolicy() {
                 <strong>Company Name:</strong> QUABU SOLUTIONS S.L.<br />
                 <strong>Tax ID (CIF):</strong> B66407966<br />
                 <strong>Address:</strong> Vilanova i la Geltrú, Barcelona, Spain<br />
-                <strong>Email:</strong> hello@quabu.com
+                <strong>Email:</strong> hello@quabusolutions.com
               </p>
 
               <h2>3. Types of Cookies We Use</h2>
@@ -185,7 +185,7 @@ export default function CookiesPolicy() {
               </p>
               <p>
                 <strong>QUABU SOLUTIONS S.L.</strong><br />
-                Email: <a href="mailto:hello@quabu.com">hello@quabu.com</a><br />
+                Email: <a href="mailto:hello@quabusolutions.com">hello@quabusolutions.com</a><br />
                 Address: Vilanova i la Geltrú, Barcelona, Spain
               </p>
               <p>

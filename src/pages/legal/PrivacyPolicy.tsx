@@ -47,14 +47,13 @@ export default function PrivacyPolicy() {
               </div>
             </div>
 
-            {/* Detailed Information */}
-            <div className="prose prose-lg max-w-none dark:prose-invert">
+            <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:mt-8 prose-headings:mb-4 prose-p:my-4 prose-ul:my-4 prose-li:my-1">
               <h2>1. Data Controller</h2>
               <p>
                 <strong>Identity:</strong> QUABU SOLUTIONS S.L.<br />
                 <strong>Tax ID (CIF):</strong> B66407966<br />
                 <strong>Address:</strong> Vilanova i la Geltrú, Barcelona, Spain<br />
-                <strong>Email:</strong> hello@quabu.com
+                <strong>Email:</strong> hello@quabusolutions.com
               </p>
 
               <h2>2. Purpose of Data Processing</h2>
@@ -109,7 +108,7 @@ export default function PrivacyPolicy() {
                 <li><strong>Right to Withdraw Consent:</strong> To withdraw consent at any time</li>
               </ul>
               <p>
-                To exercise these rights, please contact us at: <a href="mailto:hello@quabu.com">hello@quabu.com</a>
+                To exercise these rights, please contact us at: <a href="mailto:hello@quabusolutions.com">hello@quabusolutions.com</a>
               </p>
               <p>
                 You also have the right to lodge a complaint with the Spanish Data Protection Agency (AEPD) at <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> if you believe your rights have been violated.
@@ -131,7 +130,7 @@ export default function PrivacyPolicy() {
                 <li>Right to non-discrimination for exercising CCPA rights</li>
               </ul>
               <p>
-                We do not sell personal information. To exercise your CCPA rights, contact us at <a href="mailto:hello@quabu.com">hello@quabu.com</a>.
+                We do not sell personal information. To exercise your CCPA rights, contact us at <a href="mailto:hello@quabusolutions.com">hello@quabusolutions.com</a>.
               </p>
 
               <h2>10. Children's Privacy</h2>
@@ -150,7 +149,7 @@ export default function PrivacyPolicy() {
               </p>
               <p>
                 <strong>QUABU SOLUTIONS S.L.</strong><br />
-                Email: <a href="mailto:hello@quabu.com">hello@quabu.com</a><br />
+                Email: <a href="mailto:hello@quabusolutions.com">hello@quabusolutions.com</a><br />
                 Address: Vilanova i la Geltrú, Barcelona, Spain
               </p>
             </div>
