@@ -62,7 +62,7 @@ const handler = async (req: Request): Promise<Response> => {
         },
         body: JSON.stringify({
           from: "Quabu Website <onboarding@resend.dev>",
-          to: ["info@quabu.eu"],
+          to: ["hello@quabusolutions.com"],
           subject: `New Contact Form: ${subject}`,
           html: `
             <h2>New Contact Form Submission</h2>

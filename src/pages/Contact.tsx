@@ -93,7 +93,7 @@ export default function Contact() {
       console.error("Error submitting form:", error);
       toast({
         title: "Error sending message",
-        description: "Please try again or email us directly at info@quabu.eu",
+        description: "Please try again or email us directly at hello@quabusolutions.com",
         variant: "destructive",
       });
     } finally {
@@ -286,7 +286,7 @@ export default function Contact() {
                 <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
                 <div className="space-y-6">
                   <a
-                    href="mailto:info@quabu.eu"
+                    href="mailto:hello@quabusolutions.com"
                     className="flex items-start gap-4 group"
                   >
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -294,7 +294,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-medium group-hover:text-primary transition-colors">Email Us</p>
-                      <p className="text-muted-foreground">info@quabu.eu</p>
+                      <p className="text-muted-foreground">hello@quabusolutions.com</p>
                     </div>
                   </a>
 

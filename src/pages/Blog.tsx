@@ -421,7 +421,7 @@ export default function Blog() {
                 className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
                 asChild
               >
-                <a href="mailto:info@quabu.eu">
+                <a href="mailto:hello@quabusolutions.com">
                   Email Us
                 </a>
               </Button>
