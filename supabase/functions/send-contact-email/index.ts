@@ -19,6 +19,16 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
   };
 }
 
+// HTML escape function to prevent XSS in emails
+function escapeHtml(unsafe: string): string {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 interface ContactEmailRequest {
   name: string;
   email: string;
@@ -85,33 +95,33 @@ const handler = async (req: Request): Promise<Response> => {
     });
 
     try {
-      // Send notification email to Quabu
+      // Send notification email to Quabu (with escaped user content)
       await client.send({
         from: GMAIL_USER,
         to: "hello@quabusolutions.com",
         bcc: "raul.pelaez@quabu.eu",
-        subject: `New Contact Form: ${subject}`,
+        subject: `New Contact Form: ${escapeHtml(subject)}`,
         content: "auto",
         html: `
           <h2>New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Company:</strong> ${company || "Not provided"}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
+          <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+          <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+          <p><strong>Company:</strong> ${escapeHtml(company || "Not provided")}</p>
+          <p><strong>Subject:</strong> ${escapeHtml(subject)}</p>
           <p><strong>Message:</strong></p>
-          <p>${message.replace(/\n/g, "<br>")}</p>
+          <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
         `,
       });
       console.log("Notification email sent successfully");
 
-      // Send confirmation email to user
+      // Send confirmation email to user (with escaped user content)
       await client.send({
         from: GMAIL_USER,
         to: email,
         subject: "We received your message - Quabu",
         content: "auto",
         html: `
-          <h1>Thank you for contacting us, ${name}!</h1>
+          <h1>Thank you for contacting us, ${escapeHtml(name)}!</h1>
           <p>We have received your message and will get back to you as soon as possible.</p>
           <p>Best regards,<br>The Quabu Team</p>
         `,
