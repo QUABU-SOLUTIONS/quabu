@@ -1,6 +1,5 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-
-const RESEND_API_URL = "https://api.resend.com/emails";
+import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -49,65 +48,69 @@ const handler = async (req: Request): Promise<Response> => {
     console.log(`Subject: ${subject}`);
     console.log(`Message: ${message}`);
 
-    // Send email using Resend if API key is configured
-    const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+    // Get Gmail credentials
+    const GMAIL_USER = Deno.env.get("GMAIL_USER");
+    const GMAIL_APP_PASSWORD = Deno.env.get("GMAIL_APP_PASSWORD");
     
-    if (RESEND_API_KEY) {
-      // Send notification to Quabu
-      const notificationResponse = await fetch(RESEND_API_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${RESEND_API_KEY}`,
+    if (!GMAIL_USER || !GMAIL_APP_PASSWORD) {
+      console.error("Gmail credentials not configured");
+      return new Response(
+        JSON.stringify({ error: "Email service not configured" }),
+        { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Create SMTP client for Gmail
+    const client = new SMTPClient({
+      connection: {
+        hostname: "smtp.gmail.com",
+        port: 465,
+        tls: true,
+        auth: {
+          username: GMAIL_USER,
+          password: GMAIL_APP_PASSWORD,
         },
-        body: JSON.stringify({
-          from: "Quabu Website <onboarding@resend.dev>",
-          to: ["hello@quabusolutions.com"],
-          subject: `New Contact Form: ${subject}`,
-          html: `
-            <h2>New Contact Form Submission</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Company:</strong> ${company || "Not provided"}</p>
-            <p><strong>Subject:</strong> ${subject}</p>
-            <p><strong>Message:</strong></p>
-            <p>${message.replace(/\n/g, "<br>")}</p>
-          `,
-        }),
+      },
+    });
+
+    try {
+      // Send notification email to Quabu
+      await client.send({
+        from: GMAIL_USER,
+        to: "hello@quabusolutions.com",
+        subject: `New Contact Form: ${subject}`,
+        content: "auto",
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Company:</strong> ${company || "Not provided"}</p>
+          <p><strong>Subject:</strong> ${subject}</p>
+          <p><strong>Message:</strong></p>
+          <p>${message.replace(/\n/g, "<br>")}</p>
+        `,
       });
+      console.log("Notification email sent to hello@quabusolutions.com");
 
-      if (!notificationResponse.ok) {
-        const errorText = await notificationResponse.text();
-        console.error("Failed to send notification email:", errorText);
-      }
-
-      // Send confirmation to user
-      const confirmationResponse = await fetch(RESEND_API_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${RESEND_API_KEY}`,
-        },
-        body: JSON.stringify({
-          from: "Quabu <onboarding@resend.dev>",
-          to: [email],
-          subject: "We received your message!",
-          html: `
-            <h1>Thank you for contacting us, ${name}!</h1>
-            <p>We have received your message and will get back to you as soon as possible.</p>
-            <p>Best regards,<br>The Quabu Team</p>
-          `,
-        }),
+      // Send confirmation email to user
+      await client.send({
+        from: GMAIL_USER,
+        to: email,
+        subject: "We received your message - Quabu",
+        content: "auto",
+        html: `
+          <h1>Thank you for contacting us, ${name}!</h1>
+          <p>We have received your message and will get back to you as soon as possible.</p>
+          <p>Best regards,<br>The Quabu Team</p>
+        `,
       });
+      console.log("Confirmation email sent to user");
 
-      if (!confirmationResponse.ok) {
-        const errorText = await confirmationResponse.text();
-        console.error("Failed to send confirmation email:", errorText);
-      }
-
-      console.log("Emails sent successfully via Resend");
-    } else {
-      console.log("RESEND_API_KEY not configured - contact form logged but no email sent");
+      await client.close();
+    } catch (smtpError) {
+      console.error("SMTP Error:", smtpError);
+      await client.close();
+      throw smtpError;
     }
 
     return new Response(
