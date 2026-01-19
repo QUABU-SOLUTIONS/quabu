@@ -732,9 +732,11 @@ export default function About() {
               <p className="text-muted-foreground mb-6">
                 Be part of our growing family of innovators
               </p>
-              <Button variant="outline" className="w-full group">
-                View Careers
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button variant="outline" className="w-full group" asChild>
+                <a href="https://www.linkedin.com/company/quabu-solutions" target="_blank" rel="noopener noreferrer">
+                  View Careers
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
             </motion.div>
 
