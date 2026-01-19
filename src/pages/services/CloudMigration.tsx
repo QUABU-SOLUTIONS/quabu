@@ -652,7 +652,7 @@ export default function CloudMigration() {
               <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 border border-primary/20">
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    { value: "500+", label: "Migrations Completed" },
+                    { value: "80+", label: "Migrations Completed" },
                     { value: "50+", label: "Enterprise Clients" },
                     { value: "100%", label: "Data Integrity" },
                     { value: "24/7", label: "Support Available" },
