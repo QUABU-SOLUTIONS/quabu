@@ -10,9 +10,14 @@ const allowedOrigins = [
 ];
 
 function getCorsHeaders(origin: string | null): Record<string, string> {
-  const isAllowed = origin && allowedOrigins.some(allowed => origin === allowed || origin.endsWith('.lovable.app'));
+  // Allow all lovable.app subdomains (preview and published)
+  const isAllowed = origin && (
+    allowedOrigins.includes(origin) || 
+    origin.endsWith('.lovable.app') ||
+    origin.includes('localhost')
+  );
   return {
-    "Access-Control-Allow-Origin": isAllowed ? origin : "",
+    "Access-Control-Allow-Origin": isAllowed && origin ? origin : allowedOrigins[0],
     "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
   };
 }
