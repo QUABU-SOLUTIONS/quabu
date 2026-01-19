@@ -398,7 +398,7 @@ export function ServicesSection() {
             whileTap={{ scale: 0.98 }}
           >
             <Button size="lg" variant="outline" asChild>
-              <Link to="/services" className="gap-2">
+              <Link to="/services/atlassian" className="gap-2">
                 View All Services
                 <ArrowRight className="w-4 h-4" />
               </Link>
