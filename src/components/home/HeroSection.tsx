@@ -42,15 +42,15 @@ export function HeroSection() {
               transition={{ delay: 0.2 }}
               className="flex flex-wrap items-center gap-4 mb-6 justify-center lg:justify-start"
             >
+              <img
+                src={atlassianServiceManagementPartner}
+                alt="Atlassian Service Management Specialized Partner"
+                className="h-12 md:h-14 w-auto"
+              />
               <img src={atlassianGoldPartner} alt="Atlassian Gold Solution Partner" className="h-12 md:h-14 w-auto" />
               <img
                 src={atlassianMarketplacePartner}
                 alt="Atlassian Marketplace Partner"
-                className="h-12 md:h-14 w-auto"
-              />
-              <img
-                src={atlassianServiceManagementPartner}
-                alt="Atlassian Service Management Specialized Partner"
                 className="h-12 md:h-14 w-auto"
               />
             </motion.div>
