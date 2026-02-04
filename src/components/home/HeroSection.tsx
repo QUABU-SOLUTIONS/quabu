@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import quabuIcon from "@/assets/quabu-icon.png";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
+import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
 import { FuturisticRobotBackground } from "./FuturisticRobotBackground";
 
 export function HeroSection() {
@@ -45,6 +46,11 @@ export function HeroSection() {
               <img
                 src={atlassianMarketplacePartner}
                 alt="Atlassian Marketplace Partner"
+                className="h-12 md:h-14 w-auto"
+              />
+              <img
+                src={atlassianServiceManagementPartner}
+                alt="Atlassian Service Management Specialized Partner"
                 className="h-12 md:h-14 w-auto"
               />
             </motion.div>

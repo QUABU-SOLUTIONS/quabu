@@ -22,6 +22,7 @@ import { cn } from "@/lib/utils";
 import quabuLogo from "@/assets/quabu-logo.svg";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
+import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
 
 const acceleratorCategories = [
   { name: "Marketing", href: "/accelerators/marketing", description: "Automate campaigns & analytics" },
@@ -337,6 +338,11 @@ export function Header() {
               <img 
                 src={atlassianMarketplacePartner} 
                 alt="Atlassian Marketplace Partner" 
+                className="h-10 w-auto"
+              />
+              <img 
+                src={atlassianServiceManagementPartner} 
+                alt="Atlassian Service Management Specialized Partner" 
                 className="h-10 w-auto"
               />
             </div>
