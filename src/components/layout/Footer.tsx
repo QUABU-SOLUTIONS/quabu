@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Youtube, Instagram } from "luci
 import quabuLogo from "@/assets/quabu-logo.svg";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
+import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
 
 const footerLinks = {
   solutions: [
@@ -59,6 +60,11 @@ export function Footer() {
               <img 
                 src={atlassianMarketplacePartner} 
                 alt="Atlassian Marketplace Partner" 
+                className="h-10 w-auto brightness-0 invert"
+              />
+              <img 
+                src={atlassianServiceManagementPartner} 
+                alt="Atlassian Service Management Specialized Partner" 
                 className="h-10 w-auto brightness-0 invert"
               />
             </div>
