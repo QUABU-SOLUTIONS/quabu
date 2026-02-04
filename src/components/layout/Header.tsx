@@ -67,6 +67,12 @@ const appsSubmenu = [
     icon: Headset,
     href: "https://quabuapps.atlassian.net/servicedesk/customer/portal/1",
   },
+  {
+    name: "Apps Documentation",
+    description: "Guides and documentation for our apps",
+    icon: FileText,
+    href: "https://quabu.atlassian.net/wiki/spaces/QAPPS/overview",
+  },
 ];
 
 const servicesSubmenu = [
