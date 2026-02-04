@@ -65,7 +65,7 @@ export function Footer() {
               <img 
                 src={atlassianServiceManagementPartner} 
                 alt="Atlassian Service Management Specialized Partner" 
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
             </div>
 
