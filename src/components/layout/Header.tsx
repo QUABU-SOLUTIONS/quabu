@@ -331,6 +331,11 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <div className="flex items-center gap-2">
               <img 
+                src={atlassianServiceManagementPartner} 
+                alt="Atlassian Service Management Specialized Partner" 
+                className="h-10 w-auto"
+              />
+              <img 
                 src={atlassianGoldPartner} 
                 alt="Atlassian Gold Solution Partner" 
                 className="h-10 w-auto"
@@ -338,11 +343,6 @@ export function Header() {
               <img 
                 src={atlassianMarketplacePartner} 
                 alt="Atlassian Marketplace Partner" 
-                className="h-10 w-auto"
-              />
-              <img 
-                src={atlassianServiceManagementPartner} 
-                alt="Atlassian Service Management Specialized Partner" 
                 className="h-10 w-auto"
               />
             </div>

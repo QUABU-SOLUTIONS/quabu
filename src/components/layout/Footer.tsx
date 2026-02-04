@@ -53,6 +53,11 @@ export function Footer() {
             {/* Partner Badges */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
               <img 
+                src={atlassianServiceManagementPartner} 
+                alt="Atlassian Service Management Specialized Partner" 
+                className="h-10 w-auto"
+              />
+              <img 
                 src={atlassianGoldPartner} 
                 alt="Atlassian Gold Solution Partner" 
                 className="h-10 w-auto brightness-0 invert"
@@ -61,11 +66,6 @@ export function Footer() {
                 src={atlassianMarketplacePartner} 
                 alt="Atlassian Marketplace Partner" 
                 className="h-10 w-auto brightness-0 invert"
-              />
-              <img 
-                src={atlassianServiceManagementPartner} 
-                alt="Atlassian Service Management Specialized Partner" 
-                className="h-10 w-auto"
               />
             </div>
 
