@@ -34,6 +34,8 @@ const acceleratorCategories = [
   { name: "R&D", href: "/accelerators/rd", description: "Product development" },
 ];
 
+import { Headset } from "lucide-react";
+
 const appsSubmenu = [
   {
     name: "Custom Templates",
@@ -58,6 +60,12 @@ const appsSubmenu = [
     description: "Granular task management",
     icon: CheckSquare,
     href: "https://marketplace.atlassian.com/apps/1230805/task-lists-for-jira-cloud",
+  },
+  {
+    name: "Apps Support",
+    description: "Get help with our Atlassian apps",
+    icon: Headset,
+    href: "https://quabuapps.atlassian.net/servicedesk/customer/portal/1",
   },
 ];
 
