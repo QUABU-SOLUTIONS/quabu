@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Shield, Globe, CheckSquare, ExternalLink, Star } from "lucide-react";
+import { ArrowRight, ExternalLink, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import atlassianIcon from "@/assets/atlassian-icon.png";
 import customTemplatesIcon from "@/assets/custom-templates-icon.png";
 import backupManagerIcon from "@/assets/backup-manager-icon.png";
 import customLanguageIcon from "@/assets/custom-language-icon.png";
+import taskListsIcon from "@/assets/task-lists-icon.png";
 
 const apps = [
   {
@@ -41,7 +42,7 @@ const apps = [
   {
     name: "Task Lists for Jira Cloud",
     description: "Create simple tasks in any issue to keep control of the small details. Perfect for granular task management.",
-    icon: CheckSquare,
+    customIcon: taskListsIcon,
     rating: 4,
     installs: 30,
     href: "https://marketplace.atlassian.com/apps/1230805/task-lists-for-jira-cloud?hosting=cloud&tab=overview",
@@ -155,7 +156,6 @@ export function AppsSection() {
           className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12"
         >
           {apps.map((app, index) => {
-            const IconComponent = app.icon;
             return (
               <motion.a
                 key={app.name}
@@ -191,17 +191,11 @@ export function AppsSection() {
                 {/* Icon */}
                 <div className="mb-4">
                   <motion.div
-                    className={`w-14 h-14 rounded-xl flex items-center justify-center transition-colors overflow-hidden ${
-                      app.customIcon ? "" : "bg-primary/10 group-hover:bg-primary/20"
-                    }`}
+                    className="w-14 h-14 rounded-xl flex items-center justify-center transition-colors overflow-hidden"
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
                   >
-                    {app.customIcon ? (
-                      <img src={app.customIcon} alt={app.name} className="w-14 h-14 object-contain" />
-                    ) : (
-                      <IconComponent className="w-7 h-7 text-primary" />
-                    )}
+                    <img src={app.customIcon} alt={app.name} className="w-14 h-14 object-contain" />
                   </motion.div>
                 </div>
 
