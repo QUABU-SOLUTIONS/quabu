@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, FileText, Shield, Globe, CheckSquare, ExternalLink, Star } from "lucide-react";
+import { ArrowRight, Shield, Globe, CheckSquare, ExternalLink, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import atlassianIcon from "@/assets/atlassian-icon.png";
+import customTemplatesIcon from "@/assets/custom-templates-icon.png";
 
 const apps = [
   {
     name: "Custom Templates for Jira Cloud",
     description: "Speed up your workflows with predefined templates. Create issues faster and maintain consistency across your projects.",
-    icon: FileText,
+    customIcon: customTemplatesIcon,
     rating: 4,
     installs: 166,
     href: "https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview",
@@ -188,11 +189,17 @@ export function AppsSection() {
                 {/* Icon */}
                 <div className="mb-4">
                   <motion.div
-                    className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors"
+                    className={`w-14 h-14 rounded-xl flex items-center justify-center transition-colors overflow-hidden ${
+                      app.customIcon ? "" : "bg-primary/10 group-hover:bg-primary/20"
+                    }`}
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
                   >
-                    <IconComponent className="w-7 h-7 text-primary" />
+                    {app.customIcon ? (
+                      <img src={app.customIcon} alt={app.name} className="w-14 h-14 object-contain" />
+                    ) : (
+                      <IconComponent className="w-7 h-7 text-primary" />
+                    )}
                   </motion.div>
                 </div>
 
