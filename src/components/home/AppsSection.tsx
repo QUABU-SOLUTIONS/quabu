@@ -4,6 +4,7 @@ import { ArrowRight, Shield, Globe, CheckSquare, ExternalLink, Star } from "luci
 import { Button } from "@/components/ui/button";
 import atlassianIcon from "@/assets/atlassian-icon.png";
 import customTemplatesIcon from "@/assets/custom-templates-icon.png";
+import backupManagerIcon from "@/assets/backup-manager-icon.png";
 
 const apps = [
   {
@@ -19,7 +20,7 @@ const apps = [
   {
     name: "Backup Manager for Jira Cloud",
     description: "Automate your Jira backups with secure AWS integration. Reliable, efficient, and hassle-free backup solution.",
-    icon: Shield,
+    customIcon: backupManagerIcon,
     rating: 4,
     installs: 158,
     href: "https://marketplace.atlassian.com/apps/1235836/backup-manager-for-jira-cloud?hosting=cloud&tab=overview",
