@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import atlassianIcon from "@/assets/atlassian-icon.png";
 import customTemplatesIcon from "@/assets/custom-templates-icon.png";
 import backupManagerIcon from "@/assets/backup-manager-icon.png";
+import customLanguageIcon from "@/assets/custom-language-icon.png";
 
 const apps = [
   {
@@ -30,7 +31,7 @@ const apps = [
   {
     name: "Custom Language for Jira Cloud",
     description: "Translate your Jira site into Catalan and share it with all your users. Make Jira accessible to everyone.",
-    icon: Globe,
+    customIcon: customLanguageIcon,
     rating: 4,
     installs: 13,
     href: "https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud?hosting=cloud&tab=overview",
