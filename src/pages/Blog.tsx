@@ -61,6 +61,39 @@ const AnimatedBlogBackground = () => {
 // Blog post data
 const blogPosts = [
   {
+    id: "exploring-atlassian-remote-mcp-server",
+    title: "Exploring Atlassian Remote MCP Server: AI Takes Control of Jira",
+    excerpt: "Atlassian introduces its Remote MCP Server for Jira Cloud, allowing Claude Desktop to interact with Jira naturally. This isn't just another integration — it's a glimpse into the future of enterprise software interaction through AI.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "February 7, 2026",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop",
+    featured: true,
+  },
+  {
+    id: "atlassian-rovo-mcp-server-ga",
+    title: "Atlassian Rovo MCP Server Is Now GA: Take Your Workflows to the Next Level",
+    excerpt: "Atlassian officially announces that the Rovo MCP Server is now in General Availability. This milestone enables secure integration of Atlassian workflows with AI assistants and external tools.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "February 5, 2026",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=400&fit=crop",
+    featured: true,
+  },
+  {
+    id: "forge-mcp-server-for-developers",
+    title: "Forge MCP: The Ally Your IDE Needed to Master Forge Development",
+    excerpt: "Atlassian introduces the Forge MCP Server, a remote service based on the Model Context Protocol that provides contextual, up-to-date knowledge about Forge directly to your development tools and AI assistants.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "February 3, 2026",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
+    featured: true,
+  },
+  {
     id: "quabu-jmwe-success-story",
     title: "Quabu and JMWE: A Success Story Transforming Workflow Management",
     excerpt: "We're excited to share our recent success story, featured by Appfire, highlighting how our collaboration with JMWE has revolutionized workflow automation for enterprise clients.",
@@ -69,7 +102,7 @@ const blogPosts = [
     date: "June 10, 2025",
     readTime: "5 min read",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop",
-    featured: true,
+    featured: false,
   },
   {
     id: "assets-emancipates-platform",
@@ -80,7 +113,7 @@ const blogPosts = [
     date: "May 22, 2025",
     readTime: "4 min read",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-    featured: true,
+    featured: false,
   },
   {
     id: "assets-data-manager-guide",
