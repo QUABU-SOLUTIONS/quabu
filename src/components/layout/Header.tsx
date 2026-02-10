@@ -276,20 +276,21 @@ export function Header() {
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                   ) : item.hasBlogDropdown ? (
-                    <NavigationMenuItem key={item.name}>
-                      <NavigationMenuTrigger className="bg-transparent hover:bg-muted/50">
-                        {item.name}
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <div className="p-4 w-[300px] space-y-1">
+                    <div key={item.name} className="relative">
+                      <DropdownMenu>
+                        <DropdownMenuTrigger className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50 inline-flex items-center gap-1 outline-none">
+                          {item.name}
+                          <ChevronDown className="h-3 w-3 transition-transform duration-200" />
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="start" className="w-[280px] bg-popover z-50">
                           {blogSubmenu.map((blog) => (
-                            <NavigationMenuLink key={blog.name} asChild>
+                            <DropdownMenuItem key={blog.name} asChild>
                               {blog.isExternal ? (
                                 <a
                                   href={blog.href}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                                  className="flex items-start gap-3 p-3"
                                 >
                                   <blog.icon className="w-5 h-5 text-primary mt-0.5" />
                                   <div>
@@ -303,7 +304,7 @@ export function Header() {
                               ) : (
                                 <Link
                                   to={blog.href}
-                                  className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                                  className="flex items-start gap-3 p-3"
                                 >
                                   <blog.icon className="w-5 h-5 text-primary mt-0.5" />
                                   <div>
@@ -312,11 +313,11 @@ export function Header() {
                                   </div>
                                 </Link>
                               )}
-                            </NavigationMenuLink>
+                            </DropdownMenuItem>
                           ))}
-                        </div>
-                      </NavigationMenuContent>
-                    </NavigationMenuItem>
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    </div>
                   ) : item.hasAboutDropdown ? (
                     <div key={item.name} className="relative">
                       <DropdownMenu>
