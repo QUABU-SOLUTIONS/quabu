@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, Instagram, FileText, Shield, Globe, CheckSquare, ExternalLink, Cloud, Code, Cog } from "lucide-react";
+import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, Instagram, FileText, Shield, Globe, CheckSquare, ExternalLink, Cloud, Code, Cog, BookOpen, Pen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -105,12 +105,29 @@ const aboutSubmenu = [
   { name: "Contact", href: "/contact", isExternal: false, icon: "mail" },
 ];
 
+const blogSubmenu = [
+  {
+    name: "Quabu International Blog",
+    description: "Insights, news & articles in English",
+    icon: BookOpen,
+    href: "/blog",
+    isExternal: false,
+  },
+  {
+    name: "Quabu.blog",
+    description: "Our original blog in Spanish",
+    icon: Pen,
+    href: "https://quabu.blog",
+    isExternal: true,
+  },
+];
+
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Accelerators", href: "/accelerators", hasDropdown: true },
   { name: "Apps", href: "/apps", hasAppsDropdown: true },
   { name: "Services", href: "/services", hasServicesDropdown: true },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "/blog", hasBlogDropdown: true },
   { name: "About", href: "/about", hasAboutDropdown: true },
 ];
 
@@ -258,6 +275,48 @@ export function Header() {
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
+                  ) : item.hasBlogDropdown ? (
+                    <NavigationMenuItem key={item.name}>
+                      <NavigationMenuTrigger className="bg-transparent hover:bg-muted/50">
+                        {item.name}
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="p-4 w-[300px] space-y-1">
+                          {blogSubmenu.map((blog) => (
+                            <NavigationMenuLink key={blog.name} asChild>
+                              {blog.isExternal ? (
+                                <a
+                                  href={blog.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                                >
+                                  <blog.icon className="w-5 h-5 text-primary mt-0.5" />
+                                  <div>
+                                    <div className="font-medium text-sm flex items-center gap-1">
+                                      {blog.name}
+                                      <ExternalLink className="w-3 h-3 text-muted-foreground" />
+                                    </div>
+                                    <p className="text-xs text-muted-foreground">{blog.description}</p>
+                                  </div>
+                                </a>
+                              ) : (
+                                <Link
+                                  to={blog.href}
+                                  className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                                >
+                                  <blog.icon className="w-5 h-5 text-primary mt-0.5" />
+                                  <div>
+                                    <div className="font-medium text-sm">{blog.name}</div>
+                                    <p className="text-xs text-muted-foreground">{blog.description}</p>
+                                  </div>
+                                </Link>
+                              )}
+                            </NavigationMenuLink>
+                          ))}
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
                   ) : item.hasAboutDropdown ? (
                     <div key={item.name} className="relative">
                       <DropdownMenu>
@@ -374,7 +433,7 @@ export function Header() {
             <div className="container-wide py-4 space-y-2">
               {navItems.map((item) => (
                 <div key={item.name}>
-                  {(item.hasDropdown || item.hasAppsDropdown || item.hasAboutDropdown || item.hasServicesDropdown) ? (
+                  {(item.hasDropdown || item.hasAppsDropdown || item.hasAboutDropdown || item.hasServicesDropdown || item.hasBlogDropdown) ? (
                     <button
                       onClick={() => setExpandedMobileMenu(expandedMobileMenu === item.name ? null : item.name)}
                       className={cn(
@@ -443,6 +502,34 @@ export function Header() {
                           <service.icon className="w-4 h-4" />
                           {service.name}
                         </Link>
+                      ))}
+                    </div>
+                  )}
+                  {item.hasBlogDropdown && expandedMobileMenu === item.name && (
+                    <div className="ml-4 mt-2 space-y-1">
+                      {blogSubmenu.map((blog) => (
+                        blog.isExternal ? (
+                          <a
+                            key={blog.name}
+                            href={blog.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            <blog.icon className="w-4 h-4" />
+                            {blog.name}
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        ) : (
+                          <Link
+                            key={blog.name}
+                            to={blog.href}
+                            className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            <blog.icon className="w-4 h-4" />
+                            {blog.name}
+                          </Link>
+                        )
                       ))}
                     </div>
                   )}
