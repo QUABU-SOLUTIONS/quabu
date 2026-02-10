@@ -14,6 +14,15 @@ import {
   Users,
   Sparkles
 } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 // Animated background with floating elements
 const AnimatedBlogBackground = () => {
@@ -244,6 +253,9 @@ const BlogCard = ({ post, index, featured = false }: { post: typeof blogPosts[0]
 export default function Blog() {
   const featuredPosts = blogPosts.filter(p => p.featured);
   const regularPosts = blogPosts.filter(p => !p.featured);
+  const autoplayPlugin = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
 
   return (
     <Layout>
@@ -323,11 +335,23 @@ export default function Blog() {
             <h2 className="text-2xl font-bold">Featured Posts</h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredPosts.map((post, i) => (
-              <BlogCard key={post.id} post={post} index={i} featured />
-            ))}
-          </div>
+          <Carousel
+            plugins={[autoplayPlugin.current]}
+            opts={{ align: "start", loop: true }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {featuredPosts.map((post, i) => (
+                <CarouselItem key={post.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <BlogCard post={post} index={i} featured />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center gap-2 mt-6">
+              <CarouselPrevious className="static translate-y-0" />
+              <CarouselNext className="static translate-y-0" />
+            </div>
+          </Carousel>
         </div>
       </section>
 
