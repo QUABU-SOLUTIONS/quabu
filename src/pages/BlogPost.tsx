@@ -19,6 +19,272 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "exploring-atlassian-remote-mcp-server",
+    title: "Exploring Atlassian Remote MCP Server: AI Takes Control of Jira",
+    excerpt: "Atlassian introduces its Remote MCP Server for Jira Cloud, allowing Claude Desktop to interact with Jira naturally. This isn't just another integration — it's a glimpse into the future of enterprise software interaction through AI.",
+    content: `
+## Introduction
+
+Atlassian has introduced its Remote MCP Server for Jira Cloud, a groundbreaking integration that allows AI assistants like Claude Desktop to interact with Jira in a natural, conversational way. This isn't just another API integration — it represents a fundamental shift in how we interact with enterprise software.
+
+## What is MCP?
+
+The Model Context Protocol (MCP) is an open standard that enables AI models to securely connect to external tools and data sources. Think of it as a universal translator between AI assistants and the software tools you use every day.
+
+### Key Benefits
+
+- **Natural Language Interaction**: Ask questions about your Jira projects in plain English
+- **Contextual Understanding**: The AI understands your project structure, issues, and workflows
+- **Secure Access**: Enterprise-grade authentication and authorization
+- **Real-Time Data**: Always working with current information
+
+## How It Works
+
+### 1. Connection Setup
+
+Setting up the MCP Server is straightforward:
+- Configure the remote MCP server endpoint in your AI assistant
+- Authenticate with your Atlassian account
+- Grant appropriate permissions for project access
+
+### 2. Natural Interaction
+
+Once connected, you can:
+- "Show me all critical bugs in Project X"
+- "Create a new story for the authentication feature"
+- "What's the sprint velocity for the last 3 sprints?"
+- "Assign this issue to the frontend team"
+
+### 3. Workflow Automation
+
+The MCP Server enables sophisticated automation:
+- Batch operations across multiple issues
+- Intelligent triage based on content analysis
+- Automated status updates and notifications
+
+## Impact on Teams
+
+### For Project Managers
+- Instant project health dashboards through conversation
+- Quick issue creation and assignment
+- Sprint planning assistance
+
+### For Developers
+- Faster issue lookup and context gathering
+- Natural language code review requests
+- Automated documentation updates
+
+### For Stakeholders
+- Easy access to project metrics
+- Natural language reporting
+- Quick status checks without learning Jira
+
+## The Future
+
+This integration signals a broader trend: enterprise software moving toward AI-first interaction models. We expect to see:
+- More tools adopting MCP
+- Deeper integration with development workflows
+- Predictive capabilities based on project patterns
+
+## Conclusion
+
+The Atlassian Remote MCP Server isn't just a feature release — it's a glimpse into the future of enterprise software. By enabling natural language interaction with Jira, Atlassian is making project management more accessible and efficient than ever.
+
+The question is no longer whether AI will change how we interact with tools, but how quickly organizations will adapt to this new paradigm.
+    `,
+    category: "News",
+    date: "February 7, 2026",
+    readTime: "5 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
+    tags: ["MCP", "AI", "Jira", "Atlassian", "Claude"],
+  },
+  {
+    id: "atlassian-rovo-mcp-server-ga",
+    title: "Atlassian Rovo MCP Server Is Now GA: Take Your Workflows to the Next Level",
+    excerpt: "Atlassian officially announces that the Rovo MCP Server is now in General Availability. This milestone enables secure integration of Atlassian workflows with AI assistants and external tools.",
+    content: `
+## General Availability Announcement
+
+Atlassian has officially announced that the Rovo MCP Server has reached General Availability (GA). This milestone marks a significant moment for organizations looking to integrate AI capabilities into their Atlassian workflows.
+
+## What's New in GA
+
+### Production-Ready Features
+
+The GA release includes several important improvements:
+
+- **Enhanced Security**: SOC 2 Type II compliant with enterprise-grade encryption
+- **Improved Performance**: 3x faster response times compared to beta
+- **Extended Coverage**: Support for Jira, Confluence, and Bitbucket
+- **Custom Actions**: Build your own MCP actions for specific workflows
+
+### Reliability Improvements
+
+- **99.9% uptime SLA**: Enterprise-grade availability
+- **Global CDN**: Low-latency access worldwide
+- **Automatic Failover**: Built-in redundancy for critical operations
+
+## Key Use Cases
+
+### 1. Intelligent Triage
+
+Automatically categorize and prioritize incoming issues:
+- Analyze issue content using AI
+- Suggest appropriate assignees based on expertise
+- Set priority based on historical patterns
+- Route to correct project/team
+
+### 2. Cross-Tool Workflows
+
+Connect Atlassian tools with external systems:
+- Sync Jira issues with external project management tools
+- Update Confluence pages from external data sources
+- Trigger Bitbucket actions from third-party CI/CD systems
+
+### 3. Reporting & Analytics
+
+Generate insights through natural conversation:
+- "What's our team's average resolution time this quarter?"
+- "Compare sprint velocity across teams"
+- "Identify bottlenecks in our current workflow"
+
+## Migration from Beta
+
+For organizations already using the beta:
+
+1. **Review Breaking Changes**: Check the migration guide for API changes
+2. **Update Configurations**: Apply new security settings
+3. **Test Thoroughly**: Validate all existing integrations
+4. **Monitor Performance**: Use the new analytics dashboard
+
+## Pricing & Availability
+
+The Rovo MCP Server is available as part of:
+- **Atlassian Cloud Premium**: Included with premium subscriptions
+- **Atlassian Cloud Enterprise**: Full feature set with advanced controls
+- **Standalone**: Available for select use cases
+
+## Conclusion
+
+The GA release of the Rovo MCP Server represents Atlassian's commitment to AI-powered workflows. Organizations can now confidently build production-grade integrations knowing they have enterprise support and reliability behind them.
+
+This is just the beginning — expect continuous improvements and new capabilities as the MCP ecosystem matures.
+    `,
+    category: "News",
+    date: "February 5, 2026",
+    readTime: "4 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=600&fit=crop",
+    tags: ["Rovo", "MCP", "AI", "Atlassian", "GA Release"],
+  },
+  {
+    id: "forge-mcp-server-for-developers",
+    title: "Forge MCP: The Ally Your IDE Needed to Master Forge Development",
+    excerpt: "Atlassian introduces the Forge MCP Server, a remote service based on the Model Context Protocol that provides contextual, up-to-date knowledge about Forge directly to your development tools and AI assistants.",
+    content: `
+## Introduction
+
+Developing Forge apps just got significantly easier. Atlassian has introduced the Forge MCP Server, a remote service based on the Model Context Protocol that provides contextual, up-to-date knowledge about Forge directly to your development tools and AI assistants.
+
+## What is Forge MCP Server?
+
+The Forge MCP Server is a specialized knowledge provider that understands:
+
+- **Forge APIs**: Complete reference for all Forge APIs and modules
+- **Best Practices**: Recommended patterns and anti-patterns
+- **Manifest Configuration**: Schema validation and suggestions
+- **Permission Scopes**: Security-aware scope recommendations
+
+## How It Transforms Development
+
+### 1. Intelligent Code Completion
+
+Your IDE now understands Forge at a deep level:
+- Context-aware API suggestions
+- Automatic import management
+- Type-safe function signatures
+- Real-time documentation inline
+
+### 2. Manifest Assistance
+
+No more guessing about manifest configurations:
+- Auto-complete for manifest fields
+- Validation against latest schema
+- Permission scope suggestions based on code analysis
+- Module configuration help
+
+### 3. Debugging Support
+
+Get help when things go wrong:
+- Common error pattern recognition
+- Fix suggestions with code examples
+- Performance optimization tips
+- Security vulnerability detection
+
+## Supported IDEs
+
+The Forge MCP Server works with:
+
+- **VS Code**: Full integration via MCP extension
+- **JetBrains IDEs**: IntelliJ, WebStorm support
+- **Cursor**: Native MCP support
+- **Any MCP-compatible tool**: Open standard compatibility
+
+## Getting Started
+
+### Step 1: Configure MCP
+
+Add the Forge MCP Server to your IDE's MCP configuration:
+
+The server URL and authentication details are available in your Atlassian Developer Console.
+
+### Step 2: Authenticate
+
+Use your Atlassian API token for authentication. The server respects your existing permissions and access levels.
+
+### Step 3: Start Developing
+
+Once connected, your AI assistant and IDE will have full access to Forge knowledge:
+- Ask questions about Forge APIs
+- Get code suggestions based on best practices
+- Validate your manifest before deployment
+- Debug issues with contextual help
+
+## Real-World Examples
+
+### Building a Custom Panel
+
+Instead of searching through documentation, simply ask:
+- "How do I create a Jira issue panel with Forge?"
+- "What permissions do I need for reading issue data?"
+- "Show me an example of a Forge resolver for custom fields"
+
+### Optimizing Performance
+
+Get performance insights directly in your IDE:
+- "Why is my Forge function timing out?"
+- "How can I batch API calls in Forge?"
+- "What are the rate limits for this API?"
+
+## The Bigger Picture
+
+The Forge MCP Server is part of Atlassian's broader strategy to make platform development more accessible. By bringing knowledge directly to developers' tools, they're reducing the barrier to entry for Forge development.
+
+## Conclusion
+
+The Forge MCP Server is a game-changer for Forge developers. By providing contextual, always-up-to-date knowledge directly in your development environment, it dramatically reduces the time from idea to implementation.
+
+Whether you're a seasoned Forge developer or just getting started, the Forge MCP Server will become an indispensable part of your toolkit.
+    `,
+    category: "Articles",
+    date: "February 3, 2026",
+    readTime: "6 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
+    tags: ["Forge", "MCP", "Development", "IDE", "Atlassian"],
+  },
+  {
     id: "quabu-jmwe-success-story",
     title: "Quabu and JMWE: A Success Story Transforming Workflow Management",
     excerpt: "We're excited to share our recent success story, featured by Appfire, highlighting how our collaboration with JMWE has revolutionized workflow automation for enterprise clients.",
