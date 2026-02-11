@@ -337,7 +337,7 @@ export default function Blog() {
 
           <Carousel
             plugins={[autoplayPlugin.current]}
-            opts={{ align: "start", loop: true }}
+            opts={{ align: "start", loop: true, watchDrag: false }}
             className="w-full"
           >
             <CarouselContent className="-ml-4">
