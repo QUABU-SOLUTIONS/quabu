@@ -1,1 +1,7 @@
 project_id = "icldeeuwidjwjwjkrjet"
+
+[functions.newsletter-subscribe]
+verify_jwt = false
+
+[functions.newsletter-send]
+verify_jwt = false

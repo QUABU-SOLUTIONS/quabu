@@ -26,6 +26,8 @@ import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import TermsOfService from "./pages/legal/TermsOfService";
 import CookiesPolicy from "./pages/legal/CookiesPolicy";
 import NotFound from "./pages/NotFound";
+import NewsletterConfirm from "./pages/NewsletterConfirm";
+import NewsletterUnsubscribe from "./pages/NewsletterUnsubscribe";
 
 const queryClient = new QueryClient();
 
@@ -57,6 +59,8 @@ const App = () => (
           <Route path="/legal/privacy" element={<PrivacyPolicy />} />
           <Route path="/legal/terms" element={<TermsOfService />} />
           <Route path="/legal/cookies" element={<CookiesPolicy />} />
+          <Route path="/newsletter/confirm" element={<NewsletterConfirm />} />
+          <Route path="/newsletter/unsubscribe" element={<NewsletterUnsubscribe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
