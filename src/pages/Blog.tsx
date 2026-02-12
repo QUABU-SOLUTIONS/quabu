@@ -266,7 +266,7 @@ const BlogCard = ({ post, index, featured = false }: { post: typeof blogPosts[0]
 
 export default function Blog() {
   const featuredPosts = blogPosts.filter(p => p.featured);
-  const regularPosts = blogPosts.filter(p => !p.featured);
+  const regularPosts = blogPosts;
   const autoplayPlugin = useRef(
     Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
