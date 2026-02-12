@@ -34,6 +34,20 @@ serve(async (req) => {
     const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
     const supabase = createClient(supabaseUrl, supabaseKey);
 
+    // UNSUBSCRIBE action
+    if (action === "unsubscribe" && token) {
+      const { error: deleteError } = await supabase
+        .from("newsletter_subscribers")
+        .delete()
+        .eq("unsubscribe_token", token);
+
+      if (deleteError) throw deleteError;
+
+      return new Response(JSON.stringify({ success: true, message: "Successfully unsubscribed." }), {
+        headers: { "Content-Type": "application/json", ...corsHeaders },
+      });
+    }
+
     // CONFIRM action
     if (action === "confirm" && token) {
       const { data: subscriber, error: fetchError } = await supabase
