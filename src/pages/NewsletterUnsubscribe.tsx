@@ -19,13 +19,16 @@ export default function NewsletterUnsubscribe() {
 
     const unsubscribe = async () => {
       try {
-        const { error } = await supabase
-          .from("newsletter_subscribers" as any)
-          .delete()
-          .eq("unsubscribe_token", token);
+        const { data, error } = await supabase.functions.invoke("newsletter-subscribe", {
+          body: { action: "unsubscribe", token },
+        });
 
         if (error) throw error;
-        setStatus("success");
+        if (data?.error) {
+          setStatus("error");
+        } else {
+          setStatus("success");
+        }
       } catch {
         setStatus("error");
       }
