@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -23,6 +24,8 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 // Animated background with floating elements
 const AnimatedBlogBackground = () => {
@@ -256,6 +259,30 @@ export default function Blog() {
   const autoplayPlugin = useRef(
     Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
+  const [email, setEmail] = useState("");
+  const [subscribing, setSubscribing] = useState(false);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.trim()) return;
+    setSubscribing(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("newsletter-subscribe", {
+        body: { email: email.trim() },
+      });
+      if (error) throw error;
+      if (data?.error) {
+        toast.error(data.error);
+      } else {
+        toast.success(data?.message || "Check your email to confirm!");
+        setEmail("");
+      }
+    } catch {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setSubscribing(false);
+    }
+  };
 
   return (
     <Layout>
@@ -431,17 +458,20 @@ export default function Blog() {
               and news delivered directly to your inbox.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 className="flex-1 px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
               />
-              <Button size="lg" className="group">
-                Subscribe
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <Button size="lg" className="group" type="submit" disabled={subscribing}>
+                {subscribing ? "Subscribing..." : "Subscribe"}
+                {!subscribing && <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />}
               </Button>
-            </div>
+            </form>
 
             <p className="text-sm text-muted-foreground mt-4">
               No spam, unsubscribe at any time.
