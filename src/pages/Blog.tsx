@@ -73,6 +73,17 @@ const AnimatedBlogBackground = () => {
 // Blog post data
 const blogPosts = [
   {
+    id: "atlassian-google-cloud-alliance",
+    title: "Atlassian and Google Cloud: An Alliance Redefining Enterprise Productivity",
+    excerpt: "Atlassian and Google Cloud announce a historic partnership to bring advanced AI to millions of users. Discover what it means for your business and how Quabu can help you maximize its potential.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "February 10, 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop",
+    featured: true,
+  },
+  {
     id: "exploring-atlassian-remote-mcp-server",
     title: "Exploring Atlassian Remote MCP Server: AI Takes Control of Jira",
     excerpt: "Atlassian introduces its Remote MCP Server for Jira Cloud, allowing Claude Desktop to interact with Jira naturally. This isn't just another integration — it's a glimpse into the future of enterprise software interaction through AI.",

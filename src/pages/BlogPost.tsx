@@ -19,6 +19,117 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-google-cloud-alliance",
+    title: "Atlassian and Google Cloud: An Alliance Redefining Enterprise Productivity",
+    excerpt: "Atlassian and Google Cloud announce a historic partnership to bring advanced AI to millions of users. Discover what it means for your business and how Quabu can help you maximize its potential.",
+    content: `
+## Introduction: A New Era for Atlassian Users
+
+At Quabu, we've been helping companies implement, optimize, and scale Atlassian tools like Jira, Confluence, and Loom for years. That's why we're excited to share a key announcement: Atlassian has sealed a multi-year strategic alliance with Google Cloud to integrate Artificial Intelligence (AI) capabilities into its products and deliver even more secure, scalable, and collaborative cloud performance.
+
+This partnership isn't just a technological advancement — it's a real opportunity for businesses like yours to work smarter and faster.
+
+## Key Points of the Atlassian–Google Cloud Alliance
+
+### 1. Migration to AI-Optimized Infrastructure
+
+Atlassian's flagship applications — Jira, Confluence, and Loom — will run on Google Kubernetes Engine (GKE) and Cloud Spanner, delivering enhanced security, reliability, and performance.
+
+### 2. Native Integration with Google AI
+
+Leveraging Gemini and Vertex AI to power Atlassian Rovo, the intelligent assistant that already helps millions of users find information, automate tasks, and connect tools intelligently.
+
+### 3. Availability on Google Cloud Marketplace
+
+Atlassian licenses can now be purchased directly on Google Cloud Marketplace, optimizing budgets and simplifying procurement.
+
+## What Does This Mean for Businesses?
+
+The collaboration will bring features such as:
+
+- **Advanced Automation**: Issue tracking, documentation generation, and automatic project summaries
+- **Intelligent Search**: Find relevant information in seconds, even across dispersed repositories
+- **Smoother Collaboration**: Direct connection with Google Workspace, allowing work in Jira or Confluence from the Google ecosystem
+
+## How Quabu Can Help You Seize This Opportunity
+
+At Quabu, we don't just implement Atlassian tools — we adapt them to your way of working. With this new alliance, we can help you:
+
+- **Design a Google Cloud migration strategy** for Jira, Confluence, and Loom
+- **Configure and train Atlassian Rovo** for your specific workflows
+- **Integrate Google Workspace with Atlassian** to maximize real-time collaboration
+- **Train your team** on the new AI features so the transition is productive from day one
+
+## Practical Example: From Theory to Real Productivity
+
+Imagine a development team that uses Jira to manage issues and Google Docs for documentation.
+
+With the Atlassian–Google Cloud integration and Quabu's configuration:
+
+- Rovo analyzes the backlog, generates weekly summaries, and suggests priorities
+- Confluence documentation automatically syncs with Google Drive documents
+- The team saves hours on follow-up meetings and information searches
+
+## Quabu's Optimization Process
+
+Quabu transforms the theory of this alliance into real productivity for your business, following a structured methodology:
+
+### 1. Strategy & Consulting
+
+Everything starts with an analysis of your current situation. Quabu doesn't just install software — we design a personalized roadmap to ensure cloud and AI adoption meets your business needs.
+
+### 2. Ecosystem Integration
+
+Once in the cloud, Quabu connects your tools. Native integrations are configured so that Google Workspace and Atlassian communicate with each other, eliminating information silos.
+
+### 3. AI Configuration (Rovo + Gemini)
+
+This is the differentiating step. Quabu configures and trains Atlassian Rovo (powered by Google's Gemini and Vertex AI models) to understand your specific context, enabling advanced automations and intelligent searches.
+
+### 4. Training & Adoption
+
+Finally, to guarantee ROI, your team receives training. The goal is for users to know how to delegate repetitive tasks to AI and focus on strategic work from day one.
+
+## Frequently Asked Questions
+
+### When will these new features be available?
+
+The rollout will be progressive throughout 2025, starting with cloud users.
+
+### Do I need to migrate to Google Cloud to take advantage of Atlassian's AI?
+
+Not necessarily, but for maximum performance and security, it is recommended.
+
+### Does Rovo replace other bots I already use in Jira?
+
+Rovo is more powerful and can integrate with existing bots, expanding their capabilities.
+
+### Can I continue using Atlassian on my own servers?
+
+Atlassian has announced that its primary focus is the cloud, and the Server version will be retired.
+
+### Can Quabu integrate Atlassian with my current systems?
+
+Yes, we design custom integrations to make the transition seamless.
+
+### Does this integration have an additional cost?
+
+It depends on your plan and licenses. We help you optimize your investment.
+
+## Conclusion: A Key Moment to Make the Leap
+
+The Atlassian–Google Cloud alliance isn't just a technical upgrade — it's a window to transform the way you work. At Quabu, we're ready to guide you every step of the way, ensuring you make the most of these innovations.
+
+Want to know how to apply these improvements to your business? Contact us and we'll show you a personalized plan.
+    `,
+    category: "News",
+    date: "February 10, 2026",
+    readTime: "7 min read",
+    author: "Quabu Team",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop",
+    tags: ["Atlassian", "Google Cloud", "AI", "Rovo", "Enterprise", "Partnership"],
+  },
+  {
     id: "exploring-atlassian-remote-mcp-server",
     title: "Exploring Atlassian Remote MCP Server: AI Takes Control of Jira",
     excerpt: "Atlassian introduces its Remote MCP Server for Jira Cloud, allowing Claude Desktop to interact with Jira naturally. This isn't just another integration — it's a glimpse into the future of enterprise software interaction through AI.",
