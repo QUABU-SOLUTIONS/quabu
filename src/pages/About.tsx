@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { SEO } from "@/components/SEO";
 import { 
   Target, 
   Eye, 
@@ -339,6 +340,11 @@ export default function About() {
 
   return (
     <Layout>
+      <SEO
+        path="/about"
+        title="About Quabu | Atlassian Gold Partner | Our Story"
+        description="Learn about Quabu — an Atlassian Gold Solution Partner with a team passionate about helping businesses unlock the full potential of the Atlassian ecosystem."
+      />
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center section-padding overflow-hidden">
         <CircuitBackground />

@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { SEO } from "@/components/SEO";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -337,6 +338,23 @@ export default function Blog() {
 
   return (
     <Layout>
+      <SEO
+        path="/blog"
+        title="Quabu Blog | Atlassian Insights, News & Best Practices"
+        description="Stay up to date with the Atlassian ecosystem. The Quabu blog covers Jira, Confluence, Forge, AI tools, and expert tips to help your team work smarter."
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          name: "Quabu Blog",
+          url: "https://www.quabusolutions.com/blog",
+          description: "Atlassian insights, news, and best practices from the Quabu team.",
+          publisher: {
+            "@type": "Organization",
+            name: "Quabu",
+            url: "https://www.quabusolutions.com",
+          },
+        }}
+      />
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <AnimatedBlogBackground />
