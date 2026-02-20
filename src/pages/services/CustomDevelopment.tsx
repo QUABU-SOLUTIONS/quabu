@@ -503,8 +503,10 @@ export default function CustomDevelopment() {
                 {t("customDevelopment.getCustomSolution")}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                {t("customDevelopment.viewWork")}
+              <Button size="lg" asChild className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white border" variant="outline">
+                <a href="https://marketplace.atlassian.com/vendors/1220154/quabu" target="_blank" rel="noopener noreferrer">
+                  {t("customDevelopment.viewWork")}
+                </a>
               </Button>
             </motion.div>
 
