@@ -163,13 +163,15 @@ function AnimatedIconDisplay({
   gradientFrom, 
   gradientTo, 
   glowColor,
-  number 
+  number,
+  label,
 }: { 
   Icon: LucideIcon; 
   gradientFrom: string; 
   gradientTo: string; 
   glowColor: string;
   number: string;
+  label: string;
 }) {
   return (
     <div className="relative z-10 flex flex-col items-center justify-center h-full">
@@ -375,7 +377,7 @@ function AnimatedIconDisplay({
           ease: "easeInOut",
         }}
       >
-        DIGITAL ACCELERATOR
+        {label}
       </motion.h3>
     </div>
   );
@@ -545,6 +547,7 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
                       gradientTo={accelerator.gradientTo}
                       glowColor={accelerator.glowColor}
                       number={accelerator.number}
+                      label={t("acceleratorsPage.digitalAccelerator")}
                     />
                   </div>
 

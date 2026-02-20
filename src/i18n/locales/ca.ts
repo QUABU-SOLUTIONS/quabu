@@ -440,6 +440,7 @@ const ca = {
     title: "Solucions Preconfigurades per a",
     titleHighlight: "Cada Departament",
     subtitle: "Estalvia mesos de desenvolupament amb les nostres solucions Atlassian provades. Instal·la en dies, personalitza segons les teves necessitats i escala amb confiança.",
+    digitalAccelerator: "ACCELERADOR DIGITAL",
     learnMoreAbout: "Saber-ne més sobre",
     accelerators: {
       marketing: {

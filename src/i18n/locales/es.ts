@@ -440,6 +440,7 @@ const es = {
     title: "Soluciones Preconfiguradas para",
     titleHighlight: "Cada Departamento",
     subtitle: "Ahorra meses de desarrollo con nuestras soluciones Atlassian probadas en batalla. Instala en días, personaliza según tus necesidades y escala con confianza.",
+    digitalAccelerator: "ACELERADOR DIGITAL",
     learnMoreAbout: "Saber más sobre",
     accelerators: {
       marketing: {
