@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, Instagram, FileText, Shield, Globe, CheckSquare, ExternalLink, Cloud, Code, Cog, BookOpen, Pen } from "lucide-react";
@@ -23,17 +24,6 @@ import quabuLogo from "@/assets/quabu-logo.svg";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
-
-const acceleratorCategories = [
-  { name: "Marketing", href: "/accelerators/marketing", description: "Automate campaigns & analytics" },
-  { name: "Sales", href: "/accelerators/sales", description: "Pipeline & CRM acceleration" },
-  { name: "HR & People", href: "/accelerators/hr", description: "Onboarding & performance" },
-  { name: "Operations", href: "/accelerators/operations", description: "Workflow optimization" },
-  { name: "Finance", href: "/accelerators/finance", description: "Budgets & approvals" },
-  { name: "IT & DevOps", href: "/accelerators/it", description: "Service & incident management" },
-  { name: "Customer Service", href: "/accelerators/customer-service", description: "Support & ticketing" },
-  { name: "R&D", href: "/accelerators/rd", description: "Product development" },
-];
 
 import { Headset } from "lucide-react";
 
@@ -76,27 +66,6 @@ const appsSubmenu = [
   },
 ];
 
-const servicesSubmenu = [
-  {
-    name: "Atlassian Services",
-    description: "Expert consulting & implementation",
-    icon: Cog,
-    href: "/services/atlassian",
-  },
-  {
-    name: "Cloud Migration",
-    description: "Seamless migration to cloud platforms",
-    icon: Cloud,
-    href: "/services/cloud-migration",
-  },
-  {
-    name: "Custom Development",
-    description: "Tailored solutions for your needs",
-    icon: Code,
-    href: "/services/custom-development",
-  },
-];
-
 const aboutSubmenu = [
   { name: "LinkedIn", href: "https://www.linkedin.com/company/quabu-solutions", isExternal: true, icon: "linkedin" },
   { name: "Twitter / X", href: "https://x.com/quabusolutions", isExternal: true, icon: "twitter" },
@@ -105,37 +74,43 @@ const aboutSubmenu = [
   { name: "Contact", href: "/contact", isExternal: false, icon: "mail" },
 ];
 
-const blogSubmenu = [
-  {
-    name: "Quabu International Blog",
-    description: "Insights, news & articles in English",
-    icon: BookOpen,
-    href: "/blog",
-    isExternal: false,
-  },
-  {
-    name: "Quabu.blog",
-    description: "Our original blog in Spanish",
-    icon: Pen,
-    href: "https://quabu.blog",
-    isExternal: true,
-  },
-];
-
-const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Accelerators", href: "/accelerators", hasDropdown: true },
-  { name: "Apps", href: "/apps", hasAppsDropdown: true },
-  { name: "Services", href: "/services", hasServicesDropdown: true },
-  { name: "Blog", href: "/blog", hasBlogDropdown: true },
-  { name: "About", href: "/about", hasAboutDropdown: true },
-];
-
 export function Header() {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
   const location = useLocation();
+
+  const acceleratorCategories = [
+    { name: t("accelerators.marketing.name"), href: "/accelerators/marketing", description: t("accelerators.marketing.desc") },
+    { name: t("accelerators.sales.name"), href: "/accelerators/sales", description: t("accelerators.sales.desc") },
+    { name: t("accelerators.hr.name"), href: "/accelerators/hr", description: t("accelerators.hr.desc") },
+    { name: t("accelerators.operations.name"), href: "/accelerators/operations", description: t("accelerators.operations.desc") },
+    { name: t("accelerators.finance.name"), href: "/accelerators/finance", description: t("accelerators.finance.desc") },
+    { name: t("accelerators.it.name"), href: "/accelerators/it", description: t("accelerators.it.desc") },
+    { name: t("accelerators.customerService.name"), href: "/accelerators/customer-service", description: t("accelerators.customerService.desc") },
+    { name: t("accelerators.rd.name"), href: "/accelerators/rd", description: t("accelerators.rd.desc") },
+  ];
+
+  const servicesSubmenu = [
+    { name: t("nav.atlassianServices"), description: t("nav.atlassianServicesDesc"), icon: Cog, href: "/services/atlassian" },
+    { name: t("nav.cloudMigration"), description: t("nav.cloudMigrationDesc"), icon: Cloud, href: "/services/cloud-migration" },
+    { name: t("nav.customDevelopment"), description: t("nav.customDevelopmentDesc"), icon: Code, href: "/services/custom-development" },
+  ];
+
+  const blogSubmenu = [
+    { name: t("nav.internationalBlog"), description: t("nav.internationalBlogDesc"), icon: BookOpen, href: "/blog", isExternal: false },
+    { name: t("nav.originalBlog"), description: t("nav.originalBlogDesc"), icon: Pen, href: "https://quabu.blog", isExternal: true },
+  ];
+
+  const navItems = [
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.accelerators"), href: "/accelerators", hasDropdown: true },
+    { name: t("nav.apps"), href: "/apps", hasAppsDropdown: true },
+    { name: t("nav.services"), href: "/services", hasServicesDropdown: true },
+    { name: t("nav.blog"), href: "/blog", hasBlogDropdown: true },
+    { name: t("nav.about"), href: "/about", hasAboutDropdown: true },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -182,13 +157,13 @@ export function Header() {
                       <NavigationMenuContent>
                         <div className="grid gap-2 p-4 w-[500px] grid-cols-2">
                           <div className="col-span-2 mb-2">
-                            <Link
+                          <Link
                               to="/accelerators"
                               className="block p-3 rounded-lg hover:bg-muted transition-colors"
                             >
-                              <div className="font-semibold text-primary">All Digital Accelerators</div>
+                              <div className="font-semibold text-primary">{t("nav.allAccelerators")}</div>
                               <p className="text-sm text-muted-foreground">
-                                Pre-built Atlassian solutions for rapid deployment
+                                {t("nav.allAcceleratorsDesc")}
                               </p>
                             </Link>
                           </div>
@@ -221,7 +196,7 @@ export function Header() {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 p-3 rounded-lg hover:bg-muted transition-colors mb-2"
                           >
-                            <div className="font-semibold text-primary">All Apps on Marketplace</div>
+                            <div className="font-semibold text-primary">{t("nav.allApps")}</div>
                             <ExternalLink className="w-3 h-3 text-muted-foreground" />
                           </a>
                           <div className="border-t border-border pt-2 space-y-1">
@@ -331,9 +306,9 @@ export function Header() {
                               to="/about"
                               className="flex flex-col items-start gap-1 p-3"
                             >
-                              <span className="font-semibold text-primary">About Quabu</span>
+                              <span className="font-semibold text-primary">{t("nav.aboutQuabu")}</span>
                               <span className="text-xs text-muted-foreground">
-                                Learn about our team and mission
+                                {t("nav.aboutQuabuDesc")}
                               </span>
                             </Link>
                           </DropdownMenuItem>
@@ -407,7 +382,7 @@ export function Header() {
               />
             </div>
             <Button asChild>
-              <Link to="/contact">Get Started</Link>
+              <Link to="/contact">{t("nav.contact")}</Link>
             </Button>
           </div>
 
@@ -540,7 +515,7 @@ export function Header() {
                         to="/about"
                         className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
                       >
-                        About Quabu
+                        {t("nav.aboutQuabu")}
                       </Link>
                       {aboutSubmenu.map((subItem) => (
                         subItem.isExternal ? (
@@ -573,7 +548,7 @@ export function Header() {
               ))}
               <div className="pt-4 border-t border-border">
                 <Button asChild className="w-full">
-                  <Link to="/contact">Get Started</Link>
+                  <Link to="/contact">{t("nav.contact")}</Link>
                 </Button>
               </div>
             </div>
