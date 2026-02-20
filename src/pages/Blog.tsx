@@ -71,7 +71,20 @@ const AnimatedBlogBackground = () => {
   );
 };
 
-// Blog post data
+// Blog post data - titles/excerpts kept in English (editorial content)
+const blogPostsMeta = [
+  { id: "atlassian-google-cloud-alliance", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 10, 2026", readTime: "7 min", featured: true },
+  { id: "exploring-atlassian-remote-mcp-server", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 7, 2026", readTime: "5 min", featured: true },
+  { id: "atlassian-rovo-mcp-server-ga", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 5, 2026", readTime: "4 min", featured: true },
+  { id: "forge-mcp-server-for-developers", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "February 3, 2026", readTime: "6 min", featured: true },
+  { id: "quabu-jmwe-success-story", category: "Success Stories", categoryKey: "successStories", categoryIcon: Award, date: "June 10, 2025", readTime: "5 min", featured: false },
+  { id: "assets-emancipates-platform", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 22, 2025", readTime: "4 min", featured: false },
+  { id: "assets-data-manager-guide", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "April 22, 2025", readTime: "6 min", featured: false },
+  { id: "rovo-dev-agents-atlassian-ai", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 15, 2025", readTime: "5 min", featured: false },
+  { id: "atlassian-products-to-apps", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "April 15, 2025", readTime: "7 min", featured: false },
+  { id: "kanban-work-method", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 4, 2025", readTime: "8 min", featured: false },
+];
+
 const blogPosts = [
   {
     id: "atlassian-google-cloud-alliance",
@@ -185,15 +198,16 @@ const blogPosts = [
   },
 ];
 
-const categories = [
-  { name: "All Posts", icon: Sparkles, count: blogPosts.length },
-  { name: "News", icon: Newspaper, count: blogPosts.filter(p => p.category === "News").length },
-  { name: "Articles", icon: BookOpen, count: blogPosts.filter(p => p.category === "Articles").length },
-  { name: "Success Stories", icon: Award, count: blogPosts.filter(p => p.category === "Success Stories").length },
+const categoriesMeta = [
+  { key: "all", icon: Sparkles, count: blogPosts.length },
+  { key: "news", icon: Newspaper, count: blogPosts.filter(p => p.category === "News").length },
+  { key: "articles", icon: BookOpen, count: blogPosts.filter(p => p.category === "Articles").length },
+  { key: "successStories", icon: Award, count: blogPosts.filter(p => p.category === "Success Stories").length },
 ];
 
 // Blog post card component
 const BlogCard = ({ post, index, featured = false }: { post: typeof blogPosts[0], index: number, featured?: boolean }) => {
+  const { t } = useTranslation();
   const Icon = post.categoryIcon;
   
   return (
@@ -229,7 +243,7 @@ const BlogCard = ({ post, index, featured = false }: { post: typeof blogPosts[0]
             <div className="absolute top-4 right-4">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-yellow-500 text-black text-xs font-medium rounded-full">
                 <TrendingUp className="w-3 h-3" />
-                Featured
+                {t("blog.featured")}
               </span>
             </div>
           )}
@@ -256,7 +270,7 @@ const BlogCard = ({ post, index, featured = false }: { post: typeof blogPosts[0]
           </p>
 
           <span className="inline-flex items-center text-primary font-medium text-sm group-hover:gap-2 transition-all">
-            Read more
+            {t("blog.readMore")}
             <ArrowRight className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" />
           </span>
         </div>
@@ -321,13 +335,11 @@ export default function Blog() {
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Ideas, News &{" "}
-              <span className="text-primary">Insights</span>
+              {t("blog.title")}
             </h1>
 
             <p className="text-xl text-muted-foreground">
-              Stay updated with the latest trends in Atlassian ecosystem, digital transformation, 
-              and best practices from our expert team.
+              {t("blog.subtitle")}
             </p>
           </motion.div>
 
@@ -338,9 +350,9 @@ export default function Blog() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            {categories.map((category, i) => (
+            {categoriesMeta.map((category, i) => (
               <motion.button
-                key={category.name}
+                key={category.key}
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border transition-all ${
                   i === 0 
                     ? 'bg-primary text-primary-foreground border-primary' 
@@ -350,7 +362,7 @@ export default function Blog() {
                 whileTap={{ scale: 0.95 }}
               >
                 <category.icon className="w-4 h-4" />
-                <span className="font-medium">{category.name}</span>
+                <span className="font-medium">{t(`blog.categories.${category.key}`)}</span>
                 <span className={`text-xs px-2 py-0.5 rounded-full ${
                   i === 0 ? 'bg-primary-foreground/20' : 'bg-muted'
                 }`}>
@@ -462,17 +474,16 @@ export default function Blog() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Stay in the <span className="text-primary">Loop</span>
+              {t("blog.stayInLoop")}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Subscribe to our newsletter and get the latest insights, tips, 
-              and news delivered directly to your inbox.
+              {t("blog.stayInLoopDesc")}
             </p>
 
             <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t("blog.emailPlaceholder")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -497,16 +508,15 @@ export default function Blog() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Have a Story to Share?
+              {t("blog.haveStory")}
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              We'd love to hear about your success with Atlassian tools. 
-              Get in touch and let's showcase your achievements.
+              {t("blog.haveStoryDesc")}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" variant="secondary" className="group" asChild>
                 <Link to="/contact">
-                  Contact Us
+                  {t("blog.contactUs")}
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
@@ -517,7 +527,7 @@ export default function Blog() {
                 asChild
               >
                 <a href="mailto:hello@quabusolutions.com">
-                  Email Us
+                  {t("blog.emailUs")}
                 </a>
               </Button>
             </div>
