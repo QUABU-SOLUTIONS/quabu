@@ -57,6 +57,14 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    // Input length limits
+    if (name.length > 100 || email.length > 255 || subject.length > 200 || message.length > 5000 || (company && company.length > 200)) {
+      return new Response(
+        JSON.stringify({ error: "Input exceeds maximum allowed length" }),
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
@@ -81,6 +89,9 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    // BCC recipient from env var (optional — keeps personal emails out of code)
+    const BCC_RECIPIENT = Deno.env.get("CONTACT_FORM_BCC");
+
     // Create SMTP client for Gmail
     const client = new SMTPClient({
       connection: {
@@ -99,7 +110,7 @@ const handler = async (req: Request): Promise<Response> => {
       await client.send({
         from: GMAIL_USER,
         to: "hello@quabusolutions.com",
-        bcc: "raul.pelaez@quabu.eu",
+        ...(BCC_RECIPIENT && { bcc: BCC_RECIPIENT }),
         subject: `New Contact Form: ${escapeHtml(subject)}`,
         content: "auto",
         html: `
@@ -130,9 +141,13 @@ const handler = async (req: Request): Promise<Response> => {
 
       await client.close();
     } catch (smtpError) {
-      console.error("SMTP Error:", smtpError);
-      await client.close();
-      throw smtpError;
+      // Log full error server-side only — never expose to client
+      console.error("SMTP Error occurred");
+      try { await client.close(); } catch (_) { /* ignore */ }
+      return new Response(
+        JSON.stringify({ error: "Failed to send email. Please try again later." }),
+        { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
     }
 
     return new Response(
@@ -140,10 +155,10 @@ const handler = async (req: Request): Promise<Response> => {
       { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
     );
   } catch (error: unknown) {
-    console.error("Error in send-contact-email function:", error);
-    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    // Log server-side only — return generic message to client
+    console.error("Contact form handler error occurred");
     return new Response(
-      JSON.stringify({ error: errorMessage }),
+      JSON.stringify({ error: "An error occurred. Please try again later." }),
       { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
     );
   }
