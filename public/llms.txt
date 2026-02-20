@@ -1,0 +1,70 @@
+# Quabu Solutions
+
+> Quabu is an Atlassian Gold Solution Partner specialized in Digital Accelerators and enterprise digital transformation.
+> Offices in Miami, FL (USA) and Barcelona, Spain. Contact: hello@quabusolutions.com
+
+## About
+
+Quabu helps businesses accelerate their digital transformation with pre-built, customizable solutions built on the Atlassian ecosystem. We are a certified Atlassian Gold Solution Partner and Atlassian Marketplace Partner.
+
+- Website: https://www.quabusolutions.com
+- Email: hello@quabusolutions.com
+- Atlassian Marketplace: https://marketplace.atlassian.com/vendors/1220154/quabu
+
+## Services
+
+- **Atlassian Services**: Consultancy, implementation, licensing, audit, training and support for Jira, Confluence, and all Atlassian products.
+- **Cloud Migration**: Seamless migration from Atlassian Server/Data Center to Atlassian Cloud with zero downtime.
+- **Custom Development**: Custom Forge apps, REST API integrations, automations, and third-party connectors.
+- **Managed Services**: 24/7 monitoring, proactive maintenance, and ongoing Atlassian environment administration.
+
+## Digital Accelerators
+
+Pre-built, ready-to-deploy Atlassian workflows for every business department. Deploy in days, not months.
+
+- **Marketing Accelerator**: Campaign management, content calendars, and analytics pipelines.
+- **Sales Accelerator**: Sales pipelines, CRM workflows, and deal tracking.
+- **HR & People Accelerator**: Onboarding, performance reviews, and employee lifecycle management.
+- **Operations Accelerator**: Process automation, project tracking, and resource management.
+- **Finance Accelerator**: Budget approvals, expense tracking, and financial workflows.
+- **IT & DevOps Accelerator**: Incident management, change requests, and service desk workflows.
+- **Customer Service Accelerator**: Support ticketing, SLA management, and customer portals.
+- **R&D Accelerator**: Product development, innovation tracking, and research workflows.
+
+## Marketplace Apps
+
+Quabu develops apps for the Atlassian Marketplace trusted by thousands of teams worldwide:
+
+- **Backup Manager for Jira**: Automated backups for Jira projects and configurations.
+- **Custom Templates for Jira**: Reusable issue templates and workflow templates.
+- **Task Lists for Jira**: Advanced task management and checklists within Jira issues.
+- **Custom Language for Jira**: Localization and language customization for Jira.
+
+## Key Facts
+
+- Atlassian Gold Solution Partner
+- Atlassian Marketplace Partner
+- Atlassian Service Management Partner
+- 10+ years of Atlassian expertise
+- 50+ enterprise clients across USA and Europe
+- Offices: Miami, FL and Barcelona, Spain
+- 3x faster deployment with Digital Accelerators vs custom development
+
+## Pages
+
+- Home: https://www.quabusolutions.com/
+- About: https://www.quabusolutions.com/about
+- Contact: https://www.quabusolutions.com/contact
+- Blog: https://www.quabusolutions.com/blog
+- Accelerators: https://www.quabusolutions.com/accelerators
+- Atlassian Services: https://www.quabusolutions.com/services/atlassian
+- Cloud Migration: https://www.quabusolutions.com/services/cloud-migration
+- Custom Development: https://www.quabusolutions.com/services/custom-development
+- Marketing Accelerator: https://www.quabusolutions.com/accelerators/marketing
+- Sales Accelerator: https://www.quabusolutions.com/accelerators/sales
+- HR Accelerator: https://www.quabusolutions.com/accelerators/hr
+- Operations Accelerator: https://www.quabusolutions.com/accelerators/operations
+- Finance Accelerator: https://www.quabusolutions.com/accelerators/finance
+- IT Accelerator: https://www.quabusolutions.com/accelerators/it
+- Customer Service Accelerator: https://www.quabusolutions.com/accelerators/customer-service
+- R&D Accelerator: https://www.quabusolutions.com/accelerators/rd

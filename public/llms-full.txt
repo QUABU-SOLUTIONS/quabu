@@ -1,0 +1,304 @@
+# Quabu Solutions — Full Content
+
+> Quabu is an Atlassian Gold Solution Partner specialized in Digital Accelerators and enterprise digital transformation.
+> Offices in Miami, FL (USA) and Barcelona, Spain. Contact: hello@quabusolutions.com
+
+---
+
+## Company Overview
+
+Quabu provides innovative and reliable IT solutions that drive the efficiency and growth of businesses. We specialize in the Atlassian ecosystem and help organizations simplify their digital transformation journey.
+
+**Mission**: Provide innovative and reliable IT solutions that drive the efficiency and growth of our clients. We commit to offer quality products and services, customer-oriented, keeping at the forefront of technology.
+
+**Vision**: Be recognized as experts in the ICT services sector, standing out for our excellence in delivering personalized solutions that anticipate and meet the changing demands of the technological environment.
+
+**Purpose**: Facilitate digital transformation, providing ICT services that optimize processes, enhance productivity and generate a positive impact on society.
+
+### Company Values
+
+- **Focus on Results**: We listen to your problems and needs before starting any project. Once identified, we define solutions maintaining a results-oriented approach.
+- **Adaptability**: We are agile and flexible to quickly adapt to new circumstances and challenges.
+- **Continuous Learning**: We promote an environment that encourages constant update of knowledge and skills.
+- **Operative Efficiency**: We seek continuous improvement of our internal processes, optimizing operational efficiency.
+- **Corporate Social Responsibility**: We commit to act in a responsible and sustainable manner, positively contributing to society and the environment.
+
+---
+
+## Services
+
+### Atlassian Services
+
+As an Atlassian Gold Solution Partner, Quabu helps businesses unlock the full potential of Atlassian tools. URL: https://www.quabusolutions.com/services/atlassian
+
+**Core Services:**
+- **Consultancy**: We analyze your objectives and processes to find the solution that best fits your specific needs.
+- **Solutions & Implementation**: We set up products (Jira, Confluence, etc.) and develop custom functionalities to maximize value.
+- **Support & Maintenance**: Specialized teams providing stability, incident prevention, and constant operation for critical systems.
+- **Licensing**: Expert guidance through the entire procurement and compliance process for Atlassian products.
+- **Audit**: Identify strengths and weaknesses in your Jira instances to align with best practices.
+- **Updates & Training**: Keep your tools current and train your teams for greater autonomy and productivity.
+
+**Specialized Solutions:**
+- Cloud Migration: Seamlessly move between Server/Data Center and Cloud. 100+ migrations completed.
+- Work Management: Powerful tools for project tracking and cross-team collaboration. 500+ projects delivered.
+- IT Service Management: Enterprise-grade ITSM solutions with Jira Service Management. 98% client satisfaction.
+
+### Cloud Migration
+
+Seamless migration from Atlassian Server or Data Center to Atlassian Cloud. URL: https://www.quabusolutions.com/services/cloud-migration
+
+**Process:**
+1. Discovery & Assessment: Evaluate current infrastructure, apps, and data. Identify migration complexity and risks.
+2. Migration Planning: Create detailed migration plan with timeline, resources, and risk mitigation strategies.
+3. Test Migration: Perform test migration to validate data integrity and identify potential issues.
+4. Production Migration: Execute migration during planned maintenance window with minimal disruption.
+5. Validation & Support: Verify migrated data, user access, and integrations. Provide post-migration support.
+
+**Benefits:**
+- Zero downtime migration approach
+- Complete data integrity guaranteed
+- All user accounts and permissions preserved
+- App compatibility assessment and alternatives
+- Dedicated migration support team
+
+### Custom Development
+
+Tailored Atlassian solutions including Forge apps, REST API integrations, and custom automations. URL: https://www.quabusolutions.com/services/custom-development
+
+**Capabilities:**
+- Forge & Connect app development for Atlassian Marketplace
+- REST API integrations with third-party systems
+- Custom automation rules and workflows
+- Third-party connectors (Salesforce, HubSpot, SAP, etc.)
+- Custom reporting and dashboards
+
+---
+
+## Digital Accelerators
+
+Pre-built, customizable Atlassian solutions that get businesses from zero to production in weeks, not months. URL: https://www.quabusolutions.com/accelerators
+
+### Marketing Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/marketing
+
+Streamline your marketing operations with pre-built workflows for campaign management, content production, and analytics.
+
+**Key Benefits:**
+- Reduce campaign planning time by up to 60%
+- Centralize all marketing assets and workflows
+- Improve cross-team collaboration
+- Track ROI with built-in analytics workflows
+
+**Included Workflows:**
+- Campaign Planning & Execution
+- Content Calendar Management
+- Social Media Scheduling
+- Email Marketing Campaigns
+- SEO & Content Strategy
+- Event Management
+- Marketing Analytics & Reporting
+- Brand Asset Management
+
+### Sales Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/sales
+
+Accelerate your sales cycle with integrated CRM workflows, pipeline management, and deal tracking built on Atlassian.
+
+**Key Benefits:**
+- Shorten sales cycle by up to 40%
+- Improve pipeline visibility across teams
+- Automate routine follow-ups and tasks
+- Better forecast accuracy with structured workflows
+
+**Included Workflows:**
+- Lead Management & Qualification
+- Opportunity Pipeline Tracking
+- Proposal & Quote Management
+- Contract Negotiation Workflow
+- Deal Closing Checklist
+- Customer Onboarding
+- Sales Analytics & Forecasting
+- Account Management
+
+### HR & People Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/hr
+
+Transform HR operations with automated onboarding, performance management, and employee lifecycle workflows.
+
+**Key Benefits:**
+- Reduce onboarding time by up to 50%
+- Standardize HR processes across the organization
+- Improve employee experience and engagement
+- Ensure compliance with automated checklists
+
+**Included Workflows:**
+- Employee Onboarding & Offboarding
+- Performance Review Cycles
+- Leave & Absence Management
+- Training & Development Tracking
+- Recruitment Pipeline
+- Employee Satisfaction Surveys
+- HR Policy Management
+- Benefits Administration
+
+### Operations Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/operations
+
+Optimize business operations with process automation, project tracking, and resource management workflows.
+
+**Key Benefits:**
+- Improve operational efficiency by up to 35%
+- Reduce process bottlenecks and delays
+- Better resource utilization across projects
+- Real-time visibility into operational KPIs
+
+**Included Workflows:**
+- Project Portfolio Management
+- Resource Planning & Allocation
+- Process Documentation & SOPs
+- Vendor & Supplier Management
+- Quality Control Workflows
+- Risk Management
+- Business Continuity Planning
+- Operations Analytics
+
+### Finance Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/finance
+
+Streamline financial operations with automated approval workflows, budget tracking, and expense management.
+
+**Key Benefits:**
+- Reduce approval cycle time by up to 70%
+- Improve financial visibility and control
+- Ensure compliance with audit trails
+- Automate routine financial processes
+
+**Included Workflows:**
+- Budget Planning & Approval
+- Expense Reporting & Reimbursement
+- Purchase Order Management
+- Invoice Processing
+- Financial Reporting
+- Audit & Compliance Tracking
+- Cost Center Management
+- Financial Forecasting
+
+### IT & DevOps Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/it
+
+Enterprise-grade ITSM and DevOps workflows for incident management, change requests, and service desk operations.
+
+**Key Benefits:**
+- Reduce incident resolution time by up to 45%
+- Improve change success rate
+- Better SLA compliance tracking
+- Streamlined DevOps pipeline management
+
+**Included Workflows:**
+- Incident Management & Resolution
+- Problem Management
+- Change Request Management
+- Service Request Catalog
+- Asset & Configuration Management
+- Release Management
+- DevOps Pipeline Integration
+- IT Service Reporting
+
+### Customer Service Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/customer-service
+
+Deliver exceptional customer service with structured support workflows, SLA management, and customer portal templates.
+
+**Key Benefits:**
+- Improve customer satisfaction scores by up to 40%
+- Reduce average response time
+- Better SLA tracking and compliance
+- Unified customer support experience
+
+**Included Workflows:**
+- Customer Support Ticketing
+- SLA Management & Escalation
+- Customer Portal Templates
+- Knowledge Base Management
+- Customer Feedback Collection
+- Support Analytics & Reporting
+- Multi-channel Support Integration
+- Customer Health Scoring
+
+### R&D Accelerator
+**URL**: https://www.quabusolutions.com/accelerators/rd
+
+Accelerate product development with innovation management, research tracking, and product roadmap workflows.
+
+**Key Benefits:**
+- Faster time-to-market for new products
+- Better innovation pipeline visibility
+- Improved cross-functional collaboration
+- Structured approach to R&D investment
+
+**Included Workflows:**
+- Product Roadmap Planning
+- Innovation Idea Management
+- Research Project Tracking
+- Prototype & MVP Development
+- Testing & QA Workflows
+- Patent & IP Management
+- Competitive Analysis Tracking
+- R&D Budget Management
+
+---
+
+## Marketplace Apps
+
+Quabu develops and maintains apps for the Atlassian Marketplace:
+
+### Backup Manager for Jira
+Automated backups for Jira projects, configurations, and data. Protect your critical project data with scheduled backups and easy restoration.
+
+### Custom Templates for Jira
+Reusable issue templates and workflow templates for Jira. Create standardized templates that your team can reuse across projects.
+
+### Task Lists for Jira
+Advanced task management and checklists within Jira issues. Break down complex issues into manageable task lists with progress tracking.
+
+### Custom Language for Jira
+Localization and custom terminology for Jira. Adapt Jira's interface language to match your organization's terminology.
+
+**Marketplace Profile**: https://marketplace.atlassian.com/vendors/1220154/quabu
+
+---
+
+## Contact & Offices
+
+**Email**: hello@quabusolutions.com
+**Contact Page**: https://www.quabusolutions.com/contact
+
+**Miami Office**: Miami, FL, USA
+**Barcelona Office**: Barcelona, Spain
+
+**Response Time**: Within 24-48 hours
+
+---
+
+## Key Statistics
+
+- 50+ enterprise clients across USA and Europe
+- 10+ years of Atlassian expertise
+- 100+ cloud migrations completed
+- 98% client satisfaction rate
+- 3x faster deployment with Digital Accelerators
+- Available services: Atlassian Services, Cloud Migration, Custom Development, Digital Accelerators
+
+---
+
+## Certifications & Partnerships
+
+- Atlassian Gold Solution Partner
+- Atlassian Marketplace Partner
+- Atlassian Service Management Partner
+
+---
+
+*Last updated: February 2026*
+*Source: https://www.quabusolutions.com/llms-full.txt*
