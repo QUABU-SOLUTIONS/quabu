@@ -107,6 +107,12 @@ const es = {
     customerService: { name: "Atención al Cliente", desc: "Tickets de soporte, gestión de SLA y portales de clientes" },
     rd: { name: "I+D", desc: "Desarrollo de producto, seguimiento de innovación y flujos de investigación" },
   },
+  // Trust section
+  trustSection: {
+    trustedBy: "Con la confianza de empresas líderes en todos los sectores",
+    partnerTitle: "Atlassian Gold Solution Partner",
+    partnerDesc: "Como Gold Partner certificado de Atlassian, aportamos experiencia, metodologías probadas y acceso directo a los recursos de Atlassian en cada proyecto.",
+  },
   // CTA Section
   cta: {
     title: "¿Listo para Acelerar Tu Transformación Digital?",

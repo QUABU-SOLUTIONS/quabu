@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import quabuIcon from "@/assets/quabu-icon.png";
 import atlassianIcon from "@/assets/atlassian-icon.png";
 
@@ -12,6 +13,7 @@ const clientLogos = [
 ];
 
 export function TrustSection() {
+  const { t } = useTranslation();
   return (
     <section className="section-padding bg-gradient-to-b from-secondary/20 to-background">
       <div className="container-wide">
@@ -23,7 +25,7 @@ export function TrustSection() {
           className="text-center mb-12"
         >
           <p className="text-sm text-muted-foreground uppercase tracking-wider mb-8">
-            Trusted by leading companies across industries
+            {t("trustSection.trustedBy")}
           </p>
 
           {/* Logo Placeholder Grid */}
@@ -184,11 +186,10 @@ export function TrustSection() {
               </div>
             </div>
             <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
-              Atlassian Gold Solution Partner
+              {t("trustSection.partnerTitle")}
             </h3>
             <p className="text-white/80 max-w-2xl mx-auto">
-              As a certified Atlassian Gold Partner, we bring expertise, proven methodologies, 
-              and direct access to Atlassian resources to every engagement.
+              {t("trustSection.partnerDesc")}
             </p>
           </div>
         </motion.div>

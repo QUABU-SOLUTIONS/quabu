@@ -107,6 +107,12 @@ const ca = {
     customerService: { name: "Atenció al Client", desc: "Tiquets de suport, gestió de SLA i portals de clients" },
     rd: { name: "R+D", desc: "Desenvolupament de producte, seguiment d'innovació i fluxos de recerca" },
   },
+  // Trust section
+  trustSection: {
+    trustedBy: "Amb la confiança d'empreses líders en tots els sectors",
+    partnerTitle: "Atlassian Gold Solution Partner",
+    partnerDesc: "Com a Gold Partner certificat d'Atlassian, aportem experiència, metodologies provades i accés directe als recursos d'Atlassian en cada projecte.",
+  },
   // CTA Section
   cta: {
     title: "Llest per Accelerar la Teva Transformació Digital?",
