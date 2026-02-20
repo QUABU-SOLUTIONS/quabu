@@ -374,6 +374,16 @@ const en = {
     ctaSubtitle: "Get a free migration assessment and discover how we can help you transition smoothly to Atlassian Cloud.",
     scheduleFreeAssessment: "Schedule Free Assessment",
     contactSales: "Contact Sales",
+    enterpriseClients: "Enterprise Clients",
+    supportAvailable: "Support Available",
+    products: {
+      jiraSoftware: "Agile project management",
+      jiraServiceManagement: "IT service desk",
+      confluence: "Team collaboration",
+      jiraWorkManagement: "Business projects",
+      bitbucket: "Code repository",
+      opsgenie: "Incident management",
+    },
     benefits: {
       security: { title: "Maximum Security", desc: "Enterprise-grade security with automatic backups, data encryption, and compliance certifications." },
       scalability: { title: "Automatic Scalability", desc: "Your infrastructure grows with your business without manual intervention or downtime." },

@@ -239,12 +239,12 @@ export default function CloudMigration() {
   ];
 
   const products = [
-    { name: "Jira Software", description: "Agile project management" },
-    { name: "Jira Service Management", description: "IT service desk" },
-    { name: "Confluence", description: "Team collaboration" },
-    { name: "Jira Work Management", description: "Business projects" },
-    { name: "Bitbucket", description: "Code repository" },
-    { name: "Opsgenie", description: "Incident management" },
+    { name: "Jira Software", description: t("cloudMigration.products.jiraSoftware") },
+    { name: "Jira Service Management", description: t("cloudMigration.products.jiraServiceManagement") },
+    { name: "Confluence", description: t("cloudMigration.products.confluence") },
+    { name: "Jira Work Management", description: t("cloudMigration.products.jiraWorkManagement") },
+    { name: "Bitbucket", description: t("cloudMigration.products.bitbucket") },
+    { name: "Opsgenie", description: t("cloudMigration.products.opsgenie") },
   ];
 
   return (
@@ -263,31 +263,30 @@ export default function CloudMigration() {
               <div className="flex items-center gap-4 mb-6">
                 <img src={atlassianIcon} alt="Atlassian" className="h-10" />
                 <span className="text-sm font-medium px-3 py-1 bg-primary/10 rounded-full text-primary">
-                  Cloud Migration Experts
+                  {t("cloudMigration.badge")}
                 </span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Migrate to{" "}
-                <span className="text-primary">Atlassian Cloud</span>{" "}
-                with Confidence
+                {t("cloudMigration.title")}{" "}
+                <span className="text-primary">{t("cloudMigration.titleHighlight")}</span>{" "}
+                {t("cloudMigration.titleEnd")}
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 max-w-xl">
-                Seamless migration of your Jira, Confluence, and Atlassian products 
-                to the cloud. Zero downtime, zero data loss, maximum efficiency.
+                {t("cloudMigration.subtitle")}
               </p>
 
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button size="lg" className="group" asChild>
                   <Link to="/contact">
-                    Start Your Migration
+                    {t("cloudMigration.startMigration")}
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <Link to="/contact">
-                    Free Assessment
+                    {t("cloudMigration.freeAssessment")}
                   </Link>
                 </Button>
               </div>
@@ -295,8 +294,8 @@ export default function CloudMigration() {
               <div className="flex items-center gap-6">
                 <img src={goldPartner} alt="Atlassian Gold Partner" className="h-16" />
                 <div className="text-sm text-muted-foreground">
-                  <p className="font-semibold text-foreground">Atlassian Gold Solution Partner</p>
-                  <p>Certified Cloud Migration Specialists</p>
+                  <p className="font-semibold text-foreground">{t("cloudMigration.goldPartnerCert")}</p>
+                  <p>{t("cloudMigration.goldPartnerSub")}</p>
                 </div>
               </div>
             </motion.div>
@@ -313,9 +312,9 @@ export default function CloudMigration() {
                 
                 <div className="grid grid-cols-3 gap-4 mt-8">
                   {[
-                    { label: "Migrations Completed", value: "80+" },
-                    { label: "Uptime", value: "99.9%" },
-                    { label: "Data Integrity", value: "100%" },
+                    { label: t("cloudMigration.migrationsCompleted"), value: "80+" },
+                    { label: t("cloudMigration.uptime"), value: "99.9%" },
+                    { label: t("cloudMigration.dataIntegrity"), value: "100%" },
                   ].map((stat, i) => (
                     <motion.div
                       key={stat.label}
@@ -338,7 +337,7 @@ export default function CloudMigration() {
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 <CheckCircle2 className="inline w-4 h-4 mr-1" />
-                Zero Downtime
+                {t("cloudMigration.zeroDowntime")}
               </motion.div>
 
               <motion.div
@@ -347,7 +346,7 @@ export default function CloudMigration() {
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 <Shield className="inline w-4 h-4 mr-1" />
-                Data Protected
+                {t("cloudMigration.dataProtected")}
               </motion.div>
             </motion.div>
           </div>
@@ -373,12 +372,11 @@ export default function CloudMigration() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Migrate to{" "}
-              <span className="text-primary">Atlassian Cloud?</span>
+              {t("cloudMigration.whyTitle")}{" "}
+              <span className="text-primary">{t("cloudMigration.whyTitleHighlight")}</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of organizations that have already made the move to a 
-              more secure, scalable, and efficient cloud infrastructure.
+              {t("cloudMigration.whySubtitle")}
             </p>
           </motion.div>
 
@@ -414,11 +412,10 @@ export default function CloudMigration() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our <span className="text-primary">Migration Process</span>
+              {t("cloudMigration.processTitle")} <span className="text-primary">{t("cloudMigration.processTitleHighlight")}</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A proven methodology that ensures a smooth transition with minimal 
-              disruption to your teams.
+              {t("cloudMigration.processSubtitle")}
             </p>
           </motion.div>
 
@@ -503,10 +500,10 @@ export default function CloudMigration() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Products We <span className="text-primary">Migrate</span>
+              {t("cloudMigration.productsTitle")} <span className="text-primary">{t("cloudMigration.productsTitleHighlight")}</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Full migration support for the complete Atlassian ecosystem.
+              {t("cloudMigration.productsSubtitle")}
             </p>
           </motion.div>
 
@@ -546,30 +543,30 @@ export default function CloudMigration() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose <span className="text-primary">Quabu</span> for Your Migration?
+                {t("cloudMigration.whyQuabuTitle")} <span className="text-primary">{t("cloudMigration.whyQuabuHighlight")}</span> {t("cloudMigration.whyQuabuEnd")}
               </h2>
               
               <div className="space-y-6">
                 {[
                   {
-                    icon: Users,
-                    title: "Expert Team",
-                    description: "Certified Atlassian specialists with hundreds of successful migrations.",
+                    icon: Shield,
+                    title: t("cloudMigration.whyItems.team.title"),
+                    description: t("cloudMigration.whyItems.team.desc"),
                   },
                   {
-                    icon: Shield,
-                    title: "Risk-Free Process",
-                    description: "Comprehensive testing and rollback plans ensure zero data loss.",
+                    icon: CheckCircle2,
+                    title: t("cloudMigration.whyItems.risk.title"),
+                    description: t("cloudMigration.whyItems.risk.desc"),
                   },
                   {
                     icon: Clock,
-                    title: "Minimal Downtime",
-                    description: "Strategic migration planning to minimize impact on your operations.",
+                    title: t("cloudMigration.whyItems.downtime.title"),
+                    description: t("cloudMigration.whyItems.downtime.desc"),
                   },
                   {
                     icon: Headphones,
-                    title: "Ongoing Support",
-                    description: "Post-migration support and training to ensure smooth adoption.",
+                    title: t("cloudMigration.whyItems.support.title"),
+                    description: t("cloudMigration.whyItems.support.desc"),
                   },
                 ].map((item, i) => (
                   <motion.div
@@ -601,10 +598,10 @@ export default function CloudMigration() {
               <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 border border-primary/20">
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    { value: "80+", label: "Migrations Completed" },
-                    { value: "50+", label: "Enterprise Clients" },
-                    { value: "100%", label: "Data Integrity" },
-                    { value: "24/7", label: "Support Available" },
+                    { value: "80+", label: t("cloudMigration.migrationsCompleted") },
+                    { value: "50+", label: t("cloudMigration.enterpriseClients") },
+                    { value: "100%", label: t("cloudMigration.dataIntegrity") },
+                    { value: "24/7", label: t("cloudMigration.supportAvailable") },
                   ].map((stat, i) => (
                     <motion.div
                       key={stat.label}
@@ -674,22 +671,21 @@ export default function CloudMigration() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-              Ready to Move to the Cloud?
+              {t("cloudMigration.ctaTitle")}
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Get a free migration assessment and discover how we can help you 
-              transition smoothly to Atlassian Cloud.
+              {t("cloudMigration.ctaSubtitle")}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" variant="secondary" className="group" asChild>
                 <Link to="/contact">
-                  Schedule Free Assessment
+                  {t("cloudMigration.scheduleFreeAssessment")}
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
                 <a href="mailto:hello@quabusolutions.com">
-                  Contact Sales
+                  {t("cloudMigration.contactSales")}
                 </a>
               </Button>
             </div>
