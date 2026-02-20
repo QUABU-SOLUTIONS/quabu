@@ -251,8 +251,14 @@ const es = {
       efficiency: { title: "Eficiencia Operativa", desc: "Buscamos la mejora continua de nuestros procesos internos, optimizando la eficiencia operativa para proporcionar soluciones TI de manera ágil y rentable." },
       responsibility: { title: "Responsabilidad Social Corporativa", desc: "Nos comprometemos a actuar de manera responsable y sostenible, contribuyendo positivamente a la sociedad y al medio ambiente en todas nuestras operaciones." },
     },
+    contactCta: {
+      title: "Contactarnos es Fácil",
+      subtitle: "Elige la opción que más te convenga, o deja que te llamemos nosotros",
+      solutions: { title: "Conoce Nuestras Soluciones", desc: "Descubre cómo podemos ayudarte a transformar tu negocio", btn: "Contáctanos" },
+      team: { title: "Únete a Nuestro Equipo", desc: "Sé parte de nuestra creciente familia de innovadores", btn: "Ver Carreras" },
+      coffee: { title: "Tomemos un Café", desc: "Agenda una charla informal sobre tus necesidades", btn: "Reserva una Llamada" },
+    },
   },
-  // Accelerator template
   acceleratorTemplate: {
     digitalAccelerator: "Acelerador Digital",
     allAccelerators: "Todos los Aceleradores Digitales",

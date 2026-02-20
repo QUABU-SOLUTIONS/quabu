@@ -251,8 +251,14 @@ const en = {
       efficiency: { title: "Operative Efficiency", desc: "We seek continuous improvement of our internal processes, optimising operational efficiency to provide IT solutions in an agile and cost-effective manner." },
       responsibility: { title: "Corporate Social Responsibility", desc: "We commit to act in a responsible and sustainable manner, positively contributing to society and the environment in all our operations." },
     },
+    contactCta: {
+      title: "It's Easy to Contact Us",
+      subtitle: "Choose the option that suits you best, or let us call you instead",
+      solutions: { title: "Learn About Our Solutions", desc: "Discover how we can help transform your business", btn: "Contact Us" },
+      team: { title: "Join Our Team", desc: "Be part of our growing family of innovators", btn: "View Careers" },
+      coffee: { title: "Let's Grab a Coffee", desc: "Schedule a casual chat about your needs", btn: "Book a Call" },
+    },
   },
-  // Accelerator template
   acceleratorTemplate: {
     digitalAccelerator: "Digital Accelerator",
     allAccelerators: "All Digital Accelerators",

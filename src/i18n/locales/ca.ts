@@ -251,8 +251,14 @@ const ca = {
       efficiency: { title: "Eficiència Operativa", desc: "Busquem la millora contínua dels nostres processos interns, optimitzant l'eficiència operativa per proporcionar solucions TI de manera àgil i rendible." },
       responsibility: { title: "Responsabilitat Social Corporativa", desc: "Ens comprometem a actuar de manera responsable i sostenible, contribuint positivament a la societat i al medi ambient en totes les nostres operacions." },
     },
+    contactCta: {
+      title: "Contactar-nos és Fàcil",
+      subtitle: "Tria l'opció que més t'encaixi, o deixa que et truquem nosaltres",
+      solutions: { title: "Coneix les Nostres Solucions", desc: "Descobreix com podem ajudar-te a transformar el teu negoci", btn: "Contacta'ns" },
+      team: { title: "Uneix-te al Nostre Equip", desc: "Forma part de la nostra creixent família d'innovadors", btn: "Veure Carreres" },
+      coffee: { title: "Prenem un Cafè", desc: "Programa una xerrada informal sobre les teves necessitats", btn: "Reserva una Trucada" },
+    },
   },
-  // Accelerator template
   acceleratorTemplate: {
     digitalAccelerator: "Accelerador Digital",
     allAccelerators: "Tots els Acceleradors Digitals",
