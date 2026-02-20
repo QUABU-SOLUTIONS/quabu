@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { SEO } from "@/components/SEO";
 import { 
   Megaphone, 
   TrendingUp, 
@@ -476,6 +477,11 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
 
   return (
     <Layout>
+      <SEO
+        path="/accelerators"
+        title="Atlassian Digital Accelerators | Quabu Solutions"
+        description="Discover Quabu's ready-to-deploy Digital Accelerators for Jira and Confluence. Pre-built solutions for Marketing, Sales, HR, Finance, IT, Operations and more."
+      />
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center section-padding overflow-hidden">
         <AnimatedHeroBackground />

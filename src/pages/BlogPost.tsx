@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -1102,6 +1103,30 @@ export default function BlogPost() {
 
   return (
     <Layout>
+      <SEO
+        path={`/blog/${post.id}`}
+        title={`${post.title} | Quabu Blog`}
+        description={post.excerpt}
+        image={post.image}
+        type="article"
+        publishedTime={new Date(post.date).toISOString()}
+        tags={post.tags}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          description: post.excerpt,
+          image: post.image,
+          datePublished: new Date(post.date).toISOString(),
+          author: { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
+          publisher: {
+            "@type": "Organization",
+            name: "Quabu",
+            logo: { "@type": "ImageObject", url: "https://www.quabusolutions.com/favicon.png" },
+          },
+          mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.quabusolutions.com/blog/${post.id}` },
+        }}
+      />
       {/* Hero */}
       <section className="relative">
         <div className="absolute inset-0 h-[50vh]">

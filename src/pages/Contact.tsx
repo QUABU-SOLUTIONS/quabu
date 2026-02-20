@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -138,6 +139,11 @@ export default function Contact() {
 
   return (
     <Layout>
+      <SEO
+        path="/contact"
+        title="Contact Quabu | Get in Touch with Our Atlassian Experts"
+        description="Have a question or ready to transform your Atlassian setup? Contact Quabu's experts for a free consultation on Jira, Confluence, and custom Atlassian solutions."
+      />
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
