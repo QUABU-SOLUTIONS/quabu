@@ -60,7 +60,14 @@ export function SEO({
     "@type": "Organization",
     name: "Quabu",
     url: BASE_URL,
-    logo: `${BASE_URL}/favicon.png`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/favicon.png`,
+    },
+    description: "Atlassian Gold Solution Partner offering Digital Accelerators and custom Atlassian solutions for enterprises.",
+    foundingDate: "2014",
+    areaServed: ["US", "ES", "EU"],
+    knowsAbout: ["Atlassian", "Jira", "Confluence", "Digital Transformation", "Cloud Migration", "IT Service Management"],
     sameAs: [
       "https://marketplace.atlassian.com/vendors/1220154/quabu",
     ],
@@ -68,7 +75,21 @@ export function SEO({
       "@type": "ContactPoint",
       contactType: "customer support",
       email: "hello@quabusolutions.com",
+      availableLanguage: ["English", "Spanish", "Catalan"],
     },
+    address: [
+      {
+        "@type": "PostalAddress",
+        addressLocality: "Miami",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
+      {
+        "@type": "PostalAddress",
+        addressLocality: "Barcelona",
+        addressCountry: "ES",
+      },
+    ],
   };
 
   const finalSchema = schema ?? orgSchema;
@@ -91,6 +112,11 @@ export function SEO({
         />
       ))}
       <link rel="alternate" hrefLang="x-default" href={canonical} />
+
+      {/* AI / LLM discovery */}
+      <link rel="alternate" type="text/markdown" href={`${BASE_URL}/llms.txt`} title="LLMs.txt — AI-readable site summary" />
+      <meta name="llms-txt" content={`${BASE_URL}/llms.txt`} />
+      <meta name="ai-content-declaration" content="This site provides AI-readable content at /llms.txt and /llms-full.txt" />
 
       {/* Open Graph */}
       <meta property="og:title" content={resolvedTitle} />
