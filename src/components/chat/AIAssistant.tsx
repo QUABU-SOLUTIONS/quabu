@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
+import { LanguageSelector } from "@/components/LanguageSelector";
 import { 
   MessageCircle, 
   X, 
@@ -117,12 +119,13 @@ async function streamChat({
 
 export function AIAssistant() {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! 👋 I'm Quabu's AI assistant. I can help you learn about our accelerators, services, and how we can help transform your business. What would you like to know?",
+      content: t("chat.welcomeMessage"),
     },
   ]);
   const [input, setInput] = useState("");
@@ -180,26 +183,31 @@ export function AIAssistant() {
   };
 
   const suggestedQuestions = [
-    "What are digital accelerators?",
-    "Tell me about cloud migration",
-    "How can you help my business?",
+    t("chat.suggestedQ1"),
+    t("chat.suggestedQ2"),
+    t("chat.suggestedQ3"),
   ];
 
   return (
     <>
-      {/* Chat Toggle Button */}
+      {/* Language selector + Chat Toggle Button - always visible when chat is closed */}
       <AnimatePresence>
         {!isOpen && (
-          <motion.button
+          <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
-            onClick={() => setIsOpen(true)}
-            className="fixed bottom-24 right-6 z-50 w-14 h-14 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center group"
+            className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2"
           >
-            <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" />
-            <span className="absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full animate-pulse" />
-          </motion.button>
+            <LanguageSelector />
+            <motion.button
+              onClick={() => setIsOpen(true)}
+              className="w-14 h-14 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center group"
+            >
+              <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" />
+              <span className="absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full animate-pulse" />
+            </motion.button>
+          </motion.div>
         )}
       </AnimatePresence>
 
@@ -215,7 +223,7 @@ export function AIAssistant() {
               height: isMinimized ? "auto" : "500px",
             }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-24 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-card border border-border rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+            className="fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-card border border-border rounded-2xl shadow-2xl overflow-hidden flex flex-col"
           >
             {/* Header */}
             <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground p-4 flex items-center justify-between">
@@ -224,8 +232,8 @@ export function AIAssistant() {
                   <Sparkles className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Quabu Assistant</h3>
-                  <p className="text-xs opacity-80">Ask me anything</p>
+                  <h3 className="font-semibold">{t("chat.title")}</h3>
+                  <p className="text-xs opacity-80">{t("chat.subtitle")}</p>
                 </div>
               </div>
               <div className="flex items-center gap-1">
@@ -308,7 +316,7 @@ export function AIAssistant() {
                   {/* Suggested Questions */}
                   {messages.length === 1 && (
                     <div className="mt-4 space-y-2">
-                      <p className="text-xs text-muted-foreground">Quick questions:</p>
+                      <p className="text-xs text-muted-foreground">{t("chat.quickQuestions")}</p>
                       <div className="flex flex-wrap gap-2">
                         {suggestedQuestions.map((q, idx) => (
                           <button
@@ -331,7 +339,7 @@ export function AIAssistant() {
                       ref={inputRef}
                       value={input}
                       onChange={(e) => setInput(e.target.value)}
-                      placeholder="Type your message..."
+                      placeholder={t("chat.placeholder")}
                       disabled={isLoading}
                       className="flex-1"
                     />
