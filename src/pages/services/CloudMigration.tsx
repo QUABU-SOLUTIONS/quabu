@@ -218,87 +218,35 @@ const CloudIllustration = ({ variant = "default" }: { variant?: "default" | "sec
   );
 };
 
-const benefits = [
-  {
-    icon: Shield,
-    title: "Maximum Security",
-    description: "Enterprise-grade security with automatic backups, data encryption, and compliance certifications.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Automatic Scalability",
-    description: "Your infrastructure grows with your business without manual intervention or downtime.",
-  },
-  {
-    icon: Zap,
-    title: "Superior Performance",
-    description: "Faster load times, optimized performance, and 99.9% guaranteed uptime.",
-  },
-  {
-    icon: RefreshCw,
-    title: "Automatic Updates",
-    description: "Always stay on the latest version with automatic updates and zero maintenance.",
-  },
-  {
-    icon: Lock,
-    title: "Advanced Access Control",
-    description: "Granular permissions, SSO integration, and advanced user management.",
-  },
-  {
-    icon: Headphones,
-    title: "Priority Support",
-    description: "Access to premium Atlassian support with faster response times.",
-  },
-];
-
-const migrationPhases = [
-  {
-    phase: "01",
-    title: "Assessment & Planning",
-    description: "Complete analysis of your current environment, data audit, and custom migration roadmap.",
-    icon: FileCheck,
-    duration: "1-2 weeks",
-  },
-  {
-    phase: "02",
-    title: "Environment Setup",
-    description: "Cloud environment configuration, security settings, and integration preparation.",
-    icon: Settings,
-    duration: "1 week",
-  },
-  {
-    phase: "03",
-    title: "Data Migration",
-    description: "Secure transfer of projects, users, workflows, and configurations with zero data loss.",
-    icon: Database,
-    duration: "2-4 weeks",
-  },
-  {
-    phase: "04",
-    title: "Testing & Validation",
-    description: "Comprehensive testing of all functionalities, integrations, and user acceptance.",
-    icon: CheckCircle2,
-    duration: "1 week",
-  },
-  {
-    phase: "05",
-    title: "Go-Live & Support",
-    description: "Final migration, user training, and dedicated post-migration support.",
-    icon: CloudUpload,
-    duration: "Ongoing",
-  },
-];
-
-const products = [
-  { name: "Jira Software", description: "Agile project management" },
-  { name: "Jira Service Management", description: "IT service desk" },
-  { name: "Confluence", description: "Team collaboration" },
-  { name: "Jira Work Management", description: "Business projects" },
-  { name: "Bitbucket", description: "Code repository" },
-  { name: "Opsgenie", description: "Incident management" },
-];
-
 export default function CloudMigration() {
+  const { t } = useTranslation();
+
+  const benefits = [
+    { icon: Shield, title: t("cloudMigration.benefits.security.title"), description: t("cloudMigration.benefits.security.desc") },
+    { icon: TrendingUp, title: t("cloudMigration.benefits.scalability.title"), description: t("cloudMigration.benefits.scalability.desc") },
+    { icon: Zap, title: t("cloudMigration.benefits.performance.title"), description: t("cloudMigration.benefits.performance.desc") },
+    { icon: RefreshCw, title: t("cloudMigration.benefits.updates.title"), description: t("cloudMigration.benefits.updates.desc") },
+    { icon: Lock, title: t("cloudMigration.benefits.access.title"), description: t("cloudMigration.benefits.access.desc") },
+    { icon: Headphones, title: t("cloudMigration.benefits.support.title"), description: t("cloudMigration.benefits.support.desc") },
+  ];
+
+  const migrationPhases = [
+    { phase: "01", title: t("cloudMigration.phases.p01.title"), description: t("cloudMigration.phases.p01.desc"), icon: FileCheck, duration: t("cloudMigration.phases.p01.duration") },
+    { phase: "02", title: t("cloudMigration.phases.p02.title"), description: t("cloudMigration.phases.p02.desc"), icon: Settings, duration: t("cloudMigration.phases.p02.duration") },
+    { phase: "03", title: t("cloudMigration.phases.p03.title"), description: t("cloudMigration.phases.p03.desc"), icon: Database, duration: t("cloudMigration.phases.p03.duration") },
+    { phase: "04", title: t("cloudMigration.phases.p04.title"), description: t("cloudMigration.phases.p04.desc"), icon: CheckCircle2, duration: t("cloudMigration.phases.p04.duration") },
+    { phase: "05", title: t("cloudMigration.phases.p05.title"), description: t("cloudMigration.phases.p05.desc"), icon: CloudUpload, duration: t("cloudMigration.phases.p05.duration") },
+  ];
+
+  const products = [
+    { name: "Jira Software", description: "Agile project management" },
+    { name: "Jira Service Management", description: "IT service desk" },
+    { name: "Confluence", description: "Team collaboration" },
+    { name: "Jira Work Management", description: "Business projects" },
+    { name: "Bitbucket", description: "Code repository" },
+    { name: "Opsgenie", description: "Incident management" },
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
