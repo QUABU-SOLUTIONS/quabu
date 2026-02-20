@@ -656,10 +656,10 @@ export default function About() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              It's Easy to Contact Us
+              {t("about.contactCta.title")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Choose the option that suits you best, or let us call you instead
+              {t("about.contactCta.subtitle")}
             </p>
           </motion.div>
 
@@ -681,13 +681,13 @@ export default function About() {
               >
                 <Briefcase className="w-8 h-8 text-white" />
               </motion.div>
-              <h3 className="text-xl font-bold mb-3">Learn About Our Solutions</h3>
+              <h3 className="text-xl font-bold mb-3">{t("about.contactCta.solutions.title")}</h3>
               <p className="text-muted-foreground mb-6">
-                Discover how we can help transform your business
+                {t("about.contactCta.solutions.desc")}
               </p>
               <Button className="w-full group" asChild>
                 <Link to="/contact">
-                  Contact Us
+                  {t("about.contactCta.solutions.btn")}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
@@ -704,13 +704,13 @@ export default function About() {
               >
                 <Users className="w-8 h-8 text-white" />
               </motion.div>
-              <h3 className="text-xl font-bold mb-3">Join Our Team</h3>
+              <h3 className="text-xl font-bold mb-3">{t("about.contactCta.team.title")}</h3>
               <p className="text-muted-foreground mb-6">
-                Be part of our growing family of innovators
+                {t("about.contactCta.team.desc")}
               </p>
               <Button variant="outline" className="w-full group" asChild>
                 <a href="https://www.linkedin.com/company/quabu-solutions" target="_blank" rel="noopener noreferrer">
-                  View Careers
+                  {t("about.contactCta.team.btn")}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
@@ -727,13 +727,13 @@ export default function About() {
               >
                 <Coffee className="w-8 h-8 text-white" />
               </motion.div>
-              <h3 className="text-xl font-bold mb-3">Let's Grab a Coffee</h3>
+              <h3 className="text-xl font-bold mb-3">{t("about.contactCta.coffee.title")}</h3>
               <p className="text-muted-foreground mb-6">
-                Schedule a casual chat about your needs
+                {t("about.contactCta.coffee.desc")}
               </p>
               <Button variant="outline" className="w-full group" asChild>
                 <Link to="/contact">
-                  Book a Call
+                  {t("about.contactCta.coffee.btn")}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
