@@ -1,80 +1,45 @@
 import { Monitor } from "lucide-react";
-import AcceleratorPageTemplate, { AcceleratorConfig } from "@/components/accelerators/AcceleratorPageTemplate";
-
-const itConfig: AcceleratorConfig = {
-  id: "it",
-  name: "Information Technology",
-  tagline: "Deliver IT Excellence at Scale",
-  description: "Transform your IT service management with automated workflows for incident management, change control, security monitoring, and software development. Ensure reliability and accelerate innovation.",
-  icon: Monitor,
-  gradientFrom: "from-blue-500",
-  gradientTo: "to-cyan-500",
-  workflows: [
-    {
-      id: "TI-GTI-001",
-      name: "Ticket & Incident Management",
-      description: "ITIL-aligned incident management with automated triage, escalation, and resolution tracking."
-    },
-    {
-      id: "TI-AUS-002",
-      name: "Software Update & Patch Automation",
-      description: "Automated patch management with testing workflows, rollback capabilities, and compliance tracking."
-    },
-    {
-      id: "TI-CCI-003",
-      name: "Infrastructure & Application Change Control",
-      description: "CAB-ready change management with risk assessment, approval workflows, and implementation tracking."
-    },
-    {
-      id: "TI-MDS-004",
-      name: "Server & Network Performance Monitoring",
-      description: "Real-time infrastructure monitoring with alerting, capacity planning, and performance optimization."
-    },
-    {
-      id: "TI-GAP-005",
-      name: "User Access & Permission Management",
-      description: "Identity and access management with provisioning, periodic reviews, and compliance reporting."
-    },
-    {
-      id: "TI-MGH-006",
-      name: "Hardware Maintenance & Management",
-      description: "Asset lifecycle management from procurement to disposal with maintenance scheduling."
-    },
-    {
-      id: "TI-SPD-007",
-      name: "Software Development Project Tracking",
-      description: "Agile/Scrum project management with sprint planning, backlog management, and release tracking."
-    },
-    {
-      id: "TI-MSI-008",
-      name: "Security Monitoring & Incident Response",
-      description: "Security operations workflows with threat detection, incident response, and vulnerability management."
-    },
-    {
-      id: "TI-GLA-009",
-      name: "IT License & Asset Management",
-      description: "Software asset management with license tracking, compliance, and optimization recommendations."
-    },
-  ],
-  benefits: [
-    "Reduce incident resolution by 45%",
-    "Improve change success rate",
-    "Enhance security posture",
-    "Automate routine tasks",
-    "Better resource visibility",
-    "Streamline compliance",
-    "Accelerate deployments",
-    "Improve service quality"
-  ],
-  stats: [
-    { value: "45%", label: "Faster Resolution" },
-    { value: "9", label: "Workflows" },
-    { value: "99.9%", label: "Uptime" }
-  ],
-  prevAccelerator: { name: "Finances", href: "/accelerators/finance" },
-  nextAccelerator: { name: "Customer Service", href: "/accelerators/customer-service" }
-};
+import { useTranslation } from "react-i18next";
+import AcceleratorPageTemplate from "@/components/accelerators/AcceleratorPageTemplate";
 
 export default function ITAccelerator() {
-  return <AcceleratorPageTemplate config={itConfig} />;
+  const { t } = useTranslation();
+
+  const it = t("acceleratorsPage.accelerators.it", { returnObjects: true }) as {
+    name: string;
+    tagline: string;
+    description: string;
+    workflows: { name: string; description: string }[];
+    benefits: string[];
+    stats: { value: string; label: string }[];
+    prevAccelerator: string;
+    nextAccelerator: string;
+  };
+
+  const config = {
+    id: "it",
+    name: it.name,
+    tagline: it.tagline,
+    description: it.description,
+    icon: Monitor,
+    gradientFrom: "from-blue-500",
+    gradientTo: "to-cyan-500",
+    workflows: [
+      { id: "TI-GTI-001", name: it.workflows[0].name, description: it.workflows[0].description },
+      { id: "TI-AUS-002", name: it.workflows[1].name, description: it.workflows[1].description },
+      { id: "TI-CCI-003", name: it.workflows[2].name, description: it.workflows[2].description },
+      { id: "TI-MDS-004", name: it.workflows[3].name, description: it.workflows[3].description },
+      { id: "TI-GAP-005", name: it.workflows[4].name, description: it.workflows[4].description },
+      { id: "TI-MGH-006", name: it.workflows[5].name, description: it.workflows[5].description },
+      { id: "TI-SPD-007", name: it.workflows[6].name, description: it.workflows[6].description },
+      { id: "TI-MSI-008", name: it.workflows[7].name, description: it.workflows[7].description },
+      { id: "TI-GLA-009", name: it.workflows[8].name, description: it.workflows[8].description },
+    ],
+    benefits: it.benefits,
+    stats: it.stats,
+    prevAccelerator: { name: it.prevAccelerator, href: "/accelerators/finance" },
+    nextAccelerator: { name: it.nextAccelerator, href: "/accelerators/customer-service" },
+  };
+
+  return <AcceleratorPageTemplate config={config} />;
 }
