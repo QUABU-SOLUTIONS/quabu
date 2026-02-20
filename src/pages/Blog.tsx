@@ -73,6 +73,8 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "quabu-opens-miami-office", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 20, 2026", readTime: "2 min", featured: true },
+  { id: "building-atlassian-apps-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "February 18, 2026", readTime: "6 min", featured: true },
   { id: "atlassian-google-cloud-alliance", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 10, 2026", readTime: "7 min", featured: true },
   { id: "exploring-atlassian-remote-mcp-server", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 7, 2026", readTime: "5 min", featured: true },
   { id: "atlassian-rovo-mcp-server-ga", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 5, 2026", readTime: "4 min", featured: true },
@@ -86,6 +88,28 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "quabu-opens-miami-office",
+    title: "🌴 Quabu Opens an Office in Miami",
+    excerpt: "We are thrilled to announce that Quabu now has an office in Miami — one of the most exciting emerging tech hubs. We're growing, and new career opportunities are coming soon!",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "February 20, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/QuabuOficinaMiami.png",
+    featured: true,
+  },
+  {
+    id: "building-atlassian-apps-2026",
+    title: "🚀 How to Build Apps & Integrations for Atlassian in 2026",
+    excerpt: "The Atlassian ecosystem is changing fast. At Quabu we stay ahead — from Forge UI Kit to AI Apps Builder, Rovo Studio, and MCPs. Discover the best approach for your team.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "February 18, 2026",
+    readTime: "6 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/QuabuAppsAtlassian2026.png",
+    featured: true,
+  },
   {
     id: "atlassian-google-cloud-alliance",
     title: "Atlassian and Google Cloud: An Alliance Redefining Enterprise Productivity",
