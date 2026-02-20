@@ -20,6 +20,119 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "quabu-opens-miami-office",
+    title: "🌴 Quabu Opens an Office in Miami",
+    excerpt: "We are thrilled to announce that Quabu now has an office in Miami — one of the most exciting emerging tech hubs. We're growing, and new career opportunities are coming soon!",
+    content: `
+## Quabu is Growing: We Now Have an Office in Miami!
+
+At Quabu, we continue to grow and we are excited to announce that **we now have an office in Miami**.
+
+Miami is rapidly emerging as a major technology hub — a kind of new Silicon Valley where innovation, talent, and global vision come together. We want to be there, actively participating in this ecosystem and helping build the future.
+
+## Why Miami?
+
+Miami has been consolidating its position as one of the most dynamic tech cities in the world. With a vibrant startup scene, access to international markets, and a thriving community of entrepreneurs and investors, it's the perfect base for Quabu's continued expansion.
+
+Being present in Miami means we can better serve clients across the Americas while remaining connected to the global Atlassian ecosystem.
+
+## Career Opportunities Coming Soon
+
+🚀 **We will soon open new career opportunities in Miami.**
+
+If you would like to join Quabu and be part of this exciting new chapter, we'd love to hear from you. We're looking for talented people who share our passion for technology, Atlassian solutions, and building things that matter.
+
+📩 [Work with us](https://quabuapps.atlassian.net/servicedesk/customer/portal/1/group/1/create/47)
+
+## We Keep Moving Forward
+
+This new office is a statement of intent: Quabu is here to grow, to innovate, and to bring the best Atlassian solutions to more companies around the world.
+
+Stay tuned — more exciting news is coming!
+    `,
+    category: "News",
+    date: "February 20, 2026",
+    readTime: "2 min read",
+    author: "Quabu Team",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/QuabuOficinaMiami.png",
+    tags: ["Quabu", "Miami", "Office", "Hiring", "Growth"],
+  },
+  {
+    id: "building-atlassian-apps-2026",
+    title: "🚀 How to Build Apps & Integrations for Atlassian in 2026",
+    excerpt: "The Atlassian ecosystem is changing fast. At Quabu we stay ahead — from Forge UI Kit to AI Apps Builder, Rovo Studio, and MCPs. Discover the best approach for your team.",
+    content: `
+## The Atlassian Ecosystem Is Evolving Fast
+
+The world of **Atlassian** is changing rapidly, and at **Quabu** we like to stay one step ahead. **Building apps for Jira or Confluence is not what it used to be**: today there are much faster, more powerful and secure ways to do it, and we want to show you how.
+
+---
+
+## Traditional Code: Full Control with Forge UI Kit
+
+If your team has developers, coding with **Forge UI Kit** remains a solid choice. You can create **native apps**, with your own interface and logic, completely secure and auditable.
+
+The process involves writing JavaScript or TypeScript, configuring resolvers, triggers and the \`manifest.yml\`. It's not just about writing code; it's about thinking through flows, permissions and the user experience. Yes, it takes time, but it gives you **absolute control** over your app — something critical for complex projects or those that need to maintain security and scalability long-term.
+
+**Approximate time:**
+
+- Simple apps: **1–3 days**
+- More complete apps: **1–2 weeks**
+- Complex production apps: **several months**
+
+---
+
+## AI Apps Builder: From Idea to App in Minutes
+
+Not every team has time or developers. This is where [**AI Apps Builder** (like the one by SaaSJet)](https://marketplace.atlassian.com/apps/1238421/ai-apps-builder-for-jira-no-code-way-to-build-forge-apps) comes in. Just describe what you want in natural language and the AI generates the **frontend, backend, manifest and scopes** ready to install.
+
+For example, you could say:
+
+> *"Create a panel showing issues assigned to the user with a delivery date in the next 7 days."*
+
+In minutes you have a functional app that you can use as-is or download and improve with a developer. This enables **rapid prototyping** and immediate results without needing to learn Forge or React.
+
+---
+
+## Rovo Studio: Build with AI (Early Access)
+
+Atlassian has also taken a huge step with **Rovo Studio**, its new *Build with AI* tool. Here we're not just talking about apps: you can create **AI agents, automations and full apps** from a simple natural language prompt, and publish them directly in Jira or Confluence.
+
+That said, **Rovo Studio (its Build with AI part) is still in Early Access**, so only some users can try it and it's subject to changes. Even so, it shows where app creation in Atlassian is heading: everything integrated, from idea to ready-to-use solution, without writing code. **It's like having an assistant that understands exactly what you want and turns it into a real, functional solution.**
+
+---
+
+## Advanced Tools: Rovo Dev, VS Code, Antigravity and MCPs
+
+For teams that want **the best of both worlds**, at **Quabu** we explore how to combine these advanced tools:
+
+- **Rovo Dev:** an IDE that integrates AI, code development and Forge to maintain full control and productivity.
+- **VS Code or Antigravity:** environments for fast iteration and testing ideas without losing security, perfectly integrated with Rovo Dev.
+- **MCPs for Atlassian and Forge:** add power to your IDEs, install the Rovo and Atlassian Apps.
+
+This means you can have **full control**, while accelerating development and using the best of AI-assisted generation.
+
+---
+
+## In Summary: Which Option Is Right for You?
+
+- **Forge + UI Kit:** Full control, ideal if you have developers and complex projects.
+- **AI Apps Builder:** Rapid prototyping, for teams with fewer technical resources.
+- **Rovo Studio (Early Access):** Everything integrated — apps + automations + agents, no code.
+- **Rovo Dev + VS Studio + MCPs:** Advanced hybrid development, full control with speed and security.
+
+At Quabu we test all these options, see what works best in each case and help you get the most out of them. We want you to learn with us and make your Atlassian projects easier, faster and more efficient.
+
+*📣 If you want to keep your Jira and Confluence always at the cutting edge, **follow our blog**. At Quabu we share real experiences, practical advice and all the latest from the Atlassian ecosystem so you don't have to waste time guessing what works.*
+    `,
+    category: "Articles",
+    date: "February 18, 2026",
+    readTime: "6 min read",
+    author: "Quabu Team",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/QuabuAppsAtlassian2026.png",
+    tags: ["Atlassian", "Forge", "AI Apps Builder", "Rovo Studio", "Development", "2026"],
+  },
+  {
     id: "atlassian-google-cloud-alliance",
     title: "Atlassian and Google Cloud: An Alliance Redefining Enterprise Productivity",
     excerpt: "Atlassian and Google Cloud announce a historic partnership to bring advanced AI to millions of users. Discover what it means for your business and how Quabu can help you maximize its potential.",
