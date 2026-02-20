@@ -67,6 +67,7 @@ const appsSubmenu = [
 ];
 
 const aboutSubmenu = [
+  { name: "Quabu Europe", href: "http://quabu.eu/", isExternal: true, icon: "globe" },
   { name: "LinkedIn", href: "https://www.linkedin.com/company/quabu-solutions", isExternal: true, icon: "linkedin" },
   { name: "Twitter / X", href: "https://x.com/quabusolutions", isExternal: true, icon: "twitter" },
   { name: "YouTube", href: "https://www.youtube.com/@quabusolutions", isExternal: true, icon: "youtube" },
@@ -322,6 +323,7 @@ export function Header() {
                                   rel="noopener noreferrer"
                                   className="flex items-center gap-2"
                                 >
+                                  {subItem.icon === "globe" && <Globe className="w-4 h-4 text-primary" />}
                                   {subItem.icon === "linkedin" && <Linkedin className="w-4 h-4 text-primary" />}
                                   {subItem.icon === "twitter" && <Twitter className="w-4 h-4 text-primary" />}
                                   {subItem.icon === "youtube" && <Youtube className="w-4 h-4 text-primary" />}
@@ -526,6 +528,7 @@ export function Header() {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
                           >
+                            {subItem.icon === "globe" && <Globe className="w-4 h-4" />}
                             {subItem.icon === "linkedin" && <Linkedin className="w-4 h-4" />}
                             {subItem.icon === "twitter" && <Twitter className="w-4 h-4" />}
                             {subItem.icon === "youtube" && <Youtube className="w-4 h-4" />}
