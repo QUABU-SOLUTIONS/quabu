@@ -440,6 +440,7 @@ const en = {
     title: "Pre-Built Solutions for",
     titleHighlight: "Every Department",
     subtitle: "Skip months of development with our battle-tested Atlassian solutions. Install in days, customize to your needs, and scale with confidence.",
+    digitalAccelerator: "DIGITAL ACCELERATOR",
     learnMoreAbout: "Learn more about",
     accelerators: {
       marketing: {
