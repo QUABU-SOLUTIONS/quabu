@@ -478,6 +478,37 @@ const ca = {
       },
     },
   },
+  // Apps section
+  appsSection: {
+    badgeLabel: "Atlassian Marketplace",
+    title: "Les nostres",
+    titleHighlight: "Apps",
+    titleSuffix: "per a Jira Cloud",
+    subtitle: "Extensions potents creades pel nostre equip per millorar la teva experiència amb Atlassian. Amb la confiança de centenars d'equips arreu del món.",
+    viewAll: "Veure totes al Marketplace",
+    installs: "instal·lacions",
+    apps: {
+      customTemplates: {
+        name: "Custom Templates for Jira Cloud",
+        description: "Accelera els teus fluxos de treball amb plantilles predefinides. Crea incidències més ràpid i mantén la coherència en tots els teus projectes.",
+        badge: "Popular",
+      },
+      backupManager: {
+        name: "Backup Manager for Jira Cloud",
+        description: "Automatitza les teves còpies de seguretat de Jira amb integració segura d'AWS. Una solució fiable, eficient i sense complicacions.",
+        badge: "Essencial",
+      },
+      customLanguage: {
+        name: "Custom Language for Jira Cloud",
+        description: "Tradueix el teu lloc de Jira al català i comparteix-lo amb tots els teus usuaris. Fes Jira accessible per a tothom.",
+      },
+      taskLists: {
+        name: "Task Lists for Jira Cloud",
+        description: "Crea tasques simples en qualsevol incidència per controlar els petits detalls. Perfecte per a la gestió granular de tasques.",
+        badge: "Nou",
+      },
+    },
+  },
 };
 
 export default ca;

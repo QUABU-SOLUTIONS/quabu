@@ -478,6 +478,37 @@ const en = {
       },
     },
   },
+  // Apps section
+  appsSection: {
+    badgeLabel: "Atlassian Marketplace",
+    title: "Our",
+    titleHighlight: "Apps",
+    titleSuffix: "for Jira Cloud",
+    subtitle: "Powerful extensions built by our team to enhance your Atlassian experience. Trusted by hundreds of teams worldwide.",
+    viewAll: "View All on Marketplace",
+    installs: "installs",
+    apps: {
+      customTemplates: {
+        name: "Custom Templates for Jira Cloud",
+        description: "Speed up your workflows with predefined templates. Create issues faster and maintain consistency across your projects.",
+        badge: "Popular",
+      },
+      backupManager: {
+        name: "Backup Manager for Jira Cloud",
+        description: "Automate your Jira backups with secure AWS integration. Reliable, efficient, and hassle-free backup solution.",
+        badge: "Essential",
+      },
+      customLanguage: {
+        name: "Custom Language for Jira Cloud",
+        description: "Translate your Jira site into Catalan and share it with all your users. Make Jira accessible to everyone.",
+      },
+      taskLists: {
+        name: "Task Lists for Jira Cloud",
+        description: "Create simple tasks in any issue to keep control of the small details. Perfect for granular task management.",
+        badge: "New",
+      },
+    },
+  },
 };
 
 export default en;
