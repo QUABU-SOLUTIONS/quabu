@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link, useParams, Navigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -974,6 +975,7 @@ Ready to implement Kanban in your organization? Contact us for expert guidance o
 ];
 
 export default function BlogPost() {
+  const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find(p => p.id === id);
 
@@ -1009,7 +1011,7 @@ export default function BlogPost() {
               className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Blog
+              {t("blog.backToBlog")}
             </Link>
 
             <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full mb-4">
@@ -1098,8 +1100,8 @@ export default function BlogPost() {
               <div className="mt-8 p-6 bg-muted/50 rounded-xl">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div className="flex items-center gap-2">
-                    <Share2 className="w-5 h-5 text-muted-foreground" />
-                    <span className="font-medium">Share this article</span>
+                  <Share2 className="w-5 h-5 text-muted-foreground" />
+                    <span className="font-medium">{t("blog.share")}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Button variant="outline" size="icon" asChild>
@@ -1147,14 +1149,14 @@ export default function BlogPost() {
               >
                 {/* Author */}
                 <div className="p-6 bg-muted/50 rounded-xl">
-                  <h3 className="font-semibold mb-4">About the Author</h3>
+                  <h3 className="font-semibold mb-4">{t("blog.aboutAuthor")}</h3>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                       <User className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
                       <p className="font-medium">{post.author}</p>
-                      <p className="text-sm text-muted-foreground">Atlassian Experts</p>
+                      <p className="text-sm text-muted-foreground">{t("blog.atlassianExperts")}</p>
                     </div>
                   </div>
                 </div>
@@ -1163,7 +1165,7 @@ export default function BlogPost() {
                 <div className="p-6 bg-muted/50 rounded-xl">
                   <h3 className="font-semibold mb-4 flex items-center gap-2">
                     <BookOpen className="w-4 h-4" />
-                    Related Articles
+                    {t("blog.relatedArticles")}
                   </h3>
                   <div className="space-y-4">
                     {blogPosts
@@ -1187,12 +1189,12 @@ export default function BlogPost() {
 
                 {/* CTA */}
                 <div className="p-6 bg-primary rounded-xl text-primary-foreground">
-                  <h3 className="font-semibold mb-2">Need Help?</h3>
+                  <h3 className="font-semibold mb-2">{t("blog.needHelp")}</h3>
                   <p className="text-sm text-primary-foreground/80 mb-4">
-                    Our Atlassian experts are ready to help you optimize your workflows.
+                    {t("blog.needHelpDesc")}
                   </p>
                   <Button variant="secondary" size="sm" className="w-full" asChild>
-                    <Link to="/contact">Contact Us</Link>
+                    <Link to="/contact">{t("blog.contactUs")}</Link>
                   </Button>
                 </div>
               </motion.div>
@@ -1209,7 +1211,7 @@ export default function BlogPost() {
                 >
                   <span className="text-sm text-muted-foreground flex items-center gap-2 mb-2">
                     <ArrowLeft className="w-4 h-4" />
-                    Previous Article
+                    {t("blog.previousArticle")}
                   </span>
                   <h4 className="font-medium group-hover:text-primary transition-colors line-clamp-2">
                     {prevPost.title}
@@ -1222,7 +1224,7 @@ export default function BlogPost() {
                   className="group p-6 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors md:text-right md:ml-auto"
                 >
                   <span className="text-sm text-muted-foreground flex items-center gap-2 mb-2 md:justify-end">
-                    Next Article
+                    {t("blog.nextArticle")}
                     <ArrowRight className="w-4 h-4" />
                   </span>
                   <h4 className="font-medium group-hover:text-primary transition-colors line-clamp-2">
