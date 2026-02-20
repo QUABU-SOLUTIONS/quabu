@@ -495,22 +495,22 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
                 <Clock className="w-4 h-4" />
-                <span className="text-sm font-medium">Quick Implementation</span>
+                <span className="text-sm font-medium">{t("acceleratorTemplate.quickImplementation")}</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                From Installation to Production in Days
+                {t("acceleratorTemplate.fromInstallation")}
               </h2>
               <p className="text-white/70 max-w-2xl mx-auto">
-                Our accelerators are designed for rapid deployment without compromising on quality or customization
+                {t("acceleratorTemplate.fromInstallationSubtitle")}
               </p>
             </motion.div>
             
             <div className="grid md:grid-cols-4 gap-8">
               {[
-                { day: "Day 1", title: "Installation", desc: "Deploy the accelerator in your environment" },
-                { day: "Day 2-3", title: "Configuration", desc: "Customize workflows to your needs" },
-                { day: "Day 4-5", title: "Integration", desc: "Connect with existing systems" },
-                { day: "Day 6+", title: "Go Live", desc: "Start transforming your processes" },
+                { day: t("acceleratorTemplate.day1"), title: t("acceleratorTemplate.day1Title"), desc: t("acceleratorTemplate.day1Desc") },
+                { day: t("acceleratorTemplate.day23"), title: t("acceleratorTemplate.day23Title"), desc: t("acceleratorTemplate.day23Desc") },
+                { day: t("acceleratorTemplate.day45"), title: t("acceleratorTemplate.day45Title"), desc: t("acceleratorTemplate.day45Desc") },
+                { day: t("acceleratorTemplate.day6"), title: t("acceleratorTemplate.day6Title"), desc: t("acceleratorTemplate.day6Desc") },
               ].map((step, i) => (
                 <motion.div
                   key={i}
