@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, Zap, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import quabuIcon from "@/assets/quabu-icon.png";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
@@ -9,6 +10,8 @@ import atlassianServiceManagementPartner from "@/assets/atlassian-service-manage
 import { FuturisticRobotBackground } from "./FuturisticRobotBackground";
 
 export function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-secondary/30">
       {/* Background Pattern */}
@@ -56,7 +59,7 @@ export function HeroSection() {
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-balance overflow-hidden">
-              {["Accelerate", "Your"].map((word, i) => (
+              {[t("hero.title1"), t("hero.title2")].map((word, i) => (
                 <motion.span
                   key={i}
                   className="inline-block mr-[0.3em]"
@@ -73,7 +76,7 @@ export function HeroSection() {
                 animate={{ y: 0, opacity: 1, rotateX: 0 }}
                 transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               >
-                Digital Transformation
+                {t("hero.title3")}
               </motion.span>{" "}
               <motion.span
                 className="inline-block mr-[0.3em]"
@@ -81,7 +84,7 @@ export function HeroSection() {
                 animate={{ y: 0, opacity: 1, rotateX: 0 }}
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               >
-                with
+                {t("hero.title4")}
               </motion.span>{" "}
               <motion.span
                 className="bg-gradient-to-r from-[#0052CC] via-[#2684FF] to-[#0052CC] bg-clip-text text-transparent bg-[length:200%_auto] inline-block"
@@ -99,8 +102,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Pre-built, customizable solutions that get you from zero to production in weeks, not months. Built by
-              Atlassian experts for growing enterprises.
+              {t("hero.subtitle")}
             </p>
 
             {/* CTAs */}
@@ -112,7 +114,7 @@ export function HeroSection() {
               >
                 <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center shadow-lg hover:shadow-primary/40 transition-shadow duration-300" asChild>
                   <Link to="/accelerators">
-                    Explore Accelerators
+                    {t("hero.exploreAccelerators")}
                     <ArrowRight className="w-4 h-4 flex-shrink-0" />
                   </Link>
                 </Button>
@@ -123,7 +125,7 @@ export function HeroSection() {
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 <Button size="lg" className="text-base h-auto py-3 whitespace-normal text-center shadow-lg hover:shadow-primary/40 transition-shadow duration-300" asChild>
-                  <Link to="/contact">Schedule a Demo</Link>
+                  <Link to="/contact">{t("hero.scheduleDemo")}</Link>
                 </Button>
               </motion.div>
               <motion.div
@@ -133,7 +135,7 @@ export function HeroSection() {
               >
                 <Button size="lg" className="gap-2 text-base h-auto py-3 whitespace-normal text-center shadow-lg hover:shadow-accent/40 transition-shadow duration-300 bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary" asChild>
                   <Link to="/services/cloud-migration">
-                    Ascend to the Cloud
+                    {t("hero.ascendCloud")}
                     <Sparkles className="w-4 h-4 flex-shrink-0 animate-pulse" />
                   </Link>
                 </Button>
@@ -148,9 +150,9 @@ export function HeroSection() {
               className="mt-12 flex flex-wrap gap-6 justify-center lg:justify-start"
             >
               {[
-                { icon: Clock, text: "Deploy in Weeks" },
-                { icon: Shield, text: "Enterprise Ready" },
-                { icon: Zap, text: "100% Customizable" },
+                { icon: Clock, text: t("hero.deployInWeeks") },
+                { icon: Shield, text: t("hero.enterpriseReady") },
+                { icon: Zap, text: t("hero.customizable") },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
                   <item.icon className="w-4 h-4 text-primary" />

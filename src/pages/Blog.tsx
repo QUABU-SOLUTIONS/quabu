@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -265,6 +266,7 @@ const BlogCard = ({ post, index, featured = false }: { post: typeof blogPosts[0]
 };
 
 export default function Blog() {
+  const { t } = useTranslation();
   const featuredPosts = blogPosts.filter(p => p.featured);
   const regularPosts = blogPosts;
   const autoplayPlugin = useRef(
@@ -315,7 +317,7 @@ export default function Blog() {
               transition={{ delay: 0.2 }}
             >
               <BookOpen className="w-4 h-4" />
-              <span className="text-sm font-medium">Our Insights</span>
+              <span className="text-sm font-medium">{t("blog.ourInsights")}</span>
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -370,7 +372,7 @@ export default function Blog() {
             viewport={{ once: true }}
           >
             <TrendingUp className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold">Featured Posts</h2>
+            <h2 className="text-2xl font-bold">{t("blog.featuredPosts")}</h2>
           </motion.div>
 
           <Carousel
@@ -404,7 +406,7 @@ export default function Blog() {
           >
             <div className="flex items-center gap-3">
               <Newspaper className="w-6 h-6 text-primary" />
-              <h2 className="text-2xl font-bold">Latest Posts</h2>
+              <h2 className="text-2xl font-bold">{t("blog.latestPosts")}</h2>
             </div>
           </motion.div>
 
@@ -421,9 +423,7 @@ export default function Blog() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <Button variant="outline" size="lg">
-              Load More Articles
-            </Button>
+            <Button variant="outline" size="lg">{t("blog.loadMore")}</Button>
           </motion.div>
         </div>
       </section>
@@ -479,14 +479,11 @@ export default function Blog() {
                 className="flex-1 px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
               />
               <Button size="lg" className="group" type="submit" disabled={subscribing}>
-                {subscribing ? "Subscribing..." : "Subscribe"}
+                {subscribing ? t("blog.subscribing") : t("blog.subscribeBtn")}
                 {!subscribing && <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />}
               </Button>
             </form>
-
-            <p className="text-sm text-muted-foreground mt-4">
-              No spam, unsubscribe at any time.
-            </p>
+            <p className="text-sm text-muted-foreground mt-4">{t("blog.privacyNote")}</p>
           </motion.div>
         </div>
       </section>
