@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -200,6 +201,7 @@ function WorkflowCard({
 }
 
 export default function AcceleratorPageTemplate({ config }: { config: AcceleratorConfig }) {
+  const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -250,12 +252,12 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <Link 
+                <Link 
                 to="/accelerators" 
                 className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors mb-8"
               >
                 <ArrowLeft className="w-4 h-4" />
-                All Digital Accelerators
+                {t("acceleratorTemplate.allAccelerators")}
               </Link>
             </motion.div>
             
@@ -270,7 +272,7 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
                   whileHover={{ scale: 1.05 }}
                 >
                   <Zap className="w-4 h-4" />
-                  <span className="text-sm font-medium">Digital Accelerator</span>
+                  <span className="text-sm font-medium">{t("acceleratorTemplate.digitalAccelerator")}</span>
                 </motion.div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
@@ -410,10 +412,10 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                Key Benefits
+                {t("acceleratorTemplate.keyBenefits")}
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Transform your {config.name.toLowerCase()} processes with our pre-built accelerator
+                {t("acceleratorTemplate.keyBenefitsSubtitle", { name: config.name })}
               </p>
             </motion.div>
             
@@ -456,13 +458,13 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
                 <Target className="w-4 h-4" />
-                <span>{config.workflows.length} Pre-Built Workflows</span>
+                <span>{t("acceleratorTemplate.preBuiltWorkflows", { count: config.workflows.length })}</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                Ready-to-Deploy Workflows
+                {t("acceleratorTemplate.readyToDeploy")}
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Each workflow is designed, tested, and optimized for immediate deployment in your Atlassian environment
+                {t("acceleratorTemplate.readyToDeploySubtitle")}
               </p>
             </motion.div>
             
@@ -561,7 +563,7 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
                     <ArrowLeft className="w-5 h-5" />
                   </motion.div>
                   <div>
-                    <span className="text-sm text-muted-foreground">Previous</span>
+                    <span className="text-sm text-muted-foreground">{t("acceleratorTemplate.prevAccelerator")}</span>
                     <p className="font-medium group-hover:text-primary transition-colors">
                       {config.prevAccelerator.name}
                     </p>
@@ -575,7 +577,7 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
                   className="group flex items-center gap-4 p-4 rounded-xl hover:bg-secondary/50 transition-colors"
                 >
                   <div className="text-right">
-                    <span className="text-sm text-muted-foreground">Next</span>
+                  <span className="text-sm text-muted-foreground">{t("acceleratorTemplate.nextAccelerator")}</span>
                     <p className="font-medium group-hover:text-primary transition-colors">
                       {config.nextAccelerator.name}
                     </p>

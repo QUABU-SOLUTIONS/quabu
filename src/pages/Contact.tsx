@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -27,16 +28,17 @@ const contactSchema = z.object({
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(2000, "Message must be less than 2000 characters"),
 });
 
-const contactReasons = [
-  { value: "demo", label: "Schedule a Demo" },
-  { value: "consultation", label: "Request a Consultation" },
-  { value: "accelerators", label: "Learn About Accelerators" },
-  { value: "cloud-migration", label: "Cloud Migration Inquiry" },
-  { value: "partnership", label: "Partnership Opportunity" },
-  { value: "other", label: "Other" },
-];
-
 export default function Contact() {
+  const { t } = useTranslation();
+
+  const contactReasons = [
+    { value: "demo", label: t("contact.subjects.demo") },
+    { value: "consultation", label: t("contact.subjects.consultation") },
+    { value: "accelerators", label: t("contact.subjects.accelerators") },
+    { value: "cloud-migration", label: t("contact.subjects.cloudMigration") },
+    { value: "partnership", label: t("contact.subjects.partnership") },
+    { value: "other", label: t("contact.subjects.other") },
+  ];
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -116,14 +118,14 @@ export default function Contact() {
                 <CheckCircle className="w-10 h-10 text-primary" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Thank You!
+                {t("contact.successTitle")}
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Your message has been sent successfully. Our team will review your inquiry and get back to you within 24-48 hours.
+                {t("contact.successMessage")}
               </p>
               <Button size="lg" asChild>
                 <a href="/">
-                  Return Home
+                  {t("contact.returnHome")}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
@@ -151,14 +153,13 @@ export default function Contact() {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Let's Start a{" "}
+              {t("contact.title")}{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Conversation
+                {t("contact.titleHighlight")}
               </span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Whether you're looking to schedule a demo, discuss a project, or learn more about 
-              our accelerators, we're here to help transform your business.
+              {t("contact.subtitle")}
             </p>
           </motion.div>
 
@@ -171,193 +172,99 @@ export default function Contact() {
               className="lg:col-span-3"
             >
               <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 shadow-lg">
-                <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
+                <h2 className="text-2xl font-bold mb-6">{t("contact.sendMessage")}</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Full Name *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        placeholder="John Doe"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className={errors.name ? "border-destructive" : ""}
-                      />
-                      {errors.name && (
-                        <p className="text-sm text-destructive">{errors.name}</p>
-                      )}
+                  <div className="space-y-2">
+                      <Label htmlFor="name">{t("contact.fullName")} *</Label>
+                      <Input id="name" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} className={errors.name ? "border-destructive" : ""} />
+                      {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email Address *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="john@company.com"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className={errors.email ? "border-destructive" : ""}
-                      />
-                      {errors.email && (
-                        <p className="text-sm text-destructive">{errors.email}</p>
-                      )}
+                      <Label htmlFor="email">{t("contact.email")} *</Label>
+                      <Input id="email" name="email" type="email" placeholder="john@company.com" value={formData.email} onChange={handleChange} className={errors.email ? "border-destructive" : ""} />
+                      {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                     </div>
                   </div>
-
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
-                      <Input
-                        id="company"
-                        name="company"
-                        placeholder="Your Company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className={errors.company ? "border-destructive" : ""}
-                      />
-                      {errors.company && (
-                        <p className="text-sm text-destructive">{errors.company}</p>
-                      )}
+                      <Label htmlFor="company">{t("contact.company")}</Label>
+                      <Input id="company" name="company" placeholder="Your Company" value={formData.company} onChange={handleChange} className={errors.company ? "border-destructive" : ""} />
+                      {errors.company && <p className="text-sm text-destructive">{errors.company}</p>}
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="subject">Subject *</Label>
-                      <select
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
-                          errors.subject ? "border-destructive" : "border-input"
-                        }`}
-                      >
-                        <option value="">Select a topic</option>
+                      <Label htmlFor="subject">{t("contact.subject")} *</Label>
+                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${errors.subject ? "border-destructive" : "border-input"}`}>
+                        <option value="">{t("contact.selectTopic")}</option>
                         {contactReasons.map(reason => (
-                          <option key={reason.value} value={reason.label}>
-                            {reason.label}
-                          </option>
+                          <option key={reason.value} value={reason.label}>{reason.label}</option>
                         ))}
                       </select>
-                      {errors.subject && (
-                        <p className="text-sm text-destructive">{errors.subject}</p>
-                      )}
+                      {errors.subject && <p className="text-sm text-destructive">{errors.subject}</p>}
                     </div>
                   </div>
-
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder="Tell us about your project or inquiry..."
-                      rows={6}
-                      value={formData.message}
-                      onChange={handleChange}
-                      className={errors.message ? "border-destructive" : ""}
-                    />
-                    {errors.message && (
-                      <p className="text-sm text-destructive">{errors.message}</p>
-                    )}
+                    <Label htmlFor="message">{t("contact.message")} *</Label>
+                    <Textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." rows={6} value={formData.message} onChange={handleChange} className={errors.message ? "border-destructive" : ""} />
+                    {errors.message && <p className="text-sm text-destructive">{errors.message}</p>}
                   </div>
-
                   <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-                    {isSubmitting ? (
-                      <>Sending...</>
-                    ) : (
-                      <>
-                        Send Message
-                        <Send className="ml-2 w-5 h-5" />
-                      </>
-                    )}
+                    {isSubmitting ? <>{t("contact.sending")}</> : <>{t("contact.sendBtn")}<Send className="ml-2 w-5 h-5" /></>}
                   </Button>
                 </form>
               </div>
             </motion.div>
 
             {/* Contact Info */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-              className="lg:col-span-2 space-y-8"
-            >
-              {/* Direct Contact */}
+              <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} className="lg:col-span-2 space-y-8">
               <div className="bg-card border border-border rounded-2xl p-8">
-                <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
+                <h3 className="text-xl font-semibold mb-6">{t("contact.getInTouch")}</h3>
                 <div className="space-y-6">
-                  <a
-                    href="mailto:hello@quabusolutions.com"
-                    className="flex items-start gap-4 group"
-                  >
+                  <a href="mailto:hello@quabusolutions.com" className="flex items-start gap-4 group">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium group-hover:text-primary transition-colors">Email Us</p>
+                      <p className="font-medium group-hover:text-primary transition-colors">{t("contact.emailUs")}</p>
                       <p className="text-muted-foreground">hello@quabusolutions.com</p>
                     </div>
                   </a>
-
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
                       <MapPin className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                      <p className="font-medium">Our Offices</p>
+                      <p className="font-medium">{t("contact.ourOffices")}</p>
                       <p className="text-muted-foreground">Miami, FL & Barcelona, Spain</p>
                     </div>
                   </div>
-
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                       <Clock className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium">Response Time</p>
-                      <p className="text-muted-foreground">Within 24-48 hours</p>
+                      <p className="font-medium">{t("contact.responseTime")}</p>
+                      <p className="text-muted-foreground">{t("contact.responseTimeValue")}</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              {/* Why Contact Us */}
               <div className="bg-gradient-to-br from-primary to-accent text-primary-foreground rounded-2xl p-8">
-                <h3 className="text-xl font-semibold mb-6">Why Work With Us?</h3>
+                <h3 className="text-xl font-semibold mb-6">{t("contact.whyWorkWithUs")}</h3>
                 <ul className="space-y-4">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>Atlassian Gold Solution Partner</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>Deploy in weeks, not months</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>100% customizable solutions</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                    <span>Enterprise-ready accelerators</span>
-                  </li>
+                  {[t("contact.benefit1"), t("contact.benefit2"), t("contact.benefit3"), t("contact.benefit4")].map((b, i) => (
+                    <li key={i} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 flex-shrink-0" /><span>{b}</span></li>
+                  ))}
                 </ul>
               </div>
-
-              {/* Quick Actions */}
               <div className="bg-card border border-border rounded-2xl p-8">
-                <h3 className="text-xl font-semibold mb-6">Quick Actions</h3>
+                <h3 className="text-xl font-semibold mb-6">{t("contact.quickActions")}</h3>
                 <div className="space-y-4">
                   <Button variant="outline" className="w-full justify-start" asChild>
-                    <a href="/accelerators">
-                      <Building2 className="w-5 h-5 mr-3" />
-                      Explore Accelerators
-                    </a>
+                    <a href="/accelerators"><Building2 className="w-5 h-5 mr-3" />{t("contact.exploreAccelerators")}</a>
                   </Button>
                   <Button variant="outline" className="w-full justify-start" asChild>
-                    <a href="/services/cloud-migration">
-                      <MessageSquare className="w-5 h-5 mr-3" />
-                      Cloud Migration Info
-                    </a>
+                    <a href="/services/cloud-migration"><MessageSquare className="w-5 h-5 mr-3" />{t("contact.cloudMigrationInfo")}</a>
                   </Button>
                 </div>
               </div>

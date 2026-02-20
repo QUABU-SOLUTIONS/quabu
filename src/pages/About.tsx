@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { 
   Target, 
   Eye, 
@@ -282,57 +283,6 @@ function CircuitBackground() {
   );
 }
 
-const values = [
-  {
-    number: "01",
-    title: "Focus on Results",
-    description: "We listen to your problems and needs before starting any project. Once identified, we define solutions maintaining a results-oriented approach.",
-    icon: Target,
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    number: "02",
-    title: "Adaptability",
-    description: "We are agile and flexible to quickly adapt to new circumstances and challenges. We adapt to your business to provide the most appropriate answer.",
-    icon: RefreshCw,
-    color: "from-emerald-500 to-green-500",
-  },
-  {
-    number: "03",
-    title: "Continuous Learning",
-    description: "We promote an environment that encourages constant update of knowledge and skills, driving the professional development of our team.",
-    icon: GraduationCap,
-    color: "from-violet-500 to-purple-500",
-  },
-  {
-    number: "04",
-    title: "Operative Efficiency",
-    description: "We seek continuous improvement of our internal processes, optimising operational efficiency to provide IT solutions in an agile and cost-effective manner.",
-    icon: Zap,
-    color: "from-orange-500 to-amber-500",
-  },
-  {
-    number: "05",
-    title: "Corporate Social Responsibility",
-    description: "We commit to act in a responsible and sustainable manner, positively contributing to society and the environment in all our operations.",
-    icon: Leaf,
-    color: "from-green-500 to-teal-500",
-  },
-];
-
-const team = [
-  { name: "Ismael", role: "CEO & Founder" },
-  { name: "Bastien Orieux", role: "Technical Lead" },
-  { name: "Xavier Cabanach", role: "Solutions Architect" },
-  { name: "Mauricio Mendez", role: "Development Lead" },
-  { name: "Lorena Ortiz", role: "Project Manager" },
-  { name: "Carles Pedreró", role: "Senior Developer" },
-  { name: "Joan Sanchez", role: "Atlassian Specialist" },
-  { name: "Jesús Del Campo", role: "DevOps Engineer" },
-  { name: "Adrià Cirujeda", role: "UX Designer" },
-  { name: "Raul Pelaez", role: "Atlassian Champion" },
-];
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -347,6 +297,46 @@ const itemVariants = {
 };
 
 export default function About() {
+  const { t } = useTranslation();
+
+  const values = [
+    {
+      number: "01",
+      title: t("about.values.results.title"),
+      description: t("about.values.results.desc"),
+      icon: Target,
+      color: "from-blue-500 to-cyan-500",
+    },
+    {
+      number: "02",
+      title: t("about.values.adaptability.title"),
+      description: t("about.values.adaptability.desc"),
+      icon: RefreshCw,
+      color: "from-emerald-500 to-green-500",
+    },
+    {
+      number: "03",
+      title: t("about.values.learning.title"),
+      description: t("about.values.learning.desc"),
+      icon: GraduationCap,
+      color: "from-violet-500 to-purple-500",
+    },
+    {
+      number: "04",
+      title: t("about.values.efficiency.title"),
+      description: t("about.values.efficiency.desc"),
+      icon: Zap,
+      color: "from-orange-500 to-amber-500",
+    },
+    {
+      number: "05",
+      title: t("about.values.responsibility.title"),
+      description: t("about.values.responsibility.desc"),
+      icon: Leaf,
+      color: "from-green-500 to-teal-500",
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -394,7 +384,7 @@ export default function About() {
               transition={{ delay: 0.2 }}
             >
               <Heart className="w-4 h-4" />
-              About Quabu
+              {t("about.badge")}
             </motion.span>
             
             <motion.h1
@@ -403,8 +393,8 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              We Help You Take a{" "}
-              <span className="text-gradient">Leap into the Future</span>
+              {t("about.title")}{" "}
+              <span className="text-gradient">{t("about.titleHighlight")}</span>
             </motion.h1>
             
             <motion.p
@@ -413,8 +403,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Quabu provides innovative and reliable IT solutions that drive efficiency 
-              and growth. We're here to simplify your digital transformation journey.
+              {t("about.subtitle")}
             </motion.p>
           </motion.div>
         </div>
@@ -445,12 +434,8 @@ export default function About() {
                 >
                   <Target className="w-8 h-8 text-white" />
                 </motion.div>
-                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                <p className="text-muted-foreground">
-                  Provide innovative and reliable IT solutions that drive the efficiency 
-                  and growth of our clients. We commit to offer quality products and services, 
-                  customer-oriented, keeping at the forefront of technology.
-                </p>
+                <h3 className="text-2xl font-bold mb-4">{t("about.mission")}</h3>
+                <p className="text-muted-foreground">{t("about.missionText")}</p>
               </div>
             </motion.div>
 
@@ -469,12 +454,8 @@ export default function About() {
                 >
                   <Eye className="w-8 h-8 text-white" />
                 </motion.div>
-                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                <p className="text-muted-foreground">
-                  Be recognized as experts in the ICT services sector, standing out for 
-                  our excellence in delivering personalised solutions that anticipate 
-                  and meet the changing demands of the technological environment.
-                </p>
+                <h3 className="text-2xl font-bold mb-4">{t("about.vision")}</h3>
+                <p className="text-muted-foreground">{t("about.visionText")}</p>
               </div>
             </motion.div>
 
@@ -493,12 +474,8 @@ export default function About() {
                 >
                   <Lightbulb className="w-8 h-8 text-white" />
                 </motion.div>
-                <h3 className="text-2xl font-bold mb-4">Our Purpose</h3>
-                <p className="text-muted-foreground">
-                  Facilitate digital transformation, providing ICT services that optimise 
-                  processes, enhance productivity and generate a positive impact on society. 
-                  We are here to simplify your life.
-                </p>
+                <h3 className="text-2xl font-bold mb-4">{t("about.purpose")}</h3>
+                <p className="text-muted-foreground">{t("about.purposeText")}</p>
               </div>
             </motion.div>
           </motion.div>
@@ -521,14 +498,13 @@ export default function About() {
             className="text-center mb-16"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              How We Act
+              {t("about.valuesTitle")}
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Our Core Values
+              {t("about.valuesTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              These values define the identity of Quabu, steering us towards leadership 
-              in the ICT solutions sector
+              {t("about.subtitle")}
             </p>
           </motion.div>
 
