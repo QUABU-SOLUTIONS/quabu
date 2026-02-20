@@ -490,7 +490,7 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Digital Accelerators
+              {t("acceleratorsPage.badge")}
             </motion.span>
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6"
@@ -498,8 +498,8 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              Pre-Built Solutions for{" "}
-              <span className="text-gradient">Every Department</span>
+              {t("acceleratorsPage.title")}{" "}
+              <span className="text-gradient">{t("acceleratorsPage.titleHighlight")}</span>
             </motion.h1>
             <motion.p 
               className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
@@ -507,8 +507,7 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Skip months of development with our battle-tested Atlassian solutions. 
-              Install in days, customize to your needs, and scale with confidence.
+              {t("acceleratorsPage.subtitle")}
             </motion.p>
           </motion.div>
         </div>
@@ -579,11 +578,11 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
                       whileHover={{ x: 5 }}
                       className="inline-flex"
                     >
-                      <Link
+                       <Link
                         to={accelerator.href}
                         className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
                       >
-                        Learn more about {accelerator.name}
+                        {t("acceleratorsPage.learnMoreAbout")} {accelerator.name}
                         <ArrowRight className="w-4 h-4" />
                       </Link>
                     </motion.div>
