@@ -18,167 +18,77 @@ import { Layout } from "@/components/layout/Layout";
 import { TrustSection } from "@/components/home/TrustSection";
 import { CTASection } from "@/components/home/CTASection";
 
-const accelerators = [
-  {
-    id: "marketing",
-    name: "Marketing",
-    number: "01",
-    description: "Improves the planning and analysis of campaigns, facilitates content creation, and centralizes social media management.",
-    icon: Megaphone,
-    color: "bg-pink-500/10 text-pink-600",
-    gradientFrom: "from-pink-500",
-    gradientTo: "to-rose-500",
-    glowColor: "rgba(236, 72, 153, 0.4)",
-    href: "/accelerators/marketing",
-    features: [
-      "Campaign planning & tracking",
-      "Content calendar management",
-      "Social media centralization",
-      "Analytics & reporting"
-    ]
-  },
-  {
-    id: "sales",
-    name: "Sales",
-    number: "02",
-    description: "Optimizes the tracking of sales opportunities, analysis of results, and management of customer relationships to increase revenue.",
-    icon: TrendingUp,
-    color: "bg-emerald-500/10 text-emerald-600",
-    gradientFrom: "from-emerald-500",
-    gradientTo: "to-green-500",
-    glowColor: "rgba(16, 185, 129, 0.4)",
-    href: "/accelerators/sales",
-    features: [
-      "Sales pipeline management",
-      "Opportunity tracking",
-      "CRM integration",
-      "Revenue analytics"
-    ]
-  },
-  {
-    id: "hr",
-    name: "Human Resources",
-    number: "03",
-    description: "Streamlines the selection, onboarding and performance evaluation processes, improving productivity and alignment of objectives.",
-    icon: Users,
-    color: "bg-violet-500/10 text-violet-600",
-    gradientFrom: "from-violet-500",
-    gradientTo: "to-purple-500",
-    glowColor: "rgba(139, 92, 246, 0.4)",
-    href: "/accelerators/hr",
-    features: [
-      "Recruitment automation",
-      "Onboarding workflows",
-      "Performance evaluations",
-      "Objective alignment"
-    ]
-  },
-  {
-    id: "operations",
-    name: "Operations",
-    number: "04",
-    description: "Facilitates project planning and control, inventory management, and maintenance, reducing inefficiencies and improving coordination.",
-    icon: Settings,
-    color: "bg-orange-500/10 text-orange-600",
-    gradientFrom: "from-orange-500",
-    gradientTo: "to-amber-500",
-    glowColor: "rgba(249, 115, 22, 0.4)",
-    href: "/accelerators/operations",
-    features: [
-      "Project planning & control",
-      "Inventory management",
-      "Maintenance scheduling",
-      "Team coordination"
-    ]
-  },
-  {
-    id: "finance",
-    name: "Finances",
-    number: "05",
-    description: "Accelerates the approval of budgets, billing management and internal audits, increasing accuracy and transparency.",
-    icon: DollarSign,
-    color: "bg-green-500/10 text-green-600",
-    gradientFrom: "from-green-500",
-    gradientTo: "to-teal-500",
-    glowColor: "rgba(34, 197, 94, 0.4)",
-    href: "/accelerators/finance",
-    features: [
-      "Budget approval workflows",
-      "Billing management",
-      "Internal audit processes",
-      "Financial transparency"
-    ]
-  },
-  {
-    id: "it",
-    name: "Information Technology",
-    number: "06",
-    description: "Improves the management of incidents, changes and software development to ensure greater efficiency and quality of service.",
-    icon: Monitor,
-    color: "bg-blue-500/10 text-blue-600",
-    gradientFrom: "from-blue-500",
-    gradientTo: "to-cyan-500",
-    glowColor: "rgba(59, 130, 246, 0.4)",
-    href: "/accelerators/it",
-    features: [
-      "Incident management",
-      "Change management",
-      "Software development",
-      "Service quality assurance"
-    ]
-  },
-  {
-    id: "customer-service",
-    name: "Customer Service",
-    number: "07",
-    description: "Optimizes ticket resolution, facilitates access to information, and collects feedback to improve customer satisfaction.",
-    icon: HeadphonesIcon,
-    color: "bg-cyan-500/10 text-cyan-600",
-    gradientFrom: "from-cyan-500",
-    gradientTo: "to-sky-500",
-    glowColor: "rgba(6, 182, 212, 0.4)",
-    href: "/accelerators/customer-service",
-    features: [
-      "Ticket resolution",
-      "Knowledge base access",
-      "Customer feedback",
-      "Satisfaction metrics"
-    ]
-  },
-  {
-    id: "rd",
-    name: "Research & Development",
-    number: "08",
-    description: "Improves collaboration in innovation, patent tracking, and R&D project planning, accelerating development.",
-    icon: Lightbulb,
-    color: "bg-amber-500/10 text-amber-600",
-    gradientFrom: "from-amber-500",
-    gradientTo: "to-yellow-500",
-    glowColor: "rgba(245, 158, 11, 0.4)",
-    href: "/accelerators/rd",
-    features: [
-      "Innovation collaboration",
-      "Patent tracking",
-      "R&D project planning",
-      "Development acceleration"
-    ]
-  },
-];
+export default function Accelerators() {
+  const { t } = useTranslation();
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
+  const accelerators = [
+    {
+      id: "marketing", number: "01", icon: Megaphone,
+      name: t("acceleratorsPage.accelerators.marketing.name"),
+      description: t("acceleratorsPage.accelerators.marketing.desc"),
+      features: (t("acceleratorsPage.accelerators.marketing.features", { returnObjects: true }) as string[]),
+      color: "bg-pink-500/10 text-pink-600", gradientFrom: "from-pink-500", gradientTo: "to-rose-500", glowColor: "rgba(236, 72, 153, 0.4)", href: "/accelerators/marketing",
     },
-  },
-};
+    {
+      id: "sales", number: "02", icon: TrendingUp,
+      name: t("acceleratorsPage.accelerators.sales.name"),
+      description: t("acceleratorsPage.accelerators.sales.desc"),
+      features: (t("acceleratorsPage.accelerators.sales.features", { returnObjects: true }) as string[]),
+      color: "bg-emerald-500/10 text-emerald-600", gradientFrom: "from-emerald-500", gradientTo: "to-green-500", glowColor: "rgba(16, 185, 129, 0.4)", href: "/accelerators/sales",
+    },
+    {
+      id: "hr", number: "03", icon: Users,
+      name: t("acceleratorsPage.accelerators.hr.name"),
+      description: t("acceleratorsPage.accelerators.hr.desc"),
+      features: (t("acceleratorsPage.accelerators.hr.features", { returnObjects: true }) as string[]),
+      color: "bg-violet-500/10 text-violet-600", gradientFrom: "from-violet-500", gradientTo: "to-purple-500", glowColor: "rgba(139, 92, 246, 0.4)", href: "/accelerators/hr",
+    },
+    {
+      id: "operations", number: "04", icon: Settings,
+      name: t("acceleratorsPage.accelerators.operations.name"),
+      description: t("acceleratorsPage.accelerators.operations.desc"),
+      features: (t("acceleratorsPage.accelerators.operations.features", { returnObjects: true }) as string[]),
+      color: "bg-orange-500/10 text-orange-600", gradientFrom: "from-orange-500", gradientTo: "to-amber-500", glowColor: "rgba(249, 115, 22, 0.4)", href: "/accelerators/operations",
+    },
+    {
+      id: "finance", number: "05", icon: DollarSign,
+      name: t("acceleratorsPage.accelerators.finance.name"),
+      description: t("acceleratorsPage.accelerators.finance.desc"),
+      features: (t("acceleratorsPage.accelerators.finance.features", { returnObjects: true }) as string[]),
+      color: "bg-green-500/10 text-green-600", gradientFrom: "from-green-500", gradientTo: "to-teal-500", glowColor: "rgba(34, 197, 94, 0.4)", href: "/accelerators/finance",
+    },
+    {
+      id: "it", number: "06", icon: Monitor,
+      name: t("acceleratorsPage.accelerators.it.name"),
+      description: t("acceleratorsPage.accelerators.it.desc"),
+      features: (t("acceleratorsPage.accelerators.it.features", { returnObjects: true }) as string[]),
+      color: "bg-blue-500/10 text-blue-600", gradientFrom: "from-blue-500", gradientTo: "to-cyan-500", glowColor: "rgba(59, 130, 246, 0.4)", href: "/accelerators/it",
+    },
+    {
+      id: "customer-service", number: "07", icon: HeadphonesIcon,
+      name: t("acceleratorsPage.accelerators.customerService.name"),
+      description: t("acceleratorsPage.accelerators.customerService.desc"),
+      features: (t("acceleratorsPage.accelerators.customerService.features", { returnObjects: true }) as string[]),
+      color: "bg-cyan-500/10 text-cyan-600", gradientFrom: "from-cyan-500", gradientTo: "to-sky-500", glowColor: "rgba(6, 182, 212, 0.4)", href: "/accelerators/customer-service",
+    },
+    {
+      id: "rd", number: "08", icon: Lightbulb,
+      name: t("acceleratorsPage.accelerators.rd.name"),
+      description: t("acceleratorsPage.accelerators.rd.desc"),
+      features: (t("acceleratorsPage.accelerators.rd.features", { returnObjects: true }) as string[]),
+      color: "bg-amber-500/10 text-amber-600", gradientFrom: "from-amber-500", gradientTo: "to-yellow-500", glowColor: "rgba(245, 158, 11, 0.4)", href: "/accelerators/rd",
+    },
+  ];
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
 
 function AnimatedHeroBackground() {
   return (
@@ -561,7 +471,7 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
   );
 }
 
-export default function Accelerators() {
+
   return (
     <Layout>
       {/* Hero Section */}

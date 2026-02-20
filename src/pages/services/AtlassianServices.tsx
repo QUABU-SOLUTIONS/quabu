@@ -336,90 +336,34 @@ function AnimatedGridBackground() {
   );
 }
 
-const coreServices = [
-  {
-    icon: MessageSquare,
-    title: "Consultancy",
-    description: "We analyze your objectives and processes to find the solution that best fits your specific needs.",
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    icon: Settings,
-    title: "Solutions & Implementation",
-    description: "We set up products (Jira, Confluence, etc.) and develop custom functionalities to maximize value.",
-    color: "from-violet-500 to-purple-500",
-  },
-  {
-    icon: Headphones,
-    title: "Support & Maintenance",
-    description: "Specialized teams providing stability, incident prevention, and constant operation for critical systems.",
-    color: "from-emerald-500 to-green-500",
-  },
-  {
-    icon: FileCheck,
-    title: "Licensing",
-    description: "Expert guidance through the entire procurement and compliance process for Atlassian products.",
-    color: "from-orange-500 to-amber-500",
-  },
-  {
-    icon: Search,
-    title: "Audit",
-    description: "Identify strengths and weaknesses in your Jira instances to align with best practices.",
-    color: "from-pink-500 to-rose-500",
-  },
-  {
-    icon: GraduationCap,
-    title: "Updates & Training",
-    description: "Keep your tools current and train your teams for greater autonomy and productivity.",
-    color: "from-cyan-500 to-blue-500",
-  },
-];
-
-const specializedSolutions = [
-  {
-    icon: Cloud,
-    title: "Cloud Migration",
-    description: "Seamlessly move your Atlassian products and apps between Server/Data Center and Cloud with zero downtime.",
-    href: "/services/cloud-migration",
-    stats: "100+ migrations",
-  },
-  {
-    icon: Kanban,
-    title: "Work Management",
-    description: "Powerful tools for project tracking and cross-team collaboration that scale with your organization.",
-    href: "/services/work-management",
-    stats: "500+ projects",
-  },
-  {
-    icon: LifeBuoy,
-    title: "IT Service Management",
-    description: "Complete solutions for incident, problem, and service request management using Jira Service Management.",
-    href: "/services/itsm",
-    stats: "24/7 support",
-  },
-  {
-    icon: Rocket,
-    title: "Agile & DevOps",
-    description: "Enhance your delivery pipelines and agile methodologies with integrated Atlassian toolchains.",
-    href: "/services/agile-devops",
-    stats: "50% faster delivery",
-  },
-];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1 },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
-
 export default function AtlassianServices() {
+  const { t } = useTranslation();
+
+  const coreServices = [
+    { icon: MessageSquare, title: t("atlassianServices.coreServices.consultancy.title"), description: t("atlassianServices.coreServices.consultancy.desc"), color: "from-blue-500 to-cyan-500" },
+    { icon: Settings, title: t("atlassianServices.coreServices.solutions.title"), description: t("atlassianServices.coreServices.solutions.desc"), color: "from-violet-500 to-purple-500" },
+    { icon: Headphones, title: t("atlassianServices.coreServices.support.title"), description: t("atlassianServices.coreServices.support.desc"), color: "from-emerald-500 to-green-500" },
+    { icon: FileCheck, title: t("atlassianServices.coreServices.licensing.title"), description: t("atlassianServices.coreServices.licensing.desc"), color: "from-orange-500 to-amber-500" },
+    { icon: Search, title: t("atlassianServices.coreServices.audit.title"), description: t("atlassianServices.coreServices.audit.desc"), color: "from-pink-500 to-rose-500" },
+    { icon: GraduationCap, title: t("atlassianServices.coreServices.training.title"), description: t("atlassianServices.coreServices.training.desc"), color: "from-cyan-500 to-blue-500" },
+  ];
+
+  const specializedSolutions = [
+    { icon: Cloud, title: t("atlassianServices.specializedSolutions.cloudMigration.title"), description: t("atlassianServices.specializedSolutions.cloudMigration.desc"), href: "/services/cloud-migration", stats: t("atlassianServices.specializedSolutions.cloudMigration.stats") },
+    { icon: Kanban, title: t("atlassianServices.specializedSolutions.workManagement.title"), description: t("atlassianServices.specializedSolutions.workManagement.desc"), href: "/services/work-management", stats: t("atlassianServices.specializedSolutions.workManagement.stats") },
+    { icon: LifeBuoy, title: t("atlassianServices.specializedSolutions.itsm.title"), description: t("atlassianServices.specializedSolutions.itsm.desc"), href: "/services/itsm", stats: t("atlassianServices.specializedSolutions.itsm.stats") },
+    { icon: Rocket, title: t("atlassianServices.specializedSolutions.agile.title"), description: t("atlassianServices.specializedSolutions.agile.desc"), href: "/services/agile-devops", stats: t("atlassianServices.specializedSolutions.agile.stats") },
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -437,18 +381,12 @@ export default function AtlassianServices() {
         {/* Animated gradient orbs */}
         <motion.div
           className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px]"
-          animate={{
-            scale: [1, 1.2, 1],
-            x: [0, 50, 0],
-          }}
+          animate={{ scale: [1, 1.2, 1], x: [0, 50, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-cyan-400/10 rounded-full blur-[100px]"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            y: [0, -30, 0],
-          }}
+          animate={{ scale: [1.2, 1, 1.2], y: [0, -30, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
 
@@ -487,7 +425,7 @@ export default function AtlassianServices() {
               transition={{ delay: 0.3 }}
             >
               <Star className="w-4 h-4 text-yellow-400" />
-              Gold Solution Partner
+              {t("atlassianServices.heroBadge")}
             </motion.span>
             
             <motion.h1
@@ -496,8 +434,8 @@ export default function AtlassianServices() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Atlassian Services for{" "}
-              <span className="text-cyan-300">Your Success</span>
+              {t("atlassianServices.heroTitle")}{" "}
+              <span className="text-cyan-300">{t("atlassianServices.heroTitleHighlight")}</span>
             </motion.h1>
             
             <motion.p
@@ -506,9 +444,7 @@ export default function AtlassianServices() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              As an Atlassian Gold Solution Partner, we help businesses unlock the full 
-              potential of Atlassian tools. From consultancy to implementation, we're 
-              your trusted partner for digital transformation.
+              {t("atlassianServices.heroSubtitle")}
             </motion.p>
 
             <motion.div
@@ -518,12 +454,12 @@ export default function AtlassianServices() {
               transition={{ delay: 0.6 }}
             >
               <Button size="lg" className="bg-white text-blue-700 hover:bg-white/90">
-                Get Started
+                {t("atlassianServices.getStarted")}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button size="lg" className="bg-white text-blue-700 hover:bg-white/90" asChild>
                 <a href="https://marketplace.atlassian.com/vendors/1220154/quabu" target="_blank" rel="noopener noreferrer">
-                  View Our Apps
+                  {t("atlassianServices.viewApps")}
                 </a>
               </Button>
             </motion.div>
@@ -536,15 +472,11 @@ export default function AtlassianServices() {
               transition={{ delay: 0.7 }}
             >
               {[
-                { value: "15+", label: "Years Experience" },
-                { value: "500+", label: "Projects Delivered" },
-                { value: "100%", label: "Client Satisfaction" },
+                { value: "15+", label: t("atlassianServices.yearsExp") },
+                { value: "500+", label: t("atlassianServices.projectsDelivered") },
+                { value: "100%", label: t("atlassianServices.clientSatisfaction") },
               ].map((stat, i) => (
-                <motion.div
-                  key={i}
-                  className="text-center"
-                  whileHover={{ scale: 1.05 }}
-                >
+                <motion.div key={i} className="text-center" whileHover={{ scale: 1.05 }}>
                   <motion.div
                     className="text-3xl md:text-4xl font-bold mb-1"
                     initial={{ scale: 0 }}
@@ -589,13 +521,13 @@ export default function AtlassianServices() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
               <Zap className="w-4 h-4" />
-              What We Offer
+              {t("atlassianServices.coreServicesLabel")}
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Core Atlassian Services
+              {t("atlassianServices.coreServicesTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              End-to-end services to help you get the most out of your Atlassian investment
+              {t("atlassianServices.coreServicesSubtitle")}
             </p>
           </motion.div>
 
@@ -758,13 +690,13 @@ export default function AtlassianServices() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
               <Rocket className="w-4 h-4" />
-              Specialized Solutions
+              {t("atlassianServices.specializedLabel")}
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Tailored for Your Industry
+              {t("atlassianServices.specializedTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Deep expertise in specific Atlassian solutions for different business needs
+              {t("atlassianServices.specializedSubtitle")}
             </p>
           </motion.div>
 
@@ -783,7 +715,6 @@ export default function AtlassianServices() {
                 className="group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all"
               >
                 <div className="flex flex-col md:flex-row">
-                  {/* Icon Side */}
                   <div className="md:w-1/3 bg-gradient-to-br from-primary to-accent p-8 flex items-center justify-center">
                     <motion.div
                       className="w-20 h-20 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center"
@@ -792,25 +723,14 @@ export default function AtlassianServices() {
                       <solution.icon className="w-10 h-10 text-white" />
                     </motion.div>
                   </div>
-                  
-                  {/* Content Side */}
                   <div className="md:w-2/3 p-8">
                     <div className="flex items-center gap-3 mb-3">
-                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
-                        {solution.title}
-                      </h3>
-                      <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
-                        {solution.stats}
-                      </span>
+                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{solution.title}</h3>
+                      <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">{solution.stats}</span>
                     </div>
-                    <p className="text-muted-foreground mb-4">
-                      {solution.description}
-                    </p>
-                    <Link
-                      to={solution.href}
-                      className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
-                    >
-                      Learn more
+                    <p className="text-muted-foreground mb-4">{solution.description}</p>
+                    <Link to={solution.href} className="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+                      {t("atlassianServices.learnMore")}
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -837,13 +757,13 @@ export default function AtlassianServices() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-4">
               <Shield className="w-4 h-4" />
-              Why Quabu
+              {t("atlassianServices.whyLabel")}
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Your Trusted Atlassian Partner
+              {t("atlassianServices.whyTitle")}
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              We don't just implement tools – we transform the way your teams work
+              {t("atlassianServices.whySubtitle")}
             </p>
           </motion.div>
 
@@ -855,10 +775,10 @@ export default function AtlassianServices() {
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
-              { icon: Star, title: "Gold Partner", desc: "Certified Atlassian expertise" },
-              { icon: Users, title: "Expert Team", desc: "Dedicated specialists" },
-              { icon: Rocket, title: "Fast Delivery", desc: "Rapid implementation" },
-              { icon: Headphones, title: "24/7 Support", desc: "Always available help" },
+              { icon: Star, title: t("atlassianServices.whyItems.gold.title"), desc: t("atlassianServices.whyItems.gold.desc") },
+              { icon: Users, title: t("atlassianServices.whyItems.team.title"), desc: t("atlassianServices.whyItems.team.desc") },
+              { icon: Rocket, title: t("atlassianServices.whyItems.fast.title"), desc: t("atlassianServices.whyItems.fast.desc") },
+              { icon: Headphones, title: t("atlassianServices.whyItems.support.title"), desc: t("atlassianServices.whyItems.support.desc") },
             ].map((item, i) => (
               <motion.div
                 key={item.title}
@@ -866,10 +786,7 @@ export default function AtlassianServices() {
                 whileHover={{ y: -5 }}
                 className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center"
               >
-                <motion.div
-                  className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mx-auto mb-4"
-                  whileHover={{ rotate: 10 }}
-                >
+                <motion.div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mx-auto mb-4" whileHover={{ rotate: 10 }}>
                   <item.icon className="w-7 h-7" />
                 </motion.div>
                 <h3 className="font-bold mb-2">{item.title}</h3>
@@ -903,25 +820,20 @@ export default function AtlassianServices() {
               
               <div className="md:w-2/3 text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
-                  Marketplace Partner
+                  {t("atlassianServices.marketplaceTitle")}
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  When existing solutions don't meet your specific requirements, we develop custom 
-                  apps for the Atlassian Marketplace. Our apps are trusted by thousands of teams worldwide.
+                  {t("atlassianServices.marketplaceSubtitle")}
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <Button asChild>
-                    <a 
-                      href="https://marketplace.atlassian.com/vendors/1220154/quabu" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      View Our Apps
+                    <a href="https://marketplace.atlassian.com/vendors/1220154/quabu" target="_blank" rel="noopener noreferrer">
+                      {t("atlassianServices.viewApps")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </a>
                   </Button>
                   <Button variant="outline" asChild>
-                    <Link to="/contact">Request Custom App</Link>
+                    <Link to="/contact">{t("atlassianServices.getStarted")}</Link>
                   </Button>
                 </div>
               </div>

@@ -378,95 +378,34 @@ function CircuitBackground() {
   );
 }
 
-const developmentServices = [
-  {
-    number: "01",
-    icon: Globe,
-    title: "Web & Platform Development",
-    description: "Building modern, dynamic web applications using React as our core foundation. We create scalable, performant solutions that grow with your business.",
-    color: "from-blue-500 to-cyan-500",
-  },
-  {
-    number: "02",
-    icon: Smartphone,
-    title: "Mobile Development",
-    description: "Creating tailored mobile solutions using React Native to ensure your business thrives in the mobile-first digital world.",
-    color: "from-violet-500 to-purple-500",
-  },
-  {
-    number: "03",
-    icon: Layers,
-    title: "Custom Solutions",
-    description: "Analysis and personalized solutions that fit perfectly to your needs. We adapt advanced technologies to solve your unique challenges.",
-    color: "from-emerald-500 to-green-500",
-  },
-  {
-    number: "04",
-    icon: Database,
-    title: "Backend Development",
-    description: "Robust server-side solutions with modern architectures, APIs, and database design for high-performance applications.",
-    color: "from-orange-500 to-amber-500",
-  },
-];
-
-const qaServices = [
-  {
-    icon: TestTube,
-    title: "Application Testing Management",
-    description: "Comprehensive management of testing cycles to ensure quality at every stage.",
-  },
-  {
-    icon: Bug,
-    title: "Error Detection",
-    description: "Proactive identification and resolution of bugs before they impact users.",
-  },
-  {
-    icon: Activity,
-    title: "Monitoring",
-    description: "Continuous oversight of application performance and health metrics.",
-  },
-  {
-    icon: GitBranch,
-    title: "Code Management",
-    description: "Version control best practices and code review processes.",
-  },
-  {
-    icon: CheckCircle,
-    title: "Code Quality Improvement",
-    description: "Continuous refactoring and optimization for maintainable code.",
-  },
-  {
-    icon: Cpu,
-    title: "Automated Integration Testing",
-    description: "Rigorous automated tests ensuring seamless software functionality.",
-  },
-];
-
-const techStack = [
-  { name: "React", color: "#61DAFB" },
-  { name: "TypeScript", color: "#3178C6" },
-  { name: "Node.js", color: "#339933" },
-  { name: "Next.js", color: "#000000" },
-  { name: "React Native", color: "#61DAFB" },
-  { name: "GraphQL", color: "#E10098" },
-  { name: "PostgreSQL", color: "#4169E1" },
-  { name: "AWS", color: "#FF9900" },
-];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1 },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
-
 export default function CustomDevelopment() {
+  const { t } = useTranslation();
+
+  const developmentServices = [
+    { number: "01", icon: Globe, title: t("customDevelopment.devServices.web.title"), description: t("customDevelopment.devServices.web.desc"), color: "from-blue-500 to-cyan-500" },
+    { number: "02", icon: Smartphone, title: t("customDevelopment.devServices.mobile.title"), description: t("customDevelopment.devServices.mobile.desc"), color: "from-violet-500 to-purple-500" },
+    { number: "03", icon: Layers, title: t("customDevelopment.devServices.custom.title"), description: t("customDevelopment.devServices.custom.desc"), color: "from-emerald-500 to-green-500" },
+    { number: "04", icon: Database, title: t("customDevelopment.devServices.backend.title"), description: t("customDevelopment.devServices.backend.desc"), color: "from-orange-500 to-amber-500" },
+  ];
+
+  const qaServices = [
+    { icon: TestTube, title: t("customDevelopment.qaServices.testing.title"), description: t("customDevelopment.qaServices.testing.desc") },
+    { icon: Bug, title: t("customDevelopment.qaServices.bugs.title"), description: t("customDevelopment.qaServices.bugs.desc") },
+    { icon: Activity, title: t("customDevelopment.qaServices.monitoring.title"), description: t("customDevelopment.qaServices.monitoring.desc") },
+    { icon: GitBranch, title: t("customDevelopment.qaServices.codeManagement.title"), description: t("customDevelopment.qaServices.codeManagement.desc") },
+    { icon: CheckCircle, title: t("customDevelopment.qaServices.quality.title"), description: t("customDevelopment.qaServices.quality.desc") },
+    { icon: Cpu, title: t("customDevelopment.qaServices.automated.title"), description: t("customDevelopment.qaServices.automated.desc") },
+  ];
+
+  const techStack = [
+    { name: "React", color: "#61DAFB" }, { name: "TypeScript", color: "#3178C6" }, { name: "Node.js", color: "#339933" },
+    { name: "Next.js", color: "#000000" }, { name: "React Native", color: "#61DAFB" }, { name: "GraphQL", color: "#E10098" },
+    { name: "PostgreSQL", color: "#4169E1" }, { name: "AWS", color: "#FF9900" },
+  ];
+
+  const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
+  const itemVariants = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } };
+
   return (
     <Layout>
       {/* Hero Section */}
