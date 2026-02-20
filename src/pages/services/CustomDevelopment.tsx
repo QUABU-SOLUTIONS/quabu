@@ -464,7 +464,7 @@ export default function CustomDevelopment() {
                   <path fill="none" stroke="#61DAFB" strokeWidth="1" d="M12 21c2.485 0 4.5-4.03 4.5-9s-2.015-9-4.5-9-4.5 4.03-4.5 9 2.015 9 4.5 9Z" transform="rotate(-60 12 12)"/>
                 </svg>
               </motion.div>
-              <span className="text-sm font-medium">React Development Experts</span>
+              <span className="text-sm font-medium">{t("customDevelopment.badge")}</span>
             </motion.div>
             
             <motion.h1
@@ -473,8 +473,8 @@ export default function CustomDevelopment() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              Custom Development{" "}
-              <span className="text-cyan-300">Made Easy</span>
+              {t("customDevelopment.title")}{" "}
+              <span className="text-cyan-300">{t("customDevelopment.titleHighlight")}</span>
             </motion.h1>
             
             <motion.p
@@ -483,8 +483,7 @@ export default function CustomDevelopment() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              In today's dynamic business world, adaptability is key. Our team of expert professionals 
-              offers analysis and personalized solutions using advanced technologies, especially React.
+              {t("customDevelopment.subtitle")}
             </motion.p>
 
             <motion.div
@@ -494,11 +493,11 @@ export default function CustomDevelopment() {
               transition={{ delay: 0.5 }}
             >
               <Button size="lg" className="bg-white text-violet-700 hover:bg-white/90">
-                Get Custom Solution
+                {t("customDevelopment.getCustomSolution")}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                View Our Work
+                {t("customDevelopment.viewWork")}
               </Button>
             </motion.div>
 
@@ -509,7 +508,7 @@ export default function CustomDevelopment() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              <p className="text-sm text-white/50 mb-4">Technologies we use</p>
+              <p className="text-sm text-white/50 mb-4">{t("customDevelopment.technologiesLabel")}</p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 {techStack.slice(0, 6).map((tech, i) => (
                   <motion.div
@@ -557,13 +556,13 @@ export default function CustomDevelopment() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
               <Code className="w-4 h-4" />
-              Development Services
+              {t("customDevelopment.devServicesLabel")}
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Solutions Based on React
+              {t("customDevelopment.devServicesTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              React forms the solid foundation upon which we build innovative solutions for various business domains
+              {t("customDevelopment.devServicesSubtitle")}
             </p>
           </motion.div>
 
@@ -645,14 +644,13 @@ export default function CustomDevelopment() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 text-sm font-medium mb-4">
               <Shield className="w-4 h-4" />
-              QA & Testing Office
+              {t("customDevelopment.qaLabel")}
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Ensuring Excellence
+              {t("customDevelopment.qaTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our analysts work closely with you to improve existing applications and ensure 
-              the highest standards of quality and performance
+              {t("customDevelopment.qaSubtitle")}
             </p>
           </motion.div>
 
@@ -704,13 +702,13 @@ export default function CustomDevelopment() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-4">
               <Terminal className="w-4 h-4" />
-              Our Tech Stack
+              {t("customDevelopment.techLabel")}
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Built with Modern Technologies
+              {t("customDevelopment.techTitle")}
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              We use the latest and most reliable technologies to build your solutions
+              {t("customDevelopment.techSubtitle")}
             </p>
           </motion.div>
 
@@ -753,11 +751,10 @@ export default function CustomDevelopment() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Why Choose Quabu for Development?
+              {t("customDevelopment.whyTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We're here to take your business to the next level with customized solutions 
-              backed by advanced technology
+              {t("customDevelopment.whySubtitle")}
             </p>
           </motion.div>
 
@@ -769,10 +766,10 @@ export default function CustomDevelopment() {
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
-              { icon: Sparkles, title: "Custom Solutions", desc: "Tailored to your exact needs" },
-              { icon: Rocket, title: "Fast Delivery", desc: "Agile development process" },
-              { icon: Users, title: "Expert Team", desc: "Skilled React developers" },
-              { icon: Shield, title: "Quality Assured", desc: "Rigorous testing included" },
+              { icon: Sparkles, title: t("customDevelopment.whyItems.custom.title"), desc: t("customDevelopment.whyItems.custom.desc") },
+              { icon: Rocket, title: t("customDevelopment.whyItems.fast.title"), desc: t("customDevelopment.whyItems.fast.desc") },
+              { icon: Users, title: t("customDevelopment.whyItems.team.title"), desc: t("customDevelopment.whyItems.team.desc") },
+              { icon: Shield, title: t("customDevelopment.whyItems.quality.title"), desc: t("customDevelopment.whyItems.quality.desc") },
             ].map((item, i) => (
               <motion.div
                 key={item.title}
