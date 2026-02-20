@@ -374,6 +374,16 @@ const ca = {
     ctaSubtitle: "Obtén una avaluació gratuïta de migració i descobreix com podem ajudar-te a fer la transició a Atlassian Cloud de forma fluida.",
     scheduleFreeAssessment: "Programar Avaluació Gratuïta",
     contactSales: "Contactar Vendes",
+    enterpriseClients: "Clients Empresarials",
+    supportAvailable: "Suport Disponible",
+    products: {
+      jiraSoftware: "Gestió àgil de projectes",
+      jiraServiceManagement: "Service desk IT",
+      confluence: "Col·laboració en equip",
+      jiraWorkManagement: "Projectes de negoci",
+      bitbucket: "Repositori de codi",
+      opsgenie: "Gestió d'incidents",
+    },
     benefits: {
       security: { title: "Màxima Seguretat", desc: "Seguretat empresarial amb còpies de seguretat automàtiques, xifrat de dades i certificacions de compliment." },
       scalability: { title: "Escalabilitat Automàtica", desc: "La teva infraestructura creix amb el teu negoci sense intervenció manual ni temps d'inactivitat." },
