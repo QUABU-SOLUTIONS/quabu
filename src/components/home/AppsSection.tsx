@@ -1,53 +1,45 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import atlassianIcon from "@/assets/atlassian-icon.png";
 import customTemplatesIcon from "@/assets/custom-templates-icon.png";
 import backupManagerIcon from "@/assets/backup-manager-icon.png";
 import customLanguageIcon from "@/assets/custom-language-icon.png";
 import taskListsIcon from "@/assets/task-lists-icon.png";
 
-const apps = [
+const appsMeta = [
   {
-    name: "Custom Templates for Jira Cloud",
-    description: "Speed up your workflows with predefined templates. Create issues faster and maintain consistency across your projects.",
+    key: "customTemplates",
     customIcon: customTemplatesIcon,
     rating: 4,
     installs: 166,
     href: "https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview",
     featured: true,
-    badge: "Popular",
   },
   {
-    name: "Backup Manager for Jira Cloud",
-    description: "Automate your Jira backups with secure AWS integration. Reliable, efficient, and hassle-free backup solution.",
+    key: "backupManager",
     customIcon: backupManagerIcon,
     rating: 4,
     installs: 158,
     href: "https://marketplace.atlassian.com/apps/1235836/backup-manager-for-jira-cloud?hosting=cloud&tab=overview",
     featured: true,
-    badge: "Essential",
   },
   {
-    name: "Custom Language for Jira Cloud",
-    description: "Translate your Jira site into Catalan and share it with all your users. Make Jira accessible to everyone.",
+    key: "customLanguage",
     customIcon: customLanguageIcon,
     rating: 4,
     installs: 13,
     href: "https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud?hosting=cloud&tab=overview",
     featured: false,
-    badge: null,
   },
   {
-    name: "Task Lists for Jira Cloud",
-    description: "Create simple tasks in any issue to keep control of the small details. Perfect for granular task management.",
+    key: "taskLists",
     customIcon: taskListsIcon,
     rating: 4,
     installs: 30,
     href: "https://marketplace.atlassian.com/apps/1230805/task-lists-for-jira-cloud?hosting=cloud&tab=overview",
     featured: false,
-    badge: "New",
   },
 ];
 
@@ -75,6 +67,8 @@ const cardVariants = {
 };
 
 export function AppsSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding relative overflow-hidden bg-gradient-to-b from-muted/30 to-background">
       {/* Animated Background Elements */}
@@ -136,14 +130,13 @@ export function AppsSection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
           >
             <img src={atlassianIcon} alt="Atlassian" className="w-4 h-4" />
-            Atlassian Marketplace
+            {t("appsSection.badgeLabel")}
           </motion.div>
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-            Our <span className="text-primary">Apps</span> for Jira Cloud
+            {t("appsSection.title")} <span className="text-primary">{t("appsSection.titleHighlight")}</span> {t("appsSection.titleSuffix")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Powerful extensions built by our team to enhance your Atlassian experience. 
-            Trusted by hundreds of teams worldwide.
+            {t("appsSection.subtitle")}
           </p>
         </motion.div>
 
@@ -155,10 +148,11 @@ export function AppsSection() {
           viewport={{ once: true, margin: "-50px" }}
           className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12"
         >
-          {apps.map((app, index) => {
+          {appsMeta.map((app, index) => {
+            const appT = t(`appsSection.apps.${app.key}`, { returnObjects: true }) as { name: string; description: string; badge?: string };
             return (
               <motion.a
-                key={app.name}
+                key={app.key}
                 href={app.href}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -171,20 +165,20 @@ export function AppsSection() {
                 }`}
               >
                 {/* Badge */}
-                {app.badge && (
+                {appT.badge && (
                   <motion.span
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.3 + index * 0.1 }}
                     className={`absolute top-4 right-4 px-3 py-1 text-xs font-semibold rounded-full ${
-                      app.badge === "Popular"
+                      app.key === "customTemplates"
                         ? "bg-primary text-primary-foreground"
-                        : app.badge === "Essential"
+                        : app.key === "backupManager"
                         ? "bg-secondary text-secondary-foreground"
                         : "bg-accent text-accent-foreground"
                     }`}
                   >
-                    {app.badge}
+                    {appT.badge}
                   </motion.span>
                 )}
 
@@ -195,16 +189,16 @@ export function AppsSection() {
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
                   >
-                    <img src={app.customIcon} alt={app.name} className="w-14 h-14 object-contain" />
+                    <img src={app.customIcon} alt={appT.name} className="w-14 h-14 object-contain" />
                   </motion.div>
                 </div>
 
                 {/* Content */}
                 <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                  {app.name}
+                  {appT.name}
                 </h3>
                 <p className="text-muted-foreground mb-4 line-clamp-2">
-                  {app.description}
+                  {appT.description}
                 </p>
 
                 {/* Stats */}
@@ -224,7 +218,7 @@ export function AppsSection() {
                     </div>
                     {/* Installs */}
                     <span className="text-sm text-muted-foreground">
-                      {app.installs}+ installs
+                      {app.installs}+ {t("appsSection.installs")}
                     </span>
                   </div>
 
@@ -262,7 +256,7 @@ export function AppsSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View All on Marketplace
+              {t("appsSection.viewAll")}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
