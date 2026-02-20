@@ -378,33 +378,40 @@ function CircuitBackground() {
   );
 }
 
+const devServicesMeta = [
+  { number: "01", icon: Globe, key: "web", color: "from-blue-500 to-cyan-500" },
+  { number: "02", icon: Smartphone, key: "mobile", color: "from-violet-500 to-purple-500" },
+  { number: "03", icon: Layers, key: "custom", color: "from-emerald-500 to-green-500" },
+  { number: "04", icon: Database, key: "backend", color: "from-orange-500 to-amber-500" },
+];
+
+const qaServicesMeta = [
+  { icon: TestTube, key: "testing" },
+  { icon: Bug, key: "bugs" },
+  { icon: Activity, key: "monitoring" },
+  { icon: GitBranch, key: "codeManagement" },
+  { icon: CheckCircle, key: "quality" },
+  { icon: Cpu, key: "automated" },
+];
+
+const whyItemsMeta = [
+  { icon: Sparkles, key: "custom" },
+  { icon: Rocket, key: "fast" },
+  { icon: Users, key: "team" },
+  { icon: Shield, key: "quality" },
+];
+
+const techStack = [
+  { name: "React", color: "#61DAFB" }, { name: "TypeScript", color: "#3178C6" }, { name: "Node.js", color: "#339933" },
+  { name: "Next.js", color: "#000000" }, { name: "React Native", color: "#61DAFB" }, { name: "GraphQL", color: "#E10098" },
+  { name: "PostgreSQL", color: "#4169E1" }, { name: "AWS", color: "#FF9900" },
+];
+
+const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
+const itemVariants = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } };
+
 export default function CustomDevelopment() {
   const { t } = useTranslation();
-
-  const developmentServices = [
-    { number: "01", icon: Globe, title: t("customDevelopment.devServices.web.title"), description: t("customDevelopment.devServices.web.desc"), color: "from-blue-500 to-cyan-500" },
-    { number: "02", icon: Smartphone, title: t("customDevelopment.devServices.mobile.title"), description: t("customDevelopment.devServices.mobile.desc"), color: "from-violet-500 to-purple-500" },
-    { number: "03", icon: Layers, title: t("customDevelopment.devServices.custom.title"), description: t("customDevelopment.devServices.custom.desc"), color: "from-emerald-500 to-green-500" },
-    { number: "04", icon: Database, title: t("customDevelopment.devServices.backend.title"), description: t("customDevelopment.devServices.backend.desc"), color: "from-orange-500 to-amber-500" },
-  ];
-
-  const qaServices = [
-    { icon: TestTube, title: t("customDevelopment.qaServices.testing.title"), description: t("customDevelopment.qaServices.testing.desc") },
-    { icon: Bug, title: t("customDevelopment.qaServices.bugs.title"), description: t("customDevelopment.qaServices.bugs.desc") },
-    { icon: Activity, title: t("customDevelopment.qaServices.monitoring.title"), description: t("customDevelopment.qaServices.monitoring.desc") },
-    { icon: GitBranch, title: t("customDevelopment.qaServices.codeManagement.title"), description: t("customDevelopment.qaServices.codeManagement.desc") },
-    { icon: CheckCircle, title: t("customDevelopment.qaServices.quality.title"), description: t("customDevelopment.qaServices.quality.desc") },
-    { icon: Cpu, title: t("customDevelopment.qaServices.automated.title"), description: t("customDevelopment.qaServices.automated.desc") },
-  ];
-
-  const techStack = [
-    { name: "React", color: "#61DAFB" }, { name: "TypeScript", color: "#3178C6" }, { name: "Node.js", color: "#339933" },
-    { name: "Next.js", color: "#000000" }, { name: "React Native", color: "#61DAFB" }, { name: "GraphQL", color: "#E10098" },
-    { name: "PostgreSQL", color: "#4169E1" }, { name: "AWS", color: "#FF9900" },
-  ];
-
-  const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
-  const itemVariants = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } };
 
   return (
     <Layout>
@@ -573,9 +580,9 @@ export default function CustomDevelopment() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 gap-8"
           >
-            {developmentServices.map((service, index) => (
+            {devServicesMeta.map((service) => (
               <motion.div
-                key={service.title}
+                key={service.key}
                 variants={itemVariants}
                 whileHover={{ scale: 1.02, y: -5 }}
                 className="group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all"
@@ -617,10 +624,10 @@ export default function CustomDevelopment() {
                   {/* Content Side */}
                   <div className="md:w-2/3 p-6 flex flex-col justify-center">
                     <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                      {service.title}
+                      {t(`customDevelopment.devServices.${service.key}.title`)}
                     </h3>
                     <p className="text-muted-foreground">
-                      {service.description}
+                      {t(`customDevelopment.devServices.${service.key}.desc`)}
                     </p>
                   </div>
                 </div>
@@ -661,9 +668,9 @@ export default function CustomDevelopment() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {qaServices.map((service, index) => (
+            {qaServicesMeta.map((service) => (
               <motion.div
-                key={service.title}
+                key={service.key}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
                 className="group bg-card rounded-xl p-6 border border-border hover:border-emerald-500/50 transition-all"
@@ -675,10 +682,10 @@ export default function CustomDevelopment() {
                   <service.icon className="w-6 h-6 text-emerald-600" />
                 </motion.div>
                 <h3 className="font-bold mb-2 group-hover:text-emerald-600 transition-colors">
-                  {service.title}
+                  {t(`customDevelopment.qaServices.${service.key}.title`)}
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  {service.description}
+                  {t(`customDevelopment.qaServices.${service.key}.desc`)}
                 </p>
               </motion.div>
             ))}
@@ -765,14 +772,9 @@ export default function CustomDevelopment() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
-            {[
-              { icon: Sparkles, title: t("customDevelopment.whyItems.custom.title"), desc: t("customDevelopment.whyItems.custom.desc") },
-              { icon: Rocket, title: t("customDevelopment.whyItems.fast.title"), desc: t("customDevelopment.whyItems.fast.desc") },
-              { icon: Users, title: t("customDevelopment.whyItems.team.title"), desc: t("customDevelopment.whyItems.team.desc") },
-              { icon: Shield, title: t("customDevelopment.whyItems.quality.title"), desc: t("customDevelopment.whyItems.quality.desc") },
-            ].map((item, i) => (
+            {whyItemsMeta.map((item) => (
               <motion.div
-                key={item.title}
+                key={item.key}
                 variants={itemVariants}
                 whileHover={{ y: -5, scale: 1.02 }}
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-all text-center"
@@ -783,8 +785,8 @@ export default function CustomDevelopment() {
                 >
                   <item.icon className="w-7 h-7 text-white" />
                 </motion.div>
-                <h3 className="font-bold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                <h3 className="font-bold mb-2">{t(`customDevelopment.whyItems.${item.key}.title`)}</h3>
+                <p className="text-sm text-muted-foreground">{t(`customDevelopment.whyItems.${item.key}.desc`)}</p>
               </motion.div>
             ))}
           </motion.div>
