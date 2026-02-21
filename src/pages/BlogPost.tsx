@@ -1394,7 +1394,7 @@ export default function BlogPost() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-muted prose-pre:p-4 prose-pre:rounded-lg prose-hr:border-border">
+              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-headings:mt-10 prose-headings:mb-5 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-muted-foreground prose-p:mb-5 prose-p:leading-relaxed prose-strong:text-foreground prose-li:text-muted-foreground prose-li:mb-2 prose-li:leading-relaxed prose-ul:my-5 prose-ol:my-5 prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-blockquote:my-8 prose-blockquote:py-2 prose-blockquote:italic prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-muted prose-pre:p-5 prose-pre:rounded-lg prose-pre:my-6 prose-hr:border-border prose-hr:my-10">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {post.content}
                 </ReactMarkdown>
