@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-formula-custom-fields", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 21, 2026", readTime: "6 min", featured: true },
   { id: "quabu-opens-miami-office", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 20, 2026", readTime: "2 min", featured: true },
   { id: "building-atlassian-apps-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "February 18, 2026", readTime: "6 min", featured: true },
   { id: "atlassian-google-cloud-alliance", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 10, 2026", readTime: "7 min", featured: true },
@@ -89,6 +90,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-formula-custom-fields",
+    title: "Jira Cloud Takes a Historic Leap: Formula Custom Fields Are Finally Here",
+    excerpt: "After years of relying on external apps and complex automations, Atlassian has officially announced native Formula Custom Fields in Jira Cloud. This changes everything.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "February 21, 2026",
+    readTime: "6 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/FormulaFieldsJiraCloudQuabu.png",
+    featured: true,
+  },
   {
     id: "quabu-opens-miami-office",
     title: "🌴 Quabu Opens an Office in Miami",
