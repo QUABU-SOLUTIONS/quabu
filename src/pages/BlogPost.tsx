@@ -21,6 +21,209 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-formula-custom-fields",
+    title: "Jira Cloud Takes a Historic Leap: Formula Custom Fields Are Finally Here",
+    excerpt: "After years of relying on external apps and complex automations, Atlassian has officially announced native Formula Custom Fields in Jira Cloud. This changes everything.",
+    content: `
+## The Historic Problem of Jira: Data Without Intelligence
+
+Jira has always been excellent at storing information.
+
+But not so great at interpreting it.
+
+If you wanted something as simple as:
+
+- Calculating a risk based on probability × impact
+- Calculating a cost automatically
+- Showing a computed date
+- Or deriving any value from other fields
+
+you had three options:
+
+1. Automations
+2. Marketplace Apps
+3. Export data outside of Jira
+
+They all had something in common:
+
+**Unnecessary complexity.**
+
+The data was in Jira. But the logic wasn't.
+
+---
+
+## What Are Formula Custom Fields
+
+The new [Formula Custom Fields](https://community.atlassian.com/forums/Jira-articles/New-Feature-Formula-Custom-Fields-in-Jira-Cloud/ba-p/3163834) are a new type of custom field that allows you to dynamically calculate values based on other fields in the same work item.
+
+In other words:
+
+**Jira is starting to think.**
+
+These fields:
+
+- Are read-only
+- Are calculated automatically
+- Can use numbers, dates, text, selectors, priorities, etc.
+- Are displayed directly on the issue
+
+And most importantly:
+
+**The value is always up to date.**
+
+No automations. No scripts. No apps.
+
+---
+
+## Real Examples That Will Now Be Trivial
+
+This unlocks use cases that previously required engineering.
+
+For example:
+
+### Financial Management
+
+Total cost:
+\`\`\`
+Story Points × Cost per Point
+\`\`\`
+
+### Risk Management
+
+Risk Score:
+\`\`\`
+Impact × Probability
+\`\`\`
+
+### SLA Tracking
+
+Time remaining:
+\`\`\`
+Deadline − Current Date
+\`\`\`
+
+### Smart Prioritization
+
+Dynamic score based on multiple factors.
+
+All of this, now, **native**.
+
+---
+
+## The Real Revolution: Jira Becomes a Derived System
+
+Until now, Jira was primarily a data entry system.
+
+With this, it starts becoming a **knowledge derivation system**.
+
+This has profound implications:
+
+- Fewer automations
+- Fewer inconsistencies
+- Fewer human errors
+- Less dependency on external apps
+
+And more clarity.
+
+---
+
+## But There's Something Even More Important
+
+Atlassian has confirmed that this is just the beginning.
+
+The roadmap already includes:
+
+- Use in JQL searches
+- Full support in company-managed projects
+- New data types (text, dates, logic)
+- Integration with Atlassian Intelligence to generate formulas from natural language
+
+Yes.
+
+**Natural language.**
+
+The future will look something like:
+
+> "**Calculate the profit margin**"
+
+And Jira will create it.
+
+---
+
+## What This Really Means
+
+This feature eliminates one of the biggest historical dependencies on the Marketplace.
+
+For years, apps like:
+
+- ScriptRunner
+- Jira Misc Custom Fields
+- Automation for Jira
+
+Have filled this gap.
+
+Now, Atlassian is starting to close it.
+
+And that's significant.
+
+---
+
+## What Many Admins Aren't Seeing (Yet)
+
+This isn't just a new feature.
+
+It's a **change in philosophy**.
+
+Jira is evolving from:
+
+**A tracking system**
+
+to
+
+**An operational modeling system**
+
+Where data isn't just stored.
+
+It's interpreted.
+
+---
+
+## The Real Impact on Organizations
+
+This will reduce:
+
+- Complexity
+- Costs
+- Dependency on external apps
+
+And will increase:
+
+- Clarity
+- Control
+- Analytical capability
+
+All within Jira.
+
+---
+
+## Our Take at Quabu
+
+This is, without exaggeration, one of the most important features Jira Cloud has received in years.
+
+Because it eliminates friction.
+
+And in Jira, friction is the real enemy.
+
+*(Article by [Raúl Peláez Mendoza](https://www.linkedin.com/in/ra%C3%BAl-pel%C3%A1ez-mendoza-ba037a28/))*
+    `,
+    category: "News",
+    date: "February 21, 2026",
+    readTime: "6 min read",
+    author: "Raúl Peláez Mendoza",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/FormulaFieldsJiraCloudQuabu.png",
+    tags: ["Jira Cloud", "Formula Custom Fields", "Atlassian", "Jira Admin", "Custom Fields", "Productivity"],
+  },
+  {
     id: "quabu-opens-miami-office",
     title: "🌴 Quabu Opens an Office in Miami",
     excerpt: "We are thrilled to announce that Quabu now has an office in Miami — one of the most exciting emerging tech hubs. We're growing, and new career opportunities are coming soon!",
