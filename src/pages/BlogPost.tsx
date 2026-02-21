@@ -4,6 +4,8 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -1392,34 +1394,10 @@ export default function BlogPost() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground">
-                {post.content.split('\n').map((paragraph, i) => {
-                  if (paragraph.startsWith('## ')) {
-                    return <h2 key={i} className="text-2xl font-bold mt-8 mb-4 text-foreground">{paragraph.replace('## ', '')}</h2>;
-                  }
-                  if (paragraph.startsWith('### ')) {
-                    return <h3 key={i} className="text-xl font-semibold mt-6 mb-3 text-foreground">{paragraph.replace('### ', '')}</h3>;
-                  }
-                  if (paragraph.startsWith('- **')) {
-                    const match = paragraph.match(/- \*\*(.+)\*\*:? ?(.*)/)
-                    if (match) {
-                      return (
-                        <li key={i} className="ml-4 mb-2">
-                          <strong className="text-foreground">{match[1]}</strong>
-                          {match[2] && `: ${match[2]}`}
-                        </li>
-                      );
-                    }
-                  }
-                  if (paragraph.startsWith('- ')) {
-                    return <li key={i} className="ml-4 mb-2">{paragraph.replace('- ', '')}</li>;
-                  }
-                  if (paragraph.match(/^\d+\. /)) {
-                    return <li key={i} className="ml-4 mb-2">{paragraph.replace(/^\d+\. /, '')}</li>;
-                  }
-                  if (paragraph.trim() === '') return null;
-                  return <p key={i} className="mb-4">{paragraph}</p>;
-                })}
+              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-muted prose-pre:p-4 prose-pre:rounded-lg prose-hr:border-border">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {post.content}
+                </ReactMarkdown>
               </div>
 
               {/* Tags */}
