@@ -53,6 +53,14 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration"/>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.quabusolutions.com/blog/quabu-opens-miami-office</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-opens-miami-office"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-opens-miami-office"/>

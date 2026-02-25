@@ -23,6 +23,61 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-ai-agents-workflow-integration",
+    title: "Jira Transcends Human Management: Atlassian Introduces AI Agent Integration in Workflows",
+    excerpt: "The project management ecosystem is undergoing a paradigm shift. Atlassian has officially announced that Rovo Agents can now be assigned Jira tickets and mentioned in collaboration threads.",
+    content: `
+## A New Member in the Directory: The Agent as Executor
+
+The project management ecosystem is undergoing a paradigm shift. Atlassian [has officially announced](https://www.atlassian.com/blog/announcements/ai-agents-in-jira) that **Rovo Agents** are no longer mere consultation assistants, but operational entities within Jira. This update, currently in _Open Beta_, allows for the first time in the platform's history to **assign tickets directly to an AI and mention it in collaboration threads.**
+
+The major innovation lies in the agent's identity. By integrating into the directory, the Rovo agent behaves, for workflow purposes, as just another user. This unlocks three critical capabilities for enterprise scalability:
+
+1. **Direct Assignment (Assignee):** Project managers can delegate specific tasks to specialized agents. From generating technical documentation to analyzing error logs, the agent takes ownership of the task on the board.
+2. **Collaboration via @mentions:** The ability to invoke AI in comments enables real-time iteration. A developer can mention the agent to request a code review or a summary of business requirements without leaving the ticket view.
+3. **Workflow Orchestration:** Agents can be inserted into state transitions. For example, a ticket can automatically move to an agent for a security validation before being approved by a human supervisor.
+
+---
+
+## The Responsibility Dilemma: Governance and RACI
+
+The integration of agents raises a fundamental question for IT managers: **Who is ultimately responsible for a ticket assigned to an AI?**
+
+In a professional governance model, it is imperative to distinguish between the **Responsible** — the agent executing the task — and the **Accountable** — the human validating the result. Atlassian has designed this functionality while maintaining existing permission schemes and audit trails. Every action performed by an agent is logged, allowing administrators to monitor output quality and ensure no process remains in an operational "limbo."
+
+---
+
+## Risk Mitigation and the "Drift Effect"
+
+One of the greatest fears in AI adoption is the possibility of erroneous or inconsistent results (what the industry calls hallucinations). To counter this risk, Rovo's architecture relies on the **Teamwork Graph**, ensuring the agent acts based exclusively on the organization's real context (Confluence, Jira, Bitbucket, etc.).
+
+Furthermore, through the **Model Context Protocol (MCP)** standard, agents can connect to external tools like Figma or GitHub with a structured data framework, significantly reducing the margin of error and preventing unpredictable behavior in business logic.
+
+---
+
+## Toward a Hybrid Workforce
+
+We are at the beginning of an era where efficiency will not depend solely on the size of the human team, but on the ability to orchestrate AI agents within well-defined processes. Jira is thus positioning itself as the control center for this hybrid workforce.
+
+---
+
+> **Author's note:** As an **Atlassian Champion** at **[QUABU](https://www.quabusolutions.com/)**, I closely follow the implementation of these technologies in enterprise environments. The key to success lies not in the tool itself, but in the strategic configuration of the boundaries and responsibilities of these new agents.
+
+**Interested in diving deeper into how to implement these agents in your current projects?** I'd be happy to analyze the roadmap for your Jira instance with you.
+
+Official sources:
+
+- [https://www.atlassian.com/blog/announcements/ai-agents-in-jira](https://www.atlassian.com/blog/announcements/ai-agents-in-jira)
+- [https://www.atlassian.com/blog/ai/rovo-ai-agents-at-work](https://www.atlassian.com/blog/ai/rovo-ai-agents-at-work)
+    `,
+    category: "News",
+    date: "February 24, 2026",
+    readTime: "6 min read",
+    author: "Raúl Peláez Mendoza",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/RovoAsAssignee-scaled.png",
+    tags: ["Jira", "Rovo", "AI Agents", "Atlassian", "Workflow", "Automation", "Future of Work"],
+  },
+  {
     id: "jira-formula-custom-fields",
     title: "Jira Cloud Takes a Historic Leap: Formula Custom Fields Are Finally Here",
     excerpt: "After years of relying on external apps and complex automations, Atlassian has officially announced native Formula Custom Fields in Jira Cloud. This changes everything.",
