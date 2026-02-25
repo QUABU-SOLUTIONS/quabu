@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-ai-agents-workflow-integration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 24, 2026", readTime: "6 min", featured: true },
   { id: "jira-formula-custom-fields", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 21, 2026", readTime: "6 min", featured: true },
   { id: "quabu-opens-miami-office", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 20, 2026", readTime: "2 min", featured: true },
   { id: "building-atlassian-apps-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "February 18, 2026", readTime: "6 min", featured: true },
@@ -90,6 +91,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-ai-agents-workflow-integration",
+    title: "Jira Transcends Human Management: Atlassian Introduces AI Agent Integration in Workflows",
+    excerpt: "The project management ecosystem is undergoing a paradigm shift. Atlassian has officially announced that Rovo Agents can now be assigned Jira tickets and mentioned in collaboration threads.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "February 24, 2026",
+    readTime: "6 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/02/RovoAsAssignee-scaled.png",
+    featured: true,
+  },
   {
     id: "jira-formula-custom-fields",
     title: "Jira Cloud Takes a Historic Leap: Formula Custom Fields Are Finally Here",
