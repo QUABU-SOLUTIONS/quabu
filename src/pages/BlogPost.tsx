@@ -23,6 +23,61 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "loom-fundamentals-certification",
+    title: "🎥 Fewer Meetings, More Loom: The New Loom Fundamentals Certification Is Here",
+    excerpt: "The official Loom Fundamentals certificate is now live on Atlassian University. It's free, takes 45 minutes, and teaches you how to master async video communication with Loom and AI.",
+    content: `
+## Great News: The Loom Fundamentals Certificate Is Now Live!
+
+Today we bring you exciting news: **[The official Loom Fundamentals certificate is now available](https://community.atlassian.com/forums/Training-Certification/Loom-Fundamentals-Certificate-is-LIVE/m-p/3200023)**.
+
+### Why Should You Get It?
+
+It's not just "another badge." It's a quick and effective guide to mastering asynchronous communication. In less than an hour you'll learn:
+
+- How to structure video messages that people **actually want to watch**.
+- How to use **Loom's AI** to summarize videos and save even more time.
+- How to integrate these videos into your daily workflow with Jira and Confluence.
+
+### The Best Part:
+
+- It's **free**.
+- It takes about **45 minutes** to complete.
+- You earn an **Atlassian University** badge that looks great on LinkedIn.
+
+At **Quabu** we believe the future of work isn't about spending 8 hours on video calls — it's about owning your time. This course is the first step to achieving that.
+
+---
+
+## Ready to Earn the Badge?
+
+1️⃣ Go to 👉 [https://cp.certmetrics.com/atlassian](https://cp.certmetrics.com/atlassian)
+
+2️⃣ In the left menu, click on **SCHEDULE AN EXAM**
+
+3️⃣ Choose **Certiverse – Certificate exams and invitation only**
+
+4️⃣ Scroll all the way down and you'll find a small (almost hidden) button that says **"SSO TO CERTIVERSE"**
+
+5️⃣ In Certiverse, go to **"Exams"** and select **"Loom Fundamentals"**
+
+6️⃣ Click **"GET STARTED"** and you're done ✅
+
+---
+
+More info:
+
+- [Atlassian Community announcement](https://community.atlassian.com/forums/Training-Certification/Loom-Fundamentals-Certificate-is-LIVE/m-p/3200023)
+- [Certmetrics Portal](https://cp.certmetrics.com/atlassian)
+    `,
+    category: "News",
+    date: "March 3, 2026",
+    readTime: "3 min read",
+    author: "Quabu Team",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/loom2.png",
+    tags: ["Loom", "Atlassian", "Certification", "Async Communication", "Atlassian University"],
+  },
+  {
     id: "jira-ai-agents-workflow-integration",
     title: "Jira Transcends Human Management: Atlassian Introduces AI Agent Integration in Workflows",
     excerpt: "The project management ecosystem is undergoing a paradigm shift. Atlassian has officially announced that Rovo Agents can now be assigned Jira tickets and mentioned in collaboration threads.",

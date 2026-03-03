@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "loom-fundamentals-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 3, 2026", readTime: "3 min", featured: true },
   { id: "jira-ai-agents-workflow-integration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 24, 2026", readTime: "6 min", featured: true },
   { id: "jira-formula-custom-fields", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 21, 2026", readTime: "6 min", featured: true },
   { id: "quabu-opens-miami-office", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 20, 2026", readTime: "2 min", featured: true },
@@ -91,6 +92,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "loom-fundamentals-certification",
+    title: "🎥 Fewer Meetings, More Loom: The New Loom Fundamentals Certification Is Here",
+    excerpt: "The official Loom Fundamentals certificate is now live on Atlassian University. It's free, takes 45 minutes, and teaches you how to master async video communication with Loom and AI.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "March 3, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/loom2.png",
+    featured: true,
+  },
   {
     id: "jira-ai-agents-workflow-integration",
     title: "Jira Transcends Human Management: Atlassian Introduces AI Agent Integration in Workflows",
