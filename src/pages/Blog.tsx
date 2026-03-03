@@ -93,6 +93,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "loom-fundamentals-certification",
+    title: "🎥 Fewer Meetings, More Loom: The New Loom Fundamentals Certification Is Here",
+    excerpt: "The official Loom Fundamentals certificate is now live on Atlassian University. It's free, takes 45 minutes, and teaches you how to master async video communication with Loom and AI.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "March 3, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/loom2.png",
+    featured: true,
+  },
+  {
     id: "jira-ai-agents-workflow-integration",
     title: "Jira Transcends Human Management: Atlassian Introduces AI Agent Integration in Workflows",
     excerpt: "The project management ecosystem is undergoing a paradigm shift. Atlassian has officially announced that Rovo Agents can now be assigned Jira tickets and mentioned in collaboration threads.",
