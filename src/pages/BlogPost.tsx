@@ -23,6 +23,76 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-to-code-lovable-atlassian-mcp",
+    title: "From Ticket to Real Code: Automating Development with Lovable and Atlassian MCP",
+    excerpt: "What if your Jira tickets could practically develop themselves? At Quabu Solutions, we've implemented a revolutionary workflow connecting Jira with Lovable through the MCP protocol.",
+    content: `
+## From Ticket to Live Code: A New Development Paradigm
+
+What if your Jira tickets could practically develop themselves? In traditional software development, there's a huge time gap between when a Product Owner defines a task and when a developer starts writing code. But that gap is closing.
+
+At **QUABU SOLUTIONS**, we've implemented a revolutionary workflow: connecting **Jira** with **Lovable** through the **MCP (Model Context Protocol)**. The result is astonishing: information flows from the management board directly to code execution.
+
+---
+
+## 🧠 Jira as the "Brain" of Development
+
+In this use case, the **Jira Board** isn't just a place to move cards around — it's the source of truth for the AI. Thanks to the **Atlassian MCP**, Lovable doesn't just "know" there's a pending task; it can read the full context:
+
+- **Change Description:** What exactly is needed.
+- **Space Context:** Which part of the website is being worked on.
+- **Acceptance Criteria:** How the final result should look.
+
+---
+
+## 🛠️ The Workflow: "To Do" to "Done" in Record Time
+
+The process we showcase in our latest video follows these key steps:
+
+1. **Ticket Creation:** We create a ticket on the Jira Board requesting a specific change to the website (for example, a new section or a design adjustment).
+2. **Synchronization via MCP:** Lovable, connected through the MCP protocol, accesses the ticket details in real time.
+3. **Automatic Development:** Lovable interprets the instructions and develops the changes directly, understanding the current project structure.
+4. **Validation:** The code is generated while respecting the technical specifications defined in Jira.
+
+---
+
+## 🚀 Why Is This a Paradigm Shift?
+
+This integration isn't just about writing code faster — it's about **eliminating context loss**. By allowing Lovable to "live" within your Atlassian ecosystem:
+
+- **Misunderstandings are eliminated:** The AI reads directly from the original source of the request.
+- **Radical acceleration:** We drastically reduce the Software Development Life Cycle (SDLC).
+- **Focus on Value:** Your team can focus on strategy and architecture, while AI handles ticket-based execution tasks.
+
+> **Automation isn't the future — it's the competitive advantage of the present.** At Quabu Solutions, we help you integrate these tools so your team can be 10x more productive.
+
+---
+
+## 📺 Watch the Workflow in Action
+
+Don't miss our technical demo where you'll see how a simple move in Jira triggers automatic development in Lovable.
+
+[![Watch the video](https://img.youtube.com/vi/QiFfCKnae3g/maxresdefault.jpg)](https://www.youtube.com/watch?v=QiFfCKnae3g)
+
+🎬 [From Jira Ticket to Live Code: Lovable + Atlassian MCP Integration](https://www.youtube.com/watch?v=QiFfCKnae3g)
+
+---
+
+### Ready to Transform the Way You Develop?
+
+If you want your company to adopt AI-powered workflows with Atlassian MCP to optimize your web development, at **QUABU SOLUTIONS** we have the experience to make it happen.
+
+- **Explore our solutions:** [quabusolutions.com](https://www.quabusolutions.com/)
+- **Contact us today:** [hello@quabusolutions.com](mailto:hello@quabusolutions.com)
+    `,
+    category: "Articles",
+    date: "March 8, 2026",
+    readTime: "4 min read",
+    author: "Quabu Team",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/LovableAtlassian-scaled.png",
+    tags: ["Lovable", "Atlassian MCP", "Jira", "Automation", "AI", "Web Development", "SDLC"],
+  },
+  {
     id: "qa-automation-antigravity-rovo-mcp",
     title: "QA Automation: How to Create Test Cases in JSM Using Antigravity and Atlassian Rovo MCP",
     excerpt: "At Quabu Solutions, we've taken a leap into the future by integrating Antigravity with the new Rovo MCP (Model Context Protocol). Discover how this combination is changing the rules of the game for QA teams.",

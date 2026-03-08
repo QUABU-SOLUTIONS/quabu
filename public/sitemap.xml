@@ -53,6 +53,14 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp"/>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp"/>
