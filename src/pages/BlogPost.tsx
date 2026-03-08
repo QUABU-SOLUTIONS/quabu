@@ -23,6 +23,79 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "qa-automation-antigravity-rovo-mcp",
+    title: "QA Automation: How to Create Test Cases in JSM Using Antigravity and Atlassian Rovo MCP",
+    excerpt: "At Quabu Solutions, we've taken a leap into the future by integrating Antigravity with the new Rovo MCP (Model Context Protocol). Discover how this combination is changing the rules of the game for QA teams.",
+    content: `
+## QA Automation with AI: The Future Is Already Here
+
+In the dynamic world of software development, the **Quality Assurance (QA)** phase is often a bottleneck. Writing test cases manually consumes time and resources that your team could dedicate to innovation. But what if you could automate this process using Artificial Intelligence directly within your Atlassian ecosystem?
+
+At **QUABU SOLUTIONS**, we've taken a leap into the future by integrating **Antigravity** with the new **Rovo MCP (Model Context Protocol)**. In this article, we'll tell you how this combination is changing the rules of the game.
+
+---
+
+## 🚀 The Perfect Synergy: Antigravity + Atlassian Rovo
+
+The key to this innovation lies in the ability to connect powerful tools through open protocols. By using the **Atlassian extension** and the **MCP protocol**, we enable Rovo's AI to "speak" directly with Antigravity.
+
+### What components are involved in this workflow?
+
+- **Antigravity:** Our robust automation solution.
+- **Atlassian Rovo:** The AI agent designed to understand the context of your projects.
+- **MCP (Model Context Protocol):** The standard that enables information exchange between AI agents and external tools.
+- **Jira Service Management (JSM):** The portal where test cases are materialized and organized.
+
+---
+
+## 🛠️ How Does the Workflow Operate?
+
+The process is surprisingly smooth and reduces human intervention to strategic oversight:
+
+1. **Connection:** We link Antigravity with the Atlassian environment through the official extension.
+2. **Context with Rovo:** Thanks to MCP, Rovo accesses your project's documentation and requirements.
+3. **Automatic Generation:** The AI analyzes the needs and instructs Antigravity to create the **test cases**.
+4. **Integration in JSM:** The cases are automatically published in the **Jira Service Management** portal, ready to be executed.
+
+---
+
+## ✅ Benefits for Your QA Team
+
+Implementing this integration isn't just a matter of technology — it's about business results:
+
+- **Surgical Precision:** AI eliminates human errors in writing steps and validations.
+- **100% Coverage:** Ensure every requirement has its corresponding test case without additional effort.
+- **Time Savings:** What used to take hours of manual writing is now resolved in seconds.
+
+> **At Quabu Solutions, we don't just follow the future of QA — we build it.** We help companies transform their quality processes into high-speed engines.
+
+---
+
+## 📺 Watch the Integration in Action
+
+Below, you can watch the full video where we show step by step how Antigravity and Rovo MCP work together to revolutionize a JSM portal.
+
+[![Watch the video](https://img.youtube.com/vi/WomK5OEVXh8/maxresdefault.jpg)](https://www.youtube.com/watch?v=WomK5OEVXh8)
+
+🎬 [AI-Driven QA: Antigravity + Atlassian Rovo MCP for JSM Test Case Automation](https://www.youtube.com/watch?v=WomK5OEVXh8)
+
+---
+
+### Want to Take Your QA to the Next Level?
+
+At **QUABU SOLUTIONS**, we are experts in implementing intelligent workflows with Atlassian tools. If you're looking to reduce costs and increase the quality of your deployments, we're here to help.
+
+- **Visit us:** [www.quabusolutions.com](https://www.quabusolutions.com/)
+- **Let's talk:** [hello@quabusolutions.com](mailto:hello@quabusolutions.com)
+    `,
+    category: "Articles",
+    date: "March 8, 2026",
+    readTime: "4 min read",
+    author: "Quabu Team",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/AntigravityAtlassian-scaled.png",
+    tags: ["Antigravity", "Atlassian Rovo", "MCP", "JSM", "QA", "Test Automation", "AI"],
+  },
+  {
     id: "loom-fundamentals-certification",
     title: "🎥 Fewer Meetings, More Loom: The New Loom Fundamentals Certification Is Here",
     excerpt: "The official Loom Fundamentals certificate is now live on Atlassian University. It's free, takes 45 minutes, and teaches you how to master async video communication with Loom and AI.",
