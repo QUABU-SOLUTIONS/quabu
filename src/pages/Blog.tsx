@@ -95,6 +95,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "jira-to-code-lovable-atlassian-mcp",
+    title: "From Ticket to Real Code: Automating Development with Lovable and Atlassian MCP",
+    excerpt: "What if your Jira tickets could practically develop themselves? At Quabu Solutions, we've implemented a revolutionary workflow connecting Jira with Lovable through the MCP protocol.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "March 8, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/LovableAtlassian-scaled.png",
+    featured: true,
+  },
+  {
     id: "qa-automation-antigravity-rovo-mcp",
     title: "QA Automation: How to Create Test Cases in JSM Using Antigravity and Atlassian Rovo MCP",
     excerpt: "At Quabu Solutions, we've taken a leap into the future by integrating Antigravity with the new Rovo MCP (Model Context Protocol). Discover how this combination is changing the rules of the game for QA teams.",
