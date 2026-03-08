@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "qa-automation-antigravity-rovo-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 8, 2026", readTime: "4 min", featured: true },
   { id: "loom-fundamentals-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 3, 2026", readTime: "3 min", featured: true },
   { id: "jira-ai-agents-workflow-integration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 24, 2026", readTime: "6 min", featured: true },
   { id: "jira-formula-custom-fields", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 21, 2026", readTime: "6 min", featured: true },
@@ -92,6 +93,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "qa-automation-antigravity-rovo-mcp",
+    title: "QA Automation: How to Create Test Cases in JSM Using Antigravity and Atlassian Rovo MCP",
+    excerpt: "At Quabu Solutions, we've taken a leap into the future by integrating Antigravity with the new Rovo MCP (Model Context Protocol). Discover how this combination is changing the rules of the game for QA teams.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "March 8, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/AntigravityAtlassian-scaled.png",
+    featured: true,
+  },
   {
     id: "loom-fundamentals-certification",
     title: "🎥 Fewer Meetings, More Loom: The New Loom Fundamentals Certification Is Here",
