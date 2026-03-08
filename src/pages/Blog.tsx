@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "qa-automation-antigravity-rovo-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 8, 2026", readTime: "4 min", featured: true },
   { id: "loom-fundamentals-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 3, 2026", readTime: "3 min", featured: true },
   { id: "jira-ai-agents-workflow-integration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 24, 2026", readTime: "6 min", featured: true },
   { id: "jira-formula-custom-fields", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "February 21, 2026", readTime: "6 min", featured: true },
