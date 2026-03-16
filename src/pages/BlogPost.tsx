@@ -23,6 +23,45 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-community-palma-2026",
+    title: "🚀 Kicking Off 2026 with the Atlassian Community in Palma de Mallorca 🏝️",
+    excerpt: "Our colleague Raúl Peláez, Atlassian Champion at Quabu Solutions, will be speaking at the ACE Palma de Mallorca event about using multiple Rovo agents for Marketing processes and connecting them with Lovable via Atlassian MCP.",
+    content: `
+## 🎤 We're Thrilled to Share This!
+
+Our colleague **Raúl Peláez**, Atlassian consultant at **Quabu Solutions** and **Atlassian Champion**, will be one of the speakers at the upcoming **ACE Palma de Mallorca** Atlassian community event, taking place **online on March 19th at 4:30 PM (CET)**.
+
+---
+
+## 🧠 What Will the Session Cover?
+
+In his session, Raúl will demonstrate **how to use multiple Rovo agents applied to Marketing processes**, showcasing how **people + AI** can collaborate to boost team productivity.
+
+Additionally, he'll show how the tickets generated during these processes end up becoming **real development using Lovable together with the Atlassian MCP**.
+
+---
+
+## 🚀 A Highly Practical Session
+
+This is a very hands-on session designed to help you understand **how to connect AI, processes, and development within the Atlassian ecosystem**.
+
+If you're interested in seeing **Rovo in action and discovering new ways of working with Atlassian**, don't miss it!
+
+---
+
+## 📝 Register Now
+
+👉 Sign up here: [ACE Palma de Mallorca Event](https://ace.atlassian.com/events/details/atlassian-palma-de-mallorca-presents-casos-practicos-en-la-gestion-de-servicios/)
+
+#AtlassianChampion #Atlassian #JSM #Rovo #ACEPalmadeMallorca
+`,
+    date: "March 14, 2026",
+    readTime: "2 min read",
+    category: "News",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/AtlassianACEMallorca2026.jpg",
+    author: "Quabu Solutions",
+  },
+  {
     id: "jira-to-code-lovable-atlassian-mcp",
     title: "From Ticket to Real Code: Automating Development with Lovable and Atlassian MCP",
     excerpt: "What if your Jira tickets could practically develop themselves? At Quabu Solutions, we've implemented a revolutionary workflow connecting Jira with Lovable through the MCP protocol.",

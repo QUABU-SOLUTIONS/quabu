@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-community-palma-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 14, 2026", readTime: "2 min", featured: true },
   { id: "jira-to-code-lovable-atlassian-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 8, 2026", readTime: "4 min", featured: true },
   { id: "qa-automation-antigravity-rovo-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 8, 2026", readTime: "4 min", featured: true },
   { id: "loom-fundamentals-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 3, 2026", readTime: "3 min", featured: true },
@@ -94,6 +95,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-community-palma-2026",
+    title: "🚀 Kicking Off 2026 with the Atlassian Community in Palma de Mallorca 🏝️",
+    excerpt: "Our colleague Raúl Peláez, Atlassian Champion at Quabu Solutions, will be speaking at the ACE Palma de Mallorca event about using multiple Rovo agents for Marketing processes and connecting them with Lovable via Atlassian MCP.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "March 14, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/AtlassianACEMallorca2026.jpg",
+    featured: true,
+  },
   {
     id: "jira-to-code-lovable-atlassian-mcp",
     title: "From Ticket to Real Code: Automating Development with Lovable and Atlassian MCP",
