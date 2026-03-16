@@ -96,6 +96,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "atlassian-community-palma-2026",
+    title: "🚀 Kicking Off 2026 with the Atlassian Community in Palma de Mallorca 🏝️",
+    excerpt: "Our colleague Raúl Peláez, Atlassian Champion at Quabu Solutions, will be speaking at the ACE Palma de Mallorca event about using multiple Rovo agents for Marketing processes and connecting them with Lovable via Atlassian MCP.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "March 14, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/AtlassianACEMallorca2026.jpg",
+    featured: true,
+  },
+  {
     id: "jira-to-code-lovable-atlassian-mcp",
     title: "From Ticket to Real Code: Automating Development with Lovable and Atlassian MCP",
     excerpt: "What if your Jira tickets could practically develop themselves? At Quabu Solutions, we've implemented a revolutionary workflow connecting Jira with Lovable through the MCP protocol.",
