@@ -59,6 +59,7 @@ If you're interested in seeing **Rovo in action and discovering new ways of work
     readTime: "2 min read",
     category: "News",
     image: "https://quabu.blog/wp-content/uploads/2026/03/AtlassianACEMallorca2026.jpg",
+    tags: ["Atlassian", "Rovo", "ACE", "Community", "Marketing", "Lovable", "MCP"],
     author: "Quabu Solutions",
   },
   {
