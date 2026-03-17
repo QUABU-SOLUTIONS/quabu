@@ -23,6 +23,43 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "quabu-eazybi-partner",
+    title: "🚀 Quabu Solutions Is Now an eazyBI Partner",
+    excerpt: "We're excited to announce that Quabu Solutions has officially become an eazyBI partner, one of the most powerful Business Intelligence and reporting solutions for the Atlassian ecosystem.",
+    content: `
+## 🎉 Exciting News!
+
+We're thrilled to announce that **Quabu Solutions** has officially become an **eazyBI partner**, one of the most powerful **Business Intelligence and reporting solutions for the Atlassian ecosystem**.
+
+---
+
+## 📊 What Can We Do with eazyBI?
+
+With eazyBI, we help organizations transform data from **Jira, Jira Service Management, and other sources** into actionable insights through:
+
+- 📊 **Advanced dashboards**
+- 📈 **Multidimensional data analysis**
+- ⚙️ **Integrations with multiple data sources**
+- 🔎 **Deep insights to improve decision-making**
+
+---
+
+## 🚀 Expanding Our Capabilities
+
+At **Quabu Solutions**, we continue to expand our capabilities to deliver **advanced analytics and reporting solutions that truly add value to teams**.
+
+If you want to **unlock the full potential of your Jira data**, we'd be happy to help.
+
+#Atlassian #Jira #eazyBI #BusinessIntelligence #DataAnalytics #Reporting #QuabuSolutions
+`,
+    date: "March 17, 2026",
+    readTime: "2 min read",
+    category: "News",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/eazyBIPartnerQuabu.png",
+    tags: ["Atlassian", "Jira", "eazyBI", "Business Intelligence", "Data Analytics", "Reporting"],
+    author: "Quabu Solutions",
+  },
+  {
     id: "atlassian-community-palma-2026",
     title: "🚀 Kicking Off 2026 with the Atlassian Community in Palma de Mallorca 🏝️",
     excerpt: "Our colleague Raúl Peláez, Atlassian Champion at Quabu Solutions, will be speaking at the ACE Palma de Mallorca event about using multiple Rovo agents for Marketing processes and connecting them with Lovable via Atlassian MCP.",
