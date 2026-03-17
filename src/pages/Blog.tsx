@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "quabu-eazybi-partner", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 17, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-community-palma-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 14, 2026", readTime: "2 min", featured: true },
   { id: "jira-to-code-lovable-atlassian-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 8, 2026", readTime: "4 min", featured: true },
   { id: "qa-automation-antigravity-rovo-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 8, 2026", readTime: "4 min", featured: true },
