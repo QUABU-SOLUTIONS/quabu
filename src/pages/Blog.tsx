@@ -97,6 +97,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "quabu-eazybi-partner",
+    title: "🚀 Quabu Solutions Is Now an eazyBI Partner",
+    excerpt: "We're excited to announce that Quabu Solutions has officially become an eazyBI partner, one of the most powerful Business Intelligence and reporting solutions for the Atlassian ecosystem.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "March 17, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/eazyBIPartnerQuabu.png",
+    featured: true,
+  },
+  {
     id: "atlassian-community-palma-2026",
     title: "🚀 Kicking Off 2026 with the Atlassian Community in Palma de Mallorca 🏝️",
     excerpt: "Our colleague Raúl Peláez, Atlassian Champion at Quabu Solutions, will be speaking at the ACE Palma de Mallorca event about using multiple Rovo agents for Marketing processes and connecting them with Lovable via Atlassian MCP.",
