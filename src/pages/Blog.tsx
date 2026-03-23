@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "tempo-timesheets-rovo-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 20, 2026", readTime: "5 min", featured: true },
   { id: "quabu-eazybi-partner", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 17, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-community-palma-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 14, 2026", readTime: "2 min", featured: true },
   { id: "jira-to-code-lovable-atlassian-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 8, 2026", readTime: "4 min", featured: true },
@@ -96,6 +97,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "tempo-timesheets-rovo-mcp",
+    title: "Pioneering the Future: The World's First Integration of Tempo Timesheets and Atlassian Rovo via Custom MCP",
+    excerpt: "We built a Remote MCP Server that brings the entire Tempo ecosystem — Timesheets, Plans, and Financials — into Jira Rovo as actionable AI Skills. No official connector exists yet. Until now.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "March 20, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/JiraCloudTempoMCPRovoAgentSkills-scaled.png",
+    featured: true,
+  },
   {
     id: "quabu-eazybi-partner",
     title: "🚀 Quabu Solutions Is Now an eazyBI Partner",

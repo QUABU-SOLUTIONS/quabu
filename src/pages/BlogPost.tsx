@@ -23,6 +23,88 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "tempo-timesheets-rovo-mcp",
+    title: "Pioneering the Future: The World's First Integration of Tempo Timesheets and Atlassian Rovo via Custom MCP",
+    excerpt: "We built a Remote MCP Server that brings the entire Tempo ecosystem — Timesheets, Plans, and Financials — into Jira Rovo as actionable AI Skills.",
+    content: `
+At **[Quabu Solutions](https://www.quabusolutions.com/)**, we don't just wait for the "official" roadmap. We build it.
+
+If you've been exploring **Atlassian Rovo**, you know the potential of AI Agents is limitless — except when it comes to your most critical data: Time, Resources, and Budgets. Currently, there is no official connector for Tempo Timesheets, Plans, or Financial in the Rovo ecosystem.
+
+**Until now.**
+
+We are thrilled to announce that we have successfully developed a **Remote MCP (Model Context Protocol) Server** that brings the entire Tempo ecosystem into Jira Rovo as actionable "**Skills**."
+
+![Achieved](https://quabu.blog/wp-content/uploads/2026/03/AchievedCaptura-1-1024x489.png)
+
+## The Challenge: Why Hasn't This Been Done?
+
+Integrating Tempo with LLMs is notoriously tricky. High API resource consumption and frequent timeouts often stall standard integrations. To solve this, we moved away from traditional methods and built a robust, high-performance bridge.
+
+![Test](https://quabu.blog/wp-content/uploads/2026/03/TestCaptura-1.png)
+
+### Our Solution: The Quabu Tempo MCP WebApp
+
+Our Beta WebApp acts as the command center for this integration. It's not just a connector; it's a full-scale management interface for AI-driven project tracking.
+
+| **Feature** | **Description** |
+| --- | --- |
+| **Tempo MCP Server** | Connects Timesheets, Plans, and Financials directly to Rovo Agents. |
+| **Custom Dashboards** | Visualize Jira and Tempo reports with high-fidelity charts and tables. |
+| **Cloudflare Proxy** | A Server-Rendered proxy ensuring zero-timeout performance and stability. |
+| **Secure Access** | 2SV (2-Step Verification) via email to ensure your financial data stays private. |
+| **Configuration Hub** | Granular control over API tokens (Timesheets, Plans, Financial) and Jira Scopes. |
+
+---
+
+## How It Works (The Technical Edge)
+
+Our integration uses a **Custom MCP Server** architecture. By deploying a specialized proxy on **Cloudflare Workers**, we bypass the limitations of client-side rendering. This allows Rovo Agents to "talk" to Tempo data in real-time without the lag.
+
+### Setting Up a Rovo Agent with Tempo Skills:
+
+1. **The OAuth Dance:** Our WebApp facilitates a seamless OAuth 2 validation.
+
+![MCP Tempo](https://quabu.blog/wp-content/uploads/2026/03/MCPTempoCaptura-1.png)
+
+2. **Add Skills:** Simply point your Rovo Agent to our MCP URL.
+
+![Skills](https://quabu.blog/wp-content/uploads/2026/03/DestrezasCaptura-1-1024x493.png)
+
+3. **Discovery:** Rovo automatically discovers Tempo methods as "Skills," allowing you to ask things like: *"Which team members have under-logged hours this week according to Tempo Timesheets?"* or *"What is the budget variance on Project X in Tempo Financial?"*
+
+![Rovo Tempo MCP](https://quabu.blog/wp-content/uploads/2026/03/RovoTempoMCPCaptura-1-1024x493.png)
+
+> **Note:** We've even included a dedicated **MCP Testing Suite** within the app so you can watch how the AI discovers parameters and communicates with the API in real-time.
+
+---
+
+## Why This Matters
+
+We are returning to a "Bespoke" era. For years, companies had to settle for "out of the box" limitations. With this MCP bridge, we are enabling **Custom AI Solutions** tailored to your specific reporting needs. If you need a specific report that doesn't exist? We can build the method and publish it as a Rovo Skill in minutes.
+
+### Experience the Beta
+
+The WebApp is currently in Beta and performing exceptionally well.
+
+![Dashboard](https://quabu.blog/wp-content/uploads/2026/03/dashboardCaptura-1-1024x398.png)
+
+## Ready to Lead the AI Revolution in Your Jira Instance?
+
+We are looking for a select group of partners to test this integration and provide feedback as we move toward a full release.
+
+**Want to see it in action or get the Cloudflare deployment code?**
+
+**[Contact Quabu Solutions Today](/contact)** – Let's make your Jira Rovo Agents the smartest members of your team.
+`,
+    author: "Quabu Solutions",
+    date: "March 20, 2026",
+    readTime: "5 min read",
+    category: "Articles",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/JiraCloudTempoMCPRovoAgentSkills-scaled.png",
+    tags: ["Atlassian", "Jira", "Rovo", "MCP", "Tempo", "Timesheets", "AI", "Cloudflare"],
+  },
+  {
     id: "quabu-eazybi-partner",
     title: "🚀 Quabu Solutions Is Now an eazyBI Partner",
     excerpt: "We're excited to announce that Quabu Solutions has officially become an eazyBI partner, one of the most powerful Business Intelligence and reporting solutions for the Atlassian ecosystem.",
