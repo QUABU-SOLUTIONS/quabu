@@ -23,6 +23,70 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "no-more-forms-ai-booking-jira",
+    title: "🔮 This Week We Booked an Asset in Jira by Talking to an AI — Forms Will Never Be the Same",
+    excerpt: "We integrated JSM portal chat with Rovo AI and Apwide's Booking app. The result? You can now book Assets in Jira just by chatting with an AI agent. #NoMoreForms",
+    content: `
+Some weeks you finish Friday thinking *"well, that was a week."* And some weeks you finish thinking *"wait… did we just see the future?"* This was one of the second kind.
+
+In **[Quabu Solutions](https://www.quabusolutions.com/)** we've been working on integrating the **Jira Service Management** portal chat with **Rovo** AI and **[Booking](https://marketplace.atlassian.com/apps/1236123/booking-resource-reservation-for-jira-and-jsm?hosting=cloud&tab=overview)**, the app by **[Apwide](https://www.apwide.com/)** (in case you don't know it, it's the first application in the entire Atlassian ecosystem that lets you book Assets and check their availability in real time. Yes, the first in the world. Not bad for the Apwide team! 😄)
+
+## The problem (and the solution we didn't see coming)
+
+The initial challenge was that Rovo and Booking's AI agent weren't talking to each other. Literally. Like two coworkers who spot each other in the hallway and suddenly find their phones extremely interesting to avoid saying hello.
+
+It was in a conversation with **David** that we found the way forward:
+
+- Using ***skills*** to allow any Rovo agent to access Assets and the booking system. Simple in concept, powerful in execution.
+
+![Skills configuration](https://quabu.blog/wp-content/uploads/2026/03/UpdateCaptura-1-1024x625.png)
+
+And when it started working… the question that changed everything arrived.
+
+## 💡 The million-dollar question
+
+> ***Why would I fill out a form if Rovo can book the Asset for me directly from the chat?***
+
+![It's working](https://quabu.blog/wp-content/uploads/2026/03/ItsworkingCaptura-1.png)
+
+Because, as science-fiction as it sounds, **it is more natural and more comfortable to ask an AI to make a booking via chat than to open a form, fill it in field by field, submit it and pray there's no validation error at the end**. Sound familiar?
+
+Forms were, in their day, a great innovation. They digitised processes, organised workflows, saved countless administrative lives. They deserve a round of applause. But let's be honest: they've spent decades being the most annoying part of any process, especially the government ones. 🙃
+
+## 🤖 The real shift: agents talking to agents
+
+What we're building here goes beyond a UX improvement. It's a mindset change:
+
+*"**My agents will talk to other agents. No forms. No friction. Just natural language.**"*
+
+And the funny thing is that, in making this enormous technological leap, **we're actually going back to something very old and very human**: when you'd call a manager, explain what you needed, and they'd handle all the paperwork. Well, that manager is now an AI, available at 3am, and it never complains if you ask the same thing twice.
+
+## 👏 Credit where credit is due
+
+I can't close this post without calling something out: the **Apwide team** delivered all of these improvements in record time. And not just that — if you've tried the latest version of Booking, you can already see the **availability of a space before booking it**, directly from the JSM portal, with a user experience that's genuinely a pleasure to use.
+
+![Booking availability](https://quabu.blog/wp-content/uploads/2026/03/OKCaptura-1-1024x607.png)
+
+At Quabu we take this seriously, because at the end of the day, the tools we recommend to our clients are a reflection of who we are. And this is a **solid 10**. 🙌
+
+**So, what do you think?**
+
+Do you believe forms are on their way out? Are you already exploring AI agents in your Atlassian workflows?
+
+Our Quabu clients are about to discover a lot of exciting things very soon. If you're curious — or if you hate forms as much as we do — **[let's talk](https://www.quabusolutions.com/contact)**. 👇
+
+*#NoMoreForms*
+
+By [Raul Pelaez](https://www.linkedin.com/in/ra%C3%BAl-pel%C3%A1ez-mendoza-ba037a28/) (Atlassian Champion)
+`,
+    author: "Raul Pelaez",
+    date: "March 24, 2026",
+    readTime: "4 min read",
+    category: "Articles",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/ENQuabuApWideBookingAppJiraCloud-scaled.png",
+    tags: ["Atlassian", "Jira", "Rovo", "AI", "Apwide", "Booking", "JSM", "MCP"],
+  },
+  {
     id: "tempo-timesheets-rovo-mcp",
     title: "Pioneering the Future: The World's First Integration of Tempo Timesheets and Atlassian Rovo via Custom MCP",
     excerpt: "We built a Remote MCP Server that brings the entire Tempo ecosystem — Timesheets, Plans, and Financials — into Jira Rovo as actionable AI Skills.",
