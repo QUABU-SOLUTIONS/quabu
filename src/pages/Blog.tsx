@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "no-more-forms-ai-booking-jira", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 24, 2026", readTime: "4 min", featured: true },
   { id: "tempo-timesheets-rovo-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 20, 2026", readTime: "5 min", featured: true },
   { id: "quabu-eazybi-partner", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 17, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-community-palma-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 14, 2026", readTime: "2 min", featured: true },
@@ -97,6 +98,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "no-more-forms-ai-booking-jira",
+    title: "🔮 This Week We Booked an Asset in Jira by Talking to an AI — Forms Will Never Be the Same",
+    excerpt: "We integrated JSM portal chat with Rovo AI and Apwide's Booking app. The result? You can now book Assets in Jira just by chatting with an AI agent. #NoMoreForms",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "March 24, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/ENQuabuApWideBookingAppJiraCloud-scaled.png",
+    featured: true,
+  },
   {
     id: "tempo-timesheets-rovo-mcp",
     title: "Pioneering the Future: The World's First Integration of Tempo Timesheets and Atlassian Rovo via Custom MCP",
