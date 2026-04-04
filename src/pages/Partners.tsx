@@ -61,6 +61,13 @@ const partners = [
     url: "https://www.soldevelo.com",
     tier: "technology",
   },
+  {
+    name: "APSL",
+    description: "Software development and technology consulting",
+    logos: [{ src: partnerApsl, alt: "APSL Logo" }],
+    url: "https://apsl.tech/",
+    tier: "technology",
+  },
 ];
 
 export default function Partners() {
