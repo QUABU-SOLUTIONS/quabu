@@ -12,6 +12,7 @@ import partnerSoldevelo from "@/assets/partner-soldevelo.png";
 import partnerXray from "@/assets/partner-xray.png";
 import partnerApwide from "@/assets/partner-apwide.png";
 import partnerAppfire from "@/assets/partner-appfire.png";
+import partnerApsl from "@/assets/partner-apsl.png";
 
 const partners = [
   {
@@ -58,6 +59,13 @@ const partners = [
     description: "Software development and IT consulting partner",
     logos: [{ src: partnerSoldevelo, alt: "SolDevelo Logo" }],
     url: "https://www.soldevelo.com",
+    tier: "technology",
+  },
+  {
+    name: "APSL",
+    description: "Software development and technology consulting",
+    logos: [{ src: partnerApsl, alt: "APSL Logo" }],
+    url: "https://apsl.tech/",
     tier: "technology",
   },
 ];
