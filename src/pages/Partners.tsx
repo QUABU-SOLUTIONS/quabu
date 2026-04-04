@@ -71,6 +71,7 @@ export default function Partners() {
   return (
     <Layout>
       <SEO
+        path="/partners"
         title="Partners | Quabu Solutions"
         description="Meet our technology and strategic partners. We collaborate with industry leaders to deliver best-in-class solutions."
       />

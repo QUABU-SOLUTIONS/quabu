@@ -27,6 +27,13 @@ const ca = {
     appsSupportDesc: "Obtén ajuda amb les nostres apps d'Atlassian",
     appsDocumentation: "Documentació d'Apps",
     appsDocumentationDesc: "Guies i documentació per a les nostres apps",
+    partners: "Partners",
+  },
+  partners: {
+    title: "Els Nostres Partners",
+    subtitle: "Col·laborem amb empreses tecnològiques líders en la indústria per oferir les millors solucions als nostres clients.",
+    strategic: "Partners Estratègics",
+    technology: "Partners Tecnològics",
   },
   // Accelerator nav items
   accelerators: {
