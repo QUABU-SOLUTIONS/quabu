@@ -27,6 +27,13 @@ const es = {
     appsSupportDesc: "Obtén ayuda con nuestras apps de Atlassian",
     appsDocumentation: "Documentación de Apps",
     appsDocumentationDesc: "Guías y documentación para nuestras apps",
+    partners: "Partners",
+  },
+  partners: {
+    title: "Nuestros Partners",
+    subtitle: "Colaboramos con empresas tecnológicas líderes en la industria para ofrecer las mejores soluciones a nuestros clientes.",
+    strategic: "Partners Estratégicos",
+    technology: "Partners Tecnológicos",
   },
   // Accelerator nav items
   accelerators: {

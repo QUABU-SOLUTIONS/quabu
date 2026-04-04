@@ -26,6 +26,7 @@ import CloudMigration from "./pages/services/CloudMigration";
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import TermsOfService from "./pages/legal/TermsOfService";
 import CookiesPolicy from "./pages/legal/CookiesPolicy";
+import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
 import NewsletterConfirm from "./pages/NewsletterConfirm";
 import NewsletterUnsubscribe from "./pages/NewsletterUnsubscribe";
@@ -55,6 +56,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/partners" element={<Partners />} />
             <Route path="/services/atlassian" element={<AtlassianServices />} />
             <Route path="/services/custom-development" element={<CustomDevelopment />} />
             <Route path="/services/cloud-migration" element={<CloudMigration />} />

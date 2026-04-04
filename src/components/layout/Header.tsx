@@ -110,6 +110,7 @@ export function Header() {
     { name: t("nav.apps"), href: "/apps", hasAppsDropdown: true },
     { name: t("nav.services"), href: "/services", hasServicesDropdown: true },
     { name: t("nav.blog"), href: "/blog", hasBlogDropdown: true },
+    { name: t("nav.partners"), href: "/partners" },
     { name: t("nav.about"), href: "/about", hasAboutDropdown: true },
   ];
 
