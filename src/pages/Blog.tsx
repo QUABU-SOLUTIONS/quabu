@@ -99,6 +99,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "jira-dc-cloud-migration-report",
+    title: "Is Your Jira Data Center to Cloud Migration a Stroll or an Everest Expedition?",
+    excerpt: "We developed Doctor Amor, an automated audit system that analyzes your Jira Data Center instance to provide a real complexity score and comprehensive migration risk report — completely free.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "March 28, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/MigrationJiraCloudQuabu-scaled.png",
+    featured: true,
+  },
+  {
     id: "no-more-forms-ai-booking-jira",
     title: "🔮 This Week We Booked an Asset in Jira by Talking to an AI — Forms Will Never Be the Same",
     excerpt: "We integrated JSM portal chat with Rovo AI and Apwide's Booking app. The result? You can now book Assets in Jira just by chatting with an AI agent. #NoMoreForms",

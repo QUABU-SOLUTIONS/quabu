@@ -23,6 +23,80 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-dc-cloud-migration-report",
+    title: "Is Your Jira Data Center to Cloud Migration a Stroll or an Everest Expedition?",
+    excerpt: "We developed Doctor Amor, an automated audit system that analyzes your Jira Data Center instance to provide a real complexity score and comprehensive migration risk report — completely free.",
+    content: `
+If your organization is still running on **Jira Data Center**, it's probably not due to a lack of innovation. It's because your instance is a massive, complex ecosystem—and, let's be honest, a bit intimidating. With the end of Data Center support looming, the question is no longer _if_ you're migrating, but how to prevent the process from becoming «open-heart surgery» without anesthesia.
+
+At **QUABU SOLUTIONS**, we understand that for instances with millions of issues and a jungle of custom scripts, «we'll look at it tomorrow» is a high-risk strategy.
+
+### The End of «Guesstimates»
+
+![Migration overview](https://quabu.blog/wp-content/uploads/2026/03/Migration-1024x542.png)
+
+Migrating a giant isn't a linear task. That's why we developed **Doctor Amor (Diagnostic Migration Data Center)**, an automated audit system that analyzes your instance with zero manual intervention after the initial setup.
+
+Unlike generic sales pitches, our tool scans your system to provide an objective metric and a comprehensive risk report.
+
+![Discover](https://quabu.blog/wp-content/uploads/2026/03/Discover-1024x566.png)
+
+### What does the Doctor Amor diagnosis reveal?
+
+What exactly does our «specialist» do?
+
+- **Automated Analysis:** It scans your instance so you don't have to break a sweat.
+- **Critical Point Detection:** It flags those sleepless-night issues, like configurations you didn't even know existed.
+- **Real Complexity Score:** This isn't a random number; it's applied science to determine if your migration is a walk in the park or an expedition to Everest.
+- **Resource Forecasting:** We deliver a report detailing the actual time and team (Consultants and Engineers) you will truly need.
+
+![Jira DC Audit](https://quabu.blog/wp-content/uploads/2026/03/JiraDCAudit-1024x570.png)
+
+Our system analyzes eight functional blocks to determine a **Global Complexity Score (0 to 100)**:
+
+1. **The ScriptRunner Factor (Critical Weight: 20%):** We identify dependencies on Groovy scripts that will require manual refactoring for Cloud-native architecture.
+2. **Configuration & Technical Debt:** We evaluate workflows, screens, and custom fields to avoid «migrating junk» and ensure a clean slate before the jump.
+3. **Big Data Analysis:** We review the integrity of project-user associations, attachments, and comment volume.
+4. **App Ecosystem & JSM:** We detect which add-ons (like Tempo or eazyBI) have equivalents and assess the complexity of your Assets/Insight structures.
+
+![Complexity](https://quabu.blog/wp-content/uploads/2026/03/Complexity-1024x558.png)
+
+### Real Timelines for Real Instances
+
+The Doctor Amor report realistically classifies your effort level:
+
+- **Trivial to Simple:** Direct migrations with minor tweaks (typically 2 to 7 weeks).
+- **Moderate:** Requires partial redesign of logic or scripts (7 to 11 weeks).
+- **Complex to Ultra-Complex:** For instances requiring extensive reconstruction of processes or integrations (11 to 24+ weeks).
+
+![Complexity levels](https://quabu.blog/wp-content/uploads/2026/03/Complexityy-1024x550.png)
+
+### Your Report: Completely Free and No Strings Attached
+
+At **QUABU SOLUTIONS**, we want you to make decisions based on data science, not calendar panic. That's why we offer this analysis service **completely free of charge.**
+
+You will receive a comprehensive document including:
+
+- Your global difficulty score.
+- Identification of critical points and non-standard configurations.
+- High-level recommendations to mitigate risks and reduce complexity.
+
+![Migration Xray](https://quabu.blog/wp-content/uploads/2026/03/MigrationJiraDCXray-1024x550.png)
+
+![Migration Roadmap](https://quabu.blog/wp-content/uploads/2026/03/MigrationRoadmap-1024x535.png)
+
+**Ready to find out how deep your Jira rabbit hole goes?** Contact us and let **Doctor Amor** take the pulse of your migration. No drama, just expert solutions.
+
+**By [Raúl Peláez](https://www.linkedin.com/in/ra%C3%BAl-pel%C3%A1ez-mendoza-ba037a28/) #AtlassianChampions**
+`,
+    author: "Raúl Peláez",
+    date: "March 28, 2026",
+    readTime: "5 min read",
+    category: "Articles",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/MigrationJiraCloudQuabu-scaled.png",
+    tags: ["Atlassian", "Jira", "Data Center", "Cloud Migration", "ScriptRunner", "JSM"],
+  },
+  {
     id: "no-more-forms-ai-booking-jira",
     title: "🔮 This Week We Booked an Asset in Jira by Talking to an AI — Forms Will Never Be the Same",
     excerpt: "We integrated JSM portal chat with Rovo AI and Apwide's Booking app. The result? You can now book Assets in Jira just by chatting with an AI agent. #NoMoreForms",
