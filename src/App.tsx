@@ -26,6 +26,7 @@ import CloudMigration from "./pages/services/CloudMigration";
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import TermsOfService from "./pages/legal/TermsOfService";
 import CookiesPolicy from "./pages/legal/CookiesPolicy";
+import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
 import NewsletterConfirm from "./pages/NewsletterConfirm";
 import NewsletterUnsubscribe from "./pages/NewsletterUnsubscribe";
