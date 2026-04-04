@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-dc-cloud-migration-report", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 28, 2026", readTime: "5 min", featured: true },
   { id: "no-more-forms-ai-booking-jira", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 24, 2026", readTime: "4 min", featured: true },
   { id: "tempo-timesheets-rovo-mcp", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 20, 2026", readTime: "5 min", featured: true },
   { id: "quabu-eazybi-partner", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "March 17, 2026", readTime: "2 min", featured: true },
@@ -98,6 +99,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-dc-cloud-migration-report",
+    title: "Is Your Jira Data Center to Cloud Migration a Stroll or an Everest Expedition?",
+    excerpt: "We developed Doctor Amor, an automated audit system that analyzes your Jira Data Center instance to provide a real complexity score and comprehensive migration risk report — completely free.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "March 28, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/03/MigrationJiraCloudQuabu-scaled.png",
+    featured: true,
+  },
   {
     id: "no-more-forms-ai-booking-jira",
     title: "🔮 This Week We Booked an Asset in Jira by Talking to an AI — Forms Will Never Be the Same",
