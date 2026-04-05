@@ -13,6 +13,11 @@ import partnerXray from "@/assets/partner-xray.png";
 import partnerApwide from "@/assets/partner-apwide.png";
 import partnerAppfire from "@/assets/partner-appfire.png";
 import partnerApsl from "@/assets/partner-apsl.png";
+import partnerTempo from "@/assets/partner-tempo.png";
+import partnerYasoon from "@/assets/partner-yasoon.png";
+import partnerLansweeper from "@/assets/partner-lansweeper.png";
+import partnerNuvolar from "@/assets/partner-nuvolar.png";
+import partnerAws from "@/assets/partner-aws.png";
 
 const partners = [
   {
@@ -67,6 +72,41 @@ const partners = [
     logos: [{ src: partnerApsl, alt: "APSL Logo" }],
     url: "https://apsl.tech/",
     tier: "technology",
+  },
+  {
+    name: "Tempo",
+    description: "Time tracking, resource planning and budgets for Jira",
+    logos: [{ src: partnerTempo, alt: "Tempo Logo" }],
+    url: "https://www.tempo.io",
+    tier: "technology",
+  },
+  {
+    name: "Yasoon",
+    description: "Seamless integration between Microsoft Office and Atlassian tools",
+    logos: [{ src: partnerYasoon, alt: "Yasoon Logo" }],
+    url: "https://www.yasoon.com",
+    tier: "technology",
+  },
+  {
+    name: "Lansweeper",
+    description: "IT asset management and network inventory solution",
+    logos: [{ src: partnerLansweeper, alt: "Lansweeper Logo" }],
+    url: "https://www.lansweeper.com",
+    tier: "technology",
+  },
+  {
+    name: "Nuvolar",
+    description: "Cloud-native software development and consulting",
+    logos: [{ src: partnerNuvolar, alt: "Nuvolar Logo" }],
+    url: "https://www.nuvolar.com",
+    tier: "technology",
+  },
+  {
+    name: "AWS",
+    description: "Amazon Web Services — cloud computing and infrastructure partner",
+    logos: [{ src: partnerAws, alt: "AWS Partner Network Logo" }],
+    url: "https://aws.amazon.com",
+    tier: "strategic",
   },
 ];
 
