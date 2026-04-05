@@ -28,7 +28,7 @@ const partners = [
       { src: atlassianGoldPartner, alt: "Atlassian Gold Solution Partner" },
       { src: atlassianMarketplacePartner, alt: "Atlassian Marketplace Partner" },
     ],
-    url: "https://www.atlassian.com",
+    url: "https://partnerdirectory.atlassian.com/quabu-solutions-sl",
     tier: "strategic",
   },
   {
