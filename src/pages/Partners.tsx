@@ -13,6 +13,11 @@ import partnerXray from "@/assets/partner-xray.png";
 import partnerApwide from "@/assets/partner-apwide.png";
 import partnerAppfire from "@/assets/partner-appfire.png";
 import partnerApsl from "@/assets/partner-apsl.png";
+import partnerTempo from "@/assets/partner-tempo.png";
+import partnerYasoon from "@/assets/partner-yasoon.png";
+import partnerLansweeper from "@/assets/partner-lansweeper.png";
+import partnerNuvolar from "@/assets/partner-nuvolar.png";
+import partnerAws from "@/assets/partner-aws.png";
 
 const partners = [
   {
