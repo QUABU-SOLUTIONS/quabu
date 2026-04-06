@@ -53,6 +53,16 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.quabusolutions.com/blog/apwide-soldevelo-partners</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/apwide-soldevelo-partners"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/apwide-soldevelo-partners"/>
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
     <loc>https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report"/>
