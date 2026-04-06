@@ -100,6 +100,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "apwide-soldevelo-partners",
+    title: "Apwide and SolDevelo Officially Join Our Partner Network",
+    excerpt: "We're thrilled to announce that Apwide and SolDevelo have officially joined QUABU's partner network, expanding our arsenal of Atlassian solutions for environment management, time tracking, and test management.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "April 6, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/QuabuNewPartnerApwideAndSolDevelo-scaled.png",
+    featured: true,
+  },
+  {
     id: "jira-dc-cloud-migration-report",
     title: "Is Your Jira Data Center to Cloud Migration a Stroll or an Everest Expedition?",
     excerpt: "We developed Doctor Amor, an automated audit system that analyzes your Jira Data Center instance to provide a real complexity score and comprehensive migration risk report — completely free.",
