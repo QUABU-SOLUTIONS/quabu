@@ -23,6 +23,59 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "apwide-soldevelo-partners",
+    title: "Apwide and SolDevelo Officially Join Our Partner Network",
+    excerpt: "We're thrilled to announce that Apwide and SolDevelo have officially joined QUABU's partner network, expanding our arsenal of Atlassian solutions for environment management, time tracking, and test management.",
+    content: `
+Great news in the Atlassian ecosystem! At **QUABU**, we always say that our goal isn't just to give you tools — it's to give you *the best* tools. That's why today we're celebrating: **Apwide and SolDevelo have officially joined our partner network.**
+
+If you live inside Jira or Confluence, these names probably ring a bell.
+
+![Apwide Logo](https://quabu.blog/wp-content/uploads/2026/04/APWIDE_LOGO_MAIN_1-b54151a1-3b43-4460-8ccf-98f095965d1a-1024x369.png)
+
+## 🚀 Apwide: The Radar Your Environments Needed
+
+Have you ever felt lost trying to figure out which version of your software is deployed in which environment? If your answer is a frustrated sigh, [**Apwide**](https://www.apwide.com/) is your new best friend.
+
+They're the brains behind **[Golive](https://marketplace.atlassian.com/apps/1212239/golive-test-environment-release-management-for-jira?hosting=cloud&tab=overview)**, one of the most popular apps on the Atlassian Marketplace. Their specialty is test and deployment environment management directly from Jira. With them, visibility is total.
+
+At QUABU, we're delighted to help you implement their technology so your *Release Management* workflow stops being a coin toss.
+
+![SolDevelo Logo](https://quabu.blog/wp-content/uploads/2026/04/cropped-cropped-cropped-cropped-cropped-logokolor-1-1024x211.png)
+
+## 🛠️ SolDevelo: Productivity and Quality with an Expert Seal
+
+If Apwide brings order to environments, [**SolDevelo**](https://soldevelo.com/) brings power to execution. They're elite developers who understand perfectly what a team needs to be 100% efficient.
+
+They have a catalog of "must-have" apps, but if we had to highlight a few, we'd pick:
+
+- **[Worklogs](https://marketplace.atlassian.com/apps/1219004/worklogs-time-tracking-time-reports-timesheets?hosting=cloud&tab=overview):** The ultimate solution so that time tracking isn't a nightmare for your team (or the finance department).
+- **[QAlity](https://marketplace.atlassian.com/apps/1223344/qality-plus-test-management-for-jira-execute-report?hosting=cloud&tab=overview):** Test management integrated into Jira, so quality isn't something you check at the end, but part of the process from minute one.
+
+Their approach is clear: create robust, easy-to-use solutions that solve real everyday problems.
+
+## What Does This Mean for You?
+
+Our philosophy at QUABU is to surround ourselves with the best to offer you solutions that truly impact your results. By adding **Apwide** and **SolDevelo** to our partner family, we expand our arsenal to help you optimize your processes, improve project visibility, and ultimately make your work easier.
+
+> "We don't choose our partners at random; we look for those who, like us, believe that Atlassian technology can take companies to the next level when used with the right pieces."
+
+### Come Meet Them!
+
+We've updated our partners section so you can see up close everything these two giants can do for you.
+
+👉 **[Discover our partners here](/partners)**
+
+Curious about how to integrate any of their apps into your Jira instance? Let's talk! At QUABU, we're ready to help you take the next step.
+`,
+    category: "News",
+    date: "April 6, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/QuabuNewPartnerApwideAndSolDevelo-scaled.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Partnership", "Apwide", "SolDevelo", "Jira", "DevOps"],
+  },
+  {
     id: "jira-dc-cloud-migration-report",
     title: "Is Your Jira Data Center to Cloud Migration a Stroll or an Everest Expedition?",
     excerpt: "We developed Doctor Amor, an automated audit system that analyzes your Jira Data Center instance to provide a real complexity score and comprehensive migration risk report — completely free.",
