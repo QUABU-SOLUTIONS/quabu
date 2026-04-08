@@ -61,7 +61,7 @@ const partners = [
   },
   {
     name: "SolDevelo",
-    description: "Software development and IT consulting partner",
+    description: "Jira apps for time tracking, test management & project management.",
     logos: [{ src: partnerSoldevelo, alt: "SolDevelo Logo" }],
     url: "https://www.soldevelo.com",
     tier: "technology",
