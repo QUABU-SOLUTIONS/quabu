@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "quabu-ii-congres-clubs-natacio", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 12, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-community-barcelona-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 16, 2026", readTime: "2 min", featured: true },
   { id: "apwide-soldevelo-partners", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 6, 2026", readTime: "3 min", featured: true },
   { id: "jira-dc-cloud-migration-report", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 28, 2026", readTime: "5 min", featured: true },
@@ -101,6 +102,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "quabu-ii-congres-clubs-natacio",
+    title: "Quabu at the II Congress of Swimming Clubs of Catalonia: Driving the Digitalization of Sport",
+    excerpt: "We attended the II Congress of Swimming Clubs of Catalonia at the Royalverd Training Center, presenting our integrated solution for sports clubs in just 15 minutes.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "April 12, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/QuabuPacteNacionalClubsCatalunya-scaled.png",
+    featured: true,
+  },
   {
     id: "atlassian-community-barcelona-2026",
     title: "See You at the Next Atlassian Community Barcelona — In Person!",
