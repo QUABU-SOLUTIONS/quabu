@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-community-barcelona-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 16, 2026", readTime: "2 min", featured: true },
   { id: "apwide-soldevelo-partners", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 6, 2026", readTime: "3 min", featured: true },
   { id: "jira-dc-cloud-migration-report", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 28, 2026", readTime: "5 min", featured: true },
   { id: "no-more-forms-ai-booking-jira", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 24, 2026", readTime: "4 min", featured: true },
@@ -100,6 +101,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-community-barcelona-2026",
+    title: "See You at the Next Atlassian Community Barcelona — In Person!",
+    excerpt: "We're heading to «AI without the hype: what works (and what doesn't) in Atlassian», featuring Antoni Perez. Real customer experiences and practical AI in the Atlassian ecosystem.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "April 16, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/ACEBarcelona2026.png",
+    featured: true,
+  },
   {
     id: "apwide-soldevelo-partners",
     title: "Apwide and SolDevelo Officially Join Our Partner Network",

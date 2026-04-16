@@ -23,6 +23,32 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-community-barcelona-2026",
+    title: "See You at the Next Atlassian Community Barcelona — In Person!",
+    excerpt: "We're heading to «AI without the hype: what works (and what doesn't) in Atlassian», featuring Antoni Perez. Real customer experiences and practical AI in the Atlassian ecosystem.",
+    content: `
+At Quabu we never stop, and our next stop is an event that promises to be eye-opening: **«AI without the hype: what works (and what doesn't) in Atlassian»**.
+
+![Atlassian Community Barcelona 2026](https://quabu.blog/wp-content/uploads/2026/04/ACEBarcelona2026.png)
+
+We're especially excited to attend, not only because of the very timely topic, but also because it's always a treat to listen to **Antoni Perez** in action. His talks are a guarantee of practical learning and expert insight into the Atlassian ecosystem.
+
+If you're curious about how to apply AI in a real way to your processes and want to spend some time with the community, you can't miss it! We'll be there to exchange impressions and keep learning together.
+
+**Are you in? You can find all the details and registration here:**
+
+👉 [Sign up for the event here](https://ace.atlassian.com/events/details/atlassian-barcelona-presents-ia-sin-humo-lo-que-funciona-y-lo-que-no-en-atlassian-experiencias-reales-de-clientes-y-como-llevarla-a-la-practica/)
+
+See you in Barcelona!
+`,
+    category: "News",
+    date: "April 16, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/ACEBarcelona2026.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Community", "Barcelona", "AI", "Event"],
+  },
+  {
     id: "apwide-soldevelo-partners",
     title: "Apwide and SolDevelo Officially Join Our Partner Network",
     excerpt: "We're thrilled to announce that Apwide and SolDevelo have officially joined QUABU's partner network, expanding our arsenal of Atlassian solutions for environment management, time tracking, and test management.",
