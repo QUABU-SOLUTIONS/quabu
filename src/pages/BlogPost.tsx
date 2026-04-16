@@ -23,6 +23,60 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "quabu-ii-congres-clubs-natacio",
+    title: "Quabu at the II Congress of Swimming Clubs of Catalonia: Driving the Digitalization of Sport",
+    excerpt: "We attended the II Congress of Swimming Clubs of Catalonia at the Royalverd Training Center, presenting our integrated solution for sports clubs in just 15 minutes.",
+    content: `
+What an incredible day yesterday! We're still digesting all the positive energy from the **II Congress of Swimming Clubs of Catalonia**. It was one of those events that mark a before and after, and at Quabu we couldn't miss such a crucial appointment for the future of sport in our country.
+
+![Quabu at National Pact for Catalan Clubs](https://quabu.blog/wp-content/uploads/2026/04/QuabuPacteNacionalClubsCatalunya-scaled.png)
+
+Here's the chronicle of how we lived this intense day in La Garrotxa.
+
+## An Idyllic Setting to Think Big
+
+The setting couldn't have been better: the **[Royalverd Training Center](https://www.royalverd.com/training-center/)**. Surrounded by the nature of La Garrotxa, the atmosphere invited reflection and, above all, action. We want to thank Royalverd enormously for being top-notch hosts; the place is, quite simply, idyllic.
+
+![Royalverd Training Center](https://quabu.blog/wp-content/uploads/2026/04/20260411_100636-1024x768.jpg)
+
+The day kicked off with incredible energy thanks to the talk by **Raül Romeva**. It was a truly inspiring intervention that put on the table the importance of clubs as social entities of public interest. He left us all with an open mind and ready for the debate.
+
+![Raül Romeva talk](https://quabu.blog/wp-content/uploads/2026/04/20260411_104143-1024x768.jpg)
+
+## The Quabu Challenge: 15 Minutes of Pure Innovation
+
+At 12:45 it was our turn. We had an important challenge: to present our **integrated solution for sports clubs in a "record time" of just 15 minutes**.
+
+![Quabu presentation](https://quabu.blog/wp-content/uploads/2026/04/20260411_131919-1024x768.jpg)
+
+Is it possible to explain how to digitize and optimize the management of a club in the time it takes to make a coffee? We did it! And the most rewarding part was the reception. We felt that our proposal resonated with the real needs of managers: agile, direct, and effective tools. We're delighted to see how well our vision for the digital facility was received.
+
+## Productive Debates and a Historic Moment
+
+The congress wasn't just theory. The roundtables were extremely productive, largely thanks to the moderation of **Pere Vilà**, who knew how to set the pace and extract the best from each speaker, addressing complex topics such as the closure of facilities or the challenges of the new collective agreement.
+
+![Roundtable discussion](https://quabu.blog/wp-content/uploads/2026/04/20260411_113909-1024x768.jpg)
+
+And since not everything has to be work, the **networking and catering** were top-notch. It was the perfect moment to connect, share experiences, and strengthen ties with key people in the sector.
+
+![Networking moment](https://quabu.blog/wp-content/uploads/2026/04/20260411_151518-1024x768.jpg)
+
+### In Summary…
+
+We're leaving La Garrotxa with our backpack full of ideas, new contacts, and a great memory. Many thanks to the organization and to everyone who took a moment to listen to us.
+
+![Group photo](https://quabu.blog/wp-content/uploads/2026/04/20260411_100821-1024x768.jpg)
+
+At [**Quabu**](/contact) we're ready to keep swimming alongside you in this new stage. **The future of clubs has already begun!** 🏊‍♂️✨
+`,
+    category: "News",
+    date: "April 12, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/QuabuPacteNacionalClubsCatalunya-scaled.png",
+    author: "QUABU Team",
+    tags: ["Sports", "Digitalization", "Catalonia", "Swimming Clubs", "SportsTech", "Innovation"],
+  },
+  {
     id: "atlassian-community-barcelona-2026",
     title: "See You at the Next Atlassian Community Barcelona — In Person!",
     excerpt: "We're heading to «AI without the hype: what works (and what doesn't) in Atlassian», featuring Antoni Perez. Real customer experiences and practical AI in the Atlassian ecosystem.",
