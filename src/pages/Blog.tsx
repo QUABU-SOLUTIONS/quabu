@@ -462,8 +462,17 @@ const BlogCard = ({ post, index, featured = false }: { post: typeof blogPosts[0]
 
 export default function Blog() {
   const { t } = useTranslation();
-  const featuredPosts = blogPosts.filter(p => p.featured);
-  const regularPosts = blogPosts;
+  const [activeCategory, setActiveCategory] = useState<string>("all");
+  const categoryMap: Record<string, string> = {
+    news: "News",
+    articles: "Articles",
+    successStories: "Success Stories",
+  };
+  const filteredPosts = activeCategory === "all"
+    ? blogPosts
+    : blogPosts.filter(p => p.category === categoryMap[activeCategory]);
+  const featuredPosts = filteredPosts.filter(p => p.featured);
+  const regularPosts = filteredPosts;
   const autoplayPlugin = useRef(
     Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
@@ -548,26 +557,30 @@ export default function Blog() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            {categoriesMeta.map((category, i) => (
-              <motion.button
-                key={category.key}
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border transition-all ${
-                  i === 0 
-                    ? 'bg-primary text-primary-foreground border-primary' 
-                    : 'bg-background border-border hover:border-primary/50 hover:bg-primary/5'
-                }`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <category.icon className="w-4 h-4" />
-                <span className="font-medium">{t(`blog.categories.${category.key}`)}</span>
-                <span className={`text-xs px-2 py-0.5 rounded-full ${
-                  i === 0 ? 'bg-primary-foreground/20' : 'bg-muted'
-                }`}>
-                  {category.count}
-                </span>
-              </motion.button>
-            ))}
+            {categoriesMeta.map((category) => {
+              const isActive = activeCategory === category.key;
+              return (
+                <motion.button
+                  key={category.key}
+                  onClick={() => setActiveCategory(category.key)}
+                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border transition-all ${
+                    isActive
+                      ? 'bg-primary text-primary-foreground border-primary'
+                      : 'bg-background border-border hover:border-primary/50 hover:bg-primary/5'
+                  }`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <category.icon className="w-4 h-4" />
+                  <span className="font-medium">{t(`blog.categories.${category.key}`)}</span>
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${
+                    isActive ? 'bg-primary-foreground/20' : 'bg-muted'
+                  }`}>
+                    {category.count}
+                  </span>
+                </motion.button>
+              );
+            })}
           </motion.div>
         </div>
       </section>
