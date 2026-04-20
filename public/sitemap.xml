@@ -53,6 +53,15 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.quabusolutions.com/blog/iso-27001-beyond-certification</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/iso-27001-beyond-certification"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/iso-27001-beyond-certification"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio"/>

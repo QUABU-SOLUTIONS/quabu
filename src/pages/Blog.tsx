@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "iso-27001-beyond-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 20, 2026", readTime: "3 min", featured: true },
   { id: "quabu-ii-congres-clubs-natacio", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 12, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-community-barcelona-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 16, 2026", readTime: "2 min", featured: true },
   { id: "apwide-soldevelo-partners", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 6, 2026", readTime: "3 min", featured: true },
@@ -102,6 +103,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "iso-27001-beyond-certification",
+    title: "The Path to ISO 27001: Beyond the Certification",
+    excerpt: "QUABU SOLUTIONS has officially achieved ISO 27001 certification. Beyond the badge, the real transformation has been a cultural shift that embeds security into our daily DNA.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "April 20, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/QuabuISO27001-scaled.png",
+    featured: true,
+  },
   {
     id: "quabu-ii-congres-clubs-natacio",
     title: "Quabu at the II Congress of Swimming Clubs of Catalonia: Driving the Digitalization of Sport",

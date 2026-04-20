@@ -23,6 +23,30 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "iso-27001-beyond-certification",
+    title: "The Path to ISO 27001: Beyond the Certification",
+    excerpt: "QUABU SOLUTIONS has officially achieved ISO 27001 certification. Beyond the badge, the real transformation has been a cultural shift that embeds security into our daily DNA.",
+    content: `
+After months of intense work, process analysis, and total commitment from the entire team, at **QUABU SOLUTIONS** we have officially achieved **ISO 27001** certification. While the badge on our website represents an important visual milestone, the real transformation has happened beneath the surface, where the audit process forced us to question and strengthen every layer of our daily operations to raise our security standards.
+
+![Quabu ISO 27001](https://quabu.blog/wp-content/uploads/2026/04/QuabuISO27001-scaled.png)
+
+One of the deepest lessons of this journey has been understanding that information security is not a strictly technological challenge to be solved with servers or encryption, but a **collective mindset shift**. What we initially envisioned as a series of technical controls became a cultural challenge, where real success came from integrating security into the day-to-day of every area, transforming the perception of data protection: from being seen as a rigid process to being understood as the asset that guarantees our trust and stability.
+
+The certification process also forced us to confront what we call "order born from chaos." Documenting processes that we previously executed by pure instinct turned out to be a task as demanding as it was revealing, allowing us to identify invisible gaps and provide a solid structure to our technical experience. Thanks to this exercise in operational introspection, we have replaced intuition with robust methodologies that eliminate uncertainty and allow us to scale safely.
+
+Finally, we accept that this certification does not represent the end of the road, but the starting gun toward a philosophy of **continuous improvement**. At QUABU, security no longer resides in a static manual forgotten in a digital folder, but is an active part of our professional DNA. Although the effort has been considerable, the satisfaction of knowing that we operate under the highest international standards gives us the peace of mind of doing things right, thus reinforcing the non-negotiable commitment we have with our [clients and collaborators](/contact).
+
+**#ISO27001 #Cybersecurity #InformationSecurity #Compliance #RiskManagement #DataProtection #InternationalStandards**
+`,
+    category: "News",
+    date: "April 20, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/QuabuISO27001-scaled.png",
+    author: "QUABU Team",
+    tags: ["ISO 27001", "Cybersecurity", "Information Security", "Compliance", "Risk Management", "Data Protection"],
+  },
+  {
     id: "quabu-ii-congres-clubs-natacio",
     title: "Quabu at the II Congress of Swimming Clubs of Catalonia: Driving the Digitalization of Sport",
     excerpt: "We attended the II Congress of Swimming Clubs of Catalonia at the Royalverd Training Center, presenting our integrated solution for sports clubs in just 15 minutes.",
