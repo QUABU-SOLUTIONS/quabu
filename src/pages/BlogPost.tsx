@@ -47,6 +47,34 @@ Finally, we accept that this certification does not represent the end of the roa
     tags: ["ISO 27001", "Cybersecurity", "Information Security", "Compliance", "Risk Management", "Data Protection"],
   },
   {
+    id: "quabu-startup-ole-miami",
+    title: "Quabu Solutions Lands at Startup OLÉ Miami",
+    excerpt: "We're proud to be part of this technological delegation in vibrant Florida, sharing our latest digital solutions and connecting with industry leaders.",
+    content: `
+At **[Quabu Solutions](https://www.quabusolutions.com/)** we're celebrating because this week we're at one of the world's epicenters of innovation: **[Startup OLÉ Miami](https://startupolemiami.eu/)**. This event represents an exceptional opportunity to strengthen ties between the entrepreneurial ecosystems of Europe, Ibero-America, and the United States, and we're proud to be part of this technological delegation in the vibrant environment of Florida.
+
+![Quabu at Startup OLÉ Miami](https://quabu.blog/wp-content/uploads/2026/04/1000577151.jpeg)
+
+Our presence at this edition has a clear objective: to share our latest digital solutions and connect with industry leaders who, like us, seek to transform the future through technology. We're taking advantage of each day to exchange ideas with investors, discover new trends, and establish strategic alliances that allow us to keep growing and offering cutting-edge services to all our clients.
+
+![Quabu at Startup OLÉ Miami](https://quabu.blog/wp-content/uploads/2026/04/1000577175-1024x768.jpeg)
+
+If you're attending the event or are in the area, you can't miss the opportunity to stop by our official booth. We'll be delighted to welcome you at the **Quabu Solutions** space to chat about your projects, show you firsthand what we do, and explore together how we can collaborate. We're passionate about putting a face to our community and we believe there's no better place to do it than at an event that breathes innovation in every corner.
+
+![Quabu at Startup OLÉ Miami](https://quabu.blog/wp-content/uploads/2026/04/1000577199-768x1024.jpeg)
+
+For all those who couldn't travel with us, we remind you that we'll be sharing the best moments and the most interesting news through our social media channels. You can follow our American adventure minute by minute and write to us directly if you want to schedule a meeting or receive more information about what we're presenting at this edition of **[Startup OLÉ Miami](https://startupolemiami.eu/)**.
+
+**See you at the booth!**
+`,
+    category: "News",
+    date: "April 25, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/1000577151.jpeg",
+    author: "QUABU Team",
+    tags: ["Startup", "Miami", "Innovation", "Event", "FLUSA", "StartupOLE"],
+  },
+  {
     id: "quabu-ii-congres-clubs-natacio",
     title: "Quabu at the II Congress of Swimming Clubs of Catalonia: Driving the Digitalization of Sport",
     excerpt: "We attended the II Congress of Swimming Clubs of Catalonia at the Royalverd Training Center, presenting our integrated solution for sports clubs in just 15 minutes.",

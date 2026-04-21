@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "quabu-startup-ole-miami", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 25, 2026", readTime: "2 min", featured: true },
   { id: "iso-27001-beyond-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 20, 2026", readTime: "3 min", featured: true },
   { id: "quabu-ii-congres-clubs-natacio", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 12, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-community-barcelona-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 16, 2026", readTime: "2 min", featured: true },
@@ -103,6 +104,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "quabu-startup-ole-miami",
+    title: "Quabu Solutions Lands at Startup OLÉ Miami",
+    excerpt: "We're proud to be part of this technological delegation in vibrant Florida, sharing our latest digital solutions and connecting with industry leaders.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "April 25, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/1000577151.jpeg",
+    featured: true,
+  },
   {
     id: "iso-27001-beyond-certification",
     title: "The Path to ISO 27001: Beyond the Certification",
