@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "quabu-startup-ole-miami", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 25, 2026", readTime: "2 min", featured: true },
   { id: "iso-27001-beyond-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 20, 2026", readTime: "3 min", featured: true },
   { id: "quabu-ii-congres-clubs-natacio", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 12, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-community-barcelona-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 16, 2026", readTime: "2 min", featured: true },
