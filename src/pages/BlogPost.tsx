@@ -23,6 +23,41 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-lovable-ace-dublin-2026",
+    title: "Empowering Atlassian with Lovable: The Future of Planning at ACE Dublin",
+    excerpt: "On April 29, Quabu joins the Dublin Atlassian Community to showcase how extensibility is breaking the limits of Jira Cloud — integrating Lovable, Tempo MCP + Rovo, and advanced reporting.",
+    content: `
+On **April 29**, [Quabu](https://www.quabusolutions.com/) joins the Dublin community to demonstrate how extensibility is breaking the limits of Jira Cloud.
+
+![ACE Dublin Quabu](https://quabu.blog/wp-content/uploads/2026/04/ACEDublinQuabu.jpg)
+
+### Lovable: Building Solutions on Top of Jira
+
+**[Raúl Peláez](https://www.linkedin.com/in/ra%C3%BAl-pel%C3%A1ez-mendoza-ba037a28/) (Quabu)** will present how we have integrated [**Lovable**](https://lovable.dev/) with [Atlassian](https://www.atlassian.com/), using Jira Cloud as the single **source of truth** to develop:
+
+- **Custom Software:** Integrated time tracking, allocation, and planning solutions.
+- **Tempo MCP + Rovo:** Connecting Tempo with Atlassian's AI as a *skill*, enabling time queries through natural language.
+- **Advanced Reporting:** In-app report generation with historical analysis and data comparisons.
+
+### Portfolio Management
+
+Complementing the technical vision, **Germán Morales** will present his **[Strategic Hierarchy View App](https://marketplace.atlassian.com/apps/1914332338/strategic-hierarchy-view?hosting=cloud&tab=overview)**, key for the strategic oversight of large-scale projects.
+
+**Join the event:**
+
+- 🗓 **April 29, 2026** | 🕔 **5:00 PM (GMT+1)**
+- 🌐 **Free registration:** [Sign up here](https://ace.atlassian.com/events/details/atlassian-dublin-presents-strategic-planning-in-jira-and-lovable-in-atlassian/)
+
+**#Atlassian #Jira #Lovable #Tempo #Rovo #ACEDublin #JiraCloud**
+`,
+    category: "News",
+    date: "April 28, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/ACEDublinQuabu.jpg",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Jira", "Lovable", "Tempo", "Rovo", "ACE Dublin", "Jira Cloud"],
+  },
+  {
     id: "iso-27001-beyond-certification",
     title: "The Path to ISO 27001: Beyond the Certification",
     excerpt: "QUABU SOLUTIONS has officially achieved ISO 27001 certification. Beyond the badge, the real transformation has been a cultural shift that embeds security into our daily DNA.",

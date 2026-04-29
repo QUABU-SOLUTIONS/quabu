@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-lovable-ace-dublin-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 28, 2026", readTime: "3 min", featured: true },
   { id: "quabu-startup-ole-miami", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 25, 2026", readTime: "2 min", featured: true },
   { id: "iso-27001-beyond-certification", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 20, 2026", readTime: "3 min", featured: true },
   { id: "quabu-ii-congres-clubs-natacio", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 12, 2026", readTime: "3 min", featured: true },
@@ -104,6 +105,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-lovable-ace-dublin-2026",
+    title: "Empowering Atlassian with Lovable: The Future of Planning at ACE Dublin",
+    excerpt: "On April 29, Quabu joins the Dublin Atlassian Community to showcase how extensibility is breaking the limits of Jira Cloud — integrating Lovable, Tempo MCP + Rovo, and advanced reporting.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "April 28, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/04/ACEDublinQuabu.jpg",
+    featured: true,
+  },
   {
     id: "quabu-startup-ole-miami",
     title: "Quabu Solutions Lands at Startup OLÉ Miami",
