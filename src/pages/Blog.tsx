@@ -106,6 +106,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "quabu-atlassian-first-division-partners",
+    title: "Quabu Enters the First Division of Atlassian Partners",
+    excerpt: "We did it! Quabu now plays in the «First Division» of Atlassian partners in Spain, sharing the front page of the official partner directory with industry leaders.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "May 5, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/05/QuabuPrimeraDivision.png",
+    featured: true,
+  },
+  {
     id: "atlassian-lovable-ace-dublin-2026",
     title: "Empowering Atlassian with Lovable: The Future of Planning at ACE Dublin",
     excerpt: "On April 29, Quabu joins the Dublin Atlassian Community to showcase how extensibility is breaking the limits of Jira Cloud — integrating Lovable, Tempo MCP + Rovo, and advanced reporting.",
