@@ -23,6 +23,44 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "quabu-atlassian-first-division-partners",
+    title: "Quabu Enters the First Division of Atlassian Partners",
+    excerpt: "We did it! Quabu now plays in the «First Division» of Atlassian partners in Spain, sharing the front page of the official partner directory with industry leaders.",
+    content: `
+**We did it! [Quabu](https://www.quabusolutions.com/) now plays in the «First Division» of Atlassian partners in Spain!** 🚀🏆
+
+If you head over to the official Atlassian partner directory today and filter by Spain, you'll find us right there, sharing space on the **[front page](https://partnerdirectory.atlassian.com/quabu-solutions-sl)** alongside the industry's top references.
+
+![Quabu First Division](https://quabu.blog/wp-content/uploads/2026/05/QuabuPrimeraDivision.png)
+
+To give you an idea of what this means: at Quabu we're a "small" team of just 20 people. However, thanks to the effort, talent, and drive we put in every day, we've positioned ourselves in the ranking ahead of true corporate giants and consulting multinationals such as *Inetum, Excentia, Indra (Minsait), Izertis, Econocom, Accenture, and Tsoft*, among others.
+
+Not bad at all! 😎
+
+![Atlassian Partner Directory](https://quabu.blog/wp-content/uploads/2026/05/PrimeraCaptura-1024x889.png)
+
+### An achievement that bears the name of the entire team 💙
+
+This milestone is no coincidence. It is the direct result of the dedication, the late nights of certifications, the care we put into every client, and the daily hard work of every single person who is part of Quabu.
+
+We want to say a **HUGE THANK YOU to the whole team**. Your commitment and passion prove that the size of a company is not measured by its number of employees, but by the greatness of its talent and the quality of its work. 🙌🥳👏💯
+
+### What's next?
+
+Keep growing, keep helping our [clients](/contact) get the most out of the Atlassian universe and, above all, keep enjoying the journey together.
+
+Congratulations to everyone, team! This is yours. Onwards! 🥂
+
+**#QuabuTeam #AtlassianPartner #Growth #TeamPride #TechTalent #AtlassianSpain**
+`,
+    category: "News",
+    date: "May 5, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/05/QuabuPrimeraDivision.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Atlassian Partner", "Quabu", "Team", "Growth", "Spain"],
+  },
+  {
     id: "atlassian-lovable-ace-dublin-2026",
     title: "Empowering Atlassian with Lovable: The Future of Planning at ACE Dublin",
     excerpt: "On April 29, Quabu joins the Dublin Atlassian Community to showcase how extensibility is breaking the limits of Jira Cloud — integrating Lovable, Tempo MCP + Rovo, and advanced reporting.",
