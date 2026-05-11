@@ -51,6 +51,16 @@ export function Footer() {
               <img src={atlassianGoldPartner} alt="Atlassian Gold Solution Partner" className="h-10 w-auto brightness-0 invert" />
               <img src={atlassianMarketplacePartner} alt="Atlassian Marketplace Partner" className="h-10 w-auto brightness-0 invert" />
             </div>
+            <a
+              href="https://www.accio.gencat.cat/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-col gap-2 mb-6 bg-white rounded-lg p-3 hover-scale"
+              aria-label="Amb el suport d'ACCIÓ"
+            >
+              <span className="text-xs text-foreground/70 font-medium">Amb el suport d'ACCIÓ</span>
+              <img src={accioLogo} alt="ACCIÓ - Generalitat de Catalunya" className="h-10 w-auto" />
+            </a>
             <div className="space-y-3">
               <a href="mailto:hello@quabusolutions.com" className="flex items-center gap-2 text-sm text-background/70 hover:text-background transition-colors">
                 <Mail className="w-4 h-4" />
