@@ -5,6 +5,7 @@ import quabuLogo from "@/assets/quabu-logo.svg";
 import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
+import accioLogo from "@/assets/accio-generalitat.png";
 
 export function Footer() {
   const { t } = useTranslation();
