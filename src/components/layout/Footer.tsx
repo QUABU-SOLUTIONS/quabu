@@ -6,6 +6,7 @@ import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
 import accioLogo from "@/assets/accio-generalitat.png";
+import applusIso27001 from "@/assets/applus-iso27001.png";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -51,16 +52,21 @@ export function Footer() {
               <img src={atlassianGoldPartner} alt="Atlassian Gold Solution Partner" className="h-10 w-auto brightness-0 invert" />
               <img src={atlassianMarketplacePartner} alt="Atlassian Marketplace Partner" className="h-10 w-auto brightness-0 invert" />
             </div>
-            <a
-              href="https://www.accio.gencat.cat/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex flex-col gap-2 mb-6 bg-white rounded-lg p-3 hover-scale"
-              aria-label="Amb el suport d'ACCIÓ"
-            >
-              <span className="text-xs text-foreground/70 font-medium">Amb el suport d'ACCIÓ</span>
-              <img src={accioLogo} alt="ACCIÓ - Generalitat de Catalunya" className="h-10 w-auto" />
-            </a>
+            <div className="flex flex-wrap items-start gap-3 mb-6">
+              <a
+                href="https://www.accio.gencat.cat/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex flex-col gap-2 bg-white rounded-lg p-3 hover-scale"
+                aria-label="Amb el suport d'ACCIÓ"
+              >
+                <span className="text-xs text-foreground/70 font-medium">Amb el suport d'ACCIÓ</span>
+                <img src={accioLogo} alt="ACCIÓ - Generalitat de Catalunya" className="h-10 w-auto" />
+              </a>
+              <div className="inline-flex items-center bg-white rounded-lg p-2 hover-scale" aria-label="ISO 27001 Certified - Applus+">
+                <img src={applusIso27001} alt="Applus+ ISO 27001 Systems Certification SI-1668/26" className="h-20 w-auto" />
+              </div>
+            </div>
             <div className="space-y-3">
               <a href="mailto:hello@quabusolutions.com" className="flex items-center gap-2 text-sm text-background/70 hover:text-background transition-colors">
                 <Mail className="w-4 h-4" />
