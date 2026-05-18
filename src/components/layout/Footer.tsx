@@ -6,6 +6,7 @@ import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
 import accioLogo from "@/assets/accio-generalitat.png";
+import applusIso27001 from "@/assets/applus-iso27001.png";
 
 export function Footer() {
   const { t } = useTranslation();
