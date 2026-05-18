@@ -63,8 +63,8 @@ export function Footer() {
                 <span className="text-xs text-foreground/70 font-medium">Amb el suport d'ACCIÓ</span>
                 <img src={accioLogo} alt="ACCIÓ - Generalitat de Catalunya" className="h-10 w-auto" />
               </a>
-              <div className="inline-flex items-center bg-white rounded-lg p-2 hover-scale" aria-label="ISO 27001 Certified - Applus+">
-                <img src={applusIso27001} alt="Applus+ ISO 27001 Systems Certification SI-1668/26" className="h-20 w-auto" />
+              <div className="inline-flex items-center bg-white rounded-lg p-3 hover-scale" aria-label="ISO 27001 Certified - Applus+">
+                <img src={applusIso27001} alt="Applus+ ISO 27001 Systems Certification SI-1668/26" className="h-32 w-auto" />
               </div>
             </div>
             <div className="space-y-3">
