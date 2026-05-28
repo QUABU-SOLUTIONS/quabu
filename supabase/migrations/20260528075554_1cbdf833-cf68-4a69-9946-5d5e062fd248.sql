@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Allow confirm by token" ON public.newsletter_subscribers;
