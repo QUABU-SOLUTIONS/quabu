@@ -23,6 +23,61 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "board-fields-for-jira-cloud",
+    title: "Revolutionize Your Board Management: Introducing Board Fields for Jira Cloud",
+    excerpt: "We're excited to launch Board Fields for Jira Cloud — a Plug and Play app that lets you favorite, tag, and categorize your Jira boards to bring order to the chaos.",
+    content: `
+In day-to-day project management, it's very common for teams to accumulate dozens of boards in Jira. Over time, finding the exact board you need to work on can become a frustrating task and an unnecessary waste of time.
+
+To solve this problem, at **[Quabu](https://www.quabusolutions.com/)** we are very excited to present our new official release: **[Board Fields for Jira Cloud](https://marketplace.atlassian.com/apps/130463090/boards-fields-for-jira-cloud?hosting=cloud&tab=overview)**. An application designed specifically to radically improve your experience and give you full control over the organization of your Jira boards.
+
+![Board Fields for Jira Cloud](https://quabu.blog/wp-content/uploads/2026/05/BoardFieldsNewAppForJiraCloud-scaled.png)
+
+## What is Board Fields for Jira Cloud?
+
+It's a **Plug and Play** tool that completely renews your Jira boards list, allowing you to interact with them in a much more intuitive, organized, and efficient way. Instead of navigating through an endless and disorganized list, you can now classify, tag, and filter your boards according to your team's real needs.
+
+## Key features that will transform your workflow
+
+Our app adds dynamic fields and filtering capabilities so you can leave visual chaos behind:
+
+- ⭐ **Favourite Boards:** Do you have boards you use daily and others you only check once a month? Mark your essential boards as favorites and use the quick filter to hide the rest. Jump straight to what matters with a single click!
+- 🏷️ **Custom Tags:** Add keywords or tags to each board (for example, by client, technology, sprint, or team). Then use the tag-based search engine to instantly locate the exact board you're looking for. *(Tip: remember to separate your tags with a comma for optimal performance).*
+- 🗂️ **Categories:** Classify your boards into three common categories and use advanced filters to segment your view. Keeping projects organized by topic has never been easier.
+
+## Why your team will love it
+
+- **Hassle-free installation:** The app is fully integrated. It doesn't require any complex post-setup configuration; the Jira administrator installs it and the team can start enjoying its benefits instantly.
+- **Immediate productivity:** Reduces visual clutter and information search time, allowing your team to focus on what really matters: moving tasks forward.
+
+## And this is just the beginning! (Coming Soon)
+
+At [Quabu](https://quabusolutions.com/) we are committed to continuing to improve your Jira experience. Very soon we will be adding new advanced customization features, including:
+
+- **Filter Fields:** To customize and adapt the filter list entirely to your convenience.
+- **Dashboard Fields:** To bring this same level of organization and classification to your Jira Dashboards.
+
+## How to get started today
+
+If you're a Jira Administrator, you can start organizing your boards in less than two minutes:
+
+1. Visit the app page on the **[Atlassian Marketplace](https://marketplace.atlassian.com/apps/130463090/boards-fields-for-jira-cloud?hosting=cloud&tab=overview)**.
+2. Click **«Try it free»** and follow the on-screen instructions.
+
+If you want to dive deeper into how it works technically, you can check our **[Official Board Fields Documentation](https://quabu.atlassian.net/wiki/spaces/QAPPS/pages/6610223116/Board+Fields+for+Jira+Cloud)**. Have any questions or suggestions? We'll be happy to help through our **[Support Portal](https://quabuapps.atlassian.net/servicedesk/customer/portal/1/group/1/create/80)**.
+
+Ready to say goodbye to Jira board chaos? Try **Board Fields for Jira Cloud** and let us know your experience in the comments!
+
+**#Atlassian #Jira #JiraCloud #AtlassianMarketplace #BoardFields #Quabu #Productivity**
+`,
+    category: "News",
+    date: "May 28, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/05/BoardFieldsNewAppForJiraCloud-scaled.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Jira", "Jira Cloud", "Atlassian Marketplace", "Board Fields", "Quabu", "Productivity"],
+  },
+  {
     id: "quabu-atlassian-first-division-partners",
     title: "Quabu Enters the First Division of Atlassian Partners",
     excerpt: "We did it! Quabu now plays in the «First Division» of Atlassian partners in Spain, sharing the front page of the official partner directory with industry leaders.",

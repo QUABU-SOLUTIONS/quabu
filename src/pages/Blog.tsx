@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "board-fields-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 28, 2026", readTime: "3 min", featured: true },
   { id: "quabu-atlassian-first-division-partners", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 5, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-lovable-ace-dublin-2026", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 28, 2026", readTime: "3 min", featured: true },
   { id: "quabu-startup-ole-miami", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "April 25, 2026", readTime: "2 min", featured: true },
@@ -106,6 +107,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "board-fields-for-jira-cloud",
+    title: "Revolutionize Your Board Management: Introducing Board Fields for Jira Cloud",
+    excerpt: "We're excited to launch Board Fields for Jira Cloud — a Plug and Play app that lets you favorite, tag, and categorize your Jira boards to bring order to the chaos.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "May 28, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/05/BoardFieldsNewAppForJiraCloud-scaled.png",
+    featured: true,
+  },
   {
     id: "quabu-atlassian-first-division-partners",
     title: "Quabu Enters the First Division of Atlassian Partners",
