@@ -23,6 +23,55 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "custom-templates-for-jira-cloud",
+    title: "🚀 Introducing Custom Templates for Jira Cloud",
+    excerpt: "Standardize your workflow and say goodbye to blank tickets. Custom Templates brings structure, consistency, and speed to your Jira issues and comments with one-click predefined templates.",
+    content: `
+### Standardize your workflow and say goodbye to blank tickets
+
+We're thrilled to officially introduce **[Custom Templates for Jira Cloud](https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview)**, a powerful and lightweight solution designed to bring structure, consistency, and speed to your Jira issues and comments.
+
+Forget about confusing bug reports, incomplete user stories, and chaotic comment threads! With Custom Templates, your team can apply predefined structures directly into their day-to-day work with a single click.
+
+![Custom Templates for Jira Cloud](https://quabu.blog/wp-content/uploads/2026/05/CustomTemplatesJiraCloudSpanish1-scaled.png)
+
+## 🎯 Key features at a glance
+
+- **Automated descriptions with dropdowns:** Add a native dropdown custom field (single-select list) to your issue creation screens. Pick a template and watch the description auto-fill instantly.
+- **Ready-to-use examples:** Get started from day one with professional preconfigured templates for **Stories, Bugs, Epics, Tasks, and Spikes**.
+- **Template-powered comments:** Standardize your updates! Team members can select a template from a dropdown menu in the comments section, edit it to suit their needs, and preview it before publishing.
+- **Centralized control for Admins:** Jira administrators get a single, unified configuration panel to create, manage, and roll out templates across the entire organization.
+- **Full compatibility:** Works seamlessly in both **Company-managed** and **Team-managed** projects.
+
+## 🔒 100% built on Atlassian Forge
+
+Security and compliance are no joke. Built **100% on Atlassian Forge**, our app operates entirely within Atlassian's secure cloud infrastructure.
+
+> **What does this mean for you?** Your data never leaves Jira. This guarantees full compliance with Atlassian's strictest privacy, security, and data residency standards.
+
+## 🗺️ What's next on our Roadmap?
+
+This is just the beginning! We're already working to extend compatibility and bring the full power of Custom Templates to the **Jira Service Management (JSM) Customer Portal**. That way, your external users and customers will also be able to submit perfectly structured requests.
+
+## 🛠️ Try it today!
+
+Ready to boost your team's productivity and improve the quality of information in your projects?
+
+- 👉 **Download the App:** [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview)
+- 📖 **Read the documentation:** [Step-by-step setup guide](https://quabu.atlassian.net/wiki/spaces/QAPPS/pages/5328830478/Custom+Templates+for+Jira+Cloud)
+
+_Install it, try it, and let us know what you think. We'd love to hear how Custom Templates transforms your day-to-day in Jira!_
+
+**#Atlassian #Jira #JiraCloud #AtlassianMarketplace #CustomTemplates #Forge #Quabu #Productivity**
+`,
+    category: "News",
+    date: "May 29, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/05/CustomTemplatesJiraCloudSpanish1-scaled.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Jira", "Jira Cloud", "Atlassian Marketplace", "Custom Templates", "Forge", "Quabu", "Productivity"],
+  },
+  {
     id: "board-fields-for-jira-cloud",
     title: "Revolutionize Your Board Management: Introducing Board Fields for Jira Cloud",
     excerpt: "We're excited to launch Board Fields for Jira Cloud — a Plug and Play app that lets you favorite, tag, and categorize your Jira boards to bring order to the chaos.",
