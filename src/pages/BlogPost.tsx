@@ -23,6 +23,55 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "backup-manager-deprecation-notice",
+    title: "Important Announcement: Deprecation of Backup Manager for Jira Cloud (Free & Paid)",
+    excerpt: "After deep analysis and evaluating the new technical landscape, we have made the decision to officially discontinue and deprecate our Backup Manager apps on the Atlassian Marketplace.",
+    content: `
+Today, we are addressing our user community with some difficult news. After deep analysis and evaluating the new technical landscape, we have made the decision to **officially discontinue and deprecate** our app on the Atlassian Marketplace: **Backup Manager for Jira Cloud Free** and its paid version.
+
+![Backup Manager Deprecation Notice](https://quabu.blog/wp-content/uploads/2026/06/BackupManagerForJiraDeprecationNotice.png)
+
+## The End of an Era
+
+For many years, our main driving force was helping Jira administrators manage their backups easily and efficiently. We are immensely proud to have offered the free version to the entire community throughout this time, providing an accessible solution when the ecosystem needed it most. It has been an incredible journey, and we are deeply grateful for the trust that thousands of organizations have placed in our tools.
+
+## Why Are We Making This Decision?
+
+Unfortunately, Atlassian has decided to make a radical shift in its strategy and architecture regarding cloud backups. The latest changes in their policies and the restrictions applied to their APIs have left us without a viable operating margin to continue maintaining the plugin to the quality and automation standards you deserve.
+
+In this new approach, Atlassian has launched its own native tool for backup management, but with a highly restrictive billing and access model. According to their [official backup billing documentation](https://support.atlassian.com/organization-administration/docs/understand-billing-for-atlassian-backup-and-restore/), the new Atlassian Backup and Restore solution **is only available as an additional paid add-on**, and exclusively for customers on annual **Premium or Enterprise** plans.
+
+This means that **if your instance is on a Free or Standard plan, Atlassian no longer allows you to purchase or use their native backup solution.** This severe limitation, combined with the technical transition detailed in the [Atlassian Backup Management API](https://developer.atlassian.com/cloud/backup-management-apis/rest/api-group-public/#api-group-public), introduces roadblocks that completely break the architecture under which our plugins were originally designed. Atlassian has left us with no other choice.
+
+## Affected Applications
+
+This deprecation and end-of-support notice affects both versions available on the Marketplace:
+
+- [Backup Manager for Jira Cloud – Free](https://marketplace.atlassian.com/apps/1230550/backup-manager-for-jira-cloud-free?hosting=cloud&tab=overview)
+- [Backup Manager for Jira Cloud (Paid)](https://marketplace.atlassian.com/apps/1235836/backup-manager-for-jira-cloud?hosting=cloud&tab=overview)
+
+## Impact and Next Steps
+
+**The applications will stop operating starting this Friday.** Given the lack of native solutions for Free and Standard users, we strongly recommend that you look for third-party alternatives in the ecosystem that are already adapted to the new API to avoid any disruption to your data backup policies.
+
+We want to reiterate our most sincere gratitude to every user, partner, and developer who accompanied us on this journey. This was not an easy decision to make, but the conditions imposed by the new landscape force us to close this chapter.
+
+If you have any urgent questions or need assistance during this transition, please do not hesitate to contact our [support team](https://quabuapps.atlassian.net/servicedesk/customer/portal/1).
+
+Sincerely,
+
+**The QUABU Development Team**
+
+**#Atlassian #Jira #JiraCloud #AtlassianMarketplace #BackupManager #Deprecation #Quabu**
+`,
+    category: "News",
+    date: "June 2, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/06/BackupManagerForJiraDeprecationNotice.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Jira", "Jira Cloud", "Atlassian Marketplace", "Backup Manager", "Deprecation", "Quabu"],
+  },
+  {
     id: "custom-templates-for-jira-cloud",
     title: "🚀 Introducing Custom Templates for Jira Cloud",
     excerpt: "Standardize your workflow and say goodbye to blank tickets. Custom Templates brings structure, consistency, and speed to your Jira issues and comments with one-click predefined templates.",

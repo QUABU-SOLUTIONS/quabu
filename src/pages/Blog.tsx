@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "backup-manager-deprecation-notice", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 2, 2026", readTime: "3 min", featured: true },
   { id: "custom-templates-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 29, 2026", readTime: "3 min", featured: true },
   { id: "board-fields-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 28, 2026", readTime: "3 min", featured: true },
   { id: "quabu-atlassian-first-division-partners", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 5, 2026", readTime: "2 min", featured: true },
@@ -108,6 +109,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "backup-manager-deprecation-notice",
+    title: "Important Announcement: Deprecation of Backup Manager for Jira Cloud (Free & Paid)",
+    excerpt: "After deep analysis and evaluating the new technical landscape, we have made the decision to officially discontinue and deprecate our Backup Manager apps on the Atlassian Marketplace.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "June 2, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/06/BackupManagerForJiraDeprecationNotice.png",
+    featured: true,
+  },
   {
     id: "custom-templates-for-jira-cloud",
     title: "🚀 Introducing Custom Templates for Jira Cloud",
