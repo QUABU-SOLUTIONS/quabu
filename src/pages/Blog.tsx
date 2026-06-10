@@ -111,6 +111,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "custom-language-for-jira-cloud",
+    title: "Jira in Your Local Language: Break the Language Barrier with Custom Language for Jira Cloud",
+    excerpt: "Translate the Jira interface into any official regional or local language. Includes a Catalan dictionary out of the box, full customization, and compliance for public administrations.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "June 10, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/06/QuabuCustomLanguageCatalanForJiraCloud.png",
+    featured: true,
+  },
+  {
     id: "backup-manager-deprecation-notice",
     title: "Important Announcement: Deprecation of Backup Manager for Jira Cloud (Free & Paid)",
     excerpt: "After deep analysis and evaluating the new technical landscape, we have made the decision to officially discontinue and deprecate our Backup Manager apps on the Atlassian Marketplace.",
