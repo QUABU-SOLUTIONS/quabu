@@ -23,6 +23,63 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "custom-language-for-jira-cloud",
+    title: "Jira in Your Local Language: Break the Language Barrier with Custom Language for Jira Cloud",
+    excerpt: "Translate the Jira interface into any official regional or local language. Includes a Catalan dictionary out of the box, full customization, and compliance for public administrations.",
+    content: `
+![Custom Language for Jira Cloud — Catalan](https://quabu.blog/wp-content/uploads/2026/06/QuabuCustomLanguageCatalanForJiraCloud.png)
+
+Jira is undoubtedly the world's leading tool for project management and agile teams. However, for many organizations, adopting this powerful platform runs into an unexpected wall: **language**.
+
+Although Atlassian supports a wide variety of languages globally, many official regional or local languages are left out of its native configuration. This may seem like a minor inconvenience, but the reality is very different.
+
+### The language challenge in Public Administration
+
+In many countries, the use of co-official languages is not just a cultural preference but a legal obligation. Take the case of Catalonia. As recent regulations on the [mandatory use of Catalan in public administrations](https://www.google.com/search?q=https://masponsianglasell.cat/2025/08/25/el-catala-a-les-administracions-un-us-obligatori/) outline, public institutions and the companies working with them are required to use software available in this language.
+
+What happens when an institution wants to implement Jira but discovers that Catalan is not officially supported? The project is often dropped, and the organization is forced to settle for inferior tools that do meet the linguistic requirement.
+
+Until now. **There are no more excuses not to use Jira.**
+
+### The solution: Custom Language for Jira Cloud by QUABU
+
+At **QUABU** we have listened to this recurring frustration from our customers and decided to put an end to it. We are proud to introduce our new app: **[Custom Language for Jira Cloud](https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud?hosting=cloud&tab=overview)**.
+
+This tool is designed to empower Jira administrators, allowing them to translate the platform's interface into the official language of their country or region, without depending on Atlassian's official updates.
+
+### What makes our app unique?
+
+- **Catalan dictionary out of the box:** We know how much demand exists in Catalan public institutions, so the app comes with a Catalan dictionary configured by default. Install and you're ready to go!
+- **100% Customizable and Exportable:** The included dictionary is not rigid. You can modify the translations to match your company's exact terminology and easily export it.
+- **Opens the door to ANY language:** Do you need Jira in Basque, Galician, Valencian, or any other language in the world that isn't supported? Just upload your own dictionary and transform your users' work environment.
+- **Stress-free regulatory compliance:** Makes Jira adoption easier in city councils, universities, regional governments, and public companies, 100% meeting legal language requirements.
+
+### 📺 Jira Bro puts it to the test
+
+We're not the only ones convinced that this app is a game changer. We're enormously grateful to **Nikola**, better known in the Atlassian community as **Jira Bro**, who dedicated a fantastic video to us on his channel.
+
+In it, Nikola shows step by step and in detail how our app works in action. If you want to see for yourself how easy it is to set up and start translating your environment, don't miss his review!
+
+👉 **[Watch Jira Bro's video showcasing Custom Language for Jira Cloud](https://www.youtube.com/watch?v=YsoyaLxxH9A)**
+
+### Bring Jira to every corner of your organization
+
+Implementing software in users' mother tongue is not only a matter of legal compliance; it also dramatically improves the learning curve, reduces errors, and increases team satisfaction. With **Custom Language for Jira Cloud**, you have full control over your team's linguistic experience.
+
+🚀 **Ready to break the language barrier in your projects?** Visit the Atlassian Marketplace and discover how to adapt Jira to your real needs: 👉 **[Try Custom Language for Jira Cloud today](https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud?hosting=cloud&tab=overview)**
+
+**The QUABU Development Team**
+
+**#Atlassian #Jira #JiraCloud #AtlassianMarketplace #CustomLanguage #Catalan #Localization #Quabu**
+`,
+    category: "News",
+    date: "June 10, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/06/QuabuCustomLanguageCatalanForJiraCloud.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Jira", "Jira Cloud", "Atlassian Marketplace", "Custom Language", "Catalan", "Localization", "Quabu"],
+  },
+  {
     id: "backup-manager-deprecation-notice",
     title: "Important Announcement: Deprecation of Backup Manager for Jira Cloud (Free & Paid)",
     excerpt: "After deep analysis and evaluating the new technical landscape, we have made the decision to officially discontinue and deprecate our Backup Manager apps on the Atlassian Marketplace.",
