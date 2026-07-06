@@ -112,6 +112,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "atlassian-certifications-designations-2026",
+    title: "Complete Guide to Atlassian's Professional Certifications and Designations 2026 ⭐",
+    excerpt: "A walkthrough of every Atlassian credential — from ACH and ACA to ACP and the new Atlassian Certified Designations — with a recommended path for admins and consultants.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "July 6, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/AtlassianDesignacionesCertificaciones.png",
+    featured: true,
+  },
+  {
     id: "custom-language-for-jira-cloud",
     title: "Jira in Your Local Language: Break the Language Barrier with Custom Language for Jira Cloud",
     excerpt: "Translate the Jira interface into any official regional or local language. Includes a Catalan dictionary out of the box, full customization, and compliance for public administrations.",
