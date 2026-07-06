@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-certifications-designations-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "July 6, 2026", readTime: "5 min", featured: true },
   { id: "custom-language-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 10, 2026", readTime: "3 min", featured: true },
   { id: "backup-manager-deprecation-notice", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 2, 2026", readTime: "3 min", featured: true },
   { id: "custom-templates-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 29, 2026", readTime: "3 min", featured: true },
