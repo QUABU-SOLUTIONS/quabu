@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-certifications-designations-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "July 6, 2026", readTime: "5 min", featured: true },
   { id: "custom-language-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 10, 2026", readTime: "3 min", featured: true },
   { id: "backup-manager-deprecation-notice", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 2, 2026", readTime: "3 min", featured: true },
   { id: "custom-templates-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "May 29, 2026", readTime: "3 min", featured: true },
@@ -110,6 +111,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-certifications-designations-2026",
+    title: "Complete Guide to Atlassian's Professional Certifications and Designations 2026 ⭐",
+    excerpt: "A walkthrough of every Atlassian credential — from ACH and ACA to ACP and the new Atlassian Certified Designations — with a recommended path for admins and consultants.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "July 6, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/AtlassianDesignacionesCertificaciones.png",
+    featured: true,
+  },
   {
     id: "custom-language-for-jira-cloud",
     title: "Jira in Your Local Language: Break the Language Barrier with Custom Language for Jira Cloud",
