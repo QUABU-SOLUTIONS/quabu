@@ -23,6 +23,174 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-certifications-designations-2026",
+    title: "Complete Guide to Atlassian's Professional Certifications and Designations 2026 ⭐",
+    excerpt: "A walkthrough of every Atlassian credential — from ACH and ACA to ACP and the new Atlassian Certified Designations — with a recommended path for admins and consultants.",
+    content: `
+![Atlassian Certifications and Designations 2026](https://quabu.blog/wp-content/uploads/2026/07/AtlassianDesignacionesCertificaciones.png)
+
+In the Atlassian ecosystem, continuous training and the validation of knowledge have become a differentiating factor for administrators, consultants, and technical teams. With the evolution of the certification program and the introduction of the new _Atlassian Certified Designations_, there are more options than ever to prove your expertise in Jira, Confluence, Jira Service Management, and the Cloud platform. In this article we'll walk through **[all the certifications](https://community.atlassian.com/learning/certifications)** and professional designations available, explain what each one is about, and help you identify the best path based on your profile and career goals.
+
+Today, Atlassian organizes its credentials into **4 levels**, ranging from basic knowledge to advanced recognitions.
+
+## 1. ACH – Atlassian Certificate Holder
+
+These are free certificates aimed at end users. They are not proctored exams and are designed to demonstrate foundational knowledge.
+
+Examples:
+
+- Jira Essentials
+- Confluence Essentials
+- Jira Service Management Agent Essentials
+- Atlassian Cloud Foundations
+- Forge Fundamentals
+- Loom Fundamentals
+- Rovo Fundamentals
+
+They are ideal for users, Scrum Masters, Product Owners, and team members.
+
+---
+
+## 2. ACA – Atlassian Certified Associate
+
+These are official certifications for people who regularly work with Atlassian products, but not necessarily as administrators.
+
+Some of the most well-known are:
+
+- Jira Essentials
+- Jira Board Configuration
+- Confluence Essentials
+- Atlassian Cloud Foundations
+
+These certifications include an exam and are an intermediate step before the professional-level (ACP) credentials.
+
+---
+
+## 3. ACP – Atlassian Certified Professional
+
+These are the highest technical-level certifications and are aimed at administrators, consultants, and partners.
+
+The main ones include:
+
+### Jira
+
+- Jira Administration for Cloud
+- Managing Jira Projects for Cloud
+
+### Jira Service Management
+
+- Managing Jira Service Projects for Cloud
+
+### Cloud Organization
+
+- Atlassian Cloud Organization Admin
+
+### Confluence
+
+- Confluence Administration for Cloud
+
+The old Data Center certifications (such as Jira Administration for Data Center) have been progressively retired as Atlassian focuses its program on Cloud.
+
+---
+
+# 4. Atlassian Certified Designations
+
+The **Designations** are the equivalent of the former **ACE (Atlassian Certified Expert)**.
+
+They don't require an additional exam: you earn them automatically when you maintain a set of related certifications.
+
+There are currently four:
+
+### 🏅 Atlassian Certified Administration Expert
+
+The most prestigious designation for administrators.
+
+Earned by maintaining **4** of these certifications:
+
+- Jira Administration for Cloud
+- Managing Jira Projects for Cloud
+- Managing Jira Service Projects for Cloud
+- Atlassian Cloud Organization Admin
+- Confluence Administration for Cloud
+
+(Previously, the now-retired Data Center certifications also counted.)
+
+---
+
+### 🏅 Atlassian Certified Agile DevOps Specialist
+
+Specialized in agile development and DevOps.
+
+Earned with a combination of credentials such as:
+
+- Jira Essentials
+- Jira Board Configuration
+- Atlassian Cloud Foundations
+- Confluence Administration
+- Forge Fundamentals
+- Rovo Fundamentals
+- Loom Fundamentals
+
+You need to maintain **4** of them.
+
+---
+
+### 🏅 Atlassian Certified ITSM Specialist
+
+Aimed at Jira Service Management administrators.
+
+Combines credentials such as:
+
+- Jira Service Management with AI Fundamentals
+- Managing Jira Service Projects for Cloud
+- Jira Service Management Agent Essentials
+- Atlassian Cloud Foundations
+- Rovo Fundamentals
+- Loom Fundamentals
+
+It also requires **4** active credentials.
+
+---
+
+### 🏅 Atlassian Certified Teamwork Collection Specialist
+
+Focused on the Atlassian collaboration ecosystem.
+
+Requires maintaining all of these:
+
+- Jira Essentials
+- Confluence Essentials
+- Rovo Fundamentals
+- Loom Fundamentals
+
+---
+
+## What path would I recommend?
+
+If you have, for example, a Jira administrator profile with consulting experience, I'd follow this route:
+
+1. **Jira Administration for Cloud (ACP)**.
+2. **Managing Jira Service Projects for Cloud (ACP)**.
+3. **Atlassian Cloud Organization Admin (ACP)**.
+4. **Confluence Administration for Cloud (ACP)**.
+5. **Managing Jira Projects for Cloud (ACP)**.
+
+With those credentials you would automatically earn the **Atlassian Certified Administration Expert** designation, the successor to the former ACE and the most valued one for Atlassian consultants and architects.
+
+If you have any questions, you can always [contact us](https://www.quabusolutions.com/contact).
+
+**The QUABU SOLUTIONS Team**
+
+**#Atlassian #Certifications #Jira #Confluence #JiraServiceManagement #Cloud #Quabu**
+`,
+    category: "Articles",
+    date: "July 6, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/AtlassianDesignacionesCertificaciones.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Certifications", "Designations", "Jira", "Confluence", "Jira Service Management", "Cloud", "Quabu"],
+  },
+  {
     id: "custom-language-for-jira-cloud",
     title: "Jira in Your Local Language: Break the Language Barrier with Custom Language for Jira Cloud",
     excerpt: "Translate the Jira interface into any official regional or local language. Includes a Catalan dictionary out of the box, full customization, and compliance for public administrations.",
