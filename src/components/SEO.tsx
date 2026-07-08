@@ -52,7 +52,7 @@ export function SEO({
   const canonical = `${BASE_URL}${path}`;
 
   // hreflang alternates
-  const langs = ["en", "es", "ca"];
+  const langs = ["en", "es", "ca", "it"];
 
   // Default Organization schema
   const orgSchema = {
