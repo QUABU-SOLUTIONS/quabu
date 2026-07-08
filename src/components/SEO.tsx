@@ -125,7 +125,7 @@ export function SEO({
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={image} />
       <meta property="og:site_name" content="Quabu" />
-      <meta property="og:locale" content={lang === "es" ? "es_ES" : lang === "ca" ? "ca_ES" : "en_US"} />
+      <meta property="og:locale" content={lang === "es" ? "es_ES" : lang === "ca" ? "ca_ES" : lang === "it" ? "it_IT" : "en_US"} />
 
       {/* Article-specific OG */}
       {type === "article" && publishedTime && (
