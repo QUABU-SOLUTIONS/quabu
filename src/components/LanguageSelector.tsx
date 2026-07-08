@@ -7,6 +7,7 @@ const languages = [
   { code: "en", label: "EN", flag: "🇬🇧", full: "English" },
   { code: "es", label: "ES", flag: "🇪🇸", full: "Español" },
   { code: "ca", label: "CA", flag: "🏴󠁥󠁳󠁣󠁴󠁿", full: "Català" },
+  { code: "it", label: "IT", flag: "🇮🇹", full: "Italiano" },
 ];
 
 export function LanguageSelector() {
