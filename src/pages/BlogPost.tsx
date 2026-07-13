@@ -23,6 +23,63 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "new-webinar-atlassian-devs-stories",
+    title: "New Webinar: Real Atlassian Dev Stories — No PowerPoints Allowed",
+    excerpt: "Quabu and Hiera team up for a live, no-slides developer session on July 28, 2026. Screen sharing, real code, and open Q&A about building apps for the Atlassian Marketplace.",
+    content: `
+![Atlassian Dev Stories Webinar](https://quabu.blog/wp-content/uploads/2026/07/QuabuAppsAndHieraWebinar.png)
+
+If you work developing for the Atlassian ecosystem, you know exactly what day-to-day life is like. You wrestle with the Jira Cloud API, spend hours trying to fit a component so the UI looks just right, and sometimes things simply don't work on the first try.
+
+We're used to seeing webinars packed with perfect slides that sell the wonders of a new app. But **where are the real development stories?** Where do people talk about the screens that took the longest to code, or the architectural decisions we later regretted?
+
+To talk about all of this, **Quabu** has teamed up with **Germán (creator of the Hiera app)** to bring you a different kind of event. And we have one strict rule: **NO POWERPOINTS ALLOWED.**
+
+## What are we going to talk about?
+
+On **Tuesday, July 28, 2026**, we'll open a live [Google Meet](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N3VnY2szdjhzajZzdDQxa2JnZGVjbTRiMzUgcmF1bC5wZWxhZXpAcXVhYnUuZXU&tmsrc=raul.pelaez%40quabu.eu) to tear down our apps.
+
+During the session we'll cover:
+
+- **Hiera: Strategic Planning for Jira:** Germán will show us the inner workings of his planning and roadmap app. What technical challenges he faced, what failed along the way, and how he solved the bottlenecks.
+- **Custom Templates & Custom Language:** From Quabu, Raúl will open the hood of our apps. We'll talk about how we manage the complexity of the Jira API, what the development process was like, and what we'd do differently if we were starting today.
+- **The raw reality of the Atlassian Dev:** Real recommendations for other developers, tools that save us day to day, and lessons learned by stumbling.
+
+## The format: Screen sharing and real code
+
+Our idea is simple. Instead of slides, we'll share our screens to show the apps running in our development environments. We'll open the code, show the console, and if something fails live, we'll debug it together.
+
+Plus, the last part of the event will be **completely open for participation**. You can unmute, ask in the chat, and throw out any technical or business question about building apps for the Atlassian Marketplace.
+
+## Event details
+
+- **Date:** Tuesday, July 28, 2026 at 6:00 PM (Mainland Spain time).
+- **Platform:** [Google Meet](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N3VnY2szdjhzajZzdDQxa2JnZGVjbTRiMzUgcmF1bC5wZWxhZXpAcXVhYnUuZXU&tmsrc=raul.pelaez%40quabu.eu) (add to calendar)
+- **Registration:** Free registration
+- **Video call link:** [meet.google.com/kmc-hwyx-cxn](https://meet.google.com/kmc-hwyx-cxn)
+
+If you can't attend live, don't worry. **We'll record the session and publish it on our YouTube channel** so you can review the code at your own pace.
+
+In the meantime, if you want to take a look at the apps we're going to tear down, here are the links to the official Atlassian Marketplace:
+
+- [Hiera: Strategic Planning for Jira](https://marketplace.atlassian.com/apps/1914332338/hiera-strategic-planning-for-jira?hosting=cloud&tab=overview)
+- [Quabu: Custom Templates for Jira Cloud](https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview)
+- [Quabu: Custom Language for Jira Cloud](https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud?hosting=cloud&tab=overview)
+
+Grab your coffee, close the slides, and join the conversation!
+
+**The QUABU Development Team**
+
+**#Atlassian #Jira #JiraCloud #AtlassianMarketplace #Hiera #CustomTemplates #CustomLanguage #Webinar #AtlassianDev #Quabu**
+`,
+    category: "News",
+    date: "July 28, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/QuabuAppsAndHieraWebinar.png",
+    author: "QUABU Team",
+    tags: ["Atlassian", "Jira", "Jira Cloud", "Atlassian Marketplace", "Hiera", "Custom Templates", "Custom Language", "Webinar", "Atlassian Dev", "Quabu"],
+  },
+  {
     id: "atlassian-certifications-designations-2026",
     title: "Complete Guide to Atlassian's Professional Certifications and Designations 2026 ⭐",
     excerpt: "A walkthrough of every Atlassian credential — from ACH and ACA to ACP and the new Atlassian Certified Designations — with a recommended path for admins and consultants.",
