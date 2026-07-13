@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "new-webinar-atlassian-devs-stories", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 28, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-certifications-designations-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "July 6, 2026", readTime: "5 min", featured: true },
   { id: "custom-language-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 10, 2026", readTime: "3 min", featured: true },
   { id: "backup-manager-deprecation-notice", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 2, 2026", readTime: "3 min", featured: true },
@@ -111,6 +112,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "new-webinar-atlassian-devs-stories",
+    title: "New Webinar: Real Atlassian Dev Stories — No PowerPoints Allowed",
+    excerpt: "Quabu and Hiera team up for a live, no-slides developer session on July 28, 2026. Screen sharing, real code, and open Q&A about building apps for the Atlassian Marketplace.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "July 28, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/QuabuAppsAndHieraWebinar.png",
+    featured: true,
+  },
   {
     id: "atlassian-certifications-designations-2026",
     title: "Complete Guide to Atlassian's Professional Certifications and Designations 2026 ⭐",
