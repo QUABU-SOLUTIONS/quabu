@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "preview-atlassian-rovo-mcp-v2", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 31, 2026", readTime: "3 min", featured: true },
   { id: "new-webinar-atlassian-devs-stories", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 28, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-certifications-designations-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "July 6, 2026", readTime: "5 min", featured: true },
   { id: "custom-language-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "June 10, 2026", readTime: "3 min", featured: true },
@@ -112,6 +113,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "preview-atlassian-rovo-mcp-v2",
+    title: "Preview: Atlassian Rovo MCP v2",
+    excerpt: "A balanced summary of the newly launched Atlassian Rovo MCP v2 Preview: token savings, supercharged Confluence context, and the technical limitations still being polished before GA.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "July 31, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/Quabuv2Captura.png",
+    featured: true,
+  },
   {
     id: "new-webinar-atlassian-devs-stories",
     title: "New Webinar: Real Atlassian Dev Stories — No PowerPoints Allowed",

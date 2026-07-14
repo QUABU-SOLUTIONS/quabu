@@ -23,6 +23,50 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "preview-atlassian-rovo-mcp-v2",
+    title: "Preview: Atlassian Rovo MCP v2",
+    excerpt: "A balanced summary of the newly launched Atlassian Rovo MCP v2 Preview: token savings, supercharged Confluence context, and the technical limitations still being polished before GA.",
+    content: `
+![Atlassian Rovo MCP v2 Preview](https://quabu.blog/wp-content/uploads/2026/07/Quabuv2Captura.png)
+
+Hello everyone! 👋
+
+As an **Atlassian Champion** and part of the **QUABU SOLUTIONS** team, I closely follow how AI is transforming our ecosystem. Today I want to share a balanced summary of the newly launched **Atlassian Rovo MCP v2 Preview** (_Model Context Protocol_).
+
+This update takes giant strides in performance, although, like any _Preview_, it still has technical details to polish before its final release.
+
+## 🚀 The big news (the best of v2)
+
+- **Radical token savings (>50%):** Through a _lazy loading_ model (dynamic discovery of tools), the server no longer saturates the context window at startup.
+- **Supercharged Confluence:** The AI is no longer limited to reading plain text. It can now process full context by interacting with attachments, _Whiteboards_, and databases.
+- **Greater stability:** The move to the new DCR OAuth infrastructure promises to resolve the annoying 401 errors and session drops we saw in v1.
+
+## 🛠️ The technical analysis (points to keep in mind)
+
+When testing it for real enterprise implementations, we've detected some temporary limitations that the community is already debating:
+
+- **Control over tool loading:** The _discover-execute_ model is great for saving tokens, but it imposes an intermediate layer that removes some flexibility for advanced MCP clients that prefer to manage their own catalog directly.
+- **Databases in early stages:** Support for _Confluence Databases_ is a tremendous advance, but for now it is limited to reading the entire table. To fully leverage it for requirements management, we will need row-level operations.
+- **Governance and security:** The AI inherits the user's global permissions very broadly. To guarantee risk-free _Enterprise_ adoption, it will be essential for Atlassian to add granular controls (such as limiting scope to specific _Spaces_).
+
+From **[QUABU SOLUTIONS](https://www.quabusolutions.com/)** we see enormous potential in this evolution of the MCP standard. The direction is the right one, and we will continue to provide feedback to help the tool mature towards its GA (_General Availability_) phase.
+
+🔗 **You can read all the technical details and join the official thread here:**
+
+[Preview: Atlassian Rovo MCP v2 in the Atlassian Community](https://community.atlassian.com/forums/Atlassian-Remote-MCP-Server/Preview-Atlassian-Rovo-MCP-v2/ba-p/3255431?utm_source=atlcomm&utm_medium=email&utm_campaign=&utm_content=post)
+
+_Created by Raúl Peláez_ — AtlassianChampion at Quabu Solutions
+
+**#Atlassian #Rovo #MCP #ModelContextProtocol #RovoMCP #AI #Confluence #Jira #AtlassianCommunity #AtlassianChampion #Quabu**
+`,
+    category: "News",
+    date: "July 31, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/Quabuv2Captura.png",
+    author: "Raúl Peláez",
+    tags: ["Atlassian", "Rovo", "MCP", "Model Context Protocol", "Rovo MCP", "AI", "Confluence", "Jira", "Atlassian Community", "Atlassian Champion", "Quabu"],
+  },
+  {
     id: "new-webinar-atlassian-devs-stories",
     title: "New Webinar: Real Atlassian Dev Stories — No PowerPoints Allowed",
     excerpt: "Quabu and Hiera team up for a live, no-slides developer session on July 28, 2026. Screen sharing, real code, and open Q&A about building apps for the Atlassian Marketplace.",
