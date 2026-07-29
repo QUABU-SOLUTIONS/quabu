@@ -23,6 +23,87 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-devs-marketplace-webinar-recap",
+    title: "Atlassian Devs Stories: How to Build, Monetize and Survive on the Marketplace",
+    excerpt: "Key takeaways from Quabu's latest webinar with Raúl Peláez: the native vs. third-party dilemma, Forge's pay-per-use model, real case studies, and Marketplace quality standards.",
+    content: `
+![Atlassian Devs Marketplace Webinar](https://quabu.blog/wp-content/uploads/2026/07/QuabuAppsWebinar-scaled.png)
+
+Developing applications for the **Atlassian Cloud** ecosystem in 2026 goes far beyond writing functional code. It requires navigating continuous platform changes, adapting to the new **Atlassian Forge** architecture, understanding infrastructure costs, and making sound strategic business decisions.
+
+In our latest **[QUABU](https://www.quabusolutions.com/)** webinar, our specialist **Raúl Peláez** transparently analyzed the reality of being a _Marketplace Partner_. In this article we summarize the key takeaways from the session and share the full recording at the end.
+
+## 1. The big dilemma: Native features vs. Third-party solutions
+
+One of the most debated topics in the developer community is the overlap between Atlassian's roadmap and partner-built solutions.
+
+Recently, the introduction of native features by Atlassian (such as native tabs in Confluence) sparked controversy in the forums. For an app vendor, this highlights two key needs:
+
+- **Specialization and added value:** It is not enough to solve a basic problem; the app must deliver advanced workflows, integrations, or differential value that a basic native feature does not cover.
+- **Agility:** Being ready to pivot or adapt the product catalog as the main platform evolves.
+
+## 2. Atlassian Forge and the Developer Console: The impact of the cost model
+
+The progressive transition from the _Connect_ architecture toward **Atlassian Forge** has simplified deployment by offering a serverless environment hosted by Atlassian. However, the arrival of the new **Developer Console** and the pay-per-use infrastructure model introduces a decisive factor:
+
+> **The impact on free apps:** Previously, offering 100% free apps did not entail direct hosting costs for the developer. With Forge's current pay-per-use model, a free app with high execution volume generates direct costs for the vendor, making the traditional unlimited _freemium_ model unviable.
+
+### The recommended monetization strategy:
+
+1. **Paid models from day one:** Launch well-positioned commercial applications through the Marketplace.
+2. **Free plans for up to 10 users:** Leverage the free tier for small teams, which facilitates testing, initial adoption, and internal SEO positioning in the Atlassian store.
+
+## 3. Three Real Case Studies at QUABU
+
+At QUABU we believe in transparency. That is why we share three direct experiences that sum up the rollercoaster of developing in this ecosystem:
+
+### ❌ 1. Deprecation of _Backup Manager for Jira_
+
+This application allowed backing up Jira to services such as Google Drive or AWS. Due to changes in Atlassian's internal APIs and the launch of its own backup solutions, the required API became unavailable. **Lesson:** When the underlying architecture changes critically, the wisest decision is to retire the product in an orderly way.
+
+### ⚠️ 2. UI inconsistencies with _Custom Templates_
+
+Our _Custom Templates_ app standardizes descriptions in Jira through dropdown menus. Although _UI Modifications_ work excellently in Jira Software, we discovered that Jira Service Management (JSM) has different behaviors and limitations due to its original architecture for customer portals. **Lesson:** Always test your components across every flavor of the product (Jira Software, JSM, and Confluence).
+
+### 🔄 3. Storage optimization in _Custom Language for Jira Cloud_
+
+To add support for languages not natively translated (such as Basque or Catalan), we built a plugin that frequently queried Forge's _Key-Value Store_. The high query frequency increased resource usage in the developer console, which led us to refactor the logic to optimize requests and ensure the app's financial sustainability.
+
+## 4. Quality, Legal Compliance and Mandatory Standards
+
+Publishing on the Atlassian Marketplace requires meeting strict technical and operational standards:
+
+- **Mandatory Dark Mode:** Atlassian requires that app interfaces respect the visual theme chosen by the user by using the platform's official environment variables.
+- **Security and Trust:** Participating in the **Bug Bounty Program**, offering SLA response levels under 48 hours, and pursuing the **Cloud Fortified** badge are differentiating requirements to build trust with enterprise customers.
+- **Solid Legal Documentation:** It is essential to attach an End-User License Agreement (EULA) and Privacy Policies tailored to the company's local legislation, avoiding generic non-applicable templates.
+
+## 5. Resources to start developing in 2026
+
+If you are starting out or want to go deeper into Forge, Atlassian offers valuable free tools:
+
+- **Free Development Instances:** You can request Cloud environments at no cost for up to 5 users for Jira and 1 agent for Jira Service Management to run tests and support.
+- **Forge CLI:** An agile development flow based on simple commands: \`forge login\`, \`forge create\`, \`forge tunnel\`, \`forge deploy\`.
+- **Atlassian University:** Access to up-to-date courses and free unproctored certifications such as _Forge Fundamental Certificate_, _Jira Service Management with AI_, and more.
+
+## 📺 Watch the Full Webinar
+
+If you want to hear all the details, see the code examples, and get the full experience from **Raúl Peláez**, we invite you to watch the webinar recording:
+
+- [https://youtu.be/-WFtHWNlRes](https://youtu.be/-WFtHWNlRes)
+
+### 💬 Do you develop for Atlassian?
+
+Have you faced similar challenges when migrating to Forge or adapting your pricing strategies? Leave us your comments below or reach out through our social media!
+`,
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 1, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/QuabuAppsWebinar-scaled.png",
+    author: "Raúl Peláez",
+    tags: ["Atlassian", "Marketplace", "Forge", "Webinar", "App Development"],
+  },
+  {
     id: "preview-atlassian-rovo-mcp-v2",
     title: "Preview: Atlassian Rovo MCP v2",
     excerpt: "A balanced summary of the newly launched Atlassian Rovo MCP v2 Preview: token savings, supercharged Confluence context, and the technical limitations still being polished before GA.",

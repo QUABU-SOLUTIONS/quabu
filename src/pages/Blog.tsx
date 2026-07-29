@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-devs-marketplace-webinar-recap", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 1, 2026", readTime: "5 min", featured: true },
   { id: "preview-atlassian-rovo-mcp-v2", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 31, 2026", readTime: "3 min", featured: true },
   { id: "new-webinar-atlassian-devs-stories", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 28, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-certifications-designations-2026", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "July 6, 2026", readTime: "5 min", featured: true },
@@ -113,6 +114,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-devs-marketplace-webinar-recap",
+    title: "Atlassian Devs Stories: How to Build, Monetize and Survive on the Marketplace",
+    excerpt: "Key takeaways from Quabu's latest webinar with Raúl Peláez: the native vs. third-party dilemma, Forge's pay-per-use model, real case studies, and Marketplace quality standards.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 1, 2026",
+    readTime: "5 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/QuabuAppsWebinar-scaled.png",
+    featured: true,
+  },
   {
     id: "preview-atlassian-rovo-mcp-v2",
     title: "Preview: Atlassian Rovo MCP v2",
