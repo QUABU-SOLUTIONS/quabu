@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "custom-templates-rising-star-badge", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 4, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-devs-marketplace-webinar-recap", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 1, 2026", readTime: "5 min", featured: true },
   { id: "preview-atlassian-rovo-mcp-v2", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 31, 2026", readTime: "3 min", featured: true },
   { id: "new-webinar-atlassian-devs-stories", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 28, 2026", readTime: "2 min", featured: true },
@@ -114,6 +115,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "custom-templates-rising-star-badge",
+    title: "Atlassian Awards Our Custom Templates App the Rising Star Badge 🚀",
+    excerpt: "Atlassian Marketplace has officially granted Custom Templates for Jira Cloud the Rising Star badge, recognizing its fast growth, accelerated adoption and 5/5 star rating.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "August 4, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/CustomTemplatesAtlassianQuabu.png",
+    featured: true,
+  },
   {
     id: "atlassian-devs-marketplace-webinar-recap",
     title: "Atlassian Devs Stories: How to Build, Monetize and Survive on the Marketplace",

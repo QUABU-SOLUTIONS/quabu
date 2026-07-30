@@ -23,6 +23,45 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "custom-templates-rising-star-badge",
+    title: "Atlassian Awards Our Custom Templates App the Rising Star Badge 🚀",
+    excerpt: "Atlassian Marketplace has officially granted Custom Templates for Jira Cloud the Rising Star badge, recognizing its fast growth, accelerated adoption and 5/5 star rating.",
+    content: `
+![Custom Templates for Jira Cloud Rising Star](https://quabu.blog/wp-content/uploads/2026/07/CustomTemplatesAtlassianQuabu.png)
+
+At **QUABU** we are celebrating! Atlassian Marketplace has officially awarded our app **[Custom Templates for Jira Cloud](https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview)** the distinctive **Rising Star** badge.
+
+### What does Atlassian's Rising Star badge mean?
+
+The **Rising Star** badge is a recognition Atlassian grants to Marketplace applications that stand out for their fast growth, accelerated user adoption, and high level of satisfaction.
+
+It is the official validation that an emerging app is delivering real, proven value to the teams that work with Jira every day.
+
+### Standardize your workflows in Jira and JSM
+
+If you don't know the tool yet, **Custom Templates for Jira Cloud** was built to eliminate repetitive tasks and guarantee consistency in daily work. With it you can:
+
+- **Standardize issue descriptions:** Apply reusable text templates so requirement capture is uniform across the whole team.
+- **Speed up comment replies:** Create predefined comments and quick responses to resolve support tickets faster.
+- **Simplify adoption:** Integrate easy-to-use templates in both Jira Cloud and Jira Service Management.
+
+### Thank you for your trust
+
+Keeping a perfect **5/5 star rating** and watching our user community keep growing pushes us to keep improving our solutions within the Atlassian ecosystem.
+
+We want to thank every team that trusts us and helps us with their feedback to make our tools the best possible support for their day-to-day work.
+
+👉 **Want to optimize your workflows in Jira?** We invite you to try **Custom Templates for Jira Cloud** directly on the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview) and see how it can transform your team's productivity.
+`,
+    category: "News",
+    categoryIcon: BookOpen,
+    date: "August 4, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/07/CustomTemplatesAtlassianQuabu.png",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Marketplace", "Custom Templates", "Jira Cloud", "Rising Star"],
+  },
+  {
     id: "atlassian-devs-marketplace-webinar-recap",
     title: "Atlassian Devs Stories: How to Build, Monetize and Survive on the Marketplace",
     excerpt: "Key takeaways from Quabu's latest webinar with Raúl Peláez: the native vs. third-party dilemma, Forge's pay-per-use model, real case studies, and Marketplace quality standards.",
