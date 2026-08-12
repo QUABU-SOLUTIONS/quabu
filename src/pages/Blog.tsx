@@ -117,6 +117,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "atlassian-cloud-fundamentals-free",
+    title: "🚀 Atlassian Cloud Fundamentals Is Now Free: Your Shortcut to DevOps & ITSM Specializations",
+    excerpt: "The Atlassian Cloud Foundations exam has been renewed as the free ACH-820 certificate — and it is a key step toward earning the Agile DevOps and ITSM Specialist designations at zero cost.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "August 12, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/QuabuAtlassianCertificationsDesignationsDevOpsITSM.png",
+    featured: true,
+  },
+  {
     id: "custom-templates-rising-star-badge",
     title: "Atlassian Awards Our Custom Templates App the Rising Star Badge 🚀",
     excerpt: "Atlassian Marketplace has officially granted Custom Templates for Jira Cloud the Rising Star badge, recognizing its fast growth, accelerated adoption and 5/5 star rating.",
