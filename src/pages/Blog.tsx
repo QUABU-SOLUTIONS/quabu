@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-cloud-fundamentals-free", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 12, 2026", readTime: "4 min", featured: true },
   { id: "custom-templates-rising-star-badge", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 4, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-devs-marketplace-webinar-recap", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 1, 2026", readTime: "5 min", featured: true },
   { id: "preview-atlassian-rovo-mcp-v2", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 31, 2026", readTime: "3 min", featured: true },
