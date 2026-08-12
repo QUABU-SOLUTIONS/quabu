@@ -53,6 +53,14 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free"/>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.quabusolutions.com/blog/custom-templates-rising-star-badge</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/custom-templates-rising-star-badge"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/custom-templates-rising-star-badge"/>
