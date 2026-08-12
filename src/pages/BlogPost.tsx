@@ -23,6 +23,70 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-cloud-fundamentals-free",
+    title: "🚀 Atlassian Cloud Fundamentals Is Now Free: Your Shortcut to DevOps & ITSM Specializations",
+    excerpt: "The Atlassian Cloud Foundations exam has been renewed as the free ACH-820 certificate — and it is a key step toward earning the Agile DevOps and ITSM Specialist designations at zero cost.",
+    content: `
+![Atlassian Cloud Fundamentals Free](https://quabu.blog/wp-content/uploads/2026/08/QuabuAtlassianCertificationsDesignationsDevOpsITSM.png)
+
+Great news for the community! The *Atlassian Cloud Foundations (ACA-915)* exam has been completely renewed and is now the new **Atlassian Cloud Fundamentals Certificate (ACH-820)**.
+
+### 📌 Why should you get it today?
+
+- **100% Free:** No enrollment fee or hidden costs.
+- **Open-Book:** No locked browsers or live proctoring. You can check Atlassian documentation and your own products while answering.
+- **Fast and focused:** Validates the fundamental skills you already use in your daily work.
+- **Badge and E-Swag:** Includes your official certificate and digital badge to share on LinkedIn.
+
+### 🛠️ Your first step toward the *Agile DevOps Specialist* designation
+
+Earning this certificate not only boosts your CV immediately, but is also a strategic move within Atlassian's **stackable credentials** system.
+
+The new **ACH-820** counts as one of the essential requirements for obtaining the coveted **Atlassian Certified Agile DevOps Specialist** designation.
+
+### 🏆 The "4 Free Certificates" hack to become a DevOps Specialist
+
+Atlassian uses a stackable credentials system: if you earn **4 specific certificates**, you automatically receive the coveted [**Atlassian Certified Agile DevOps Specialist**](https://community.atlassian.com/learning/hub/resources-and-support/atlassian-certified-designations/) designation.
+
+What many people don't know is that right now you can obtain this expert-level designation by investing **$0**. Among the valid options on the list, there are at least four fundamental certifications that are now completely free and open-book:
+
+1. **[Atlassian Cloud Fundamentals](https://community.atlassian.com/learning/certifications/atlassian-cloud-fundamentals) (ACH-820)**
+2. **[Rovo Fundamentals](https://community.atlassian.com/learning/certifications/rovo-fundamentals) (ACH-800)**
+3. **[Forge Fundamentals](https://community.atlassian.com/learning/certifications/forge-fundamentals)**
+4. **[Loom Fundamentals](https://community.atlassian.com/learning/certifications/loom-fundamentals)**
+
+_(Note: Certifications such as Jira Essentials or Confluence Essentials still have a $100 exam fee. That's why the "Fundamentals" route is your best strategic option today!)_
+
+### 🚨 BONUS! Earn the *ITSM Specialist* designation (also FREE)
+
+But wait, there's more! The "4 free certificates" strategy doesn't just work for DevOps — it also helps you earn the **Atlassian Certified ITSM Specialist** designation.
+
+The rule is the same: you need to accumulate 4 credentials from the official list. If you already have **Cloud Fundamentals, Rovo and Loom**, you only need to add one more free, service-focused certificate:
+
+1. **Atlassian Cloud Fundamentals (ACH-820)**
+2. **Rovo Fundamentals (ACH-800)**
+3. **Loom Fundamentals**
+4. **[Jira Service Management with AI Fundamentals](https://community.atlassian.com/learning/certifications/jira-service-management-with-AI-fundamentals)**
+
+_(Other options on this list, such as Managing Jira Service Projects for Cloud or Agent Essentials, are not free. Also remember that the old "ITSM with Jira Service Management Foundations" was retired in June 2026.)_
+
+### 🏁 How to get started?
+
+1. Complete the free learning path on **Atlassian Learning**.
+2. Take the quick online assessment at your own pace.
+3. Add the credential to your professional profile!
+
+#Atlassian, #DevOps, #Certifications, #AtlassianCloud
+`,
+    category: "News",
+    categoryIcon: BookOpen,
+    date: "August 12, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/QuabuAtlassianCertificationsDesignationsDevOpsITSM.png",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Cloud Fundamentals", "ACH-820", "DevOps", "ITSM", "Certifications"],
+  },
+  {
     id: "custom-templates-rising-star-badge",
     title: "Atlassian Awards Our Custom Templates App the Rising Star Badge 🚀",
     excerpt: "Atlassian Marketplace has officially granted Custom Templates for Jira Cloud the Rising Star badge, recognizing its fast growth, accelerated adoption and 5/5 star rating.",

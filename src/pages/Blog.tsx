@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-cloud-fundamentals-free", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 12, 2026", readTime: "4 min", featured: true },
   { id: "custom-templates-rising-star-badge", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 4, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-devs-marketplace-webinar-recap", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 1, 2026", readTime: "5 min", featured: true },
   { id: "preview-atlassian-rovo-mcp-v2", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "July 31, 2026", readTime: "3 min", featured: true },
@@ -115,6 +116,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-cloud-fundamentals-free",
+    title: "🚀 Atlassian Cloud Fundamentals Is Now Free: Your Shortcut to DevOps & ITSM Specializations",
+    excerpt: "The Atlassian Cloud Foundations exam has been renewed as the free ACH-820 certificate — and it is a key step toward earning the Agile DevOps and ITSM Specialist designations at zero cost.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "August 12, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/QuabuAtlassianCertificationsDesignationsDevOpsITSM.png",
+    featured: true,
+  },
   {
     id: "custom-templates-rising-star-badge",
     title: "Atlassian Awards Our Custom Templates App the Rising Star Badge 🚀",
