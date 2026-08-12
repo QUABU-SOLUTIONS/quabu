@@ -76,7 +76,7 @@ _(Other options on this list, such as Managing Jira Service Projects for Cloud o
 2. Take the quick online assessment at your own pace.
 3. Add the credential to your professional profile!
 
-`#Atlassian`, `#DevOps`, `#Certifications`, `#AtlassianCloud`
+#Atlassian, #DevOps, #Certifications, #AtlassianCloud
 `,
     category: "News",
     categoryIcon: BookOpen,
