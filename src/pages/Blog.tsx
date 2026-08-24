@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "stop-triaging-jira-tickets-manually", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 24, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-cloud-fundamentals-free", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 12, 2026", readTime: "4 min", featured: true },
   { id: "custom-templates-rising-star-badge", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 4, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-devs-marketplace-webinar-recap", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 1, 2026", readTime: "5 min", featured: true },
@@ -116,6 +117,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "stop-triaging-jira-tickets-manually",
+    title: "Stop Triaging Jira Tickets Manually. Do This Instead",
+    excerpt: "Build your own AI-powered Backlog Guardian with Atlassian Rovo Studio and Jira Automation to score readiness, detect missing requirements and route issues automatically.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 24, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/QuabuAtlassianAITriageJiraBro1-scaled.jpg",
+    featured: true,
+  },
   {
     id: "atlassian-cloud-fundamentals-free",
     title: "🚀 Atlassian Cloud Fundamentals Is Now Free: Your Shortcut to DevOps & ITSM Specializations",
