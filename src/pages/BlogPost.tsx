@@ -23,6 +23,38 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "stop-triaging-jira-tickets-manually",
+    title: "Stop Triaging Jira Tickets Manually. Do This Instead",
+    excerpt: "Build your own AI-powered Backlog Guardian with Atlassian Rovo Studio and Jira Automation to score readiness, detect missing requirements and route issues automatically.",
+    content: `
+![Stop Triaging Jira Tickets Manually](https://quabu.blog/wp-content/uploads/2026/08/QuabuAtlassianAITriageJiraBro1-scaled.jpg)
+
+Do your agile refinement sessions turn into marathons of deciphering ambiguous, out-of-context Jira tickets? Unclear acceptance criteria slow sprint velocity and burn out developers. To eliminate this bottleneck, **JiraBro** presents a hands-on guide to automating issue triage and raising the quality of your backlog with Artificial Intelligence.
+
+In this video tutorial you will learn how to build your own **"Backlog Guardian"**, an autonomous agent configured with **Atlassian Rovo Studio** and **Jira Automation**. In just 5 minutes, you will discover how to integrate this AI assistant into your workflow so it analyzes every new issue, evaluates its readiness level against the **Definition of Ready**, and provides immediate recommendations.
+
+### What you will learn in this video
+
+- **Automatic AI evaluation:** Assignment of a readiness score (1 to 10) and a clear status (*Ready for Sprint*, *Needs Clarification* or *Incomplete*).
+- **Missing-requirement detection:** Automatic identification of missing reproduction steps, environment data or acceptance criteria.
+- **Smart routing:** Automatic suggestion of the right technical component (API, Frontend, Infrastructure, etc.).
+- **No-Code automation:** Step-by-step configuration of rules in Jira Cloud to run the agent and add structured comments with no manual intervention.
+
+Check out the video below!
+
+[STOP Triaging Jira Tickets Manually! (Do This Instead)](https://www.youtube.com/watch?v=MXzi_RVk5qE)
+
+#AtlassianRovo #JiraAutomation #RovoStudio #JiraSoftware #JiraBro #Quabu #BacklogRefinement #AgileProjectManagement #ArtificialIntelligenceJira #AIAgents #TicketTriage #BacklogGrooming #DefinitionOfReady #DevOps #Scrum #SoftwareQuality #NoCodeAutomation #AtlassianAI #IssueManagement
+`,
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 24, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/QuabuAtlassianAITriageJiraBro1-scaled.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian Rovo", "Jira Automation", "Rovo Studio", "Jira Software", "JiraBro", "Quabu", "Backlog Refinement", "AI Agents", "No-Code Automation", "Atlassian AI"],
+  },
+  {
     id: "atlassian-cloud-fundamentals-free",
     title: "🚀 Atlassian Cloud Fundamentals Is Now Free: Your Shortcut to DevOps & ITSM Specializations",
     excerpt: "The Atlassian Cloud Foundations exam has been renewed as the free ACH-820 certificate — and it is a key step toward earning the Agile DevOps and ITSM Specialist designations at zero cost.",
