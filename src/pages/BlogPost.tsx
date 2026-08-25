@@ -23,6 +23,41 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "vibe-coding-atlassian-forge-rovo-studio",
+    title: "Vibe Coding in Atlassian Forge: How to Create 3 AI Apps with Rovo Studio",
+    excerpt: "Jira Bro shows how to build three production-ready Forge apps — Issue Mood Meter, Confluence Reading Time macro and JSM AI Sentiment Evaluator — using only AI prompts in Cursor and Windsurf.",
+    content: `
+![Vibe Coding in Atlassian Forge](https://quabu.blog/wp-content/uploads/2026/08/RovoStudioAtlassianForgeAppsQuabu.jpg)
+
+Want to develop production-ready Atlassian Cloud apps without writing repetitive manual code? In his latest tutorial, **Jira Bro** demonstrates how to leverage **_Vibe Coding_** to create three fully functional apps in **Atlassian Forge** using only AI prompts in **Cursor** and **Windsurf**. The showcased projects bring AI-assisted development to the entire Atlassian ecosystem:
+
+- **Issue Mood Meter** for Jira — monitor team climate and sentiment around tickets.
+- **Reading Time & Freshness** macro for Confluence — detect outdated documentation at a glance.
+- **AI Sentiment Evaluator** for Jira Service Management (JSM) — automatically classify incoming tickets using an LLM.
+
+### Beyond the projects: practical AI workflow strategies
+
+This guide also reveals key tactics to overcome common obstacles in AI-assisted development:
+
+- **Feed official docs to your assistant:** Use the latest **Forge UI Kit** documentation as context to avoid syntax errors and deprecated APIs.
+- **Generate valid manifests from plain language:** Produce correct \`manifest.yml\` configuration files by describing the app in simple Spanish or English prompts.
+- **Deploy straight to Cloud:** Push your apps directly to your Atlassian Cloud site with minimal manual steps.
+
+Discover how to optimize your development workflow at Quabu and start building Atlassian apps much faster with AI!
+
+[I Built 3 Atlassian Forge Apps Using Pure AI Prompts](https://www.youtube.com/watch?v=lFLLCfoV5fc)
+
+#Atlassian #AtlassianForge #VibeCoding #Jira #Confluence #JSM #JiraServiceManagement #CursorAI #Windsurf #ArtificialIntelligence #AI #AppDevelopment #JiraBro #Quabu #ForgeUIKit #LLM #DevOps #LowCode #CodeWithAI
+`,
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 25, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/RovoStudioAtlassianForgeAppsQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Atlassian Forge", "Vibe Coding", "Jira", "Confluence", "JSM", "Jira Service Management", "Cursor AI", "Windsurf", "AI", "App Development", "Jira Bro", "Quabu", "Forge UI Kit", "LLM"],
+  },
+  {
     id: "stop-triaging-jira-tickets-manually",
     title: "Stop Triaging Jira Tickets Manually. Do This Instead",
     excerpt: "Build your own AI-powered Backlog Guardian with Atlassian Rovo Studio and Jira Automation to score readiness, detect missing requirements and route issues automatically.",
