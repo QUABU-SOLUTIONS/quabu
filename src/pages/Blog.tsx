@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "vibe-coding-atlassian-forge-rovo-studio", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 25, 2026", readTime: "3 min", featured: true },
   { id: "stop-triaging-jira-tickets-manually", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 24, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-cloud-fundamentals-free", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 12, 2026", readTime: "4 min", featured: true },
   { id: "custom-templates-rising-star-badge", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 4, 2026", readTime: "3 min", featured: true },
@@ -117,6 +118,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "vibe-coding-atlassian-forge-rovo-studio",
+    title: "Vibe Coding in Atlassian Forge: How to Create 3 AI Apps with Rovo Studio",
+    excerpt: "Jira Bro shows how to build three production-ready Forge apps — Issue Mood Meter, Confluence Reading Time macro and JSM AI Sentiment Evaluator — using only AI prompts in Cursor and Windsurf.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 25, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/RovoStudioAtlassianForgeAppsQuabu.jpg",
+    featured: true,
+  },
   {
     id: "stop-triaging-jira-tickets-manually",
     title: "Stop Triaging Jira Tickets Manually. Do This Instead",
