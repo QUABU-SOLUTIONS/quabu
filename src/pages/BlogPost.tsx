@@ -40,7 +40,7 @@ Want to develop production-ready Atlassian Cloud apps without writing repetitive
 This guide also reveals key tactics to overcome common obstacles in AI-assisted development:
 
 - **Feed official docs to your assistant:** Use the latest **Forge UI Kit** documentation as context to avoid syntax errors and deprecated APIs.
-- **Generate valid manifests from plain language:** Produce correct `manifest.yml` configuration files by describing the app in simple Spanish or English prompts.
+- **Generate valid manifests from plain language:** Produce correct \`manifest.yml\` configuration files by describing the app in simple Spanish or English prompts.
 - **Deploy straight to Cloud:** Push your apps directly to your Atlassian Cloud site with minimal manual steps.
 
 Discover how to optimize your development workflow at Quabu and start building Atlassian apps much faster with AI!
