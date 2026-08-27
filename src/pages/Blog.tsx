@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "ai-escalation-agent-jira-no-code", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 27, 2026", readTime: "3 min", featured: true },
   { id: "vibe-coding-atlassian-forge-rovo-studio", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 25, 2026", readTime: "3 min", featured: true },
   { id: "stop-triaging-jira-tickets-manually", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 24, 2026", readTime: "3 min", featured: true },
   { id: "atlassian-cloud-fundamentals-free", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 12, 2026", readTime: "4 min", featured: true },
@@ -118,6 +119,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "ai-escalation-agent-jira-no-code",
+    title: "I Built an AI Escalation Agent in Jira (No Code Needed)",
+    excerpt: "Learn how to automatically escalate VIP accounts and critical incidents in Jira by combining Atlassian Rovo Studio and Jira Automation — no coding required.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 27, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/AIEscalationAgentAtlassianRovoQuabu.jpg",
+    featured: true,
+  },
   {
     id: "vibe-coding-atlassian-forge-rovo-studio",
     title: "Vibe Coding in Atlassian Forge: How to Create 3 AI Apps with Rovo Studio",

@@ -23,6 +23,42 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "ai-escalation-agent-jira-no-code",
+    title: "I Built an AI Escalation Agent in Jira (No Code Needed)",
+    excerpt: "Learn how to automatically escalate VIP accounts and critical incidents in Jira by combining Atlassian Rovo Studio and Jira Automation — no coding required.",
+    content: `
+![AI Escalation Agent in Jira](https://quabu.blog/wp-content/uploads/2026/08/AIEscalationAgentAtlassianRovoQuabu.jpg)
+
+Is your team still wasting hours manually triaging tickets in Jira? 🚨
+
+Manual triage is a silent productivity killer. VIP accounts get stuck in standard queues, critical incidents slip through the cracks, and managers lose time assigning priorities by hand.
+
+To fix this, we teamed up with **JiraBro** to show you how to automate the entire process without writing a single line of code, combining **Atlassian Rovo Studio** and **Jira Automation**.
+
+### How Does the AI Escalation Agent Work?
+
+- 👑 **VIP Detection:** Identifies high-value customers directly from ticket data.
+- 🔍 **Severity Analysis:** Scans descriptions for critical keywords like "production outage" or "payment failure".
+- 🛂 **Automatic Escalation:** Raises priority to "Highest" and applies risk labels instantly.
+- 💬 **Generated Responses:** Creates a ready-to-send internal response draft in seconds.
+
+At **Quabu Solutions**, as an **Atlassian Gold Solution & Marketplace Partner**, we love supporting tools that showcase the true potential of AI and automation inside Jira.
+
+🎬 Watch the full breakdown in the JiraBro video (less than 5 minutes!) and grab the prompt in the first comment. 👇
+
+[I Built an AI Escalation Agent in Jira (No Code)](https://www.youtube.com/watch?v=7syEcmoL9UQ)
+
+#JiraAutomation #AtlassianRovo #ITSM #AI #NoCode #JiraBro #Quabu
+`,
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 27, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/AIEscalationAgentAtlassianRovoQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Jira Automation", "Atlassian Rovo", "ITSM", "AI", "No Code", "JiraBro", "Quabu"],
+  },
+  {
     id: "vibe-coding-atlassian-forge-rovo-studio",
     title: "Vibe Coding in Atlassian Forge: How to Create 3 AI Apps with Rovo Studio",
     excerpt: "Jira Bro shows how to build three production-ready Forge apps — Issue Mood Meter, Confluence Reading Time macro and JSM AI Sentiment Evaluator — using only AI prompts in Cursor and Windsurf.",
