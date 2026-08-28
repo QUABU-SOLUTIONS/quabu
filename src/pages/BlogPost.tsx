@@ -23,6 +23,29 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "can-atlassian-rovo-replace-jira-admin",
+    title: "Can Atlassian Rovo Really Replace a Jira Administrator? (Practical Analysis)",
+    excerpt: "We put Atlassian Rovo to the test to explore how far AI goes in the daily work of a Jira administrator, analyzing where it saves time and where human skills remain essential.",
+    content: `
+![Can Atlassian Rovo Replace a Jira Administrator?](https://quabu.blog/wp-content/uploads/2026/08/CanRovoReplaceJiraAdmins.jpg)
+
+We are sharing this **Jira Bro** video: *"Can Atlassian Rovo really replace a Jira administrator?"* 🤖 In this episode, Rovo is put to the test to explore how far AI goes in the day-to-day work of a Jira administrator, analyzing where it saves time and, most importantly, where human skills remain essential.
+
+The video covers what Rovo can do for Jira administration, how to use AI in routine tasks, its strengths and weaknesses, whether it is realistic for it to replace a professional in the field, its main limitations, and what the future of AI-assisted administration looks like. Whether you are a Jira administrator, Atlassian professional, team leader, or automation enthusiast, here you will find a practical look at what Rovo can achieve today. Do you think AI will eventually replace Jira administrators or simply augment their productivity? Leave us your opinion in the comments!
+
+[Can Atlassian Rovo Really Replace a Jira Administrator? (Practical Analysis)](https://www.youtube.com/watch?v=-MsLigqbjWM)
+
+#Jira #Atlassian #AtlassianRovo #JiraAdmin #ArtificialIntelligence #AI #Automation #Productivity #JiraBro #Quabu #Tech #JiraAutomation #AtlassianCommunity #JiraAdministration #ProjectManagement
+`,
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 28, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/CanRovoReplaceJiraAdmins.jpg",
+    author: "Quabu Team",
+    tags: ["Jira", "Atlassian", "Atlassian Rovo", "Jira Admin", "Artificial Intelligence", "AI", "Automation", "Productivity", "Jira Bro", "Quabu", "Jira Automation", "Atlassian Community", "Jira Administration", "Project Management"],
+  },
+  {
     id: "ai-escalation-agent-jira-no-code",
     title: "I Built an AI Escalation Agent in Jira (No Code Needed)",
     excerpt: "Learn how to automatically escalate VIP accounts and critical incidents in Jira by combining Atlassian Rovo Studio and Jira Automation — no coding required.",
