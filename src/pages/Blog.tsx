@@ -121,6 +121,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "can-atlassian-rovo-replace-jira-admin",
+    title: "Can Atlassian Rovo Really Replace a Jira Administrator? (Practical Analysis)",
+    excerpt: "We put Atlassian Rovo to the test to explore how far AI goes in the daily work of a Jira administrator, analyzing where it saves time and where human skills remain essential.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "August 28, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/CanRovoReplaceJiraAdmins.jpg",
+    featured: true,
+  },
+  {
     id: "ai-escalation-agent-jira-no-code",
     title: "I Built an AI Escalation Agent in Jira (No Code Needed)",
     excerpt: "Learn how to automatically escalate VIP accounts and critical incidents in Jira by combining Atlassian Rovo Studio and Jira Automation — no coding required.",
