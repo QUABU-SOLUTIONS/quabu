@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "can-atlassian-rovo-replace-jira-admin", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 28, 2026", readTime: "3 min", featured: true },
   { id: "ai-escalation-agent-jira-no-code", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 27, 2026", readTime: "3 min", featured: true },
   { id: "vibe-coding-atlassian-forge-rovo-studio", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 25, 2026", readTime: "3 min", featured: true },
   { id: "stop-triaging-jira-tickets-manually", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 24, 2026", readTime: "3 min", featured: true },
