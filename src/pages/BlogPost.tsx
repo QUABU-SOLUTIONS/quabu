@@ -23,7 +23,96 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
-    id: "can-atlassian-rovo-replace-jira-admin",
+    id: "visual-organizer-for-jira-cloud",
+    title: "Master Navigation in Jira Cloud: How Visual Organizer for Jira Turns Board & Dashboard Chaos into Visual Order",
+    excerpt: "Visual Organizer: Custom Labels & Views for Jira centralizes boards, dashboards, filters, projects and Advanced Roadmaps with favorites, color-coded tags and smart categories to kill visual noise in growing instances.",
+    content: `
+![Visual Organizer for Jira Cloud](https://quabu.blog/wp-content/uploads/2026/08/VisualOrganizerForJiraAppQuabu-1-scaled.jpg)
+
+As organizations grow and adopt Jira Cloud at scale, a critical challenge emerges: **information overload**. In medium and large instances, it is common to accumulate dozens or hundreds of projects, boards, dashboards, saved filters and Advanced Roadmaps plans. Finding the right resource at the right moment becomes a bottleneck that erodes productivity.
+
+For organizations trying to keep operations fluid —or those missing the centralized structure of Data Center environments— this scattered experience creates significant friction. To solve it, **[Visual Organizer: Custom Labels & Views for Jira](https://marketplace.atlassian.com/apps/130463090/visual-organizer-custom-labels-views-for-jira?hosting=cloud&tab=overview)** stands out as one of the most effective tools in the Atlassian Marketplace.
+
+[Visual Organizer - Custom Labels & Views for Jira](https://www.youtube.com/watch?v=xZXuXRWqEgE)
+
+## The Challenge: "Visual Noise" in Growing Jira Cloud Instances
+
+In day-to-day Atlassian consulting, one of the most recurring frustrations among users is not the lack of features, but the **difficulty of organizing and locating their work tools**.
+
+Without a structured visual classification system:
+
+- Native dropdown menus become long and hard to navigate.
+- Grouping resources by customer, department, initiative or priority becomes complex.
+- Roles with different needs (Scrum Masters, Product Owners, Jira Admins) are forced to wade through layers of information that add no direct value.
+
+## What Is Visual Organizer for Jira Cloud?
+
+**[Visual Organizer](https://marketplace.atlassian.com/apps/130463090/visual-organizer-custom-labels-views-for-jira?hosting=cloud&tab=overview)** is an app designed to centralize, categorize and visually organize the key components of the Jira Cloud workspace.
+
+Unlike traditional tagging tools focused solely on *issues*, Visual Organizer extends its reach to the workspace architecture: **Dashboards, Projects, Filters, Boards and Plans (Advanced Roadmaps)**.
+
+Its value proposition is a clean, intuitive navigation experience with a clear visual hierarchy, suited both to individual management and corporate governance.
+
+## Key Features That Make the Difference
+
+### 1. Efficient Favorites Management
+
+Star any relevant board, dashboard, filter or project. With a simple toggle filter, users can switch between the global view and a filtered view containing only their favorites, instantly reducing on-screen noise.
+
+![Favorites Management](https://quabu.blog/wp-content/uploads/2026/08/23c9ae2a-2d3d-4369-b961-aaf0efc25568-1024x501.png)
+
+### 2. Custom Tagging & Color Coding
+
+Assign custom tags and color codes to each resource. You can classify dashboards or boards by customer, technology, status or criticality level, providing instant visual recognition.
+
+![Custom Tagging](https://quabu.blog/wp-content/uploads/2026/08/34a32d0a-244a-4ccc-a187-2c6268a0f88e-1024x501.png)
+
+### 3. Smart Categorization (Personal vs. Company-wide Scope)
+
+Structure resources into custom categories (*Personal* or *Company-wide*). This lets the PMO or Jira administrator establish global shared taxonomies for the whole organization, while each teammate keeps their own working groups.
+
+![Smart Categorization](https://quabu.blog/wp-content/uploads/2026/08/2fdb9d0e-7b33-4f24-adf4-a5276470cdd3-1024x501.png)
+
+### 4. Advanced Global Search & Filtering
+
+Stop hunting element by element. With the built-in search bar and filters by tags or categories, locating the "Level 2 Support" dashboard or the "Sprint Q3 – Finance" board takes just seconds.
+
+### 5. Adaptable Views: Card or Table Layout
+
+Every team works differently. The tool lets you switch between a **Card View** —friendlier and more intuitive— and a **Table View**, aimed at dynamically analyzing higher volumes of information.
+
+![Card and Table Views](https://quabu.blog/wp-content/uploads/2026/08/VisualOrganizerScreensJira-1-1024x501.jpg)
+
+## Real-World Use Cases in the Organization
+
+- **Scrum Masters & Agile Leads:** Those managing multiple boards in parallel can tag them by team, release or active sprint to access them without wasting time in endless menus.
+- **Jira System Administrators:** Simplifies the ordering of the most-used corporate Dashboards and Filters, offering a clean entry point that reduces incidents and FAQs about where to find each report.
+- **PMO & Management:** Lets you group Plans (Advanced Roadmaps) and executive Dashboards by business unit or strategic customer, improving overall portfolio visibility.
+
+## Key Benefits for Your Team
+
+1. **Operational Time Savings:** Fewer clicks and fruitless searches translate into greater focus on value delivery.
+2. **Improved Adoption:** A clean, colorful interface makes Jira more accessible to non-technical users.
+3. **Controlled Scalability:** Your Jira instance can grow in project volume without losing coherence or navigational order.
+
+## Optimize Your Jira Cloud Workspace
+
+Having a navigable structure is not just a matter of aesthetics; it is a determining factor for team efficiency. If your Jira Cloud instance has reached a volume where finding the right information takes too long, **Visual Organizer** is the piece that completes your workflow.
+
+Try it free on your instance from the official listing on the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/130463090/visual-organizer-custom-labels-views-for-jira?hosting=cloud&tab=overview).
+
+At **[Quabu](https://www.quabusolutions.com/)**, as specialists in the Atlassian ecosystem, we help you with optimization, governance and selecting the best tools to boost your processes. **Want to discover how to get the most out of your Jira Cloud? [Get in touch](https://www.quabusolutions.com/contact) with our consulting team.**
+
+#Atlassian #Jira #JiraCloud #VisualOrganizer #AtlassianMarketplace #AtlassianExpert #Quabu #Productivity #Agile #Scrum #ProjectManagement #PMO #ITManagement #JiraAdmin #VisualOrganization
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "August 31, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/VisualOrganizerForJiraAppQuabu-1-scaled.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Jira", "Jira Cloud", "Visual Organizer", "Atlassian Marketplace", "Quabu", "Productivity", "Agile", "Scrum", "Project Management", "PMO", "IT Management", "Jira Admin"],
+  },
     title: "Can Atlassian Rovo Really Replace a Jira Administrator? (Practical Analysis)",
     excerpt: "We put Atlassian Rovo to the test to explore how far AI goes in the daily work of a Jira administrator, analyzing where it saves time and where human skills remain essential.",
     content: `

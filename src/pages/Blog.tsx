@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "visual-organizer-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 31, 2026", readTime: "4 min", featured: true },
   { id: "can-atlassian-rovo-replace-jira-admin", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 28, 2026", readTime: "3 min", featured: true },
   { id: "ai-escalation-agent-jira-no-code", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 27, 2026", readTime: "3 min", featured: true },
   { id: "vibe-coding-atlassian-forge-rovo-studio", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 25, 2026", readTime: "3 min", featured: true },
@@ -120,6 +121,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "visual-organizer-for-jira-cloud",
+    title: "Master Navigation in Jira Cloud: How Visual Organizer for Jira Turns Board & Dashboard Chaos into Visual Order",
+    excerpt: "Visual Organizer: Custom Labels & Views for Jira centralizes boards, dashboards, filters, projects and Advanced Roadmaps with favorites, color-coded tags and smart categories to kill visual noise in growing instances.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "August 31, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/08/VisualOrganizerForJiraAppQuabu-1-scaled.jpg",
+    featured: true,
+  },
   {
     id: "can-atlassian-rovo-replace-jira-admin",
     title: "Can Atlassian Rovo Really Replace a Jira Administrator? (Practical Analysis)",
