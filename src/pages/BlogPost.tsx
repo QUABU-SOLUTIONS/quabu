@@ -113,6 +113,8 @@ At **[Quabu](https://www.quabusolutions.com/)**, as specialists in the Atlassian
     author: "Quabu Team",
     tags: ["Atlassian", "Jira", "Jira Cloud", "Visual Organizer", "Atlassian Marketplace", "Quabu", "Productivity", "Agile", "Scrum", "Project Management", "PMO", "IT Management", "Jira Admin"],
   },
+  {
+    id: "can-atlassian-rovo-replace-jira-admin",
     title: "Can Atlassian Rovo Really Replace a Jira Administrator? (Practical Analysis)",
     excerpt: "We put Atlassian Rovo to the test to explore how far AI goes in the daily work of a Jira administrator, analyzing where it saves time and where human skills remain essential.",
     content: `
