@@ -16,6 +16,7 @@ import {
   Twitter,
   Facebook,
   BookOpen,
+  Newspaper,
   Tag,
   User
 } from "lucide-react";
