@@ -24,6 +24,33 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-bro-reviews-visual-organizer-for-jira",
+    title: "🚀 Jira Bro Has Tried the New Visual Organizer for Jira App!",
+    excerpt: "Jira Bro takes a deep dive into our new Visual Organizer for Jira app and shares his impressions on boosting project visibility and organization.",
+    content: `
+![Visual Organizer for Jira and Jira Bro](https://quabu.blog/wp-content/uploads/2026/09/VisualOrganizerForJiraandJiraBro.jpg)
+
+It's always great to see ecosystem experts put our tools to the test. In his latest video, **Jira Bro** takes a deep dive into **[Visual Organizer for Jira](https://marketplace.atlassian.com/apps/130463090/visual-organizer-custom-labels-views-for-jira?hosting=cloud&tab=overview)** and shares his impressions on how to boost visibility and organization in your projects.
+
+## 📺 Watch the Full Review Here
+
+[Jira Bro reviews Visual Organizer for Jira](https://www.youtube.com/watch?v=VfgUzJZTZ_g)
+
+A huge thank you to **Jira Bro** for taking the time to analyze the app, share his feedback with the community, and support our work! 🙌
+
+Have you watched the video yet? Leave us your thoughts in the comments! 👇
+
+#Atlassian #Jira #JiraCloud #VisualOrganizer #JiraBro #AtlassianMarketplace #Quabu #Productivity
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 1, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/VisualOrganizerForJiraandJiraBro.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Jira", "Jira Cloud", "Visual Organizer", "Jira Bro", "Atlassian Marketplace", "Quabu"],
+  },
+  {
     id: "visual-organizer-for-jira-cloud",
     title: "Master Navigation in Jira Cloud: How Visual Organizer for Jira Turns Board & Dashboard Chaos into Visual Order",
     excerpt: "Visual Organizer: Custom Labels & Views for Jira centralizes boards, dashboards, filters, projects and Advanced Roadmaps with favorites, color-coded tags and smart categories to kill visual noise in growing instances.",
