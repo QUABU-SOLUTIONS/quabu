@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-bro-reviews-visual-organizer-for-jira", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 1, 2026", readTime: "2 min", featured: true },
   { id: "visual-organizer-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 31, 2026", readTime: "4 min", featured: true },
   { id: "can-atlassian-rovo-replace-jira-admin", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 28, 2026", readTime: "3 min", featured: true },
   { id: "ai-escalation-agent-jira-no-code", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 27, 2026", readTime: "3 min", featured: true },
@@ -121,6 +122,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-bro-reviews-visual-organizer-for-jira",
+    title: "🚀 Jira Bro Has Tried the New Visual Organizer for Jira App!",
+    excerpt: "Jira Bro takes a deep dive into our new Visual Organizer for Jira app and shares his impressions on boosting project visibility and organization.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 1, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/VisualOrganizerForJiraandJiraBro.jpg",
+    featured: true,
+  },
   {
     id: "visual-organizer-for-jira-cloud",
     title: "Master Navigation in Jira Cloud: How Visual Organizer for Jira Turns Board & Dashboard Chaos into Visual Order",
