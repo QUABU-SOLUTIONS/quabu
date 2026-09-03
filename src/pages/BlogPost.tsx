@@ -24,6 +24,45 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "quabu-teamwork-collection-learning-camp-barcelona",
+    title: "Yesterday, the Quabu Team Went Camping: Atlassian Teamwork Collection Learning Camp Barcelona 🏕️⛺",
+    excerpt: "We joined the Atlassian Teamwork Collection Learning Camp in Barcelona for a hands-on day of networking, AI agents, Loom bug reporting and Confluence brainstorming with the local community.",
+    content: `
+![Atlassian Teamwork Collection Learning Camp Barcelona 2026](https://quabu.blog/wp-content/uploads/2026/09/AtlassianTeamworkCamp2026Barcelona.jpg)
+
+We attended the [Teamwork Collection Learning Camp by #Atlassian in #Barcelona](https://ace.atlassian.com/events/details/atlassian-barcelona-presents-barcelona-teamwork-collection-learning-camp-2026/) and, honestly… what an event! It had been years since we had such a great time at a community event around here.
+
+Beyond the tech hype, it is always nice to take a break, see familiar faces, meet colleagues from other partners in person, chat with customers and reach out directly to the Atlassian team. Real networking, no posturing, fueled by coffee and great pastries ☕️⚡️.
+
+![Atlassian Teamwork Collection Learning Camp Barcelona networking](https://quabu.blog/wp-content/uploads/2026/09/5818950610819158348-1024x768.jpg)
+
+## What Were We Tinkering With?
+
+It was a 100% hands-on, dynamic and super collaborative event where we saw how **Jira**, **Confluence** and **Loom** work wonderfully together:
+
+- 🤖 **Autonomous agents writing code:** You assign the task to the agent and it starts executing and solving the work almost without blinking. Fewer intermediaries, more magic.
+- 🎥 **Bugs reported with a quick video:** You record your screen in Loom explaining the issue, and the AI takes care of understanding the context and creating the ticket for you.
+- 💡 **Brainstorming that does not stay up in the air:** Real-time voting from Confluence whiteboards and direct conversion to work items in no time.
+
+![Atlassian Teamwork Collection Learning Camp Barcelona hands-on session](https://quabu.blog/wp-content/uploads/2026/09/5818950610819158344-1024x768.jpg)
+
+And as at any good camp, the best came at the end: the **Happy Hour from 4:00 PM to 6:00 PM**. A few beers, the best laughs with the community, and spectacular panoramic views of the Barcelona skyline with the sea in the background 🌅🍻.
+
+![Atlassian Teamwork Collection Learning Camp Barcelona Happy Hour](https://quabu.blog/wp-content/uploads/2026/09/5818950610819158337-1024x768.jpg)
+
+A huge round of applause to the organization for the atmosphere and the effort! That is how learning is enjoyable! 🚀🔥
+
+#Atlassian #Barcelona #TeamworkCollection #LearningCamp #Jira #Confluence #Loom #AI #Networking #AtlassianCommunity #Quabu
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 2, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/AtlassianTeamworkCamp2026Barcelona.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Barcelona", "Teamwork Collection", "Learning Camp", "Jira", "Confluence", "Loom", "AI", "Networking", "Atlassian Community", "Quabu"],
+  },
+  {
     id: "jira-bro-reviews-visual-organizer-for-jira",
     title: "🚀 Jira Bro Has Tried the New Visual Organizer for Jira App!",
     excerpt: "Jira Bro takes a deep dive into our new Visual Organizer for Jira app and shares his impressions on boosting project visibility and organization.",
