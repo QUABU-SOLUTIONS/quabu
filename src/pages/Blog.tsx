@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "quabu-teamwork-collection-learning-camp-barcelona", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 2, 2026", readTime: "2 min", featured: true },
   { id: "jira-bro-reviews-visual-organizer-for-jira", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 1, 2026", readTime: "2 min", featured: true },
   { id: "visual-organizer-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 31, 2026", readTime: "4 min", featured: true },
   { id: "can-atlassian-rovo-replace-jira-admin", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "August 28, 2026", readTime: "3 min", featured: true },
@@ -122,6 +123,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "quabu-teamwork-collection-learning-camp-barcelona",
+    title: "Yesterday, the Quabu Team Went Camping: Atlassian Teamwork Collection Learning Camp Barcelona 🏕️⛺",
+    excerpt: "We joined the Atlassian Teamwork Collection Learning Camp in Barcelona for a hands-on day of networking, AI agents, Loom bug reporting and Confluence brainstorming with the local community.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 2, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/AtlassianTeamworkCamp2026Barcelona.jpg",
+    featured: true,
+  },
   {
     id: "jira-bro-reviews-visual-organizer-for-jira",
     title: "🚀 Jira Bro Has Tried the New Visual Organizer for Jira App!",
