@@ -124,6 +124,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "quabu-teamwork-collection-learning-camp-barcelona",
+    title: "Yesterday, the Quabu Team Went Camping: Atlassian Teamwork Collection Learning Camp Barcelona 🏕️⛺",
+    excerpt: "We joined the Atlassian Teamwork Collection Learning Camp in Barcelona for a hands-on day of networking, AI agents, Loom bug reporting and Confluence brainstorming with the local community.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 2, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/AtlassianTeamworkCamp2026Barcelona.jpg",
+    featured: true,
+  },
+  {
     id: "jira-bro-reviews-visual-organizer-for-jira",
     title: "🚀 Jira Bro Has Tried the New Visual Organizer for Jira App!",
     excerpt: "Jira Bro takes a deep dive into our new Visual Organizer for Jira app and shares his impressions on boosting project visibility and organization.",
