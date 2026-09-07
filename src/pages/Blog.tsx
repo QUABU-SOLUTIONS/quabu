@@ -124,6 +124,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "atlassian-experts-webinar-jira-premium-news",
+    title: "New Atlassian Experts Webinar: Jira Premium Live Demo — Journeys, Playbooks & More Atlassian News",
+    excerpt: "Join our free Atlassian Experts session on September 10 for a live demo of the latest Jira, JSM and Customer Service Management Premium features — Live Chats, Capacity Planning, Rovo in workflows and more.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 7, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/1788280314692.jpg",
+    featured: true,
+  },
+  {
     id: "quabu-teamwork-collection-learning-camp-barcelona",
     title: "Yesterday, the Quabu Team Went Camping: Atlassian Teamwork Collection Learning Camp Barcelona 🏕️⛺",
     excerpt: "We joined the Atlassian Teamwork Collection Learning Camp in Barcelona for a hands-on day of networking, AI agents, Loom bug reporting and Confluence brainstorming with the local community.",
