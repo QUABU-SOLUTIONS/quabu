@@ -24,6 +24,43 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "atlassian-experts-webinar-jira-premium-news",
+    title: "New Atlassian Experts Webinar: Jira Premium Live Demo — Journeys, Playbooks & More Atlassian News",
+    excerpt: "Join our free Atlassian Experts session on September 10 for a live demo of the latest Jira, JSM and Customer Service Management Premium features — Live Chats, Capacity Planning, Rovo in workflows and more.",
+    content: `
+![Atlassian Experts Webinar — Jira Premium Live Demo](https://quabu.blog/wp-content/uploads/2026/09/1788280314692.jpg)
+
+What's new in Atlassian Premium and, more importantly, what is really worth it?
+
+**Atlassian Experts — in Spanish and free! Thursday, September 10, 6:30 PM Madrid and 1:30 PM Buenos Aires/Santiago de Chile.**
+
+In this new session with our Atlassian Champion [Raul Pelaez](https://www.linkedin.com/in/ra%C3%BAl-pel%C3%A1ez-mendoza-ba037a28/), we will review the latest features of Jira, Jira Service Management and Customer Service Management Premium, and we will test them live to see how they work and what impact they can have on teams' day-to-day work.
+
+We will talk about new features such as Live Chats, Capacity Planning, Rovo in workflows and other capabilities Atlassian is adding to its Premium products.
+
+But it won't be just a "What's New": we will put them to the test, look at real use cases and give our honest opinion on which features are truly interesting, which have potential and which still need to mature.
+
+A session to discover what is coming to the Atlassian ecosystem and, above all, to separate the hype from what can really deliver value.
+
+Webinar hosted by the Atlassian Experts Community and the great [Ariel Prado](https://www.linkedin.com/in/ariprado/) (the largest Spanish-speaking community!)
+
+✏️ Register on Meetup: [https://www.meetup.com/atlassian-experts/events/316356164/?slug=atlassian-experts&eventId=316356164](https://www.meetup.com/atlassian-experts/events/316356164/?slug=atlassian-experts&eventId=316356164)
+
+✏️ Register on LinkedIn: [https://www.linkedin.com/events/7500591278712193024/](https://www.linkedin.com/events/7500591278712193024/)
+
+See you there 💻 📱 🎧!
+
+#Atlassian #Jira #JiraPremium #JSM #Webinar #AtlassianCommunity #Rovo #Quabu
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 7, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/1788280314692.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Jira", "Jira Premium", "JSM", "Webinar", "Atlassian Community", "Rovo", "Quabu"],
+  },
+  {
     id: "quabu-teamwork-collection-learning-camp-barcelona",
     title: "Yesterday, the Quabu Team Went Camping: Atlassian Teamwork Collection Learning Camp Barcelona 🏕️⛺",
     excerpt: "We joined the Atlassian Teamwork Collection Learning Camp in Barcelona for a hands-on day of networking, AI agents, Loom bug reporting and Confluence brainstorming with the local community.",
