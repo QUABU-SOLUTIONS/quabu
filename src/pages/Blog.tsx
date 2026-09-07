@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-experts-webinar-jira-premium-news", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 7, 2026", readTime: "2 min", featured: true },
   { id: "quabu-teamwork-collection-learning-camp-barcelona", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 2, 2026", readTime: "2 min", featured: true },
   { id: "jira-bro-reviews-visual-organizer-for-jira", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 1, 2026", readTime: "2 min", featured: true },
   { id: "visual-organizer-for-jira-cloud", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "August 31, 2026", readTime: "4 min", featured: true },
