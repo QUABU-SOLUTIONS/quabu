@@ -1,7 +1,10 @@
 {
   "name": "vite_react_shadcn_ts",
   "private": true,
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css",
+    "./src/i18n/**"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite dev",

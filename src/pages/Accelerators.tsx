@@ -568,7 +568,7 @@ function AnimatedCardBackground({ gradientFrom, gradientTo, glowColor }: { gradi
                     
                     {/* Features */}
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                      {accelerator.features.map((feature, i) => (
+                      {(Array.isArray(accelerator.features) ? accelerator.features : []).map((feature, i) => (
                         <motion.li
                           key={i}
                           initial={{ opacity: 0, x: -10 }}

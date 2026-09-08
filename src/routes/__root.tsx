@@ -23,8 +23,10 @@ import NotFound from "@/pages/NotFound";
 import { reportLovableError } from "@/lib/lovable-error-reporting";
 import appCss from "../styles.css?url";
 
-// ported from main.tsx
-import "../i18n";
+// ported from main.tsx — imported as a value (not a bare side-effect import)
+// so production tree-shaking can never drop the i18n initialization.
+import i18n from "../i18n";
+import { I18nextProvider } from "react-i18next";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -112,17 +114,19 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
-    <HelmetProvider>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <ScrollToTop />
-          <Outlet />
-          <CookieConsent />
-        </TooltipProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
+    <I18nextProvider i18n={i18n}>
+      <HelmetProvider>
+        <QueryClientProvider client={queryClient}>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <ScrollToTop />
+            <Outlet />
+            <CookieConsent />
+          </TooltipProvider>
+        </QueryClientProvider>
+      </HelmetProvider>
+    </I18nextProvider>
   );
 }
 
