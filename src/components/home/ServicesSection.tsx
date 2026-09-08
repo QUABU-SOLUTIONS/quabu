@@ -111,7 +111,7 @@ export function ServicesSection() {
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
                   <ul className="grid grid-cols-2 gap-2">
-                    {service.features.map((feature, featureIndex) => (
+                    {(Array.isArray(service.features) ? service.features : []).map((feature, featureIndex) => (
                       <motion.li key={feature} className="flex items-center gap-2 text-sm" initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 + featureIndex * 0.05 }}>
                         <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity, delay: featureIndex * 0.3 }}>
                           <Check className="w-4 h-4 text-success shrink-0" />
