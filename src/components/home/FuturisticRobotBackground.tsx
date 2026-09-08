@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
 
+// Deterministic pseudo-random (SSR-safe): identical values on server and client.
+const seeded = (i: number, salt: number) => {
+  const x = Math.sin(i * 127.1 + salt * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
+
 interface Robot {
   id: number;
   x: number;
