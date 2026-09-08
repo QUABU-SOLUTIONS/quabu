@@ -7,9 +7,13 @@ import { buttonVariants } from "@/components/ui/button";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
+// react-day-picker v8's DayPickerProps union doesn't re-spread cleanly under
+// exactOptionalPropertyTypes; widen the component's prop surface locally.
+const DayPickerWidened = DayPicker as unknown as React.ComponentType<Record<string, unknown>>;
+
 function Calendar({ className, classNames, showOutsideDays = true, ...props }: CalendarProps) {
   return (
-    <DayPicker
+    <DayPickerWidened
       showOutsideDays={showOutsideDays}
       className={cn("p-3", className)}
       classNames={{
