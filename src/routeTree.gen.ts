@@ -32,6 +32,7 @@ import { Route as NewsletterUnsubscribeRouteImport } from './routes/newsletter/u
 import { Route as ServicesAtlassianRouteImport } from './routes/services/atlassian'
 import { Route as ServicesCloudMigrationRouteImport } from './routes/services/cloud-migration'
 import { Route as ServicesCustomDevelopmentRouteImport } from './routes/services/custom-development'
+import { Route as ApiPublicChatAssistantRouteImport } from './routes/api/public/chat-assistant'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -150,6 +151,11 @@ const ServicesCustomDevelopmentRoute =
     path: '/services/custom-development',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicChatAssistantRoute = ApiPublicChatAssistantRouteImport.update({
+  id: '/api/public/chat-assistant',
+  path: '/api/public/chat-assistant',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -175,6 +181,7 @@ export interface FileRoutesByFullPath {
   '/services/custom-development': typeof ServicesCustomDevelopmentRoute
   '/accelerators/': typeof AcceleratorsIndexRoute
   '/blog/': typeof BlogIndexRoute
+  '/api/public/chat-assistant': typeof ApiPublicChatAssistantRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -200,6 +207,7 @@ export interface FileRoutesByTo {
   '/services/custom-development': typeof ServicesCustomDevelopmentRoute
   '/accelerators': typeof AcceleratorsIndexRoute
   '/blog': typeof BlogIndexRoute
+  '/api/public/chat-assistant': typeof ApiPublicChatAssistantRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -226,6 +234,7 @@ export interface FileRoutesById {
   '/services/custom-development': typeof ServicesCustomDevelopmentRoute
   '/accelerators/': typeof AcceleratorsIndexRoute
   '/blog/': typeof BlogIndexRoute
+  '/api/public/chat-assistant': typeof ApiPublicChatAssistantRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -253,6 +262,7 @@ export interface FileRouteTypes {
     | '/services/custom-development'
     | '/accelerators/'
     | '/blog/'
+    | '/api/public/chat-assistant'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -278,6 +288,7 @@ export interface FileRouteTypes {
     | '/services/custom-development'
     | '/accelerators'
     | '/blog'
+    | '/api/public/chat-assistant'
   id:
     | '__root__'
     | '/'
@@ -303,6 +314,7 @@ export interface FileRouteTypes {
     | '/services/custom-development'
     | '/accelerators/'
     | '/blog/'
+    | '/api/public/chat-assistant'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -329,6 +341,7 @@ export interface RootRouteChildren {
   ServicesCustomDevelopmentRoute: typeof ServicesCustomDevelopmentRoute
   AcceleratorsIndexRoute: typeof AcceleratorsIndexRoute
   BlogIndexRoute: typeof BlogIndexRoute
+  ApiPublicChatAssistantRoute: typeof ApiPublicChatAssistantRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -494,6 +507,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesCustomDevelopmentRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/chat-assistant': {
+      id: '/api/public/chat-assistant'
+      path: '/api/public/chat-assistant'
+      fullPath: '/api/public/chat-assistant'
+      preLoaderRoute: typeof ApiPublicChatAssistantRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -521,6 +541,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesCustomDevelopmentRoute: ServicesCustomDevelopmentRoute,
   AcceleratorsIndexRoute: AcceleratorsIndexRoute,
   BlogIndexRoute: BlogIndexRoute,
+  ApiPublicChatAssistantRoute: ApiPublicChatAssistantRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

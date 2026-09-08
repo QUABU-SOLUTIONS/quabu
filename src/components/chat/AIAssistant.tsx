@@ -22,7 +22,7 @@ type Message = {
   content: string;
 };
 
-const CHAT_URL = `${import.meta.env['VITE_SUPABASE_URL']}/functions/v1/chat-assistant`;
+const CHAT_URL = "/api/public/chat-assistant";
 
 async function streamChat({
   messages,
@@ -40,7 +40,6 @@ async function streamChat({
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${import.meta.env['VITE_SUPABASE_PUBLISHABLE_KEY']}`,
       },
       body: JSON.stringify({ messages }),
     });
