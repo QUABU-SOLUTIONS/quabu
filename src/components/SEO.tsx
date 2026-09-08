@@ -1,4 +1,6 @@
-import { Helmet } from "react-helmet-async";
+// react-helmet-async is CJS; named imports break under SSR module evaluation.
+import helmetPkg from "react-helmet-async";
+const { Helmet } = helmetPkg;
 import { useTranslation } from "react-i18next";
 
 const BASE_URL = "https://www.quabusolutions.com";
