@@ -24,6 +24,13 @@ import {
 import atlassianIcon from "@/assets/atlassian-icon.png";
 import goldPartner from "@/assets/atlassian-gold-partner.png";
 
+// Deterministic pseudo-random (SSR-safe): identical values on server and client.
+const seeded = (i: number, salt: number) => {
+  const x = Math.sin(i * 127.1 + salt * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
+
 // Animated floating clouds background
 const AnimatedCloudsBackground = () => {
   return (
