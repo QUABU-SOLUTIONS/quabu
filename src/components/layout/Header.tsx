@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "@/lib/router-compat";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, Linkedin, Twitter, Mail, Youtube, Instagram, FileText, Shield, Globe, CheckSquare, ExternalLink, Cloud, Code, Cog, BookOpen, Pen } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -255,7 +255,7 @@ export function Header() {
                   ) : item.hasBlogDropdown ? (
                     <div key={item.name} className="relative">
                       <DropdownMenu>
-                        <DropdownMenuTrigger className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50 inline-flex items-center gap-1 outline-none">
+                        <DropdownMenuTrigger className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50 inline-flex items-center gap-1 outline-hidden">
                           {item.name}
                           <ChevronDown className="h-3 w-3 transition-transform duration-200" />
                         </DropdownMenuTrigger>
@@ -298,7 +298,7 @@ export function Header() {
                   ) : item.hasAboutDropdown ? (
                     <div key={item.name} className="relative">
                       <DropdownMenu>
-                        <DropdownMenuTrigger className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50 inline-flex items-center gap-1 outline-none">
+                        <DropdownMenuTrigger className="px-4 py-2 rounded-md text-sm font-medium transition-colors text-foreground hover:text-primary hover:bg-muted/50 inline-flex items-center gap-1 outline-hidden">
                           {item.name}
                           <ChevronDown className="h-3 w-3 transition-transform duration-200" />
                         </DropdownMenuTrigger>

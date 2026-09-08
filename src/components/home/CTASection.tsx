@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, MessageCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 

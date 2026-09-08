@@ -1,0 +1,29 @@
+{
+  "customizations": [
+    { "token": "Quabu brand palette (:root light tokens)", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "Quabu brand palette (.dark tokens)", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--success / --success-foreground", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--warning / --warning-foreground", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--gradient-start / --gradient-end", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "sidebar token set (--sidebar-background et al.)", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--radius: 0.75rem", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "font-sans Inter / font-display Plus Jakarta Sans", "source": "tailwind.config.ts", "reappliedIn": "src/styles.css" },
+    { "token": "container (center, 2rem padding, 1400px cap)", "source": "tailwind.config.ts", "reappliedIn": "src/styles.css" },
+    { "token": "gradient-primary", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "gradient-text", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "gradient-border", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "glass", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "shadow-soft", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "shadow-glow", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "hover-lift", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "hover-scale", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "section-padding", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "container-tight", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "container-wide", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "keyframes fade-up/fade-in/slide-in-right/float/pulse-glow + animate-* utilities", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "keyframes accordion-down/accordion-up + animations", "source": "tailwind.config.ts", "reappliedIn": "src/styles.css" },
+    { "token": "custom scrollbar styles", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "base styles (antialiased body, font-feature-settings, bold tracking-tight headings, border-border reset)", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "@tailwindcss/typography plugin (prose classes for blog)", "source": "tailwind.config.ts", "reappliedIn": "src/styles.css" }
+  ]
+}

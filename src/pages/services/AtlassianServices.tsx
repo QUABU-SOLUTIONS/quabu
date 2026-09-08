@@ -18,7 +18,7 @@ import {
   Users,
   Shield
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Layout } from "@/components/layout/Layout";
 import { TrustSection } from "@/components/home/TrustSection";
 import { CTASection } from "@/components/home/CTASection";
@@ -419,7 +419,7 @@ export default function AtlassianServices() {
             </motion.div>
             
             <motion.span
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 text-sm font-medium mb-6"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3 }}
@@ -717,7 +717,7 @@ export default function AtlassianServices() {
                 <div className="flex flex-col md:flex-row">
                   <div className="md:w-1/3 bg-gradient-to-br from-primary to-accent p-8 flex items-center justify-center">
                     <motion.div
-                      className="w-20 h-20 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center"
+                      className="w-20 h-20 rounded-2xl bg-white/20 backdrop-blur-xs flex items-center justify-center"
                       whileHover={{ rotate: 10, scale: 1.1 }}
                     >
                       <solution.icon className="w-10 h-10 text-white" />
@@ -755,7 +755,7 @@ export default function AtlassianServices() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-4">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 text-sm font-medium mb-4">
               <Shield className="w-4 h-4" />
               {t("atlassianServices.whyLabel")}
             </span>
@@ -784,7 +784,7 @@ export default function AtlassianServices() {
                 key={item.title}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center"
+                className="bg-white/10 backdrop-blur-xs rounded-2xl p-6 border border-white/20 text-center"
               >
                 <motion.div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mx-auto mb-4" whileHover={{ rotate: 10 }}>
                   <item.icon className="w-7 h-7" />

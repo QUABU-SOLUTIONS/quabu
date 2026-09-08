@@ -9,7 +9,7 @@ import {
   Target,
   LucideIcon
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Layout } from "@/components/layout/Layout";
 import { TrustSection } from "@/components/home/TrustSection";
 import { CTASection } from "@/components/home/CTASection";
@@ -268,7 +268,7 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
                 transition={{ duration: 0.6 }}
               >
                 <motion.div
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 mb-6"
                   whileHover={{ scale: 1.05 }}
                 >
                   <Zap className="w-4 h-4" />
@@ -493,7 +493,7 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 mb-4">
                 <Clock className="w-4 h-4" />
                 <span className="text-sm font-medium">{t("acceleratorTemplate.quickImplementation")}</span>
               </div>
@@ -531,7 +531,7 @@ export default function AcceleratorPageTemplate({ config }: { config: Accelerato
                     />
                   )}
                   <motion.div
-                    className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-4 mx-auto md:mx-0"
+                    className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-xs border border-white/20 flex items-center justify-center mb-4 mx-auto md:mx-0"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                   >
                     <span className="text-2xl font-bold">{i + 1}</span>

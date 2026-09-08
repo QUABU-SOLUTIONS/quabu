@@ -200,7 +200,7 @@ export default function Contact() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="subject">{t("contact.subject")} *</Label>
-                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${errors.subject ? "border-destructive" : "border-input"}`}>
+                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${errors.subject ? "border-destructive" : "border-input"}`}>
                         <option value="">{t("contact.selectTopic")}</option>
                         {contactReasons.map(reason => (
                           <option key={reason.value} value={reason.label}>{reason.label}</option>

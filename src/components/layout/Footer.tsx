@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Mail, MapPin, Linkedin, Twitter, Youtube, Instagram } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import quabuLogo from "@/assets/quabu-logo.svg";

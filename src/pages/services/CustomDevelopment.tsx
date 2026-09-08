@@ -20,7 +20,7 @@ import {
   Rocket,
   Users
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Layout } from "@/components/layout/Layout";
 import { TrustSection } from "@/components/home/TrustSection";
 import { CTASection } from "@/components/home/CTASection";
@@ -454,7 +454,7 @@ export default function CustomDevelopment() {
           >
             {/* React badge */}
             <motion.div
-              className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8"
+              className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 mb-8"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
@@ -522,7 +522,7 @@ export default function CustomDevelopment() {
                 {techStack.slice(0, 6).map((tech, i) => (
                   <motion.div
                     key={tech.name}
-                    className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium"
+                    className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 text-sm font-medium"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.7 + i * 0.1 }}
@@ -616,7 +616,7 @@ export default function CustomDevelopment() {
                       {service.number}
                     </span>
                     <motion.div
-                      className="w-16 h-16 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center relative z-10"
+                      className="w-16 h-16 rounded-xl bg-white/20 backdrop-blur-xs flex items-center justify-center relative z-10"
                       whileHover={{ rotate: 10, scale: 1.1 }}
                     >
                       <service.icon className="w-8 h-8 text-white" />
@@ -709,7 +709,7 @@ export default function CustomDevelopment() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-4">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 text-sm font-medium mb-4">
               <Terminal className="w-4 h-4" />
               {t("customDevelopment.techLabel")}
             </span>
@@ -733,7 +733,7 @@ export default function CustomDevelopment() {
                 key={tech.name}
                 variants={itemVariants}
                 whileHover={{ scale: 1.1, y: -5 }}
-                className="px-6 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-center"
+                className="px-6 py-4 rounded-xl bg-white/10 backdrop-blur-xs border border-white/20 text-center"
                 style={{ minWidth: '120px' }}
               >
                 <motion.div

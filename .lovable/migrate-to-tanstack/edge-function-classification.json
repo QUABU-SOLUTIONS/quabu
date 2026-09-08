@@ -1,0 +1,28 @@
+{
+  "functions": [
+    {
+      "name": "chat-assistant",
+      "classification": "internal-only",
+      "signal": "called only from src/components/chat/AIAssistant.tsx via /functions/v1/ URL; SSE streaming, in-memory rate limiter and LOVABLE_API_KEY secret bound to the Supabase runtime",
+      "outcome": "left"
+    },
+    {
+      "name": "newsletter-subscribe",
+      "classification": "Deno-only dependency",
+      "signal": "SMTP via deno.land/x/denomailer (raw sockets, no equivalent in the new server runtime); called from 3 src/ files",
+      "outcome": "left"
+    },
+    {
+      "name": "send-contact-email",
+      "classification": "Deno-only dependency",
+      "signal": "SMTP via deno.land/x/denomailer; called from src/pages/Contact.tsx",
+      "outcome": "left"
+    },
+    {
+      "name": "newsletter-send",
+      "classification": "unknown",
+      "signal": "requires service-role key in Authorization header, no internal call sites — treated as externally invoked",
+      "outcome": "left"
+    }
+  ]
+}
