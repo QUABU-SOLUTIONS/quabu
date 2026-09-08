@@ -32,7 +32,7 @@ function AnimatedStar({
   delay = 0,
   variant = "yellow"
 }: { 
-  style?: React.CSSProperties; 
+  style?: import("framer-motion").MotionStyle; 
   delay?: number;
   variant?: "yellow" | "pink" | "blue" | "green" | "orange";
 }) {

@@ -27,7 +27,7 @@ import { CTASection } from "@/components/home/CTASection";
 import { Button } from "@/components/ui/button";
 
 // Animated Code Editor Illustration
-function AnimatedCodeEditor({ style, delay = 0 }: { style?: React.CSSProperties; delay?: number }) {
+function AnimatedCodeEditor({ style, delay = 0 }: { style?: import("framer-motion").MotionStyle; delay?: number }) {
   return (
     <motion.div
       className="absolute pointer-events-none"
@@ -92,7 +92,7 @@ function AnimatedCodeEditor({ style, delay = 0 }: { style?: React.CSSProperties;
 }
 
 // Animated Server/Database Illustration
-function AnimatedServer({ style, delay = 0 }: { style?: React.CSSProperties; delay?: number }) {
+function AnimatedServer({ style, delay = 0 }: { style?: import("framer-motion").MotionStyle; delay?: number }) {
   return (
     <motion.div
       className="absolute pointer-events-none"
@@ -153,7 +153,7 @@ function AnimatedServer({ style, delay = 0 }: { style?: React.CSSProperties; del
 }
 
 // Animated Mobile Phone Illustration
-function AnimatedMobile({ style, delay = 0 }: { style?: React.CSSProperties; delay?: number }) {
+function AnimatedMobile({ style, delay = 0 }: { style?: import("framer-motion").MotionStyle; delay?: number }) {
   return (
     <motion.div
       className="absolute pointer-events-none"
@@ -220,7 +220,7 @@ function AnimatedMobile({ style, delay = 0 }: { style?: React.CSSProperties; del
 }
 
 // Animated Bug/Testing Illustration
-function AnimatedTestTube({ style, delay = 0 }: { style?: React.CSSProperties; delay?: number }) {
+function AnimatedTestTube({ style, delay = 0 }: { style?: import("framer-motion").MotionStyle; delay?: number }) {
   return (
     <motion.div
       className="absolute pointer-events-none"

@@ -29,7 +29,7 @@ function AnimatedRobot({
   delay = 0,
   variant = "friendly"
 }: { 
-  style?: React.CSSProperties; 
+  style?: import("framer-motion").MotionStyle; 
   delay?: number;
   variant?: "friendly" | "helper" | "thinker" | "wave";
 }) {
