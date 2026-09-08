@@ -3,8 +3,8 @@
     {
       "name": "chat-assistant",
       "classification": "internal-only",
-      "signal": "called only from src/components/chat/AIAssistant.tsx via /functions/v1/ URL; SSE streaming, in-memory rate limiter and LOVABLE_API_KEY secret bound to the Supabase runtime",
-      "outcome": "left"
+      "signal": "called only from src/components/chat/AIAssistant.tsx; ported to the server route src/routes/api/public/chat-assistant.ts with the same SSE streaming, validation and rate limiting",
+      "outcome": "migrated"
     },
     {
       "name": "newsletter-subscribe",
