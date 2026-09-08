@@ -24,6 +24,41 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "automate-release-notes-rovo-jira-ai",
+    title: "🚀 How to Automate Your Release Notes in 5 Minutes with Atlassian Rovo and Jira AI",
+    excerpt: "Say goodbye to writing release notes manually: learn how to connect Jira Automation with Atlassian Rovo to turn technical tickets into clear, publish-ready notes in Confluence in just 5 minutes.",
+    content: `
+![Automated Release Notes with Atlassian Rovo and Jira AI](https://quabu.blog/wp-content/uploads/2026/09/ReleaseNotesAtlassianJiraBroQuabu2-scaled.jpg)
+
+Writing release notes manually is one of the most tedious and repetitive tasks for any Product Manager, Scrum Master or Jira Administrator. In the new tutorial from the **Jira Bro** channel, we show how to eliminate this process entirely by setting up an automated workflow with **Atlassian Rovo** and **Jira Automation**.
+
+In just 5 minutes, you'll learn how to automatically transform Jira tickets and technical issues into clear release notes — free of internal jargon and ready to publish directly to Confluence.
+
+## 💡 What Will You Learn in This Tutorial?
+
+- **End-to-end automation:** How to connect Jira Automation with Atlassian Rovo to process releases with zero manual intervention.
+- **Technical jargon translation:** Configuring AI to convert bugs and backend refactorings into descriptions focused on end-user value.
+- **Direct publishing:** Automatically sending the formatted content to Confluence for external and internal stakeholders.
+
+## 🎥 Watch the Full Tutorial
+
+Watch the step-by-step guide and subscribe to the channel so you don't miss the latest news and productivity tricks in the Atlassian ecosystem.
+
+👉 **Watch the video: How I Automated Release Notes in 5 Minutes using Jira AI**
+
+[How I Automated Release Notes in 5 Minutes using Jira AI](https://www.youtube.com/watch?v=REQFmImbNMw)
+
+#Jira #JiraSoftware #Atlassian #AtlassianRovo #JiraAI #JiraAutomation #ReleaseNotes #ProductManagement #Agile #ScrumMaster #ArtificialIntelligence #Productivity #JiraBro #Confluence #DevOps #ProjectManagement #SoftwareDevelopment #Quabu
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 8, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/ReleaseNotesAtlassianJiraBroQuabu2-scaled.jpg",
+    author: "Quabu Team",
+    tags: ["Jira", "Atlassian", "Atlassian Rovo", "Jira AI", "Jira Automation", "Release Notes", "Confluence", "Jira Bro", "Quabu"],
+  },
+  {
     id: "atlassian-experts-webinar-jira-premium-news",
     title: "New Atlassian Experts Webinar: Jira Premium Live Demo — Journeys, Playbooks & More Atlassian News",
     excerpt: "Join our free Atlassian Experts session on September 10 for a live demo of the latest Jira, JSM and Customer Service Management Premium features — Live Chats, Capacity Planning, Rovo in workflows and more.",

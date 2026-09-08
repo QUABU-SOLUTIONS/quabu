@@ -74,6 +74,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "automate-release-notes-rovo-jira-ai", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 8, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-experts-webinar-jira-premium-news", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 7, 2026", readTime: "2 min", featured: true },
   { id: "quabu-teamwork-collection-learning-camp-barcelona", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 2, 2026", readTime: "2 min", featured: true },
   { id: "jira-bro-reviews-visual-organizer-for-jira", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 1, 2026", readTime: "2 min", featured: true },
@@ -124,6 +125,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "automate-release-notes-rovo-jira-ai",
+    title: "🚀 How to Automate Your Release Notes in 5 Minutes with Atlassian Rovo and Jira AI",
+    excerpt: "Say goodbye to writing release notes manually: learn how to connect Jira Automation with Atlassian Rovo to turn technical tickets into clear, publish-ready notes in Confluence in just 5 minutes.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 8, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/ReleaseNotesAtlassianJiraBroQuabu2-scaled.jpg",
+    featured: true,
+  },
   {
     id: "atlassian-experts-webinar-jira-premium-news",
     title: "New Atlassian Experts Webinar: Jira Premium Live Demo — Journeys, Playbooks & More Atlassian News",
