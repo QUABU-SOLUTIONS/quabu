@@ -1,6 +1,9 @@
-// react-helmet-async is CJS; named imports break under SSR module evaluation.
-import helmetPkg from "react-helmet-async";
-const { Helmet } = helmetPkg;
+// react-helmet-async ships CJS (dev SSR) and ESM (prod build) with different
+// export shapes; the namespace + default fallback works under both.
+import * as helmetNs from "react-helmet-async";
+const Helmet =
+  helmetNs.Helmet ??
+  (helmetNs as unknown as { default: typeof helmetNs }).default.Helmet;
 import { useTranslation } from "react-i18next";
 
 const BASE_URL = "https://www.quabusolutions.com";
