@@ -8,7 +8,9 @@ import {
   Scripts,
   useRouter,
 } from "@tanstack/react-router";
-import { HelmetProvider } from "react-helmet-async";
+// react-helmet-async is CJS; named imports break under SSR module evaluation.
+import helmetPkg from "react-helmet-async";
+const { HelmetProvider } = helmetPkg;
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
