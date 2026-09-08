@@ -52,8 +52,8 @@ function NetworkLines() {
       <motion.line x1="18.75%" y1="28" x2="43.75%" y2="28" stroke="url(#lineGradient)" strokeWidth="2" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.3 }} />
       <motion.line x1="56.25%" y1="28" x2="43.75%" y2="28" stroke="url(#lineGradient)" strokeWidth="2" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.5 }} />
       <motion.line x1="56.25%" y1="28" x2="81.25%" y2="28" stroke="url(#lineGradient)" strokeWidth="2" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.7 }} />
-      <motion.circle r="4" fill="hsl(var(--primary))" initial={{ opacity: 0 }} animate={{ opacity: [0, 1, 1, 0], cx: ["18.75%", "43.75%", "56.25%", "81.25%"] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, ease: "easeInOut" }} cy="28" />
-      <motion.circle r="4" fill="hsl(var(--accent))" initial={{ opacity: 0 }} animate={{ opacity: [0, 1, 1, 0], cx: ["81.25%", "56.25%", "43.75%", "18.75%"] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, delay: 1.5, ease: "easeInOut" }} cy="28" />
+      <motion.circle r="4" fill="hsl(var(--primary))" initial={{ opacity: 0, cx: "18.75%" }} animate={{ opacity: [0, 1, 1, 0], cx: ["18.75%", "43.75%", "56.25%", "81.25%"] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, ease: "easeInOut" }} cy="28" />
+      <motion.circle r="4" fill="hsl(var(--accent))" initial={{ opacity: 0, cx: "81.25%" }} animate={{ opacity: [0, 1, 1, 0], cx: ["81.25%", "56.25%", "43.75%", "18.75%"] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, delay: 1.5, ease: "easeInOut" }} cy="28" />
     </svg>
   );
 }

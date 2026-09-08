@@ -33,10 +33,10 @@ function NetworkBackground() {
           <motion.line x1="25%" y1="30%" x2="75%" y2="70%" stroke="url(#serviceGradient)" strokeWidth="1.5" strokeDasharray="8 4" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 0.5 }} viewport={{ once: true }} transition={{ duration: 1.5, delay: 1.1 }} />
           <motion.line x1="75%" y1="30%" x2="25%" y2="70%" stroke="url(#serviceGradient)" strokeWidth="1.5" strokeDasharray="8 4" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 0.5 }} viewport={{ once: true }} transition={{ duration: 1.5, delay: 1.3 }} />
         </g>
-        <motion.circle r="5" fill="hsl(var(--primary))" animate={{ cx: ["25%", "75%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, ease: "easeInOut" }} cy="30%" className="hidden md:block" />
-        <motion.circle r="5" fill="hsl(var(--accent))" animate={{ cx: ["75%", "25%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, delay: 1.5, ease: "easeInOut" }} cy="70%" className="hidden md:block" />
+        <motion.circle r="5" fill="hsl(var(--primary))" initial={{ cx: "25%", opacity: 0 }} animate={{ cx: ["25%", "75%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, ease: "easeInOut" }} cy="30%" className="hidden md:block" />
+        <motion.circle r="5" fill="hsl(var(--accent))" initial={{ cx: "75%", opacity: 0 }} animate={{ cx: ["75%", "25%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 3, repeat: Infinity, repeatDelay: 1, delay: 1.5, ease: "easeInOut" }} cy="70%" className="hidden md:block" />
         {[{ cx: "25%", cy: "30%" }, { cx: "75%", cy: "30%" }, { cx: "25%", cy: "70%" }, { cx: "75%", cy: "70%" }].map((pos, i) => (
-          <motion.circle key={i} cx={pos.cx} cy={pos.cy} r="20" fill="url(#nodeGlow)" animate={{ r: [15, 25, 15], opacity: [0.3, 0.6, 0.3] }} transition={{ duration: 2, repeat: Infinity, delay: i * 0.4, ease: "easeInOut" }} className="hidden md:block" />
+          <motion.circle key={i} cx={pos.cx} cy={pos.cy} r="20" fill="url(#nodeGlow)" initial={{ r: 15, opacity: 0.3 }} animate={{ r: [15, 25, 15], opacity: [0.3, 0.6, 0.3] }} transition={{ duration: 2, repeat: Infinity, delay: i * 0.4, ease: "easeInOut" }} className="hidden md:block" />
         ))}
       </svg>
       {[...Array(8)].map((_, i) => (
