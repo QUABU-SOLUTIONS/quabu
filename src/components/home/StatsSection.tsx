@@ -1,3 +1,4 @@
+import { useMounted } from "@/hooks/use-mounted";
 import { motion, animate } from "framer-motion";
 import { Users, Award, Clock, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";

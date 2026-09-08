@@ -1,3 +1,4 @@
+import { useMounted } from "@/hooks/use-mounted";
 import { motion } from "framer-motion";
 import { 
   Megaphone, TrendingUp, Users, Settings, DollarSign, Monitor, HeadphonesIcon, Lightbulb, ArrowRight

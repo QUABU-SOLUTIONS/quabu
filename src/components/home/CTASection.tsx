@@ -1,3 +1,4 @@
+import { useMounted } from "@/hooks/use-mounted";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, MessageCircle } from "lucide-react";
 import { Link } from "@/lib/router-compat";

@@ -1,3 +1,4 @@
+import { useMounted } from "@/hooks/use-mounted";
 import { motion } from "framer-motion";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
