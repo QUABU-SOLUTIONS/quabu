@@ -125,6 +125,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "automate-release-notes-rovo-jira-ai",
+    title: "🚀 How to Automate Your Release Notes in 5 Minutes with Atlassian Rovo and Jira AI",
+    excerpt: "Say goodbye to writing release notes manually: learn how to connect Jira Automation with Atlassian Rovo to turn technical tickets into clear, publish-ready notes in Confluence in just 5 minutes.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 8, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/ReleaseNotesAtlassianJiraBroQuabu2-scaled.jpg",
+    featured: true,
+  },
+  {
     id: "atlassian-experts-webinar-jira-premium-news",
     title: "New Atlassian Experts Webinar: Jira Premium Live Demo — Journeys, Playbooks & More Atlassian News",
     excerpt: "Join our free Atlassian Experts session on September 10 for a live demo of the latest Jira, JSM and Customer Service Management Premium features — Live Chats, Capacity Planning, Rovo in workflows and more.",
