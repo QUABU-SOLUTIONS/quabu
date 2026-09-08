@@ -14,7 +14,7 @@ import {
   CheckCircle2,
   LucideIcon
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Layout } from "@/components/layout/Layout";
 import { TrustSection } from "@/components/home/TrustSection";
 import { CTASection } from "@/components/home/CTASection";

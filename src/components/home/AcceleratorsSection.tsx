@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { 
   Megaphone, TrendingUp, Users, Settings, DollarSign, Monitor, HeadphonesIcon, Lightbulb, ArrowRight
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { useTranslation } from "react-i18next";
 
 const containerVariants = {
@@ -79,7 +79,7 @@ export function AcceleratorsSection() {
           <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
             {accelerators.map((accelerator, index) => (
               <motion.div key={accelerator.id} variants={itemVariants} whileHover={{ y: -8, transition: { type: "spring", stiffness: 300 } }}>
-                <Link to={accelerator.href} className="group block p-6 rounded-xl bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
+                <Link to={accelerator.href} className="group block p-6 rounded-xl bg-card/80 backdrop-blur-xs border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
                   <PulsingCardIcon icon={accelerator.icon} color={accelerator.color} index={index} />
                   <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">{accelerator.name}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{accelerator.description}</p>

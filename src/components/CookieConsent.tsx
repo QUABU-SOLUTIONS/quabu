@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Cookie, X, Settings } from "lucide-react";
 
 type CookiePreferences = {
@@ -34,6 +34,7 @@ export function CookieConsent() {
         setPreferences(JSON.parse(savedPrefs));
       }
     }
+    return undefined;
   }, []);
 
   const savePreferences = (prefs: CookiePreferences) => {

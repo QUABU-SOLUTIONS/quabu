@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, ArrowRight, Cloud, Code, Wrench, Headphones } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
@@ -98,7 +98,7 @@ export function ServicesSection() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <motion.div key={service.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} whileHover={{ y: -6, transition: { type: "spring", stiffness: 300 } }} className="group p-8 rounded-2xl bg-card/80 backdrop-blur-sm border border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all">
+            <motion.div key={service.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} whileHover={{ y: -6, transition: { type: "spring", stiffness: 300 } }} className="group p-8 rounded-2xl bg-card/80 backdrop-blur-xs border border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all">
               <div className="flex items-start gap-4">
                 <PulsingServiceIcon icon={service.icon} index={index} />
                 <div className="flex-1">

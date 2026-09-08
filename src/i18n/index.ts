@@ -5,7 +5,8 @@ import es from "./locales/es";
 import ca from "./locales/ca";
 import it from "./locales/it";
 
-const savedLang = localStorage.getItem("quabu-lang") || "en";
+const savedLang =
+  (typeof localStorage !== "undefined" && localStorage.getItem("quabu-lang")) || "en";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -20,7 +21,9 @@ i18n.use(initReactI18next).init({
 });
 
 i18n.on("languageChanged", (lang) => {
-  localStorage.setItem("quabu-lang", lang);
+  if (typeof localStorage !== "undefined") {
+    localStorage.setItem("quabu-lang", lang);
+  }
 });
 
 export default i18n;

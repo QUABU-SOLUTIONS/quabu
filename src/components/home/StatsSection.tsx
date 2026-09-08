@@ -19,7 +19,6 @@ function AnimatedCounter({ value, suffix, duration = 2 }: { value: number; suffi
               ease: "easeOut",
               onUpdate: (latest) => { setDisplayValue(Math.round(latest)); },
             });
-            return () => controls.stop();
           }
         });
       },

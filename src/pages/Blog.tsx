@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { SEO } from "@/components/SEO";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { 
   ArrowRight, 
   Calendar, 
@@ -974,7 +974,7 @@ export default function Blog() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50"
+                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background focus:outline-hidden focus:ring-2 focus:ring-primary/50"
               />
               <Button size="lg" className="group" type="submit" disabled={subscribing}>
                 {subscribing ? t("blog.subscribing") : t("blog.subscribeBtn")}

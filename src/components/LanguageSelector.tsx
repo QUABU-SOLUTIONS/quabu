@@ -42,7 +42,7 @@ export function LanguageSelector() {
         aria-label="Select language"
       >
         <Globe className="w-4 h-4 text-primary" />
-        <span className="font-semibold text-primary">{currentLang.label}</span>
+        <span className="font-semibold text-primary">{currentLang?.label}</span>
       </motion.button>
 
       <AnimatePresence>

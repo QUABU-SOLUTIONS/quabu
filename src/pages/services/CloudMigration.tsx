@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { 
   Cloud, 
   Server, 

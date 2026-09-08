@@ -17,7 +17,7 @@ import {
   Users,
   Briefcase
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Layout } from "@/components/layout/Layout";
 import { TrustSection } from "@/components/home/TrustSection";
 import { CTASection } from "@/components/home/CTASection";
@@ -29,7 +29,7 @@ function AnimatedRobot({
   delay = 0,
   variant = "friendly"
 }: { 
-  style?: React.CSSProperties; 
+  style?: import("framer-motion").MotionStyle; 
   delay?: number;
   variant?: "friendly" | "helper" | "thinker" | "wave";
 }) {
@@ -45,7 +45,7 @@ function AnimatedRobot({
   return (
     <motion.div
       className="absolute pointer-events-none"
-      style={style}
+      style={style ?? {}}
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay, duration: 0.5, type: "spring" }}
@@ -133,11 +133,11 @@ function AnimatedRobot({
           stroke={colors.eye}
           strokeWidth="2"
           fill="none"
-          animate={{ 
-            d: variant === "wave" 
-              ? ["M 28 52 Q 40 60 52 52", "M 28 50 Q 40 62 52 50", "M 28 52 Q 40 60 52 52"]
-              : undefined
-          }}
+          animate={
+            variant === "wave"
+              ? { d: ["M 28 52 Q 40 60 52 52", "M 28 50 Q 40 62 52 50", "M 28 52 Q 40 60 52 52"] }
+              : {}
+          }
           transition={{ duration: 1, repeat: Infinity }}
         />
         
@@ -606,7 +606,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-4">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 text-sm font-medium mb-4">
               <Users className="w-4 h-4" />
               Our Team
             </span>
@@ -632,7 +632,7 @@ export default function About() {
                 whileHover={{ y: -10, scale: 1.05 }}
                 className="group relative"
               >
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all">
+                <div className="bg-white/10 backdrop-blur-xs rounded-2xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all">
                   <motion.div
                     className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4 text-xl font-bold"
                     whileHover={{ rotate: 10 }}

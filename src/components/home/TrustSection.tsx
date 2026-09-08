@@ -138,7 +138,7 @@ export function TrustSection() {
             <div className="flex justify-center mb-6">
               <div className="flex items-center gap-6">
                 <motion.div 
-                  className="w-24 h-24 md:w-28 md:h-28 rounded-2xl bg-white/20 flex items-center justify-center p-4 backdrop-blur-sm"
+                  className="w-24 h-24 md:w-28 md:h-28 rounded-2xl bg-white/20 flex items-center justify-center p-4 backdrop-blur-xs"
                   animate={{ 
                     y: [0, -8, 0],
                     rotate: [0, -3, 0, 3, 0]

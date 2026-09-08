@@ -22,7 +22,7 @@ type Message = {
   content: string;
 };
 
-const CHAT_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat-assistant`;
+const CHAT_URL = `${import.meta.env['VITE_SUPABASE_URL']}/functions/v1/chat-assistant`;
 
 async function streamChat({
   messages,
@@ -40,7 +40,7 @@ async function streamChat({
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        Authorization: `Bearer ${import.meta.env['VITE_SUPABASE_PUBLISHABLE_KEY']}`,
       },
       body: JSON.stringify({ messages }),
     });
@@ -160,7 +160,7 @@ export function AIAssistant() {
       assistantSoFar += nextChunk;
       setMessages(prev => {
         const last = prev[prev.length - 1];
-        if (last?.role === "assistant" && prev.length > 1 && prev[prev.length - 2].role === "user") {
+        if (last?.role === "assistant" && prev.length > 1 && prev[prev.length - 2]?.role === "user") {
           return prev.map((m, i) => (i === prev.length - 1 ? { ...m, content: assistantSoFar } : m));
         }
         return [...prev, { role: "assistant", content: assistantSoFar }];
