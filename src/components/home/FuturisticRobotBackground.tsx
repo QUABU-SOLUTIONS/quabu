@@ -42,6 +42,7 @@ function BenderRobot({ scale = 1 }: { scale?: number }) {
         y2="10"
         stroke="#64748b"
         strokeWidth="2"
+        initial={{ y1: -2 }}
         animate={{ y1: [-2, 2, -2] }}
         transition={{ duration: 0.5, repeat: Infinity }}
       />
