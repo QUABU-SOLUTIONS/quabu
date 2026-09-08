@@ -13,7 +13,7 @@ function AnimatedBackground() {
       <motion.div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary rounded-full blur-[100px]" animate={{ x: [0, 100, 0], y: [0, 50, 0], scale: [1, 1.2, 1], opacity: [0.2, 0.35, 0.2] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} />
       <motion.div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent rounded-full blur-[100px]" animate={{ x: [0, -100, 0], y: [0, -50, 0], scale: [1, 1.3, 1], opacity: [0.2, 0.35, 0.2] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }} />
       <motion.div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary/50 rounded-full blur-[80px]" animate={{ scale: [1, 1.4, 1], opacity: [0.1, 0.25, 0.1] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }} />
-      <svg className="absolute inset-0 w-full h-full opacity-20">
+      {mounted && (<svg className="absolute inset-0 w-full h-full opacity-20">
         <defs>
           <linearGradient id="ctaLineGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0" /><stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.8" /><stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0" /></linearGradient>
           <linearGradient id="ctaLineGradientV" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stopColor="hsl(var(--accent))" stopOpacity="0" /><stop offset="50%" stopColor="hsl(var(--accent))" stopOpacity="0.8" /><stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0" /></linearGradient>
@@ -23,7 +23,7 @@ function AnimatedBackground() {
         {[20, 60].map((y, i) => (<motion.circle key={`dot-h-${i}`} r="4" fill="hsl(var(--primary))" animate={{ cx: ["0%", "100%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 4, repeat: Infinity, delay: i * 2, ease: "linear" }} cy={`${y}%`} />))}
         {[40, 80].map((x, i) => (<motion.circle key={`dot-v-${i}`} r="4" fill="hsl(var(--accent))" animate={{ cy: ["0%", "100%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 5, repeat: Infinity, delay: 1 + i * 2, ease: "linear" }} cx={`${x}%`} />))}
         {[{x:"20%",y:"20%"},{x:"40%",y:"40%"},{x:"60%",y:"60%"},{x:"80%",y:"80%"},{x:"40%",y:"20%"},{x:"60%",y:"40%"},{x:"20%",y:"60%"},{x:"80%",y:"40%"}].map((pos, i) => (<motion.circle key={`node-${i}`} cx={pos.x} cy={pos.y} r="3" fill="white" animate={{ r: [2, 5, 2], opacity: [0.3, 0.8, 0.3] }} transition={{ duration: 2, repeat: Infinity, delay: i * 0.3, ease: "easeInOut" }} />))}
-      </svg>
+      </svg>)}
       {[...Array(15)].map((_, i) => (<motion.div key={`particle-${i}`} className="absolute w-1 h-1 rounded-full bg-white/40" style={{ left: `${5 + (i * 6.5) % 90}%`, top: `${10 + (i * 7) % 80}%` }} animate={{ y: [0, -20, 0], x: [0, (i % 2 === 0 ? 10 : -10), 0], opacity: [0.2, 0.6, 0.2], scale: [1, 1.5, 1] }} transition={{ duration: 3 + (i % 3), repeat: Infinity, ease: "easeInOut", delay: i * 0.2 }} />))}
       <motion.div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] rounded-full" style={{ background: "radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%)" }} animate={{ scale: [1, 2, 1], opacity: [0.3, 0.1, 0.3] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} />
     </div>
