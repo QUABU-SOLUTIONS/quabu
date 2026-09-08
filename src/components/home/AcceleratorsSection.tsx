@@ -1,3 +1,4 @@
+import { useMounted } from "@/hooks/use-mounted";
 import { motion } from "framer-motion";
 import { 
   Megaphone, TrendingUp, Users, Settings, DollarSign, Monitor, HeadphonesIcon, Lightbulb, ArrowRight
@@ -16,6 +17,9 @@ const itemVariants = {
 };
 
 function NetworkBackground() {
+  // Client-only: framer-motion SVG attribute keyframes break under SSR hydration.
+  const mounted = useMounted();
+  if (!mounted) return null;
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none hidden lg:block">
       <svg className="absolute inset-0 w-full h-full">
@@ -29,9 +33,9 @@ function NetworkBackground() {
         {[0, 1, 2].map((i) => (<motion.line key={`h1-${i}`} x1={`${12.5 + i * 25}%`} y1="25%" x2={`${37.5 + i * 25}%`} y2="25%" stroke="url(#networkGradient)" strokeWidth="2" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.3 + i * 0.1 }} />))}
         {[0, 1, 2].map((i) => (<motion.line key={`h2-${i}`} x1={`${12.5 + i * 25}%`} y1="75%" x2={`${37.5 + i * 25}%`} y2="75%" stroke="url(#networkGradient)" strokeWidth="2" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.5 + i * 0.1 }} />))}
         {[0, 1, 2, 3].map((i) => (<motion.line key={`v-${i}`} x1={`${12.5 + i * 25}%`} y1="30%" x2={`${12.5 + i * 25}%`} y2="70%" stroke="url(#networkGradient)" strokeWidth="2" initial={{ pathLength: 0, opacity: 0 }} whileInView={{ pathLength: 1, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.7 + i * 0.1 }} />))}
-        {[0, 1, 2].map((i) => (<motion.circle key={`dot-h1-${i}`} r="4" fill="hsl(var(--primary))" animate={{ cx: [`${12.5 + i * 25}%`, `${37.5 + i * 25}%`], opacity: [0, 1, 1, 0] }} transition={{ duration: 2, repeat: Infinity, repeatDelay: 2, delay: i * 0.5, ease: "easeInOut" }} cy="25%" />))}
-        {[0, 1, 2].map((i) => (<motion.circle key={`dot-h2-${i}`} r="4" fill="hsl(var(--accent))" animate={{ cx: [`${37.5 + i * 25}%`, `${12.5 + i * 25}%`], opacity: [0, 1, 1, 0] }} transition={{ duration: 2, repeat: Infinity, repeatDelay: 2, delay: 1 + i * 0.5, ease: "easeInOut" }} cy="75%" />))}
-        {[0, 1, 2, 3].map((i) => (<motion.circle key={`dot-v-${i}`} r="3" fill="hsl(var(--primary))" animate={{ cy: ["30%", "70%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1.5, delay: i * 0.4, ease: "easeInOut" }} cx={`${12.5 + i * 25}%`} />))}
+        {[0, 1, 2].map((i) => (<motion.circle key={`dot-h1-${i}`} r="4" fill="hsl(var(--primary))" initial={{ cx: `${12.5 + i * 25}%`, opacity: 0 }} animate={{ cx: [`${12.5 + i * 25}%`, `${37.5 + i * 25}%`], opacity: [0, 1, 1, 0] }} transition={{ duration: 2, repeat: Infinity, repeatDelay: 2, delay: i * 0.5, ease: "easeInOut" }} cy="25%" />))}
+        {[0, 1, 2].map((i) => (<motion.circle key={`dot-h2-${i}`} r="4" fill="hsl(var(--accent))" initial={{ cx: `${37.5 + i * 25}%`, opacity: 0 }} animate={{ cx: [`${37.5 + i * 25}%`, `${12.5 + i * 25}%`], opacity: [0, 1, 1, 0] }} transition={{ duration: 2, repeat: Infinity, repeatDelay: 2, delay: 1 + i * 0.5, ease: "easeInOut" }} cy="75%" />))}
+        {[0, 1, 2, 3].map((i) => (<motion.circle key={`dot-v-${i}`} r="3" fill="hsl(var(--primary))" initial={{ cy: "30%", opacity: 0 }} animate={{ cy: ["30%", "70%"], opacity: [0, 1, 1, 0] }} transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1.5, delay: i * 0.4, ease: "easeInOut" }} cx={`${12.5 + i * 25}%`} />))}
       </svg>
     </div>
   );

@@ -8,7 +8,12 @@ import {
   Scripts,
   useRouter,
 } from "@tanstack/react-router";
-import { HelmetProvider } from "react-helmet-async";
+// react-helmet-async ships CJS (dev SSR) and ESM (prod build) with different
+// export shapes; the namespace + default fallback works under both.
+import * as helmetNs from "react-helmet-async";
+const HelmetProvider =
+  helmetNs.HelmetProvider ??
+  (helmetNs as unknown as { default: typeof helmetNs }).default.HelmetProvider;
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";

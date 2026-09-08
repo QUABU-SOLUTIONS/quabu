@@ -255,7 +255,7 @@ function FloatingTechElements() {
             delay: i * 0.8,
           }}
         >
-          {Array(10).fill(0).map(() => Math.random() > 0.5 ? "1" : "0").join("")}
+          {Array(10).fill(0).map((_, j) => (Math.sin(i * 127.1 + j * 311.7) * 43758.5453) % 1 > 0 ? "1" : "0").join("")}
         </motion.div>
       ))}
     </div>

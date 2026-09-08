@@ -36,6 +36,12 @@ export interface AcceleratorConfig {
   nextAccelerator?: { name: string; href: string };
 }
 
+// Deterministic pseudo-random (SSR-safe): identical values on server and client.
+const seeded = (i: number, salt: number) => {
+  const x = Math.sin(i * 127.1 + salt * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
 // Animated floating particles
 function FloatingParticles({ color }: { color: string }) {
   return (
@@ -45,19 +51,19 @@ function FloatingParticles({ color }: { color: string }) {
           key={i}
           className={`absolute w-1 h-1 rounded-full ${color}`}
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            left: `${seeded(i, 1) * 100}%`,
+            top: `${seeded(i, 2) * 100}%`,
           }}
           animate={{
             y: [0, -30, 0],
-            x: [0, Math.random() * 20 - 10, 0],
+            x: [0, seeded(i, 3) * 20 - 10, 0],
             opacity: [0, 0.8, 0],
             scale: [0, 1, 0],
           }}
           transition={{
-            duration: 3 + Math.random() * 2,
+            duration: 3 + seeded(i, 4) * 2,
             repeat: Infinity,
-            delay: Math.random() * 3,
+            delay: seeded(i, 5) * 3,
             ease: "easeInOut",
           }}
         />
@@ -95,17 +101,17 @@ function CircuitLines() {
           key={i}
           className="absolute h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"
           style={{
-            width: `${100 + Math.random() * 200}px`,
-            left: `${Math.random() * 100}%`,
+            width: `${100 + seeded(i, 6) * 200}px`,
+            left: `${seeded(i, 7) * 100}%`,
             top: `${10 + i * 12}%`,
-            rotate: `${Math.random() * 30 - 15}deg`,
+            rotate: `${seeded(i, 8) * 30 - 15}deg`,
           }}
           animate={{
             opacity: [0, 0.5, 0],
             x: [-100, 100],
           }}
           transition={{
-            duration: 4 + Math.random() * 2,
+            duration: 4 + seeded(i, 9) * 2,
             repeat: Infinity,
             delay: i * 0.5,
             ease: "linear",

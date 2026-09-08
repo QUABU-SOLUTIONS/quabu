@@ -24,6 +24,13 @@ import {
 import atlassianIcon from "@/assets/atlassian-icon.png";
 import goldPartner from "@/assets/atlassian-gold-partner.png";
 
+// Deterministic pseudo-random (SSR-safe): identical values on server and client.
+const seeded = (i: number, salt: number) => {
+  const x = Math.sin(i * 127.1 + salt * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
+
 // Animated floating clouds background
 const AnimatedCloudsBackground = () => {
   return (
@@ -82,8 +89,8 @@ const AnimatedCloudsBackground = () => {
           key={`particle-${i}`}
           className="absolute w-2 h-2 rounded-full bg-primary/20"
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            left: `${seeded(i, 1) * 100}%`,
+            top: `${seeded(i, 2) * 100}%`,
           }}
           animate={{
             y: [-20, 20, -20],
@@ -91,9 +98,9 @@ const AnimatedCloudsBackground = () => {
             scale: [1, 1.2, 1],
           }}
           transition={{
-            duration: 3 + Math.random() * 2,
+            duration: 3 + seeded(i, 3) * 2,
             repeat: Infinity,
-            delay: Math.random() * 2,
+            delay: seeded(i, 4) * 2,
           }}
         />
       ))}
@@ -646,8 +653,8 @@ export default function CloudMigration() {
               key={i}
               className="absolute"
               style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
+                top: `${seeded(i, 5) * 100}%`,
+                left: `${seeded(i, 6) * 100}%`,
               }}
               animate={{
                 y: [-20, 20, -20],

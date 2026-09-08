@@ -1,4 +1,12 @@
+import { useMounted } from "@/hooks/use-mounted";
 import { motion } from "framer-motion";
+
+// Deterministic pseudo-random (SSR-safe): identical values on server and client.
+const seeded = (i: number, salt: number) => {
+  const x = Math.sin(i * 127.1 + salt * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
 
 interface Robot {
   id: number;
@@ -34,6 +42,7 @@ function BenderRobot({ scale = 1 }: { scale?: number }) {
         y2="10"
         stroke="#64748b"
         strokeWidth="2"
+        initial={{ y1: -2 }}
         animate={{ y1: [-2, 2, -2] }}
         transition={{ duration: 0.5, repeat: Infinity }}
       />
@@ -136,6 +145,9 @@ function BenderRobot({ scale = 1 }: { scale?: number }) {
 }
 
 export function FuturisticRobotBackground() {
+  // Client-only: framer-motion SVG attribute keyframes break under SSR hydration.
+  const mounted = useMounted();
+  if (!mounted) return null;
   return (
     <div className="absolute inset-0 overflow-hidden rounded-xl">
       {/* Futuristic grid background */}
@@ -194,8 +206,8 @@ export function FuturisticRobotBackground() {
           key={i}
           className="absolute w-1 h-1 bg-cyan-400 rounded-full"
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            left: `${seeded(i, 1) * 100}%`,
+            top: `${seeded(i, 2) * 100}%`,
           }}
           animate={{
             y: [0, -20, 0],
@@ -203,9 +215,9 @@ export function FuturisticRobotBackground() {
             scale: [1, 1.5, 1],
           }}
           transition={{
-            duration: 2 + Math.random() * 2,
+            duration: 2 + seeded(i, 3) * 2,
             repeat: Infinity,
-            delay: Math.random() * 2,
+            delay: seeded(i, 4) * 2,
           }}
         />
       ))}

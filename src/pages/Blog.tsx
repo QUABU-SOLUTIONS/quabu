@@ -29,6 +29,12 @@ import { useRef } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
+// Deterministic pseudo-random (SSR-safe): identical values on server and client.
+const seeded = (i: number, salt: number) => {
+  const x = Math.sin(i * 127.1 + salt * 311.7) * 43758.5453;
+  return x - Math.floor(x);
+};
+
 // Animated background with floating elements
 const AnimatedBlogBackground = () => {
   return (
@@ -41,8 +47,8 @@ const AnimatedBlogBackground = () => {
           key={i}
           className="absolute"
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            left: `${seeded(i, 1) * 100}%`,
+            top: `${seeded(i, 2) * 100}%`,
           }}
           animate={{
             y: [-20, 20, -20],
@@ -50,7 +56,7 @@ const AnimatedBlogBackground = () => {
             opacity: [0.05, 0.15, 0.05],
           }}
           transition={{
-            duration: 5 + Math.random() * 5,
+            duration: 5 + seeded(i, 3) * 5,
             repeat: Infinity,
             delay: i * 0.5,
           }}
