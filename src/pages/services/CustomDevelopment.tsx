@@ -31,7 +31,7 @@ function AnimatedCodeEditor({ style, delay = 0 }: { style?: React.CSSProperties;
   return (
     <motion.div
       className="absolute pointer-events-none"
-      style={style}
+      style={style ?? {}}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay, duration: 0.5 }}
@@ -96,7 +96,7 @@ function AnimatedServer({ style, delay = 0 }: { style?: React.CSSProperties; del
   return (
     <motion.div
       className="absolute pointer-events-none"
-      style={style}
+      style={style ?? {}}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay, duration: 0.5 }}
@@ -157,7 +157,7 @@ function AnimatedMobile({ style, delay = 0 }: { style?: React.CSSProperties; del
   return (
     <motion.div
       className="absolute pointer-events-none"
-      style={style}
+      style={style ?? {}}
       initial={{ opacity: 0, rotate: -10 }}
       animate={{ opacity: 1, rotate: 0 }}
       transition={{ delay, duration: 0.5 }}
@@ -224,7 +224,7 @@ function AnimatedTestTube({ style, delay = 0 }: { style?: React.CSSProperties; d
   return (
     <motion.div
       className="absolute pointer-events-none"
-      style={style}
+      style={style ?? {}}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay, duration: 0.5 }}

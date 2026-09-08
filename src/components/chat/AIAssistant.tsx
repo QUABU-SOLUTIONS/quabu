@@ -160,7 +160,7 @@ export function AIAssistant() {
       assistantSoFar += nextChunk;
       setMessages(prev => {
         const last = prev[prev.length - 1];
-        if (last?.role === "assistant" && prev.length > 1 && prev[prev.length - 2].role === "user") {
+        if (last?.role === "assistant" && prev.length > 1 && prev[prev.length - 2]?.role === "user") {
           return prev.map((m, i) => (i === prev.length - 1 ? { ...m, content: assistantSoFar } : m));
         }
         return [...prev, { role: "assistant", content: assistantSoFar }];

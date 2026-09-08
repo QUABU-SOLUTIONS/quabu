@@ -34,6 +34,7 @@ export function CookieConsent() {
         setPreferences(JSON.parse(savedPrefs));
       }
     }
+    return undefined;
   }, []);
 
   const savePreferences = (prefs: CookiePreferences) => {

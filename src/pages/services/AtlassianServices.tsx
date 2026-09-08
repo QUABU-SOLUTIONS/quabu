@@ -74,7 +74,7 @@ function AnimatedStar({
   return (
     <motion.div
       className="absolute pointer-events-none"
-      style={style}
+      style={style ?? {}}
       initial={{ opacity: 0, scale: 0, rotate: -180 }}
       animate={{ opacity: 1, scale: 1, rotate: 0 }}
       transition={{ delay, duration: 0.6, type: "spring" }}

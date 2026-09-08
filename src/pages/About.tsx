@@ -45,7 +45,7 @@ function AnimatedRobot({
   return (
     <motion.div
       className="absolute pointer-events-none"
-      style={style}
+      style={style ?? {}}
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay, duration: 0.5, type: "spring" }}
@@ -133,11 +133,11 @@ function AnimatedRobot({
           stroke={colors.eye}
           strokeWidth="2"
           fill="none"
-          animate={{ 
-            d: variant === "wave" 
-              ? ["M 28 52 Q 40 60 52 52", "M 28 50 Q 40 62 52 50", "M 28 52 Q 40 60 52 52"]
-              : undefined
-          }}
+          animate={
+            variant === "wave"
+              ? { d: ["M 28 52 Q 40 60 52 52", "M 28 50 Q 40 62 52 50", "M 28 52 Q 40 60 52 52"] }
+              : {}
+          }
           transition={{ duration: 1, repeat: Infinity }}
         />
         

@@ -183,36 +183,36 @@ export default function Contact() {
                   <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                       <Label htmlFor="name">{t("contact.fullName")} *</Label>
-                      <Input id="name" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} className={errors.name ? "border-destructive" : ""} />
-                      {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
+                      <Input id="name" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} className={errors["name"] ? "border-destructive" : ""} />
+                      {errors["name"] && <p className="text-sm text-destructive">{errors["name"]}</p>}
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">{t("contact.email")} *</Label>
-                      <Input id="email" name="email" type="email" placeholder="john@company.com" value={formData.email} onChange={handleChange} className={errors.email ? "border-destructive" : ""} />
-                      {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
+                      <Input id="email" name="email" type="email" placeholder="john@company.com" value={formData.email} onChange={handleChange} className={errors["email"] ? "border-destructive" : ""} />
+                      {errors["email"] && <p className="text-sm text-destructive">{errors["email"]}</p>}
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="company">{t("contact.company")}</Label>
-                      <Input id="company" name="company" placeholder="Your Company" value={formData.company} onChange={handleChange} className={errors.company ? "border-destructive" : ""} />
-                      {errors.company && <p className="text-sm text-destructive">{errors.company}</p>}
+                      <Input id="company" name="company" placeholder="Your Company" value={formData.company} onChange={handleChange} className={errors["company"] ? "border-destructive" : ""} />
+                      {errors["company"] && <p className="text-sm text-destructive">{errors["company"]}</p>}
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="subject">{t("contact.subject")} *</Label>
-                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${errors.subject ? "border-destructive" : "border-input"}`}>
+                      <select id="subject" name="subject" value={formData.subject} onChange={handleChange} className={`flex h-10 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${errors["subject"] ? "border-destructive" : "border-input"}`}>
                         <option value="">{t("contact.selectTopic")}</option>
                         {contactReasons.map(reason => (
                           <option key={reason.value} value={reason.label}>{reason.label}</option>
                         ))}
                       </select>
-                      {errors.subject && <p className="text-sm text-destructive">{errors.subject}</p>}
+                      {errors["subject"] && <p className="text-sm text-destructive">{errors["subject"]}</p>}
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">{t("contact.message")} *</Label>
-                    <Textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." rows={6} value={formData.message} onChange={handleChange} className={errors.message ? "border-destructive" : ""} />
-                    {errors.message && <p className="text-sm text-destructive">{errors.message}</p>}
+                    <Textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." rows={6} value={formData.message} onChange={handleChange} className={errors["message"] ? "border-destructive" : ""} />
+                    {errors["message"] && <p className="text-sm text-destructive">{errors["message"]}</p>}
                   </div>
                   <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                     {isSubmitting ? <>{t("contact.sending")}</> : <>{t("contact.sendBtn")}<Send className="ml-2 w-5 h-5" /></>}
