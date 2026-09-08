@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Check, ArrowRight, Cloud, Code, Wrench, Headphones } from "lucide-react";
 import { Link } from "@/lib/router-compat";
@@ -5,6 +6,11 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
 function NetworkBackground() {
+  // Decorative SVG animations use framer-motion attribute keyframes that break
+  // under SSR hydration; render client-side only.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       <svg className="absolute inset-0 w-full h-full">
