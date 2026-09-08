@@ -143,6 +143,9 @@ function BenderRobot({ scale = 1 }: { scale?: number }) {
 }
 
 export function FuturisticRobotBackground() {
+  // Client-only: framer-motion SVG attribute keyframes break under SSR hydration.
+  const mounted = useMounted();
+  if (!mounted) return null;
   return (
     <div className="absolute inset-0 overflow-hidden rounded-xl">
       {/* Futuristic grid background */}

@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
 function AnimatedBackground() {
+  // Client-only SVG layer: framer-motion SVG attribute keyframes break under SSR hydration.
+  const mounted = useMounted();
   return (
     <div className="absolute inset-0 overflow-hidden">
       <div className="absolute inset-0 bg-foreground" />

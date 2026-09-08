@@ -36,6 +36,9 @@ function AnimatedCounter({ value, suffix, duration = 2 }: { value: number; suffi
 }
 
 function NetworkLines() {
+  // Client-only: framer-motion SVG attribute keyframes break under SSR hydration.
+  const mounted = useMounted();
+  if (!mounted) return null;
   return (
     <svg className="absolute inset-0 w-full h-full pointer-events-none hidden lg:block" style={{ zIndex: 0 }}>
       <defs>

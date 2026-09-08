@@ -16,6 +16,9 @@ const itemVariants = {
 };
 
 function NetworkBackground() {
+  // Client-only: framer-motion SVG attribute keyframes break under SSR hydration.
+  const mounted = useMounted();
+  if (!mounted) return null;
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none hidden lg:block">
       <svg className="absolute inset-0 w-full h-full">
