@@ -114,17 +114,19 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
-    <HelmetProvider>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <ScrollToTop />
-          <Outlet />
-          <CookieConsent />
-        </TooltipProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
+    <I18nextProvider i18n={i18n}>
+      <HelmetProvider>
+        <QueryClientProvider client={queryClient}>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <ScrollToTop />
+            <Outlet />
+            <CookieConsent />
+          </TooltipProvider>
+        </QueryClientProvider>
+      </HelmetProvider>
+    </I18nextProvider>
   );
 }
 
