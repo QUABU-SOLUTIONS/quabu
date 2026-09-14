@@ -142,7 +142,7 @@ const handler = async (req: Request): Promise<Response> => {
       await client.close();
     } catch (smtpError) {
       // Log full error server-side only — never expose to client
-      console.error("SMTP Error occurred");
+      console.error("SMTP Error occurred", smtpError instanceof Error ? smtpError.message : String(smtpError));
       try { await client.close(); } catch (_) { /* ignore */ }
       return new Response(
         JSON.stringify({ error: "Failed to send email. Please try again later." }),
