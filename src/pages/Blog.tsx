@@ -80,6 +80,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-cloud-pricing-2026-optimization", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 14, 2026", readTime: "4 min", featured: true },
   { id: "automate-release-notes-rovo-jira-ai", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 8, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-experts-webinar-jira-premium-news", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 7, 2026", readTime: "2 min", featured: true },
   { id: "quabu-teamwork-collection-learning-camp-barcelona", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 2, 2026", readTime: "2 min", featured: true },
@@ -131,6 +132,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-cloud-pricing-2026-optimization",
+    title: "New Atlassian Cloud Pricing 2026: Everything That Changes and How to Optimize Your Cost",
+    excerpt: "Atlassian is moving from license-only pricing to a hybrid usage-based model: base price adjustments in October 2026 and pay-per-use billing in December 2026. Here's what changes and how to prepare.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 14, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/NuevosPreciosAtlassian2026.jpg",
+    featured: true,
+  },
   {
     id: "automate-release-notes-rovo-jira-ai",
     title: "🚀 How to Automate Your Release Notes in 5 Minutes with Atlassian Rovo and Jira AI",
