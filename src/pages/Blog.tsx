@@ -80,6 +80,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "want-to-master-atlassian-rovo-ai-next-level", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 15, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-cloud-pricing-2026-optimization", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 14, 2026", readTime: "4 min", featured: true },
   { id: "automate-release-notes-rovo-jira-ai", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 8, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-experts-webinar-jira-premium-news", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 7, 2026", readTime: "2 min", featured: true },
@@ -132,6 +133,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "want-to-master-atlassian-rovo-ai-next-level",
+    title: "🚀 Want to Master Atlassian Rovo and Take AI to the Next Level in Your Team?",
+    excerpt: "Jira Bro has launched a complete Atlassian Rovo course. Learn how to build custom AI agents, design smart automations, and create tailor-made apps inside the Atlassian ecosystem.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 15, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraBroRovoTrainingQuabu.jpg",
+    featured: true,
+  },
   {
     id: "atlassian-cloud-pricing-2026-optimization",
     title: "New Atlassian Cloud Pricing 2026: Everything That Changes and How to Optimize Your Cost",

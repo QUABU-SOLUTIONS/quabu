@@ -24,66 +24,37 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
-    id: "atlassian-cloud-pricing-2026-optimization",
-    title: "New Atlassian Cloud Pricing 2026: Everything That Changes and How to Optimize Your Cost",
-    excerpt: "Atlassian is moving from license-only pricing to a hybrid usage-based model: base price adjustments in October 2026 and pay-per-use billing in December 2026. Here's what changes and how to prepare.",
+    id: "want-to-master-atlassian-rovo-ai-next-level",
+    title: "🚀 Want to Master Atlassian Rovo and Take AI to the Next Level in Your Team?",
+    excerpt: "Jira Bro has launched a complete Atlassian Rovo course. Learn how to build custom AI agents, design smart automations, and create tailor-made apps inside the Atlassian ecosystem.",
     content: `
-![New Atlassian Cloud Pricing 2026](https://quabu.blog/wp-content/uploads/2026/09/NuevosPreciosAtlassian2026.jpg)
+![Atlassian Rovo Full Course by Jira Bro](https://quabu.blog/wp-content/uploads/2026/09/JiraBroRovoTrainingQuabu.jpg)
 
-Atlassian has announced a major evolution of its pricing and billing model for Cloud environments, taking effect in late 2026. The model moves away from being based exclusively on licenses toward a hybrid scheme where real consumption and additional capabilities carry much more weight.
+Our friend **Jira Bro** has released a complete course perfect for moving from beginner to advanced user on the Atlassian Rovo platform.
 
-If your company uses Jira, Confluence or Jira Service Management, this is what you need to know — and how we at Quabu can help you minimize the impact.
+**In this video you will learn to:**
 
-**1. Base price adjustment (October 13, 2026)**
+- Create your own custom **AI agents**.
+- Design **smart automations** to save time in your workflows.
+- Develop **tailor-made apps** inside the Atlassian ecosystem.
 
-Starting October 13, 2026, Atlassian will apply an annual adjustment to the list prices of its Cloud portfolio.
+**Who is it for?** Anyone working day-to-day with Atlassian products (Jira, Confluence, and more) who wants to squeeze the full potential out of Rovo.
 
-- The economic impact will range between 0% and 10%, depending on the product and the plan you have subscribed.
-- For example, Jira and Confluence Standard and Premium plans will see a 7% increase if you are below 5,000 users.
-- These same plans will see a 10% increase if you are above 5,000 users.
+👉 Hit play, save the video, and tell us in the comments which agent you are going to build first!
 
-**2. Transition to usage-based billing (December 3, 2026)**
+🔗 **Watch the full tutorial here:**
 
-December 3, 2026 kicks off the second big change: Atlassian adds an extra layer that bills the exact consumption of advanced capabilities exceeding the free monthly allowance included in your plan. The metrics that will start being charged for excess usage include:
+[Atlassian Rovo Full Course (2026)](https://www.youtube.com/watch?v=m2BtOi6D9Fg)
 
-- **Rovo Credits (AI):** Consumed when performing deep AI interactions.
-- **Automations:** Each step executed by an automation rule is counted.
-- **AI Agent Resolution:** Only counted and billed at 1 USD when the agent resolves and closes a customer's ticket 100% autonomously.
-- **Objects in Assets:** Will vary depending on additional consumption.
-
-As a customer, you will have an admin dashboard to monitor consumption. In addition, the system will send email alerts when reaching 80% and 100% of the free monthly allowance, and you will be able to set strict spending limits (Hard Caps) to pause services and avoid overcharges.
-
-**3. How does this affect you and what can you do?**
-
-> **We offer you a free review!**
-
-The impact of these changes is not the same for every customer. Instead of simply absorbing the increase, the best way to prepare is to review your current real usage, compare it against the new model and detect optimization opportunities before your renewal.
-
-To help you through this transition, at [Quabu](https://www.quabusolutions.com/) we offer a **free review of your Jira environment**. Through a detailed analysis, we will help you understand which part of the cost comes from the general price increase and which part depends on your own consumption. 👇👇👇
-
-[✅ Download our PDF: **New Atlassian Cloud pricing and a different way to calculate the cost**](https://quabu.blog/wp-content/uploads/2026/09/Nuevos-precios-de-Atlassian-Cloud-y-una-forma-distinta-de-calcular-el-coste.pdf)
-
-Our **free process consists of 5 phases** to give you full visibility:
-
-- **1. Discovery:** To understand the real starting point of your environment.
-- **2. Consumption analysis:** To detect what is generating cost and what adds no value.
-- **3. New model simulation:** To anticipate the renewal without surprises through an estimate of the economic impact.
-- **4. Improvement detection:** To propose concrete actions, reduce the impact and improve efficiency.
-- **5. Final recommendation:** To deliver a decision plan and help the customer choose wisely.
-
-Before the new Atlassian pricing takes effect, get ahead of it. **[Contact us today and request your free Jira review!](https://www.quabusolutions.com/contact)**
-
-![Quabu's 5-step improvement process](https://quabu.blog/wp-content/uploads/2026/09/5accionesQuabuMejora-822x1024.jpg)
-
-#Atlassian #Jira #AtlassianCloud #Quabu #ITSM #ITOptimization #UsageBasedBilling #JiraServiceManagement
+#Atlassian #Rovo #AI #ArtificialIntelligence #JiraBro #Quabu #Productivity #Jira #Confluence
 `,
     category: "News",
     categoryIcon: Newspaper,
-    date: "September 14, 2026",
-    readTime: "4 min read",
-    image: "https://quabu.blog/wp-content/uploads/2026/09/NuevosPreciosAtlassian2026.jpg",
+    date: "September 15, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraBroRovoTrainingQuabu.jpg",
     author: "Quabu Team",
-    tags: ["Atlassian", "Jira", "Atlassian Cloud", "Pricing", "Usage-Based Billing", "ITSM", "Jira Service Management", "Quabu"],
+    tags: ["Atlassian", "Rovo", "AI", "Artificial Intelligence", "Jira Bro", "Quabu", "Productivity", "Jira", "Confluence", "Atlassian Community"],
   },
   {
     id: "automate-release-notes-rovo-jira-ai",
