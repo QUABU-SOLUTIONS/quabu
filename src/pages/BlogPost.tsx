@@ -24,9 +24,9 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
-    id: "atlassian-cloud-pricing-2026-optimization",
-    title: "New Atlassian Cloud Pricing 2026: Everything That Changes and How to Optimize Your Cost",
-    excerpt: "Atlassian is moving from license-only pricing to a hybrid usage-based model: base price adjustments in October 2026 and pay-per-use billing in December 2026. Here's what changes and how to prepare.",
+    id: "want-to-master-atlassian-rovo-ai-next-level",
+    title: "🚀 Want to Master Atlassian Rovo and Take AI to the Next Level in Your Team?",
+    excerpt: "Jira Bro has launched a complete Atlassian Rovo course. Learn how to build custom AI agents, design smart automations, and create tailor-made apps inside the Atlassian ecosystem.",
     content: `
 ![New Atlassian Cloud Pricing 2026](https://quabu.blog/wp-content/uploads/2026/09/NuevosPreciosAtlassian2026.jpg)
 
