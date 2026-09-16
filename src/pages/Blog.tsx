@@ -80,6 +80,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-cloud-api-full-course-2026-integrators", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 16, 2026", readTime: "2 min", featured: true },
   { id: "want-to-master-atlassian-rovo-ai-next-level", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 15, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-cloud-pricing-2026-optimization", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 14, 2026", readTime: "4 min", featured: true },
   { id: "automate-release-notes-rovo-jira-ai", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 8, 2026", readTime: "2 min", featured: true },
