@@ -135,6 +135,17 @@ const blogPostsMeta = [
 
 const blogPosts = [
   {
+    id: "jira-cloud-api-full-course-2026-integrators",
+    title: "Complete Jira Cloud API Course (2026): Ideal for Integrators",
+    excerpt: "Want to automate workflows and integrate tools with Jira Cloud? Discover the complete Jira Cloud API course by Jira Bro, sponsored by Quabu Solutions: API tokens, HTTP methods, status codes, JSON requests and JQL.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 16, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraBoJiraCloudAPICourseQuabu.jpg",
+    featured: true,
+  },
+  {
     id: "want-to-master-atlassian-rovo-ai-next-level",
     title: "🚀 Want to Master Atlassian Rovo and Take AI to the Next Level in Your Team?",
     excerpt: "Jira Bro has launched a complete Atlassian Rovo course. Learn how to build custom AI agents, design smart automations, and create tailor-made apps inside the Atlassian ecosystem.",
