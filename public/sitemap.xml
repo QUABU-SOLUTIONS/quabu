@@ -53,6 +53,14 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level"/>

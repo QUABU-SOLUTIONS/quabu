@@ -24,6 +24,36 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-cloud-api-full-course-2026-integrators",
+    title: "Complete Jira Cloud API Course (2026): Ideal for Integrators",
+    excerpt: "Want to automate workflows and integrate tools with Jira Cloud? Discover the complete Jira Cloud API course by Jira Bro, sponsored by Quabu Solutions: API tokens, HTTP methods, status codes, JSON requests and JQL.",
+    content: `
+![Jira Cloud API Full Course 2026 by Jira Bro](https://quabu.blog/wp-content/uploads/2026/09/JiraBoJiraCloudAPICourseQuabu.jpg)
+
+Want to **automate workflows** and **integrate tools with Jira Cloud**? 🚀
+
+In this course you will learn to master the **Jira API** from start to finish:
+
+- Secure **API token** generation and management.
+- Practical use of **HTTP methods** (\`GET\`, \`POST\`, \`PUT\`, \`DELETE\`).
+- Interpretation of **status codes** and error debugging (\`200\`, \`400\`, \`401\`, \`404\`).
+- JSON request structure and use of **JQL** in endpoints.
+
+[Jira Cloud API Full Course (2026) - YouTube](https://www.youtube.com/watch?v=HMgS_KOKJFI)
+
+A course by **[Jira Bro](https://www.youtube.com/@JiraBro)**, sponsored by **[Quabu Solutions](https://www.quabusolutions.com/)**.
+
+#JiraAPI #JiraCloud #Atlassian #DevOps #APIDevelopment #SoftwareEngineering
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 16, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraBoJiraCloudAPICourseQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Jira API", "Jira Cloud", "Atlassian", "DevOps", "API Development", "Software Engineering", "Jira Bro", "Quabu", "Integrations", "Jira Automation"],
+  },
+  {
     id: "want-to-master-atlassian-rovo-ai-next-level",
     title: "🚀 Want to Master Atlassian Rovo and Take AI to the Next Level in Your Team?",
     excerpt: "Jira Bro has launched a complete Atlassian Rovo course. Learn how to build custom AI agents, design smart automations, and create tailor-made apps inside the Atlassian ecosystem.",
