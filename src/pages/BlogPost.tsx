@@ -24,6 +24,33 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-service-management-help-centers-beta",
+    title: "Jira Service Management Help Center Configuration (Beta Feature)",
+    excerpt: "Atlassian has quietly shipped a new beta: creating Help Centers directly from Jira Service Management. Jira Bro has already tested it — watch his full video walkthrough.",
+    content: `
+![Jira Service Management Help Centers beta by Jira Bro](https://quabu.blog/wp-content/uploads/2026/09/JiraHelpCentersJiraBroQuabu.jpg)
+
+Atlassian releasing new features by surprise? A classic. 🚀
+
+Sometimes the **release notes** announce it, but new features always end up catching us off guard. Luckily, **Jira Bro** has already tried it and in his latest video he shows us the new beta: **creating Help Centers directly from Jira**.
+
+At **Quabu Solutions**, as an **Atlassian Gold Solution Partner**, we love supporting useful content that keeps the community up to date with the latest innovations.
+
+📽️ Check out the full video below to see how it works in detail!
+
+[Jira Service Management Help Centers (Beta) — Jira Bro](https://www.youtube.com/watch?v=2MNyUW_QQ3Y)
+
+#Atlassian #Jira #JiraServiceManagement #AtlassianRovo #QuabuSolutions #ITSM #TechNews
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 18, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraHelpCentersJiraBroQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian", "Jira", "Jira Service Management", "Help Center", "Customer Service", "ITSM", "Atlassian Rovo", "Jira Bro", "Quabu"],
+  },
+  {
     id: "jira-cloud-api-full-course-2026-integrators",
     title: "Complete Jira Cloud API Course (2026): Ideal for Integrators",
     excerpt: "Want to automate workflows and integrate tools with Jira Cloud? Discover the complete Jira Cloud API course by Jira Bro, sponsored by Quabu Solutions: API tokens, HTTP methods, status codes, JSON requests and JQL.",
