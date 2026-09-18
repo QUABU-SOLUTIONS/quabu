@@ -80,6 +80,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-service-management-help-centers-beta", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 18, 2026", readTime: "2 min", featured: true },
   { id: "jira-cloud-api-full-course-2026-integrators", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 16, 2026", readTime: "2 min", featured: true },
   { id: "want-to-master-atlassian-rovo-ai-next-level", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 15, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-cloud-pricing-2026-optimization", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 14, 2026", readTime: "4 min", featured: true },
@@ -134,6 +135,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-service-management-help-centers-beta",
+    title: "Jira Service Management Help Center Configuration (Beta Feature)",
+    excerpt: "Atlassian has quietly shipped a new beta: creating Help Centers directly from Jira Service Management. Jira Bro has already tested it — watch his full video walkthrough.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 18, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraHelpCentersJiraBroQuabu.jpg",
+    featured: true,
+  },
   {
     id: "jira-cloud-api-full-course-2026-integrators",
     title: "Complete Jira Cloud API Course (2026): Ideal for Integrators",
