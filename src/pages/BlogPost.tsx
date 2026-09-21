@@ -6,6 +6,7 @@ import { Link, useParams, Navigate } from "@/lib/router-compat";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import jiraTeamManagedPoliciesCover from "@/assets/JiraTeamManagedPoliciesJiraBroquabu.jpg.asset.json";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -28,7 +29,13 @@ const blogPosts = [
     title: "New Space Policies in Jira: How to Control Fields and Statuses in Team-Managed Spaces",
     excerpt: "Atlassian has introduced Space Policies in beta for Jira: a new governance layer that lets admins restrict custom fields and statuses in team-managed projects while preserving team autonomy.",
     content: `
-![New Space Policies in Jira — Quabu Solutions](https://quabu.blog/wp-content/uploads/2026/09/SpacePolicies2.png)
+![Jira Team-Managed Space Policies — Jira Bro and Quabu Solutions](${jiraTeamManagedPoliciesCover.url})
+
+## Watch Jira Team-Managed Space Policies in action
+
+[![Watch Jira Bro's video about Jira Team-Managed Space Policies](https://img.youtube.com/vi/Wgok8l70obM/maxresdefault.jpg)](https://www.youtube.com/watch?v=Wgok8l70obM)
+
+🎬 [Jira Team-Managed Space Policies — Jira Bro](https://www.youtube.com/watch?v=Wgok8l70obM)
 
 ## Introduction
 
@@ -79,7 +86,7 @@ Have you already tried this feature in your administration panel? Tell us about 
     categoryIcon: Newspaper,
     date: "September 21, 2026",
     readTime: "3 min read",
-    image: "https://quabu.blog/wp-content/uploads/2026/09/SpacePolicies2.png",
+    image: jiraTeamManagedPoliciesCover.url,
     author: "Quabu Team",
     tags: ["Jira", "Jira Software", "Atlassian", "Jira Admin", "Space Policies", "Team-Managed Projects", "IT Governance", "Agile", "Productivity", "New Features"],
   },
