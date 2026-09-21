@@ -28,6 +28,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import jiraTeamManagedPoliciesCover from "@/assets/JiraTeamManagedPoliciesJiraBroquabu.jpg.asset.json";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
 const seeded = (i: number, salt: number) => {
@@ -144,7 +145,7 @@ const blogPosts = [
     categoryIcon: Newspaper,
     date: "September 21, 2026",
     readTime: "3 min read",
-    image: "https://quabu.blog/wp-content/uploads/2026/09/SpacePolicies2.png",
+    image: jiraTeamManagedPoliciesCover.url,
     featured: true,
   },
   {
