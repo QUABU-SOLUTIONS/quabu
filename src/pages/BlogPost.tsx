@@ -24,6 +24,66 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-space-policies-team-managed-fields-statuses",
+    title: "New Space Policies in Jira: How to Control Fields and Statuses in Team-Managed Spaces",
+    excerpt: "Atlassian has introduced Space Policies in beta for Jira: a new governance layer that lets admins restrict custom fields and statuses in team-managed projects while preserving team autonomy.",
+    content: `
+![New Space Policies in Jira — Quabu Solutions](https://quabu.blog/wp-content/uploads/2026/09/SpacePolicies2.png)
+
+## Introduction
+
+Team-managed projects revolutionized the way teams work in Jira Software by letting each team configure its own workflow without constantly depending on a central administrator. However, in medium and large organizations, this autonomy often leads to the proliferation of duplicated fields, inconsistent work phases and difficulties extracting corporate-level metrics.
+
+To solve this friction, Atlassian has introduced **Space Policies** in beta: an administration feature designed to balance team autonomy with centralized data governance.
+
+## What are Space Policies and how do they work?
+
+Located under **Jira admin settings > Spaces > Policies**, Space Policies let administrators restrict the creation of local elements in team-managed projects.
+
+The tool offers three control levels:
+
+- **Global fields only**: Prevents users from creating their own custom fields within the space, forcing them to choose only the global fields defined by the organization.
+- **Global statuses only**: Prohibits the creation of new local statuses in workflows, ensuring that the work lifecycle uses the system's standard phases.
+- **Both global fields and statuses**: Activates both restrictions simultaneously to keep data and process control homogeneous.
+
+## Deployment and assignment options
+
+One of the main advantages of this feature is its granularity when applying it:
+
+- **Specific spaces (+ Spaces)**: Assign the rule only to specific projects or departments.
+- **Templates (+ Templates)**: Link restrictions to predefined templates so projects inherit the rule when created.
+- **Default policy (Set as default policy for all new spaces)**: Toggle so every new team-managed space automatically applies these restrictions from creation.
+
+## Configuration prerequisite
+
+To use this feature in your Jira Cloud instance, you must access the **Beta features** panel as a Jira administrator and make sure you have two features enabled:
+
+- **Global statuses**: Allows creating and managing statuses for use in team-managed spaces from the workflow editor.
+- **Space policies**: Activates the control rules panel (requires the **Global statuses** feature to be enabled).
+
+## Key benefits for Jira administration
+
+- **Data quality**: Eliminates indiscriminate creation of identical fields with slightly different names (for example, \`Due Date\`, \`Due date\`, \`due_date\`).
+- **Reporting consolidation**: By sharing global statuses, dashboards and cross-project JQL queries work uniformly.
+- **Scalability**: Facilitates organized platform growth without completely slowing down teams' operational agility.
+
+## Conclusion
+
+Space Policies represent the middle ground many Jira administrators have been waiting for. They maintain the simplicity and agility of the team-managed spaces interface while protecting the organization's global data architecture.
+
+Have you already tried this feature in your administration panel? Tell us about your experience or questions in the comments section.
+
+#JiraSoftware #Atlassian #JiraAdmin #Agile #ITGovernance #Productivity #NewFeatures
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 21, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/SpacePolicies2.png",
+    author: "Quabu Team",
+    tags: ["Jira", "Jira Software", "Atlassian", "Jira Admin", "Space Policies", "Team-Managed Projects", "IT Governance", "Agile", "Productivity", "New Features"],
+  },
+  {
     id: "jira-service-management-help-centers-beta",
     title: "Jira Service Management Help Center Configuration (Beta Feature)",
     excerpt: "Atlassian has quietly shipped a new beta: creating Help Centers directly from Jira Service Management. Jira Bro has already tested it — watch his full video walkthrough.",
