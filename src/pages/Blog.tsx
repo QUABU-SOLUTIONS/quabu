@@ -80,6 +80,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-space-policies-team-managed-fields-statuses", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 21, 2026", readTime: "3 min", featured: true },
   { id: "jira-service-management-help-centers-beta", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 18, 2026", readTime: "2 min", featured: true },
   { id: "jira-cloud-api-full-course-2026-integrators", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 16, 2026", readTime: "2 min", featured: true },
   { id: "want-to-master-atlassian-rovo-ai-next-level", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 15, 2026", readTime: "2 min", featured: true },
@@ -135,6 +136,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-space-policies-team-managed-fields-statuses",
+    title: "New Space Policies in Jira: How to Control Fields and Statuses in Team-Managed Spaces",
+    excerpt: "Atlassian has introduced Space Policies in beta for Jira: a new governance layer that lets admins restrict custom fields and statuses in team-managed projects while preserving team autonomy.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 21, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/SpacePolicies2.png",
+    featured: true,
+  },
   {
     id: "jira-service-management-help-centers-beta",
     title: "Jira Service Management Help Center Configuration (Beta Feature)",
