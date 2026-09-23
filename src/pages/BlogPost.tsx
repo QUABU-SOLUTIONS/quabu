@@ -25,6 +25,44 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "jira-software-work-items-redesign-new-experience",
+    title: "Jira Software Redesign: A New Experience for Your Work Items",
+    excerpt: "All Jira Software users will soon get a completely renewed work item interface: clearer icons, smarter layout, less visual clutter and better visibility of critical details.",
+    content: `
+![Jira Software work items redesign — Jira Bro and Quabu Solutions](https://quabu.blog/wp-content/uploads/2026/09/JiraBroNewUXQuabu.jpg)
+
+The way we interact with our everyday work tools is about to evolve. Very soon, all Jira Software users will experience a complete renewal of the **work items** interface, designed to make project management smoother, clearer and more intuitive.
+
+This change goes beyond a simple cosmetic touch-up; it is a comprehensive improvement focused on **user experience (UX)** and team productivity.
+
+## What's new?
+
+- **Refreshed iconography**: Clearer, more modern icons that make it easy to quickly identify work types, priorities and statuses.
+- **Strategic reorganization**: Elements placed in more logical and intuitive positions to reduce the number of clicks needed to find key information.
+- **Less visual clutter**: A cleaner design that removes distractions and lets you focus on what really matters.
+- **Greater visibility**: Critical project details now stand out at a glance, optimizing decision-making and real-time collaboration.
+
+## Watch the new Jira experience in action
+
+[![Watch Jira Bro's video about the new Jira work item design](https://img.youtube.com/vi/_InVIKpAIGc/maxresdefault.jpg)](https://www.youtube.com/watch?v=_InVIKpAIGc)
+
+🎬 [New Jira work item experience — Jira Bro](https://www.youtube.com/watch?v=_InVIKpAIGc)
+
+Overall, the environment feels completely renewed and significantly more comfortable for the daily workflow.
+
+What do you think of this update? Do you think this new design will improve your team's pace of work? Leave your comment below and let's share impressions.
+
+#JiraSoftware #Atlassian #UX #Productivity #ProjectManagement #QuabuSolutions
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 23, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraBroNewUXQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Jira", "Jira Software", "Atlassian", "UX", "Work Items", "Productivity", "Project Management", "New Features"],
+  },
+  {
     id: "jira-space-policies-team-managed-fields-statuses",
     title: "New Space Policies in Jira: How to Control Fields and Statuses in Team-Managed Spaces",
     excerpt: "Atlassian has introduced Space Policies in beta for Jira: a new governance layer that lets admins restrict custom fields and statuses in team-managed projects while preserving team autonomy.",
