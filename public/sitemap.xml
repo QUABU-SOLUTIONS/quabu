@@ -53,6 +53,14 @@
 
   <!-- BLOG POSTS -->
   <url>
+    <loc>https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience"/>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses"/>

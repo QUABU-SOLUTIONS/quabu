@@ -81,6 +81,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-software-work-items-redesign-new-experience", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 23, 2026", readTime: "2 min", featured: true },
   { id: "jira-space-policies-team-managed-fields-statuses", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 21, 2026", readTime: "3 min", featured: true },
   { id: "jira-service-management-help-centers-beta", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 18, 2026", readTime: "2 min", featured: true },
   { id: "jira-cloud-api-full-course-2026-integrators", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 16, 2026", readTime: "2 min", featured: true },
@@ -137,6 +138,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-software-work-items-redesign-new-experience",
+    title: "Jira Software Redesign: A New Experience for Your Work Items",
+    excerpt: "All Jira Software users will soon get a completely renewed work item interface: clearer icons, smarter layout, less visual clutter and better visibility of critical details.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 23, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/JiraBroNewUXQuabu.jpg",
+    featured: true,
+  },
   {
     id: "jira-space-policies-team-managed-fields-statuses",
     title: "New Space Policies in Jira: How to Control Fields and Statuses in Team-Managed Spaces",
