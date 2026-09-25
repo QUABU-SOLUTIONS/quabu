@@ -80,7 +80,8 @@ const AnimatedBlogBackground = () => {
 };
 
 // Blog post data - titles/excerpts kept in English (editorial content)
-const blogPostsMeta = [
+  const blogPostsMeta = [
+  { id: "reduce-adoption-gap-jira-cloud-visual-organizer", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 25, 2026", readTime: "3 min", featured: true },
   { id: "jira-software-work-items-redesign-new-experience", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 23, 2026", readTime: "2 min", featured: true },
   { id: "jira-space-policies-team-managed-fields-statuses", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 21, 2026", readTime: "3 min", featured: true },
   { id: "jira-service-management-help-centers-beta", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 18, 2026", readTime: "2 min", featured: true },
@@ -137,7 +138,18 @@ const blogPostsMeta = [
   { id: "kanban-work-method", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 4, 2025", readTime: "8 min", featured: false },
 ];
 
-const blogPosts = [
+  const blogPosts = [
+  {
+    id: "reduce-adoption-gap-jira-cloud-visual-organizer",
+    title: "How to Reduce the Adoption Gap in Jira Cloud with Quabu's Visual Organizer",
+    excerpt: "Migrating to Jira Cloud is only half the journey: adoption is the real challenge. Visual Organizer's new Issues and Summary tabs give every user a unified command center and an actionable dashboard — no JQL filters or gadgets required.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 25, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/AppSummary.png",
+    featured: true,
+  },
   {
     id: "jira-software-work-items-redesign-new-experience",
     title: "Jira Software Redesign: A New Experience for Your Work Items",

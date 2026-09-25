@@ -25,6 +25,65 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
   {
+    id: "reduce-adoption-gap-jira-cloud-visual-organizer",
+    title: "How to Reduce the Adoption Gap in Jira Cloud with Quabu's Visual Organizer",
+    excerpt: "Migrating to Jira Cloud is only half the journey: adoption is the real challenge. Visual Organizer's new Issues and Summary tabs give every user a unified command center and an actionable dashboard — no JQL filters or gadgets required.",
+    content: `
+![Visual Organizer for Jira Cloud — Summary tab by Quabu Solutions](https://quabu.blog/wp-content/uploads/2026/09/AppSummary.png)
+
+Migrating to Jira Cloud means taking on a major change process. However, the real challenge usually begins in the teams' day-to-day work: the **user experience**. Suddenly changing the interface and working dynamics makes many users feel lost, reducing platform adoption and generating frustration.
+
+To solve this problem and simplify daily management, at **Quabu** we have updated the app **Visual Organizer for Jira Cloud** with two new tabs designed to streamline work without complications: **Issues** and **Summary**.
+
+## 1. "Issues" tab: Centralize all your work at a glance
+
+Searching for tickets spread across different boards or projects usually costs valuable productive time. With the new **Issues** tab, users get a unified command center with three key views:
+
+![Visual Organizer for Jira Cloud — Issues tab](https://quabu.blog/wp-content/uploads/2026/09/AppIssues-1024x384.png)
+
+- **My Assigned Issues**: Direct access to all the tasks assigned to you.
+- **My Reported Issues**: Control and track the tickets you have created.
+- **My Watched Issues**: View the tasks you are supervising as a watcher.
+
+It also lets you quickly filter by status (**Open**, **In Progress**, **Done**) and by project or space, making it easy to jump straight to each ticket's details.
+
+## 2. "Summary" tab: An actionable dashboard without complex filters
+
+Keeping projects clean in Jira usually requires manually creating JQL filters, gadgets and custom dashboards. The **Summary** tab removes this administrative work with an interactive, ready-to-use panel:
+
+![Visual Organizer for Jira Cloud — Summary dashboard](https://quabu.blog/wp-content/uploads/2026/09/AppSummary-1024x434.png)
+
+- **Visual work distribution**: Intuitive charts breaking down the status of assigned, reported and watched work.
+- **Bottleneck detection**: Analysis by project (**Issues by Space**) to investigate why some tickets stay open for too long.
+- **Immediate cleanup**: Audit and tidy up project tasks without configuring extra dashboards.
+
+## Key benefits for teams
+
+- **Reduced adoption gap**: A structured interface minimizes the impact of change after migrating to Jira Cloud.
+- **Time savings**: Avoids the constant management of individual filters and boards.
+- **Flexible customization**: Configure the default tab when opening the app and organize boards, projects or filters using colored labels and categories.
+
+## Simplify your team's management in Jira Cloud
+
+Don't let the members of your organization get lost in the platform. With the new features of **Visual Organizer for Jira Cloud**, keeping control of your work and the health of your projects is easier than ever.
+
+## Watch the app in action
+
+[![Watch the Visual Organizer for Jira Cloud demo video](https://img.youtube.com/vi/Yq94SrBV9dA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yq94SrBV9dA)
+
+🎬 [Visual Organizer for Jira Cloud — demo video](https://www.youtube.com/watch?v=Yq94SrBV9dA)
+
+#Jira #JiraCloud #Atlassian #VisualOrganizer #Adoption #Productivity #QuabuSolutions
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "September 25, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/09/AppSummary.png",
+    author: "Quabu Team",
+    tags: ["Jira", "Jira Cloud", "Atlassian", "Visual Organizer", "Adoption", "Apps", "Productivity", "New Features"],
+  },
+  {
     id: "jira-software-work-items-redesign-new-experience",
     title: "Jira Software Redesign: A New Experience for Your Work Items",
     excerpt: "All Jira Software users will soon get a completely renewed work item interface: clearer icons, smarter layout, less visual clutter and better visibility of critical details.",
