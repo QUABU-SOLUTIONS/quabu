@@ -138,7 +138,7 @@ const blogPostsMeta = [
   { id: "kanban-work-method", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "March 4, 2025", readTime: "8 min", featured: false },
 ];
 
-  const blogPosts = [
+const blogPosts = [
   {
     id: "reduce-adoption-gap-jira-cloud-visual-organizer",
     title: "How to Reduce the Adoption Gap in Jira Cloud with Quabu's Visual Organizer",
