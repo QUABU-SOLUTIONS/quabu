@@ -80,7 +80,7 @@ const AnimatedBlogBackground = () => {
 };
 
 // Blog post data - titles/excerpts kept in English (editorial content)
-  const blogPostsMeta = [
+const blogPostsMeta = [
   { id: "reduce-adoption-gap-jira-cloud-visual-organizer", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 25, 2026", readTime: "3 min", featured: true },
   { id: "jira-software-work-items-redesign-new-experience", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 23, 2026", readTime: "2 min", featured: true },
   { id: "jira-space-policies-team-managed-fields-statuses", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 21, 2026", readTime: "3 min", featured: true },
