@@ -3432,14 +3432,14 @@ export default function BlogPost() {
         }}
       />
       {/* Hero */}
-      <section className="relative">
-        <div className="absolute inset-0 h-[50vh]">
+      <section className="relative min-h-[520px] overflow-hidden">
+        <div className="absolute inset-0 h-full">
           <img 
             src={post.image} 
             alt={post.title} 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/75 via-foreground/60 to-background" />
         </div>
 
         <div className="container relative z-10 pt-32 pb-20">
@@ -3485,15 +3485,15 @@ export default function BlogPost() {
       {/* Content */}
       <section className="py-12">
         <div className="container">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="grid min-w-0 lg:grid-cols-12 gap-12">
             {/* Main Content */}
             <motion.article
-              className="lg:col-span-8"
+              className="min-w-0 lg:col-span-8"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-headings:mt-10 prose-headings:mb-5 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-muted-foreground prose-p:mb-5 prose-p:leading-relaxed prose-strong:text-foreground prose-li:text-muted-foreground prose-li:mb-2 prose-li:leading-relaxed prose-ul:my-5 prose-ol:my-5 prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-blockquote:my-8 prose-blockquote:py-2 prose-blockquote:italic prose-code:bg-muted prose-code:text-foreground prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-semibold prose-pre:bg-muted prose-pre:text-foreground prose-pre:p-5 prose-pre:rounded-lg prose-pre:my-6 prose-hr:border-border prose-hr:my-10">
+              <div className="prose prose-lg max-w-none min-w-0 break-words prose-img:max-w-full prose-headings:text-foreground prose-headings:mt-10 prose-headings:mb-5 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-muted-foreground prose-p:mb-5 prose-p:leading-relaxed prose-strong:text-foreground prose-li:text-muted-foreground prose-li:mb-2 prose-li:leading-relaxed prose-ul:my-5 prose-ol:my-5 prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-blockquote:my-8 prose-blockquote:py-2 prose-blockquote:italic prose-code:bg-muted prose-code:text-foreground prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-semibold prose-pre:bg-muted prose-pre:text-foreground prose-pre:p-5 prose-pre:rounded-lg prose-pre:my-6 prose-hr:border-border prose-hr:my-10">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {post.content}
                 </ReactMarkdown>
