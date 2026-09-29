@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import jiraTeamManagedPoliciesCover from "@/assets/JiraTeamManagedPoliciesJiraBroquabu.jpg.asset.json";
+import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.jpg.asset.json";
+import { metafrazoTraceabilityContent } from "@/lib/metafrazo-traceability";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -24,6 +26,19 @@ import {
 
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
+  {
+    id: "traceability-is-not-a-jira-problem",
+    title: "Traceability is not a Jira problem",
+    excerpt: "Audit evidence cannot be reconstructed after the fact. MetaFrazo explains why Jira Cloud event history must be recorded as the work happens, with insights from Quabu's Raúl Peláez Mendoza.",
+    content: metafrazoTraceabilityContent,
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "September 29, 2026",
+    readTime: "5 min read",
+    image: metafrazoTraceabilityCover.url,
+    author: "Maria Reisinger · MetaFrazo",
+    tags: ["Jira Cloud", "MetaFrazo", "Traceability", "ENS", "Audit", "Governance", "Compliance"],
+  },
   {
     id: "reduce-adoption-gap-jira-cloud-visual-organizer",
     title: "How to Reduce the Adoption Gap in Jira Cloud with Quabu's Visual Organizer",
@@ -3404,7 +3419,9 @@ export default function BlogPost() {
           description: post.excerpt,
           image: post.image,
           datePublished: new Date(post.date).toISOString(),
-          author: { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
+          author: post.id === "traceability-is-not-a-jira-problem"
+            ? { "@type": "Person", name: "Maria Reisinger", url: "https://blog.metafrazo.cloud/blog/traceability-is-not-a-jira-problem" }
+            : { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
           publisher: {
             "@type": "Organization",
             name: "Quabu",
@@ -3556,7 +3573,7 @@ export default function BlogPost() {
                     </div>
                     <div>
                       <p className="font-medium">{post.author}</p>
-                      <p className="text-sm text-muted-foreground">{t("blog.atlassianExperts")}</p>
+                      <p className="text-sm text-muted-foreground">{post.id === "traceability-is-not-a-jira-problem" ? "MetaFrazo" : t("blog.atlassianExperts")}</p>
                     </div>
                   </div>
                 </div>

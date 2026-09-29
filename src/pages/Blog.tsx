@@ -29,6 +29,7 @@ import { useRef } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import jiraTeamManagedPoliciesCover from "@/assets/JiraTeamManagedPoliciesJiraBroquabu.jpg.asset.json";
+import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.jpg.asset.json";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
 const seeded = (i: number, salt: number) => {
@@ -81,6 +82,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "traceability-is-not-a-jira-problem", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "September 29, 2026", readTime: "5 min", featured: true },
   { id: "reduce-adoption-gap-jira-cloud-visual-organizer", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 25, 2026", readTime: "3 min", featured: true },
   { id: "jira-software-work-items-redesign-new-experience", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 23, 2026", readTime: "2 min", featured: true },
   { id: "jira-space-policies-team-managed-fields-statuses", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 21, 2026", readTime: "3 min", featured: true },
@@ -139,6 +141,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "traceability-is-not-a-jira-problem",
+    title: "Traceability is not a Jira problem",
+    excerpt: "Audit evidence cannot be reconstructed after the fact. MetaFrazo explains why Jira Cloud event history must be recorded as the work happens, with insights from Quabu's Raúl Peláez Mendoza.",
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "September 29, 2026",
+    readTime: "5 min read",
+    image: metafrazoTraceabilityCover.url,
+    featured: true,
+  },
   {
     id: "reduce-adoption-gap-jira-cloud-visual-organizer",
     title: "How to Reduce the Adoption Gap in Jira Cloud with Quabu's Visual Organizer",
