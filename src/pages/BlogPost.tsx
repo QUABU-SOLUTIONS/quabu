@@ -3409,7 +3409,7 @@ export default function BlogPost() {
         path={`/blog/${post.id}`}
         title={`${post.title} | Quabu Blog`}
         description={post.excerpt}
-        image={post.image}
+        image={post.image.startsWith("/") ? `https://www.quabusolutions.com${post.image}` : post.image}
         type="article"
         publishedTime={new Date(post.date).toISOString()}
         tags={post.tags}
