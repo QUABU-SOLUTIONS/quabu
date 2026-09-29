@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import jiraTeamManagedPoliciesCover from "@/assets/JiraTeamManagedPoliciesJiraBroquabu.jpg.asset.json";
+import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.jpg.asset.json";
+import { metafrazoTraceabilityContent } from "@/lib/metafrazo-traceability";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -24,6 +26,19 @@ import {
 
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 const blogPosts = [
+  {
+    id: "traceability-is-not-a-jira-problem",
+    title: "Traceability is not a Jira problem",
+    excerpt: "Audit evidence cannot be reconstructed after the fact. MetaFrazo explains why Jira Cloud event history must be recorded as the work happens, with insights from Quabu's Raúl Peláez Mendoza.",
+    content: metafrazoTraceabilityContent,
+    category: "Articles",
+    categoryIcon: BookOpen,
+    date: "September 29, 2026",
+    readTime: "5 min read",
+    image: metafrazoTraceabilityCover.url,
+    author: "Maria Reisinger · MetaFrazo",
+    tags: ["Jira Cloud", "MetaFrazo", "Traceability", "ENS", "Audit", "Governance", "Compliance"],
+  },
   {
     id: "reduce-adoption-gap-jira-cloud-visual-organizer",
     title: "How to Reduce the Adoption Gap in Jira Cloud with Quabu's Visual Organizer",
@@ -3378,6 +3393,7 @@ export default function BlogPost() {
   const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find(p => p.id === id);
+  const shareUrl = `https://www.quabusolutions.com/blog/${encodeURIComponent(id)}`;
 
   if (!post) {
     return <Navigate to="/blog" replace />;
@@ -3393,7 +3409,7 @@ export default function BlogPost() {
         path={`/blog/${post.id}`}
         title={`${post.title} | Quabu Blog`}
         description={post.excerpt}
-        image={post.image}
+        image={post.image.startsWith("/") ? `https://www.quabusolutions.com${post.image}` : post.image}
         type="article"
         publishedTime={new Date(post.date).toISOString()}
         tags={post.tags}
@@ -3404,7 +3420,9 @@ export default function BlogPost() {
           description: post.excerpt,
           image: post.image,
           datePublished: new Date(post.date).toISOString(),
-          author: { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
+          author: post.id === "traceability-is-not-a-jira-problem"
+            ? { "@type": "Person", name: "Maria Reisinger", url: "https://blog.metafrazo.cloud/blog/traceability-is-not-a-jira-problem" }
+            : { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
           publisher: {
             "@type": "Organization",
             name: "Quabu",
@@ -3414,14 +3432,14 @@ export default function BlogPost() {
         }}
       />
       {/* Hero */}
-      <section className="relative">
-        <div className="absolute inset-0 h-[50vh]">
+      <section className="relative min-h-[520px] overflow-hidden">
+        <div className="absolute inset-0 h-full">
           <img 
             src={post.image} 
             alt={post.title} 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/75 via-foreground/60 to-background" />
         </div>
 
         <div className="container relative z-10 pt-32 pb-20">
@@ -3467,15 +3485,15 @@ export default function BlogPost() {
       {/* Content */}
       <section className="py-12">
         <div className="container">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="grid min-w-0 lg:grid-cols-12 gap-12">
             {/* Main Content */}
             <motion.article
-              className="lg:col-span-8"
+              className="min-w-0 lg:col-span-8"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-headings:mt-10 prose-headings:mb-5 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-muted-foreground prose-p:mb-5 prose-p:leading-relaxed prose-strong:text-foreground prose-li:text-muted-foreground prose-li:mb-2 prose-li:leading-relaxed prose-ul:my-5 prose-ol:my-5 prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-blockquote:my-8 prose-blockquote:py-2 prose-blockquote:italic prose-code:bg-muted prose-code:text-foreground prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-semibold prose-pre:bg-muted prose-pre:text-foreground prose-pre:p-5 prose-pre:rounded-lg prose-pre:my-6 prose-hr:border-border prose-hr:my-10">
+              <div className="prose prose-lg max-w-none min-w-0 break-words prose-img:max-w-full prose-headings:text-foreground prose-headings:mt-10 prose-headings:mb-5 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-muted-foreground prose-p:mb-5 prose-p:leading-relaxed prose-strong:text-foreground prose-li:text-muted-foreground prose-li:mb-2 prose-li:leading-relaxed prose-ul:my-5 prose-ol:my-5 prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-blockquote:my-8 prose-blockquote:py-2 prose-blockquote:italic prose-code:bg-muted prose-code:text-foreground prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-semibold prose-pre:bg-muted prose-pre:text-foreground prose-pre:p-5 prose-pre:rounded-lg prose-pre:my-6 prose-hr:border-border prose-hr:my-10">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {post.content}
                 </ReactMarkdown>
@@ -3506,7 +3524,7 @@ export default function BlogPost() {
                   <div className="flex items-center gap-2">
                     <Button variant="outline" size="icon" asChild>
                       <a 
-                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(post.title)}`}
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(post.title)}`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         aria-label="Share on LinkedIn"
@@ -3516,7 +3534,7 @@ export default function BlogPost() {
                     </Button>
                     <Button variant="outline" size="icon" asChild>
                       <a 
-                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`}
+                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         aria-label="Share on Twitter"
@@ -3526,7 +3544,7 @@ export default function BlogPost() {
                     </Button>
                     <Button variant="outline" size="icon" asChild>
                       <a 
-                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         aria-label="Share on Facebook"
@@ -3556,7 +3574,7 @@ export default function BlogPost() {
                     </div>
                     <div>
                       <p className="font-medium">{post.author}</p>
-                      <p className="text-sm text-muted-foreground">{t("blog.atlassianExperts")}</p>
+                      <p className="text-sm text-muted-foreground">{post.id === "traceability-is-not-a-jira-problem" ? "MetaFrazo" : t("blog.atlassianExperts")}</p>
                     </div>
                   </div>
                 </div>
