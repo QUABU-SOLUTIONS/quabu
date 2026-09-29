@@ -18,6 +18,7 @@ import partnerYasoon from "@/assets/partner-yasoon.png";
 import partnerLansweeper from "@/assets/partner-lansweeper.png";
 import partnerNuvolar from "@/assets/partner-nuvolar.png";
 import partnerAws from "@/assets/partner-aws.png";
+import partnerMetafrazo from "@/assets/metafrazo-logo.png.asset.json";
 
 const partners = [
   {
@@ -99,6 +100,13 @@ const partners = [
     description: "Cloud-native software development and consulting",
     logos: [{ src: partnerNuvolar, alt: "Nuvolar Logo" }],
     url: "https://www.nuvolar.com",
+    tier: "technology",
+  },
+  {
+    name: "MetaFrazo",
+    description: "Workflow, governance and compliance analytics from Jira Cloud event history",
+    logos: [{ src: partnerMetafrazo.url, alt: "MetaFrazo Logo" }],
+    url: "https://marketplace.atlassian.com/vendors/684225822/metafrazo",
     tier: "technology",
   },
   {
