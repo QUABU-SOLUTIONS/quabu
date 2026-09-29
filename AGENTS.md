@@ -1,0 +1,2 @@
+- Keep editorial blog articles as Markdown in `src/lib/` when they include substantial text; this keeps the listing and article page concise while preserving the original author's attribution.
+- Define route-level metadata with `pageHead` on each content route; leaf routes need discoverable titles and descriptions even before client-side SEO renders.
