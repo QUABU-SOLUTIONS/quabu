@@ -3393,6 +3393,7 @@ export default function BlogPost() {
   const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const post = blogPosts.find(p => p.id === id);
+  const shareUrl = `https://www.quabusolutions.com/blog/${encodeURIComponent(id)}`;
 
   if (!post) {
     return <Navigate to="/blog" replace />;
@@ -3523,7 +3524,7 @@ export default function BlogPost() {
                   <div className="flex items-center gap-2">
                     <Button variant="outline" size="icon" asChild>
                       <a 
-                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(post.title)}`}
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(post.title)}`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         aria-label="Share on LinkedIn"
@@ -3533,7 +3534,7 @@ export default function BlogPost() {
                     </Button>
                     <Button variant="outline" size="icon" asChild>
                       <a 
-                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`}
+                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         aria-label="Share on Twitter"
@@ -3543,7 +3544,7 @@ export default function BlogPost() {
                     </Button>
                     <Button variant="outline" size="icon" asChild>
                       <a 
-                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         aria-label="Share on Facebook"
