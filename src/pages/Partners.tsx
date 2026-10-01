@@ -111,6 +111,13 @@ const partners = [
     tier: "technology",
   },
   {
+    name: "AVISIAPPS",
+    description: "Apps that turn complex data into seamless productivity.",
+    logos: [{ src: partnerAvisiApps.url, alt: "AVISIAPPS Logo" }],
+    url: "https://apps.avisi.com/",
+    tier: "technology",
+  },
+  {
     name: "AWS",
     description: "Amazon Web Services — cloud computing and infrastructure partner",
     logos: [{ src: partnerAws, alt: "AWS Partner Network Logo" }],
