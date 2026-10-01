@@ -19,6 +19,7 @@ import partnerLansweeper from "@/assets/partner-lansweeper.png";
 import partnerNuvolar from "@/assets/partner-nuvolar.png";
 import partnerAws from "@/assets/partner-aws.png";
 import partnerMetafrazo from "@/assets/metafrazo-logo.png.asset.json";
+import partnerAvisiApps from "@/assets/avisi-apps-logo.png.asset.json";
 
 const partners = [
   {
@@ -107,6 +108,13 @@ const partners = [
     description: "Workflow, governance and compliance analytics from Jira Cloud event history",
     logos: [{ src: partnerMetafrazo.url, alt: "MetaFrazo Logo" }],
     url: "https://marketplace.atlassian.com/vendors/684225822/metafrazo",
+    tier: "technology",
+  },
+  {
+    name: "AVISIAPPS",
+    description: "Apps that turn complex data into seamless productivity.",
+    logos: [{ src: partnerAvisiApps.url, alt: "AVISIAPPS Logo" }],
+    url: "https://apps.avisi.com/",
     tier: "technology",
   },
   {
