@@ -33,6 +33,7 @@ export function Footer() {
       { name: t("footer.links.privacyPolicy"), href: "/legal/privacy" },
       { name: t("footer.links.termsOfService"), href: "/legal/terms" },
       { name: t("footer.links.cookiesPolicy"), href: "/legal/cookies" },
+      { name: t("footer.links.securityPolicy"), href: "/legal/security" },
     ],
   };
 
