@@ -26,6 +26,7 @@ import { Route as BlogIndexRouteImport } from './routes/blog/index'
 import { Route as BlogIdRouteImport } from './routes/blog/$id'
 import { Route as LegalCookiesRouteImport } from './routes/legal/cookies'
 import { Route as LegalPrivacyRouteImport } from './routes/legal/privacy'
+import { Route as LegalSecurityRouteImport } from './routes/legal/security'
 import { Route as LegalTermsRouteImport } from './routes/legal/terms'
 import { Route as NewsletterConfirmRouteImport } from './routes/newsletter/confirm'
 import { Route as NewsletterUnsubscribeRouteImport } from './routes/newsletter/unsubscribe'
@@ -120,6 +121,11 @@ const LegalPrivacyRoute = LegalPrivacyRouteImport.update({
   path: '/legal/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LegalSecurityRoute = LegalSecurityRouteImport.update({
+  id: '/legal/security',
+  path: '/legal/security',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LegalTermsRoute = LegalTermsRouteImport.update({
   id: '/legal/terms',
   path: '/legal/terms',
@@ -173,6 +179,7 @@ export interface FileRoutesByFullPath {
   '/blog/$id': typeof BlogIdRoute
   '/legal/cookies': typeof LegalCookiesRoute
   '/legal/privacy': typeof LegalPrivacyRoute
+  '/legal/security': typeof LegalSecurityRoute
   '/legal/terms': typeof LegalTermsRoute
   '/newsletter/confirm': typeof NewsletterConfirmRoute
   '/newsletter/unsubscribe': typeof NewsletterUnsubscribeRoute
@@ -199,6 +206,7 @@ export interface FileRoutesByTo {
   '/blog/$id': typeof BlogIdRoute
   '/legal/cookies': typeof LegalCookiesRoute
   '/legal/privacy': typeof LegalPrivacyRoute
+  '/legal/security': typeof LegalSecurityRoute
   '/legal/terms': typeof LegalTermsRoute
   '/newsletter/confirm': typeof NewsletterConfirmRoute
   '/newsletter/unsubscribe': typeof NewsletterUnsubscribeRoute
@@ -226,6 +234,7 @@ export interface FileRoutesById {
   '/blog/$id': typeof BlogIdRoute
   '/legal/cookies': typeof LegalCookiesRoute
   '/legal/privacy': typeof LegalPrivacyRoute
+  '/legal/security': typeof LegalSecurityRoute
   '/legal/terms': typeof LegalTermsRoute
   '/newsletter/confirm': typeof NewsletterConfirmRoute
   '/newsletter/unsubscribe': typeof NewsletterUnsubscribeRoute
@@ -254,6 +263,7 @@ export interface FileRouteTypes {
     | '/blog/$id'
     | '/legal/cookies'
     | '/legal/privacy'
+    | '/legal/security'
     | '/legal/terms'
     | '/newsletter/confirm'
     | '/newsletter/unsubscribe'
@@ -280,6 +290,7 @@ export interface FileRouteTypes {
     | '/blog/$id'
     | '/legal/cookies'
     | '/legal/privacy'
+    | '/legal/security'
     | '/legal/terms'
     | '/newsletter/confirm'
     | '/newsletter/unsubscribe'
@@ -306,6 +317,7 @@ export interface FileRouteTypes {
     | '/blog/$id'
     | '/legal/cookies'
     | '/legal/privacy'
+    | '/legal/security'
     | '/legal/terms'
     | '/newsletter/confirm'
     | '/newsletter/unsubscribe'
@@ -333,6 +345,7 @@ export interface RootRouteChildren {
   BlogIdRoute: typeof BlogIdRoute
   LegalCookiesRoute: typeof LegalCookiesRoute
   LegalPrivacyRoute: typeof LegalPrivacyRoute
+  LegalSecurityRoute: typeof LegalSecurityRoute
   LegalTermsRoute: typeof LegalTermsRoute
   NewsletterConfirmRoute: typeof NewsletterConfirmRoute
   NewsletterUnsubscribeRoute: typeof NewsletterUnsubscribeRoute
@@ -465,6 +478,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LegalPrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/legal/security': {
+      id: '/legal/security'
+      path: '/legal/security'
+      fullPath: '/legal/security'
+      preLoaderRoute: typeof LegalSecurityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/legal/terms': {
       id: '/legal/terms'
       path: '/legal/terms'
@@ -533,6 +553,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogIdRoute: BlogIdRoute,
   LegalCookiesRoute: LegalCookiesRoute,
   LegalPrivacyRoute: LegalPrivacyRoute,
+  LegalSecurityRoute: LegalSecurityRoute,
   LegalTermsRoute: LegalTermsRoute,
   NewsletterConfirmRoute: NewsletterConfirmRoute,
   NewsletterUnsubscribeRoute: NewsletterUnsubscribeRoute,
