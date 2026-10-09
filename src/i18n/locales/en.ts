@@ -150,6 +150,7 @@ const en = {
       privacyPolicy: "Privacy Policy",
       termsOfService: "Terms of Service",
       cookiesPolicy: "Cookies Policy",
+      securityPolicy: "Security Policy",
     },
   },
   // AI Assistant

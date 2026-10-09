@@ -150,6 +150,7 @@ const it = {
       privacyPolicy: "Informativa Privacy",
       termsOfService: "Termini di Servizio",
       cookiesPolicy: "Informativa Cookie",
+      securityPolicy: "Politica di Sicurezza",
     },
   },
   // AI Assistant
