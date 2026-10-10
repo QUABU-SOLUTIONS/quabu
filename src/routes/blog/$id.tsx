@@ -12,16 +12,35 @@ export const Route = createFileRoute("/blog/$id")({
       ? "MetaFrazo explains why Jira Cloud audit evidence must be recorded as work happens, with insights from Quabu's Raúl Peláez Mendoza."
       : `Read ${title} on the Quabu blog for Atlassian news and insights.`;
     const head = pageHead(title.length > 46 ? title : `${title} | Quabu Blog`, description, "article", `/blog/${params.id}`);
-    return params.id === "traceability-is-not-a-jira-problem"
+    const url = `https://www.quabusolutions.com/blog/${params.id}`;
+    const isMetafrazo = params.id === "traceability-is-not-a-jira-problem";
+    const scripts = [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        description,
+        url,
+        mainEntityOfPage: url,
+        ...(isMetafrazo ? { image: `https://www.quabusolutions.com${metafrazoTraceabilityCover.url}` } : {}),
+        author: isMetafrazo
+          ? { "@type": "Person", name: "Maria Reisinger", url: "https://blog.metafrazo.cloud/blog/traceability-is-not-a-jira-problem" }
+          : { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
+        publisher: { "@type": "Organization", name: "Quabu", logo: { "@type": "ImageObject", url: "https://www.quabusolutions.com/favicon.png" } },
+      }),
+    }];
+    return isMetafrazo
       ? {
           ...head,
+          scripts,
           meta: [
             ...head.meta,
             { property: "og:image", content: `https://www.quabusolutions.com${metafrazoTraceabilityCover.url}` },
             { name: "twitter:image", content: `https://www.quabusolutions.com${metafrazoTraceabilityCover.url}` },
           ],
         }
-      : head;
+      : { ...head, scripts };
   },
   component: BlogPost,
 });
