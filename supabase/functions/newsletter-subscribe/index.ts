@@ -94,7 +94,7 @@ serve(async (req) => {
 
     const normalizedEmail = email.toLowerCase().trim();
     const genericResponse = () =>
-      new Response(JSON.stringify({ success: true, message: "Please check your inbox to confirm your subscription." }), {
+      new Response(JSON.stringify({ success: true, message: "Please check your email to confirm your subscription." }), {
         headers: { "Content-Type": "application/json", ...corsHeaders },
       });
 
