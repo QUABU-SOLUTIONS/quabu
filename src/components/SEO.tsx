@@ -59,45 +59,8 @@ export function SEO({
   // hreflang alternates
   const langs = ["en", "es", "ca", "it"];
 
-  // Default Organization schema
-  const orgSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Quabu",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${BASE_URL}/favicon.png`,
-    },
-    description: "Atlassian Gold Solution Partner offering Digital Accelerators and custom Atlassian solutions for enterprises.",
-    foundingDate: "2014",
-    areaServed: ["US", "ES", "EU"],
-    knowsAbout: ["Atlassian", "Jira", "Confluence", "Digital Transformation", "Cloud Migration", "IT Service Management"],
-    sameAs: [
-      "https://marketplace.atlassian.com/vendors/1220154/quabu",
-    ],
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "customer support",
-      email: "hello@quabusolutions.com",
-      availableLanguage: ["English", "Spanish", "Catalan"],
-    },
-    address: [
-      {
-        "@type": "PostalAddress",
-        addressLocality: "Miami",
-        addressRegion: "FL",
-        addressCountry: "US",
-      },
-      {
-        "@type": "PostalAddress",
-        addressLocality: "Barcelona",
-        addressCountry: "ES",
-      },
-    ],
-  };
-
-  const finalSchema = schema ?? orgSchema;
+  // Organization markup lives once in __root; only emit page-specific schema here.
+  const finalSchema = schema;
 
   return (
     <Helmet>
@@ -146,9 +109,9 @@ export function SEO({
       <meta name="twitter:image" content={image} />
 
       {/* JSON-LD Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify(finalSchema)}
-      </script>
+      {finalSchema && (
+        <script type="application/ld+json">{JSON.stringify(finalSchema)}</script>
+      )}
     </Helmet>
   );
 }
