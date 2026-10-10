@@ -92,32 +92,32 @@ serve(async (req) => {
       });
     }
 
-    // Check if already confirmed
-    const { data: existing } = await supabase
-      .from("newsletter_subscribers")
-      .select("confirmed")
-      .eq("email", email.toLowerCase().trim())
-      .single();
-
-    if (existing?.confirmed) {
-      return new Response(JSON.stringify({ success: true, message: "You're already subscribed!" }), {
+    const normalizedEmail = email.toLowerCase().trim();
+    const genericResponse = () =>
+      new Response(JSON.stringify({ success: true, message: "Please check your inbox to confirm your subscription." }), {
         headers: { "Content-Type": "application/json", ...corsHeaders },
       });
-    }
 
-    // Delete existing unconfirmed to allow re-subscription
-    if (existing && !existing.confirmed) {
-      await supabase.from("newsletter_subscribers").delete().eq("email", email.toLowerCase().trim());
-    }
-
-    // Insert new subscriber
-    const { data: newSub, error: insertError } = await supabase
+    const { data: existing } = await supabase
       .from("newsletter_subscribers")
-      .insert({ email: email.toLowerCase().trim() })
-      .select("confirmation_token")
-      .single();
+      .select("confirmed, confirmation_token")
+      .eq("email", normalizedEmail)
+      .maybeSingle();
 
-    if (insertError) throw insertError;
+    // Same response whether or not the address is already subscribed (no status leak)
+    if (existing?.confirmed) return genericResponse();
+
+    // Reuse a pending row instead of deleting it, so nobody can wipe another visitor's pending signup
+    let newSub = existing;
+    if (!newSub) {
+      const { data, error: insertError } = await supabase
+        .from("newsletter_subscribers")
+        .insert({ email: normalizedEmail })
+        .select("confirmed, confirmation_token")
+        .single();
+      if (insertError) throw insertError;
+      newSub = data;
+    }
 
     // Send confirmation email via SMTP
     const gmailUser = Deno.env.get("GMAIL_USER")!;

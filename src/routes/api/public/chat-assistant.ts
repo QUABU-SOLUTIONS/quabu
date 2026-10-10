@@ -24,7 +24,7 @@ const rateLimitMap = new Map<string, { count: number; resetTime: number }>()
 
 const MAX_MESSAGE_LENGTH = 4000
 const MAX_MESSAGES_COUNT = 50
-const VALID_ROLES = ['user', 'assistant', 'system']
+const VALID_ROLES = ['user', 'assistant']
 
 interface Message {
   role: string
