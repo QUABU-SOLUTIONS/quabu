@@ -13,7 +13,7 @@ const Index = () => {
     <Layout>
       <SEO
         path="/"
-        title="Quabu | Atlassian Gold Solution Partner | Digital Accelerators"
+        title="Quabu | Atlassian Gold Partner & Digital Accelerators"
         description="Quabu is an Atlassian Gold Solution Partner. We deliver Digital Accelerators — pre-built, customizable Atlassian solutions that transform how enterprises work."
         schema={{
           "@context": "https://schema.org",
