@@ -98,7 +98,7 @@ export function CookieConsent() {
                       By clicking "Accept All", you consent to our use of cookies. You can customize your preferences 
                       or reject non-essential cookies.{" "}
                       <Link to="/legal/cookies" className="text-primary hover:underline">
-                        Learn more
+                        Read our cookie policy
                       </Link>
                     </p>
                     <div className="flex flex-wrap gap-3">

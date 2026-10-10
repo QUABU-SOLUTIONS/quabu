@@ -188,7 +188,7 @@ export function HeroSection() {
                   <div className="flex-1 flex items-center justify-center overflow-hidden">
                     <motion.img 
                       src={quabuIcon} 
-                      alt="Quabu" 
+                      alt="Quabu company logo" 
                       className="w-24 h-24 md:w-64 md:h-64 opacity-95 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]"
                       animate={{ 
                         x: [0, 15, -10, 20, -15, 0],
