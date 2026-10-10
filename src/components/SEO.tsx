@@ -105,7 +105,6 @@ export function SEO({
       <html lang={lang} />
       <title>{resolvedTitle}</title>
       <meta name="description" content={resolvedDescription} />
-      <link rel="canonical" href={canonical} />
 
       {/* hreflang alternates — tells Google which language each URL serves */}
       {langs.map((l) => (
