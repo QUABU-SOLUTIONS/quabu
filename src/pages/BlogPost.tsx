@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
-const blogPosts = [
+export const blogPosts = [
   {
     id: "traceability-is-not-a-jira-problem",
     title: "Traceability is not a Jira problem",
@@ -3413,23 +3413,6 @@ export default function BlogPost() {
         type="article"
         publishedTime={new Date(post.date).toISOString()}
         tags={post.tags}
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: post.title,
-          description: post.excerpt,
-          image: post.image,
-          datePublished: new Date(post.date).toISOString(),
-          author: post.id === "traceability-is-not-a-jira-problem"
-            ? { "@type": "Person", name: "Maria Reisinger", url: "https://blog.metafrazo.cloud/blog/traceability-is-not-a-jira-problem" }
-            : { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
-          publisher: {
-            "@type": "Organization",
-            name: "Quabu",
-            logo: { "@type": "ImageObject", url: "https://www.quabusolutions.com/favicon.png" },
-          },
-          mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.quabusolutions.com/blog/${post.id}` },
-        }}
       />
       {/* Hero */}
       <section className="relative min-h-[520px] overflow-hidden">

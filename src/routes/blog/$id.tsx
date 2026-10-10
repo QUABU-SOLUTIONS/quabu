@@ -1,6 +1,6 @@
 import { pageHead } from "@/lib/page-head";
 import { createFileRoute } from "@tanstack/react-router";
-import BlogPost from "@/pages/BlogPost";
+import BlogPost, { blogPosts } from "@/pages/BlogPost";
 import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.jpg.asset.json";
 
 export const Route = createFileRoute("/blog/$id")({
@@ -14,6 +14,11 @@ export const Route = createFileRoute("/blog/$id")({
     const head = pageHead(title.length > 46 ? title : `${title} | Quabu Blog`, description, "article", `/blog/${params.id}`);
     const url = `https://www.quabusolutions.com/blog/${params.id}`;
     const isMetafrazo = params.id === "traceability-is-not-a-jira-problem";
+    const post = blogPosts.find((p) => p.id === params.id);
+    const rawImage = isMetafrazo ? metafrazoTraceabilityCover.url : post?.image ?? "/og-image.png";
+    const image = rawImage.startsWith("/") ? `https://www.quabusolutions.com${rawImage}` : rawImage;
+    const parsed = post ? new Date(post.date) : null;
+    const datePublished = parsed && !isNaN(parsed.getTime()) ? parsed.toISOString() : undefined;
     const scripts = [{
       type: "application/ld+json",
       children: JSON.stringify({
@@ -23,7 +28,8 @@ export const Route = createFileRoute("/blog/$id")({
         description,
         url,
         mainEntityOfPage: url,
-        ...(isMetafrazo ? { image: `https://www.quabusolutions.com${metafrazoTraceabilityCover.url}` } : {}),
+        image,
+        ...(datePublished ? { datePublished, dateModified: datePublished } : {}),
         author: isMetafrazo
           ? { "@type": "Person", name: "Maria Reisinger", url: "https://blog.metafrazo.cloud/blog/traceability-is-not-a-jira-problem" }
           : { "@type": "Organization", name: "Quabu", url: "https://www.quabusolutions.com" },
