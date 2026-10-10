@@ -47,7 +47,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Pre-built, customizable Atlassian solutions that accelerate your digital transformation.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://www.quabusolutions.com/" },
       { property: "og:image", content: "https://www.quabusolutions.com/og-image.png" },
       { property: "og:site_name", content: "Quabu" },
       { property: "og:locale", content: "en_US" },
@@ -62,7 +61,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon.png" },
       { rel: "apple-touch-icon", href: "/favicon.png" },
       { rel: "sitemap", type: "application/xml", title: "Sitemap", href: "/sitemap.xml" },
-      { rel: "canonical", href: "https://www.quabusolutions.com/" },
     ],
     scripts: [
       { src: "https://www.googletagmanager.com/gtag/js?id=G-8BNB10YGBV", async: true },
