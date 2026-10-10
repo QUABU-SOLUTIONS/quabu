@@ -141,7 +141,7 @@ export function Header() {
           <Link to="/" className="flex items-center group">
             <img 
               src={quabuLogo} 
-              alt="Quabu" 
+              alt="Quabu company logo" 
               className="h-8 lg:h-10 w-auto transition-transform group-hover:scale-105"
             />
           </Link>

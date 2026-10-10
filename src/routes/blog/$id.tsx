@@ -11,7 +11,7 @@ export const Route = createFileRoute("/blog/$id")({
     const description = params.id === "traceability-is-not-a-jira-problem"
       ? "MetaFrazo explains why Jira Cloud audit evidence must be recorded as work happens, with insights from Quabu's Raúl Peláez Mendoza."
       : `Read ${title} on the Quabu blog for Atlassian news and insights.`;
-    const head = pageHead(`${title} | Quabu Blog`, description, "article");
+    const head = pageHead(title.length > 46 ? title : `${title} | Quabu Blog`, description, "article");
     return params.id === "traceability-is-not-a-jira-problem"
       ? {
           ...head,
