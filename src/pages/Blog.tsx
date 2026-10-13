@@ -82,6 +82,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-team-26-amsterdam-recap-agentic-collaboration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 13, 2026", readTime: "4 min", featured: true },
   { id: "traceability-is-not-a-jira-problem", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "September 29, 2026", readTime: "5 min", featured: true },
   { id: "reduce-adoption-gap-jira-cloud-visual-organizer", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 25, 2026", readTime: "3 min", featured: true },
   { id: "jira-software-work-items-redesign-new-experience", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 23, 2026", readTime: "2 min", featured: true },
@@ -141,6 +142,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-team-26-amsterdam-recap-agentic-collaboration",
+    title: 'Atlassian Team ’26 Amsterdam Recap: The Rise of Agentic Collaboration, Artifacts, and Next-Gen DX',
+    excerpt: 'Atlassian unveiled an AI-centric platform anchored by the Teamwork Graph at Team ’26 Amsterdam: AMP, Artifacts, EU data residency and AI-native developer experience. Quabu breaks down what it means for your organization.',
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 13, 2026",
+    readTime: "4 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/Team26AtlassianQuabu.jpg",
+    featured: true,
+  },
   {
     id: "traceability-is-not-a-jira-problem",
     title: "Traceability is not a Jira problem",
