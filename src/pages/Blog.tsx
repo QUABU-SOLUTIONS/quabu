@@ -82,6 +82,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "atlassian-csm-disconnected-support-developers", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 15, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-team-26-amsterdam-recap-agentic-collaboration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 13, 2026", readTime: "4 min", featured: true },
   { id: "traceability-is-not-a-jira-problem", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "September 29, 2026", readTime: "5 min", featured: true },
   { id: "reduce-adoption-gap-jira-cloud-visual-organizer", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "September 25, 2026", readTime: "3 min", featured: true },
@@ -142,6 +143,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "atlassian-csm-disconnected-support-developers",
+    title: "Disconnected Support and Developers? Atlassian CSM Changes the Rules of the Game",
+    excerpt: "Jira Bro explains how Atlassian Customer Service Management breaks the silos between support and engineering, escalating issues to Jira with full context and automating routine answers with Rovo AI agents.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 15, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/CustomerServiceAtlassianTrainingQuabu.jpg",
+    featured: true,
+  },
   {
     id: "atlassian-team-26-amsterdam-recap-agentic-collaboration",
     title: 'Atlassian Team ’26 Amsterdam Recap: The Rise of Agentic Collaboration, Artifacts, and Next-Gen DX',
