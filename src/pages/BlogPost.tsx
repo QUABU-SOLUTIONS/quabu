@@ -39,7 +39,7 @@ Throughout the video, we'll discover how this platform delivers omnichannel capa
 
 [![Atlassian Customer Service Management Full Course (2026)](https://img.youtube.com/vi/WpC4pQNQ6uc/maxresdefault.jpg)](https://www.youtube.com/watch?v=WpC4pQNQ6uc)
 
-`#Atlassian` `#Jira` `#AtlassianCSM` `#AtlassianRovo` `#CustomerService` `#CustomerSupport` `#SoftwareEngineering` `#ProductManagement` `#ITSM` `#DevOps` `#QuabuSolutions` `#AtlassianPartner`
+\`#Atlassian\` \`#Jira\` \`#AtlassianCSM\` \`#AtlassianRovo\` \`#CustomerService\` \`#CustomerSupport\` \`#SoftwareEngineering\` \`#ProductManagement\` \`#ITSM\` \`#DevOps\` \`#QuabuSolutions\` \`#AtlassianPartner\`
 `,
     category: "News",
     categoryIcon: Newspaper,
