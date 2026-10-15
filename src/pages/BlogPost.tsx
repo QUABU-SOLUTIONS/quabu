@@ -27,6 +27,29 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
   {
+    id: "atlassian-csm-disconnected-support-developers",
+    title: "Disconnected Support and Developers? Atlassian CSM Changes the Rules of the Game",
+    excerpt: "Jira Bro explains how Atlassian Customer Service Management breaks the silos between support and engineering, escalating issues to Jira with full context and automating routine answers with Rovo AI agents.",
+    content: `
+![Atlassian Customer Service Management — Quabu](https://quabu.blog/wp-content/uploads/2026/10/CustomerServiceAtlassianTrainingQuabu.jpg)
+
+In today's technology landscape, the disconnect between support teams and engineering or product areas is a problem that slows down issue resolution and frustrates customers. In this video, **[Jira Bro](https://youtu.be/WpC4pQNQ6uc)** takes a detailed look at how **Atlassian Customer Service Management (CSM)** arrives to break down these silos once and for all. The key to this tool is that it integrates customer service directly into the development ecosystem, allowing any critical issue to be escalated to Jira with all its context intact, so developers can fix the root cause much faster.
+
+Throughout the video, we'll discover how this platform delivers omnichannel capabilities and leverages AI agents powered by **Atlassian Rovo** to automate the most routine responses. This not only frees teams to focus on complex issues, but also makes it possible to capture real user sentiment and build new features based on data, not assumptions. Hit play below to watch the full analysis *(course sponsored by [Quabu Solutions, Atlassian Gold Marketplace and Solution Partners](https://www.quabusolutions.com/))*.
+
+[![Atlassian Customer Service Management Full Course (2026)](https://img.youtube.com/vi/WpC4pQNQ6uc/maxresdefault.jpg)](https://www.youtube.com/watch?v=WpC4pQNQ6uc)
+
+\`#Atlassian\` \`#Jira\` \`#AtlassianCSM\` \`#AtlassianRovo\` \`#CustomerService\` \`#CustomerSupport\` \`#SoftwareEngineering\` \`#ProductManagement\` \`#ITSM\` \`#DevOps\` \`#QuabuSolutions\` \`#AtlassianPartner\`
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 15, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/CustomerServiceAtlassianTrainingQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian CSM", "Customer Service", "Rovo", "Jira", "Jira Bro"],
+  },
+  {
     id: "atlassian-team-26-amsterdam-recap-agentic-collaboration",
     title: 'Atlassian Team ’26 Amsterdam Recap: The Rise of Agentic Collaboration, Artifacts, and Next-Gen DX',
     excerpt: 'Atlassian unveiled an AI-centric platform anchored by the Teamwork Graph at Team ’26 Amsterdam: AMP, Artifacts, EU data residency and AI-native developer experience. Quabu breaks down what it means for your organization.',
