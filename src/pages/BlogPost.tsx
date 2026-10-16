@@ -27,6 +27,38 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
   {
+    id: "jira-admin-performance-insights-real-data",
+    title: "⚡ Is Your Jira Slow, or Is It Just a Feeling? Now You Can Measure It with Real Data",
+    excerpt: "Atlassian launches a Beta performance insights feature for Jira admins: analyze issue and backlog load times, instance performance, custom time ranges and CSV exports. Jira Bro breaks it down.",
+    content: `
+![Jira Admin Performance Insights — Quabu](https://quabu.blog/wp-content/uploads/2026/10/JiraAdminPerformanceQuabu.jpg)
+
+Atlassian has just launched the new **performance insights** feature for Jira Administrators in **Beta**.
+
+There's no longer any need to guess what's slowing down day-to-day work. Admins can now:
+
+- Analyze the load speed of *issues* and the *backlog*.
+- Evaluate the overall performance of the instance.
+- Select custom time ranges.
+- Download complete metrics in CSV format.
+
+A key tool for optimizing the user experience and keeping workflows agile.
+
+Here's the analysis from **[Jira Bro](https://www.youtube.com/watch?v=X9yo9gEiWNc)** 👇
+
+[![Jira Admin Performance Insight Feature](https://img.youtube.com/vi/X9yo9gEiWNc/maxresdefault.jpg)](https://www.youtube.com/watch?v=X9yo9gEiWNc)
+
+\`#JiraAdmin\` \`#PerformanceTesting\` \`#JiraSoftware\` \`#AtlassianCommunity\` \`#TechUpdates\` \`#Quabu\`
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 16, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/JiraAdminPerformanceQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Jira Admin", "Performance", "Jira Software", "Beta", "Jira Bro"],
+  },
+  {
     id: "atlassian-csm-disconnected-support-developers",
     title: "Disconnected Support and Developers? Atlassian CSM Changes the Rules of the Game",
     excerpt: "Jira Bro explains how Atlassian Customer Service Management breaks the silos between support and engineering, escalating issues to Jira with full context and automating routine answers with Rovo AI agents.",

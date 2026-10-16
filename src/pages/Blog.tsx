@@ -82,6 +82,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "jira-admin-performance-insights-real-data", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 16, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-csm-disconnected-support-developers", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 15, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-team-26-amsterdam-recap-agentic-collaboration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 13, 2026", readTime: "4 min", featured: true },
   { id: "traceability-is-not-a-jira-problem", category: "Articles", categoryKey: "articles", categoryIcon: BookOpen, date: "September 29, 2026", readTime: "5 min", featured: true },
@@ -143,6 +144,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "jira-admin-performance-insights-real-data",
+    title: "⚡ Is Your Jira Slow, or Is It Just a Feeling? Now You Can Measure It with Real Data",
+    excerpt: "Atlassian launches a Beta performance insights feature for Jira admins: analyze issue and backlog load times, instance performance, custom time ranges and CSV exports. Jira Bro breaks it down.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 16, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/JiraAdminPerformanceQuabu.jpg",
+    featured: true,
+  },
   {
     id: "atlassian-csm-disconnected-support-developers",
     title: "Disconnected Support and Developers? Atlassian CSM Changes the Rules of the Game",
