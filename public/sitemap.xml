@@ -61,6 +61,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers"/>
