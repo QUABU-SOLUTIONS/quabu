@@ -82,6 +82,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "rovo-custom-ai-agent-user-stories-jira", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 21, 2026", readTime: "2 min", featured: true },
   { id: "jira-admin-performance-insights-real-data", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 16, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-csm-disconnected-support-developers", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 15, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-team-26-amsterdam-recap-agentic-collaboration", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 13, 2026", readTime: "4 min", featured: true },
@@ -144,6 +145,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "rovo-custom-ai-agent-user-stories-jira",
+    title: "How to Automate User Story Creation with Rovo's Custom AI Agent in Jira",
+    excerpt: "Jira Bro shows how a Rovo Custom AI Agent reads long PRDs and automatically creates well-structured user stories directly in your Jira project.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 21, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/AIAgentConfluenceBusinessAnalyst.jpg",
+    featured: true,
+  },
   {
     id: "jira-admin-performance-insights-real-data",
     title: "⚡ Is Your Jira Slow, or Is It Just a Feeling? Now You Can Measure It with Real Data",
