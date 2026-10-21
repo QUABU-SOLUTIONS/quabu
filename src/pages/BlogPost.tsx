@@ -27,6 +27,37 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
   {
+    id: "rovo-custom-ai-agent-user-stories-jira",
+    title: "How to Automate User Story Creation with Rovo's Custom AI Agent in Jira",
+    excerpt: "Jira Bro shows how a Rovo Custom AI Agent reads long PRDs and automatically creates well-structured user stories directly in your Jira project.",
+    content: `
+![Business Analyst AI Agent for Confluence — Quabu](https://quabu.blog/wp-content/uploads/2026/10/AIAgentConfluenceBusinessAnalyst.jpg)
+
+Software development demands precision and speed. Yet one of the most time-consuming tasks for *Business Analysts* and *Product Owners* is translating lengthy Product Requirements Documents (PRDs) into well-defined user stories in Jira.
+
+[![Business Analyst AI Agent for Confluence](https://img.youtube.com/vi/MgOGIl7i4b8/maxresdefault.jpg)](https://www.youtube.com/watch?v=MgOGIl7i4b8)
+
+In this video, **[Jira Bro](https://www.youtube.com/watch?v=MgOGIl7i4b8)** shows you how to solve it with a **Rovo Custom AI Agent** built specifically inside the Jira environment.
+
+### What does this Rovo AI agent achieve?
+
+- **Processing long PRDs:** It reads and analyzes requirements documents longer than a page without losing context.
+- **Writing user stories:** It extracts the key needs and writes clear, structured user stories.
+- **Native Jira integration:** It creates the user stories directly and automatically inside your Jira project, eliminating manual workload.
+
+With this custom Rovo agent, product teams cut operational work to a minimum and can focus on delivering strategic value to the business.
+
+Watch the full video above to see the agent in action and how it works step by step.
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 21, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/AIAgentConfluenceBusinessAnalyst.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian Rovo", "AI Agents", "Jira", "User Stories", "Jira Bro"],
+  },
+  {
     id: "jira-admin-performance-insights-real-data",
     title: "⚡ Is Your Jira Slow, or Is It Just a Feeling? Now You Can Measure It with Real Data",
     excerpt: "Atlassian launches a Beta performance insights feature for Jira admins: analyze issue and backlog load times, instance performance, custom time ranges and CSV exports. Jira Bro breaks it down.",
