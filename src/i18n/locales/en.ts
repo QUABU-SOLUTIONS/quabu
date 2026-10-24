@@ -673,6 +673,10 @@ const en = {
     viewAll: "View All on Marketplace",
     installs: "installs",
     apps: {
+      visualOrganizer: {
+        name: "Visual Organizer - Custom Labels & Views for Jira",
+        description: "Organize your Jira boards, dashboards and projects using custom colors, labels and tailored visual views",
+      },
       customTemplates: {
         name: "Custom Templates for Jira Cloud",
         description: "Speed up your workflows with predefined templates. Create issues faster and maintain consistency across your projects.",

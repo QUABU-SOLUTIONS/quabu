@@ -673,6 +673,10 @@ const ca = {
     viewAll: "Veure totes al Marketplace",
     installs: "instal·lacions",
     apps: {
+      visualOrganizer: {
+        name: "Visual Organizer - Custom Labels & Views for Jira",
+        description: "Organitza els teus taulers, panells i projectes de Jira amb colors personalitzats, etiquetes i vistes visuals a mida",
+      },
       customTemplates: {
         name: "Custom Templates for Jira Cloud",
         description: "Accelera els teus fluxos de treball amb plantilles predefinides. Crea incidències més ràpid i mantén la coherència en tots els teus projectes.",
