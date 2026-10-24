@@ -27,9 +27,24 @@ import atlassianServiceManagementPartner from "@/assets/atlassian-service-manage
 
 import { Headset } from "lucide-react";
 import { visualOrganizer } from "@/lib/visual-organizer";
+import customTemplatesIcon from "@/assets/custom-templates-icon.png";
+import customLanguageIcon from "@/assets/custom-language-icon.png";
+import taskListsIcon from "@/assets/task-lists-icon.png";
 
 function VisualOrganizerIcon({ className }: { className?: string }) {
   return <img src={visualOrganizer.customIcon} alt="" className={className} />;
+}
+
+function CustomTemplatesIcon({ className }: { className?: string }) {
+  return <img src={customTemplatesIcon} alt="" className={cn("object-contain", className)} />;
+}
+
+function CustomLanguageIcon({ className }: { className?: string }) {
+  return <img src={customLanguageIcon} alt="" className={cn("object-contain", className)} />;
+}
+
+function TaskListsIcon({ className }: { className?: string }) {
+  return <img src={taskListsIcon} alt="" className={cn("object-contain", className)} />;
 }
 
 const appsSubmenu = [
@@ -37,19 +52,19 @@ const appsSubmenu = [
   {
     name: "Custom Templates",
     description: "Predefined templates for faster workflows",
-    icon: FileText,
+    icon: CustomTemplatesIcon,
     href: "https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud",
   },
   {
     name: "Custom Language",
     description: "Translate your Jira site into languages not natively supported by Jira and share it with all your users",
-    icon: Globe,
+    icon: CustomLanguageIcon,
     href: "https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud",
   },
   {
     name: "Task Lists",
     description: "Granular task management",
-    icon: CheckSquare,
+    icon: TaskListsIcon,
     href: "https://marketplace.atlassian.com/apps/1230805/task-lists-for-jira-cloud",
   },
   {
