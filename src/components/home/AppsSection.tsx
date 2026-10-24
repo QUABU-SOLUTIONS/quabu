@@ -7,8 +7,10 @@ import customTemplatesIcon from "@/assets/custom-templates-icon.png";
 import backupManagerIcon from "@/assets/backup-manager-icon.png";
 import customLanguageIcon from "@/assets/custom-language-icon.png";
 import taskListsIcon from "@/assets/task-lists-icon.png";
+import { visualOrganizer } from "@/lib/visual-organizer";
 
 const appsMeta = [
+  { ...visualOrganizer, rating: undefined, installs: undefined, featured: false },
   {
     key: "customTemplates",
     customIcon: customTemplatesIcon,
@@ -197,7 +199,7 @@ export function AppsSection() {
                 <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {appT.name}
                 </h3>
-                <p className="text-muted-foreground mb-4 line-clamp-2">
+                <p className="text-muted-foreground mb-4">
                   {appT.description}
                 </p>
 
@@ -205,7 +207,7 @@ export function AppsSection() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     {/* Rating */}
-                    <div className="flex items-center gap-1">
+                    {app.rating !== undefined && <div className="flex items-center gap-1">
                       {[...Array(4)].map((_, i) => (
                         <Star
                           key={i}
@@ -215,11 +217,11 @@ export function AppsSection() {
                         />
                       ))}
                       <span className="text-sm text-muted-foreground ml-1">/4</span>
-                    </div>
+                    </div>}
                     {/* Installs */}
-                    <span className="text-sm text-muted-foreground">
+                    {app.installs !== undefined && <span className="text-sm text-muted-foreground">
                       {app.installs}+ {t("appsSection.installs")}
-                    </span>
+                    </span>}
                   </div>
 
                   {/* External link indicator */}

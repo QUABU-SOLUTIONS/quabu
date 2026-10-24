@@ -26,8 +26,14 @@ import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.
 import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
 
 import { Headset } from "lucide-react";
+import { visualOrganizer } from "@/lib/visual-organizer";
+
+function VisualOrganizerIcon({ className }: { className?: string }) {
+  return <img src={visualOrganizer.customIcon} alt="" className={className} />;
+}
 
 const appsSubmenu = [
+  { ...visualOrganizer, icon: VisualOrganizerIcon },
   {
     name: "Custom Templates",
     description: "Predefined templates for faster workflows",
@@ -210,8 +216,8 @@ export function Header() {
                                   rel="noopener noreferrer"
                                   className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
                                 >
-                                  <app.icon className="w-5 h-5 text-primary mt-0.5" />
-                                  <div>
+                                  <app.icon className="w-5 h-5 shrink-0 text-primary mt-0.5" />
+                                  <div className="min-w-0">
                                     <div className="font-medium text-sm">{app.name}</div>
                                     <p className="text-xs text-muted-foreground">
                                       {app.description}
@@ -464,8 +470,8 @@ export function Header() {
                           rel="noopener noreferrer"
                           className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
                         >
-                          <app.icon className="w-4 h-4" />
-                          {app.name}
+                          <app.icon className="w-4 h-4 shrink-0" />
+                          <span className="min-w-0">{app.name}</span>
                         </a>
                       ))}
                     </div>
