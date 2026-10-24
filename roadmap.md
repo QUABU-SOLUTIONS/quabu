@@ -1,4 +1,5 @@
 # Tasks
+- [ ] Update Custom Language description in all four languages and display four stars and six installations for Visual Organizer.
 - [x] Add Visual Organizer to the apps section and desktop/mobile menus with the supplied icon, link and description; verified in all four languages.
 - [x] Replace the Catalan flag with CA on mobile and desktop.
 - [x] Make translated pages discoverable through distinct URLs and matching metadata/sitemap.
