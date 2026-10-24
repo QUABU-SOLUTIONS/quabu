@@ -30,7 +30,7 @@ import { resolveLanguage } from "@/lib/languages";
 import { I18nextProvider } from "react-i18next";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  validateSearch: (search: Record<string, unknown>) => ({ ...search, lang: resolveLanguage(search.lang) }),
+  validateSearch: (search: Record<string, unknown>) => ({ ...search, lang: resolveLanguage(search["lang"]) }),
   head: () => ({
     meta: [
       { charSet: "utf-8" },
