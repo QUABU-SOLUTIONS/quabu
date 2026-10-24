@@ -689,7 +689,7 @@ const en = {
       },
       customLanguage: {
         name: "Custom Language for Jira Cloud",
-        description: "Translate your Jira site into Catalan and share it with all your users. Make Jira accessible to everyone.",
+        description: "Translate your Jira site into languages not natively supported by Jira and share it with all your users",
       },
       taskLists: {
         name: "Task Lists for Jira Cloud",
