@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import atlassianIcon from "@/assets/atlassian-icon.png";
 import customTemplatesIcon from "@/assets/custom-templates-icon.png";
-import backupManagerIcon from "@/assets/backup-manager-icon.png";
 import customLanguageIcon from "@/assets/custom-language-icon.png";
 import taskListsIcon from "@/assets/task-lists-icon.png";
 import { visualOrganizer } from "@/lib/visual-organizer";
@@ -17,14 +16,6 @@ const appsMeta = [
     rating: 4,
     installs: 166,
     href: "https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud?hosting=cloud&tab=overview",
-    featured: true,
-  },
-  {
-    key: "backupManager",
-    customIcon: backupManagerIcon,
-    rating: 4,
-    installs: 158,
-    href: "https://marketplace.atlassian.com/apps/1235836/backup-manager-for-jira-cloud?hosting=cloud&tab=overview",
     featured: true,
   },
   {

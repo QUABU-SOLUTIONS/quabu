@@ -41,12 +41,6 @@ const appsSubmenu = [
     href: "https://marketplace.atlassian.com/apps/1230162/custom-templates-for-jira-cloud",
   },
   {
-    name: "Backup Manager",
-    description: "Automated Jira backups with AWS",
-    icon: Shield,
-    href: "https://marketplace.atlassian.com/apps/1235836/backup-manager-for-jira-cloud",
-  },
-  {
     name: "Custom Language",
     description: "Translate Jira to Catalan",
     icon: Globe,
