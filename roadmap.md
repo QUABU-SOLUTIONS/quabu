@@ -1,4 +1,5 @@
 # Tasks
+- [ ] Add Visual Organizer to the apps section and desktop/mobile menus with the supplied icon, link and description.
 - [x] Replace the Catalan flag with CA on mobile and desktop.
 - [x] Make translated pages discoverable through distinct URLs and matching metadata/sitemap.
 - [x] Connect and check Google Search Console: homepage indexed; current sitemap has no errors.
