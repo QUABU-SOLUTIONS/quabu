@@ -25,7 +25,7 @@ import atlassianGoldPartner from "@/assets/atlassian-gold-partner.png";
 import atlassianMarketplacePartner from "@/assets/atlassian-marketplace-partner.png";
 import atlassianServiceManagementPartner from "@/assets/atlassian-service-management-partner.png";
 
-import { Headset } from "lucide-react";
+import { Headset, Megaphone, TrendingUp, Users, Settings, DollarSign, Monitor, HeadphonesIcon, Lightbulb, LayoutGrid } from "lucide-react";
 import { visualOrganizer } from "@/lib/visual-organizer";
 import customTemplatesIcon from "@/assets/custom-templates-icon.png";
 import customLanguageIcon from "@/assets/custom-language-icon.png";
@@ -98,14 +98,14 @@ export function Header() {
   const location = useLocation();
 
   const acceleratorCategories = [
-    { name: t("accelerators.marketing.name"), href: "/accelerators/marketing", description: t("accelerators.marketing.desc") },
-    { name: t("accelerators.sales.name"), href: "/accelerators/sales", description: t("accelerators.sales.desc") },
-    { name: t("accelerators.hr.name"), href: "/accelerators/hr", description: t("accelerators.hr.desc") },
-    { name: t("accelerators.operations.name"), href: "/accelerators/operations", description: t("accelerators.operations.desc") },
-    { name: t("accelerators.finance.name"), href: "/accelerators/finance", description: t("accelerators.finance.desc") },
-    { name: t("accelerators.it.name"), href: "/accelerators/it", description: t("accelerators.it.desc") },
-    { name: t("accelerators.customerService.name"), href: "/accelerators/customer-service", description: t("accelerators.customerService.desc") },
-    { name: t("accelerators.rd.name"), href: "/accelerators/rd", description: t("accelerators.rd.desc") },
+    { name: t("accelerators.marketing.name"), href: "/accelerators/marketing", description: t("accelerators.marketing.desc"), icon: Megaphone },
+    { name: t("accelerators.sales.name"), href: "/accelerators/sales", description: t("accelerators.sales.desc"), icon: TrendingUp },
+    { name: t("accelerators.hr.name"), href: "/accelerators/hr", description: t("accelerators.hr.desc"), icon: Users },
+    { name: t("accelerators.operations.name"), href: "/accelerators/operations", description: t("accelerators.operations.desc"), icon: Settings },
+    { name: t("accelerators.finance.name"), href: "/accelerators/finance", description: t("accelerators.finance.desc"), icon: DollarSign },
+    { name: t("accelerators.it.name"), href: "/accelerators/it", description: t("accelerators.it.desc"), icon: Monitor },
+    { name: t("accelerators.customerService.name"), href: "/accelerators/customer-service", description: t("accelerators.customerService.desc"), icon: HeadphonesIcon },
+    { name: t("accelerators.rd.name"), href: "/accelerators/rd", description: t("accelerators.rd.desc"), icon: Lightbulb },
   ];
 
   const servicesSubmenu = [
@@ -176,24 +176,30 @@ export function Header() {
                           <div className="col-span-2 mb-2">
                           <Link
                               to="/accelerators"
-                              className="block p-3 rounded-lg hover:bg-muted transition-colors"
+                              className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
                             >
-                              <div className="font-semibold text-primary">{t("nav.allAccelerators")}</div>
-                              <p className="text-sm text-muted-foreground">
-                                {t("nav.allAcceleratorsDesc")}
-                              </p>
+                              <LayoutGrid aria-hidden="true" className="w-5 h-5 shrink-0 text-primary mt-0.5" />
+                              <div className="min-w-0">
+                                <div className="font-semibold text-primary">{t("nav.allAccelerators")}</div>
+                                <p className="text-sm text-muted-foreground">
+                                  {t("nav.allAcceleratorsDesc")}
+                                </p>
+                              </div>
                             </Link>
                           </div>
                           {acceleratorCategories.map((category) => (
                             <NavigationMenuLink key={category.name} asChild>
                               <Link
                                 to={category.href}
-                                className="block p-3 rounded-lg hover:bg-muted transition-colors"
+                                className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
                               >
-                                <div className="font-medium text-sm">{category.name}</div>
-                                <p className="text-xs text-muted-foreground">
-                                  {category.description}
-                                </p>
+                                <category.icon aria-hidden="true" className="w-5 h-5 shrink-0 text-primary mt-0.5" />
+                                <div className="min-w-0">
+                                  <div className="font-medium text-sm">{category.name}</div>
+                                  <p className="text-xs text-muted-foreground">
+                                    {category.description}
+                                  </p>
+                                </div>
                               </Link>
                             </NavigationMenuLink>
                           ))}
@@ -462,9 +468,10 @@ export function Header() {
                         <Link
                           key={category.name}
                           to={category.href}
-                          className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
+                          className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground"
                         >
-                          {category.name}
+                          <category.icon aria-hidden="true" className="w-4 h-4 shrink-0 text-primary" />
+                          <span className="min-w-0">{category.name}</span>
                         </Link>
                       ))}
                     </div>
