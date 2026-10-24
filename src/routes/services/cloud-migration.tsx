@@ -3,6 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import CloudMigration from "@/pages/services/CloudMigration";
 
 export const Route = createFileRoute("/services/cloud-migration")({
-  head: () => pageHeadAt("/services/cloud-migration")('Atlassian Cloud Migration | Quabu', 'Plan your Atlassian Cloud migration with support from Quabu specialists.'),
+  head: ({ match }) => pageHeadAt("/services/cloud-migration", match.search.lang)('Atlassian Cloud Migration | Quabu', 'Plan your Atlassian Cloud migration with support from Quabu specialists.'),
   component: CloudMigration,
 });

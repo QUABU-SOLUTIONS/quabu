@@ -3,6 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import CustomDevelopment from "@/pages/services/CustomDevelopment";
 
 export const Route = createFileRoute("/services/custom-development")({
-  head: () => pageHeadAt("/services/custom-development")('Custom Development | Quabu', 'Build custom Atlassian apps and solutions with Quabu development experts.'),
+  head: ({ match }) => pageHeadAt("/services/custom-development", match.search.lang)('Custom Development | Quabu', 'Build custom Atlassian apps and solutions with Quabu development experts.'),
   component: CustomDevelopment,
 });

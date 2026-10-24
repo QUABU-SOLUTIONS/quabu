@@ -1,690 +1,1251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- HOME -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.quabusolutions.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/" />
   </url>
-
-  <!-- ABOUT -->
+  <url>
+    <loc>https://www.quabusolutions.com/?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/" />
+  </url>
   <url>
     <loc>https://www.quabusolutions.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/about"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/about"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/about"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/about?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/about?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/about?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/about" />
   </url>
-
-  <!-- CONTACT -->
+  <url>
+    <loc>https://www.quabusolutions.com/about?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/about?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/about?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/about?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/about" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/about?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/about?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/about?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/about?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/about" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/about?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/about?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/about?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/about?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/about" />
+  </url>
   <url>
     <loc>https://www.quabusolutions.com/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/contact"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/contact?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/contact?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/contact?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/contact" />
   </url>
-
-  <!-- BLOG -->
+  <url>
+    <loc>https://www.quabusolutions.com/contact?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/contact?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/contact?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/contact?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/contact" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/contact?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/contact?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/contact?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/contact?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/contact" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/contact?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/contact?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/contact?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/contact?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/contact" />
+  </url>
   <url>
     <loc>https://www.quabusolutions.com/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/blog"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog" />
   </url>
-
-  <!-- BLOG POSTS -->
   <url>
     <loc>https://www.quabusolutions.com/blog/traceability-is-not-a-jira-problem</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/traceability-is-not-a-jira-problem"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/traceability-is-not-a-jira-problem"/>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/traceability-is-not-a-jira-problem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/traceability-is-not-a-jira-problem" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/rovo-custom-ai-agent-user-stories-jira</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/rovo-custom-ai-agent-user-stories-jira"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/rovo-custom-ai-agent-user-stories-jira"/>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/rovo-custom-ai-agent-user-stories-jira" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/rovo-custom-ai-agent-user-stories-jira" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data"/>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-admin-performance-insights-real-data" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-csm-disconnected-support-developers" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-team-26-amsterdam-recap-agentic-collaboration</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-team-26-amsterdam-recap-agentic-collaboration"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-team-26-amsterdam-recap-agentic-collaboration"/>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-team-26-amsterdam-recap-agentic-collaboration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-team-26-amsterdam-recap-agentic-collaboration" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/reduce-adoption-gap-jira-cloud-visual-organizer</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/reduce-adoption-gap-jira-cloud-visual-organizer"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/reduce-adoption-gap-jira-cloud-visual-organizer"/>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/reduce-adoption-gap-jira-cloud-visual-organizer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/reduce-adoption-gap-jira-cloud-visual-organizer" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience"/>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-software-work-items-redesign-new-experience" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses"/>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-space-policies-team-managed-fields-statuses" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-service-management-help-centers-beta</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-service-management-help-centers-beta"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-service-management-help-centers-beta"/>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-service-management-help-centers-beta" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-service-management-help-centers-beta" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators"/>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-cloud-api-full-course-2026-integrators" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level"/>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/want-to-master-atlassian-rovo-ai-next-level" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-cloud-pricing-2026-optimization</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-cloud-pricing-2026-optimization"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-cloud-pricing-2026-optimization"/>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-cloud-pricing-2026-optimization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-cloud-pricing-2026-optimization" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/automate-release-notes-rovo-jira-ai</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/automate-release-notes-rovo-jira-ai"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/automate-release-notes-rovo-jira-ai"/>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/automate-release-notes-rovo-jira-ai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/automate-release-notes-rovo-jira-ai" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-experts-webinar-jira-premium-news</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-experts-webinar-jira-premium-news"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-experts-webinar-jira-premium-news"/>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-experts-webinar-jira-premium-news" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-experts-webinar-jira-premium-news" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/quabu-teamwork-collection-learning-camp-barcelona</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-teamwork-collection-learning-camp-barcelona"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-teamwork-collection-learning-camp-barcelona"/>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-teamwork-collection-learning-camp-barcelona" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-teamwork-collection-learning-camp-barcelona" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-bro-reviews-visual-organizer-for-jira</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-bro-reviews-visual-organizer-for-jira"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-bro-reviews-visual-organizer-for-jira"/>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-bro-reviews-visual-organizer-for-jira" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-bro-reviews-visual-organizer-for-jira" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/visual-organizer-for-jira-cloud</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/visual-organizer-for-jira-cloud"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/visual-organizer-for-jira-cloud"/>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/visual-organizer-for-jira-cloud" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/visual-organizer-for-jira-cloud" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/can-atlassian-rovo-replace-jira-admin</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/can-atlassian-rovo-replace-jira-admin"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/can-atlassian-rovo-replace-jira-admin"/>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/can-atlassian-rovo-replace-jira-admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/can-atlassian-rovo-replace-jira-admin" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/ai-escalation-agent-jira-no-code</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/ai-escalation-agent-jira-no-code"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/ai-escalation-agent-jira-no-code"/>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/ai-escalation-agent-jira-no-code" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/ai-escalation-agent-jira-no-code" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/vibe-coding-atlassian-forge-rovo-studio</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/vibe-coding-atlassian-forge-rovo-studio"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/vibe-coding-atlassian-forge-rovo-studio"/>
     <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/vibe-coding-atlassian-forge-rovo-studio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/vibe-coding-atlassian-forge-rovo-studio" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/stop-triaging-jira-tickets-manually</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/stop-triaging-jira-tickets-manually"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/stop-triaging-jira-tickets-manually"/>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/stop-triaging-jira-tickets-manually" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/stop-triaging-jira-tickets-manually" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free"/>
     <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-cloud-fundamentals-free" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/custom-templates-rising-star-badge</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/custom-templates-rising-star-badge"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/custom-templates-rising-star-badge"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/custom-templates-rising-star-badge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/custom-templates-rising-star-badge" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-devs-marketplace-webinar-recap</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-devs-marketplace-webinar-recap"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-devs-marketplace-webinar-recap"/>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-devs-marketplace-webinar-recap" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-devs-marketplace-webinar-recap" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/preview-atlassian-rovo-mcp-v2</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/preview-atlassian-rovo-mcp-v2"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/preview-atlassian-rovo-mcp-v2"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/preview-atlassian-rovo-mcp-v2" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/preview-atlassian-rovo-mcp-v2" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/new-webinar-atlassian-devs-stories</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/new-webinar-atlassian-devs-stories"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/new-webinar-atlassian-devs-stories"/>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/new-webinar-atlassian-devs-stories" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/new-webinar-atlassian-devs-stories" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-certifications-designations-2026</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-certifications-designations-2026"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-certifications-designations-2026"/>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-certifications-designations-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-certifications-designations-2026" />
   </url>
-
   <url>
     <loc>https://www.quabusolutions.com/blog/custom-language-for-jira-cloud</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/custom-language-for-jira-cloud"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/custom-language-for-jira-cloud"/>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/custom-language-for-jira-cloud" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/custom-language-for-jira-cloud" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/backup-manager-deprecation-notice</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/backup-manager-deprecation-notice"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/backup-manager-deprecation-notice"/>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/backup-manager-deprecation-notice" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/backup-manager-deprecation-notice" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/custom-templates-for-jira-cloud</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/custom-templates-for-jira-cloud"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/custom-templates-for-jira-cloud"/>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/custom-templates-for-jira-cloud" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/custom-templates-for-jira-cloud" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/board-fields-for-jira-cloud</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/board-fields-for-jira-cloud"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/board-fields-for-jira-cloud"/>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/board-fields-for-jira-cloud" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/board-fields-for-jira-cloud" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/quabu-atlassian-first-division-partners</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-atlassian-first-division-partners"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-atlassian-first-division-partners"/>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-atlassian-first-division-partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-atlassian-first-division-partners" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-lovable-ace-dublin-2026</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-lovable-ace-dublin-2026"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-lovable-ace-dublin-2026"/>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-lovable-ace-dublin-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-lovable-ace-dublin-2026" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/quabu-startup-ole-miami</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-startup-ole-miami"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-startup-ole-miami"/>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-startup-ole-miami" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-startup-ole-miami" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/iso-27001-beyond-certification</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/iso-27001-beyond-certification"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/iso-27001-beyond-certification"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/iso-27001-beyond-certification" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/iso-27001-beyond-certification" />
   </url>
-
   <url>
     <loc>https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio"/>
     <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-ii-congres-clubs-natacio" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-community-barcelona-2026</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-community-barcelona-2026"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-community-barcelona-2026"/>
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-community-barcelona-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-community-barcelona-2026" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/apwide-soldevelo-partners</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/apwide-soldevelo-partners"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/apwide-soldevelo-partners"/>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/apwide-soldevelo-partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/apwide-soldevelo-partners" />
   </url>
-
-
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report"/>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-dc-cloud-migration-report" />
   </url>
-
-  <!-- BLOG POSTS -->
   <url>
     <loc>https://www.quabusolutions.com/blog/no-more-forms-ai-booking-jira</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/no-more-forms-ai-booking-jira"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/no-more-forms-ai-booking-jira"/>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/no-more-forms-ai-booking-jira" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/no-more-forms-ai-booking-jira" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/tempo-timesheets-rovo-mcp</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/tempo-timesheets-rovo-mcp"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/tempo-timesheets-rovo-mcp"/>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/tempo-timesheets-rovo-mcp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/tempo-timesheets-rovo-mcp" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/quabu-eazybi-partner</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-eazybi-partner"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-eazybi-partner"/>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-eazybi-partner" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-eazybi-partner" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-community-palma-2026</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-community-palma-2026"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-community-palma-2026"/>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-community-palma-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-community-palma-2026" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp"/>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-to-code-lovable-atlassian-mcp" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp"/>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/qa-automation-antigravity-rovo-mcp" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/loom-fundamentals-certification</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/loom-fundamentals-certification"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/loom-fundamentals-certification"/>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/loom-fundamentals-certification" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/loom-fundamentals-certification" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration"/>
     <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/jira-ai-agents-workflow-integration" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/quabu-opens-miami-office</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-opens-miami-office"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-opens-miami-office"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-opens-miami-office" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-opens-miami-office" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/building-atlassian-apps-2026</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/building-atlassian-apps-2026"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/building-atlassian-apps-2026"/>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/building-atlassian-apps-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/building-atlassian-apps-2026" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-google-cloud-alliance</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-google-cloud-alliance"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-google-cloud-alliance"/>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-google-cloud-alliance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-google-cloud-alliance" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/exploring-atlassian-remote-mcp-server</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/exploring-atlassian-remote-mcp-server"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/exploring-atlassian-remote-mcp-server"/>
     <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/exploring-atlassian-remote-mcp-server" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/exploring-atlassian-remote-mcp-server" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-rovo-mcp-server-ga</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-rovo-mcp-server-ga"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-rovo-mcp-server-ga"/>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-rovo-mcp-server-ga" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-rovo-mcp-server-ga" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/forge-mcp-server-for-developers</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/forge-mcp-server-for-developers"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/forge-mcp-server-for-developers"/>
     <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/forge-mcp-server-for-developers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/forge-mcp-server-for-developers" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/quabu-jmwe-success-story</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-jmwe-success-story"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-jmwe-success-story"/>
     <lastmod>2025-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/quabu-jmwe-success-story" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/quabu-jmwe-success-story" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/assets-emancipates-platform</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/assets-emancipates-platform"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/assets-emancipates-platform"/>
     <lastmod>2025-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/assets-emancipates-platform" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/assets-emancipates-platform" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/assets-data-manager-guide</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/assets-data-manager-guide"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/assets-data-manager-guide"/>
     <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/assets-data-manager-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/assets-data-manager-guide" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/rovo-dev-agents-atlassian-ai</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/rovo-dev-agents-atlassian-ai"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/rovo-dev-agents-atlassian-ai"/>
     <lastmod>2025-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/rovo-dev-agents-atlassian-ai" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/rovo-dev-agents-atlassian-ai" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/atlassian-products-to-apps</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-products-to-apps"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-products-to-apps"/>
     <lastmod>2025-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-products-to-apps" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-products-to-apps" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/blog/kanban-work-method</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/kanban-work-method"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/kanban-work-method"/>
     <lastmod>2025-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/kanban-work-method" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/kanban-work-method" />
   </url>
-
-  <!-- ACCELERATORS -->
   <url>
     <loc>https://www.quabusolutions.com/accelerators</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/marketing</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/marketing"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/marketing"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/marketing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/marketing"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/marketing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/marketing?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/marketing?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/marketing?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/marketing" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/marketing?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/marketing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/marketing?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/marketing?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/marketing?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/marketing" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/marketing?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/marketing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/marketing?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/marketing?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/marketing?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/marketing" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/marketing?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/marketing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/marketing?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/marketing?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/marketing?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/marketing" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/sales</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/sales"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/sales"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/sales"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/sales"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/sales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/sales?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/sales?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/sales?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/sales" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/sales?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/sales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/sales?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/sales?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/sales?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/sales" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/sales?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/sales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/sales?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/sales?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/sales?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/sales" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/sales?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/sales" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/sales?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/sales?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/sales?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/sales" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/hr</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/hr"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/hr"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/hr"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/hr"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/hr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/hr?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/hr?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/hr?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/hr" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/hr?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/hr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/hr?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/hr?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/hr?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/hr" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/hr?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/hr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/hr?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/hr?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/hr?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/hr" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/hr?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/hr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/hr?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/hr?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/hr?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/hr" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/operations</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/operations"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/operations"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/operations"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/operations"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/operations" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/operations?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/operations?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/operations?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/operations" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/operations?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/operations" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/operations?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/operations?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/operations?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/operations" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/operations?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/operations" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/operations?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/operations?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/operations?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/operations" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/operations?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/operations" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/operations?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/operations?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/operations?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/operations" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/finance</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/finance"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/finance"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/finance"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/finance"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/finance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/finance?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/finance?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/finance?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/finance" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/finance?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/finance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/finance?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/finance?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/finance?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/finance" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/finance?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/finance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/finance?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/finance?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/finance?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/finance" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/finance?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/finance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/finance?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/finance?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/finance?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/finance" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/it</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/it"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/it"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/it"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/it"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/it" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/it?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/it?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/it?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/it" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/it?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/it" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/it?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/it?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/it?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/it" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/it?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/it" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/it?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/it?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/it?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/it" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/it?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/it" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/it?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/it?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/it?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/it" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/customer-service</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/customer-service"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/customer-service"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/customer-service"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/customer-service"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/customer-service" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/customer-service?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/customer-service?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/customer-service?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/customer-service" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/customer-service?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/customer-service" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/customer-service?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/customer-service?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/customer-service?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/customer-service" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/customer-service?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/customer-service" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/customer-service?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/customer-service?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/customer-service?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/customer-service" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/customer-service?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/customer-service" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/customer-service?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/customer-service?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/customer-service?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/customer-service" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/accelerators/rd</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/rd"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/rd"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/rd"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/rd"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/rd" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/rd?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/rd?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/rd?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/rd" />
   </url>
-
-  <!-- SERVICES -->
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/rd?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/rd" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/rd?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/rd?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/rd?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/rd" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/rd?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/rd" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/rd?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/rd?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/rd?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/rd" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/accelerators/rd?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/accelerators/rd" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/accelerators/rd?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/accelerators/rd?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/accelerators/rd?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/accelerators/rd" />
+  </url>
   <url>
     <loc>https://www.quabusolutions.com/services/atlassian</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/atlassian"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/atlassian"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/atlassian"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/atlassian"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/atlassian" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/atlassian?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/atlassian?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/atlassian?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/atlassian" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/atlassian?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/atlassian" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/atlassian?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/atlassian?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/atlassian?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/atlassian" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/atlassian?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/atlassian" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/atlassian?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/atlassian?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/atlassian?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/atlassian" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/atlassian?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/atlassian" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/atlassian?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/atlassian?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/atlassian?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/atlassian" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/services/custom-development</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/custom-development"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/custom-development"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/custom-development"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/custom-development"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/custom-development" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/custom-development?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/custom-development?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/custom-development?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/custom-development" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/custom-development?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/custom-development" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/custom-development?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/custom-development?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/custom-development?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/custom-development" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/custom-development?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/custom-development" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/custom-development?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/custom-development?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/custom-development?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/custom-development" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/custom-development?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/custom-development" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/custom-development?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/custom-development?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/custom-development?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/custom-development" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/services/cloud-migration</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/cloud-migration"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/cloud-migration"/>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/cloud-migration"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/cloud-migration"/>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/cloud-migration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/cloud-migration?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/cloud-migration?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/cloud-migration?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/cloud-migration" />
   </url>
-
-  <!-- LEGAL -->
+  <url>
+    <loc>https://www.quabusolutions.com/services/cloud-migration?lang=es</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/cloud-migration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/cloud-migration?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/cloud-migration?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/cloud-migration?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/cloud-migration" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/cloud-migration?lang=ca</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/cloud-migration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/cloud-migration?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/cloud-migration?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/cloud-migration?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/cloud-migration" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/services/cloud-migration?lang=it</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/services/cloud-migration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/services/cloud-migration?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/services/cloud-migration?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/services/cloud-migration?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/services/cloud-migration" />
+  </url>
   <url>
     <loc>https://www.quabusolutions.com/legal/privacy</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/legal/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/legal/privacy" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/legal/terms</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/legal/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/legal/terms" />
   </url>
   <url>
     <loc>https://www.quabusolutions.com/legal/cookies</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/legal/cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/legal/cookies" />
   </url>
-
   <url>
     <loc>https://www.quabusolutions.com/legal/security</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/legal/security" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/legal/security?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/legal/security?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/legal/security?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/legal/security" />
   </url>
-
+  <url>
+    <loc>https://www.quabusolutions.com/legal/security?lang=es</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/legal/security" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/legal/security?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/legal/security?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/legal/security?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/legal/security" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/legal/security?lang=ca</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/legal/security" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/legal/security?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/legal/security?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/legal/security?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/legal/security" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/legal/security?lang=it</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/legal/security" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/legal/security?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/legal/security?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/legal/security?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/legal/security" />
+  </url>
   <url>
     <loc>https://www.quabusolutions.com/partners</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/partners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/partners?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/partners?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/partners?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/partners" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/partners?lang=es</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/partners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/partners?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/partners?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/partners?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/partners" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/partners?lang=ca</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/partners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/partners?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/partners?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/partners?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/partners" />
+  </url>
+  <url>
+    <loc>https://www.quabusolutions.com/partners?lang=it</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/partners" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.quabusolutions.com/partners?lang=es" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.quabusolutions.com/partners?lang=ca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/partners?lang=it" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/partners" />
   </url>
 </urlset>

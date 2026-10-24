@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import type { ReactNode } from "react";
 import { QueryClientProvider, type QueryClient } from "@tanstack/react-query";
 import {
@@ -25,10 +25,12 @@ import appCss from "../styles.css?url";
 
 // ported from main.tsx — imported as a value (not a bare side-effect import)
 // so production tree-shaking can never drop the i18n initialization.
-import i18n from "../i18n";
+import { createLanguageInstance } from "../i18n";
+import { resolveLanguage } from "@/lib/languages";
 import { I18nextProvider } from "react-i18next";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  validateSearch: (search: Record<string, unknown>) => ({ ...search, lang: resolveLanguage(search.lang) }),
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -47,12 +49,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Pre-built, customizable Atlassian solutions that accelerate your digital transformation.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://www.quabusolutions.com/og-image.png" },
       { property: "og:site_name", content: "Quabu" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@quabu" },
-      { name: "twitter:image", content: "https://www.quabusolutions.com/og-image.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -95,8 +95,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const { lang } = Route.useSearch();
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
@@ -110,6 +111,12 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const { lang } = Route.useSearch();
+  const i18n = useMemo(() => createLanguageInstance(lang), [lang]);
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    try { localStorage.setItem("quabu-lang", lang); } catch { /* Storage may be unavailable. */ }
+  }, [lang]);
 
   return (
     <I18nextProvider i18n={i18n}>

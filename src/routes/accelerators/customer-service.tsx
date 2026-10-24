@@ -3,6 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import CustomerServiceAccelerator from "@/pages/accelerators/CustomerService";
 
 export const Route = createFileRoute("/accelerators/customer-service")({
-  head: () => pageHeadAt("/accelerators/customer-service")('Customer Service Accelerator | Quabu', 'Improve customer support workflows with the Quabu customer service accelerator.'),
+  head: ({ match }) => pageHeadAt("/accelerators/customer-service", match.search.lang)('Customer Service Accelerator | Quabu', 'Improve customer support workflows with the Quabu customer service accelerator.'),
   component: CustomerServiceAccelerator,
 });
