@@ -689,7 +689,7 @@ const es = {
       },
       customLanguage: {
         name: "Custom Language for Jira Cloud",
-        description: "Traduce tu sitio de Jira al catalán y compártelo con todos tus usuarios. Haz Jira accesible para todos.",
+        description: "Traduce tu sitio de Jira a idiomas que Jira no admite de forma nativa y compártelo con todos tus usuarios",
       },
       taskLists: {
         name: "Task Lists for Jira Cloud",

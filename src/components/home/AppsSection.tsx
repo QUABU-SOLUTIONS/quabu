@@ -9,7 +9,7 @@ import taskListsIcon from "@/assets/task-lists-icon.png";
 import { visualOrganizer } from "@/lib/visual-organizer";
 
 const appsMeta = [
-  { ...visualOrganizer, rating: undefined, installs: undefined, featured: false },
+  { ...visualOrganizer, featured: false },
   {
     key: "customTemplates",
     customIcon: customTemplatesIcon,

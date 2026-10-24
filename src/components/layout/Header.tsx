@@ -42,7 +42,7 @@ const appsSubmenu = [
   },
   {
     name: "Custom Language",
-    description: "Translate Jira to Catalan",
+    description: "Translate your Jira site into languages not natively supported by Jira and share it with all your users",
     icon: Globe,
     href: "https://marketplace.atlassian.com/apps/1234462/custom-language-for-jira-cloud",
   },
