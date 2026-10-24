@@ -679,7 +679,7 @@ const es = {
       },
       customTemplates: {
         name: "Custom Templates for Jira Cloud",
-        description: "Acelera tus flujos de trabajo con plantillas predefinidas. Crea incidencias más rápido y mantén la coherencia en todos tus proyectos.",
+        description: "Estandariza los flujos de trabajo de Jira Cloud y JSM con plantillas de texto reutilizables para descripciones de incidencias, comentarios y respuestas predefinidas",
         badge: "Popular",
       },
       backupManager: {

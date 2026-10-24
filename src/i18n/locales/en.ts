@@ -679,7 +679,7 @@ const en = {
       },
       customTemplates: {
         name: "Custom Templates for Jira Cloud",
-        description: "Speed up your workflows with predefined templates. Create issues faster and maintain consistency across your projects.",
+        description: "Standardize Jira Cloud and JSM workflows with reusable text templates for issue descriptions, comments, and canned responses",
         badge: "Popular",
       },
       backupManager: {

@@ -679,7 +679,7 @@ const ca = {
       },
       customTemplates: {
         name: "Custom Templates for Jira Cloud",
-        description: "Accelera els teus fluxos de treball amb plantilles predefinides. Crea incidències més ràpid i mantén la coherència en tots els teus projectes.",
+        description: "Estandarditza els fluxos de treball de Jira Cloud i JSM amb plantilles de text reutilitzables per a descripcions d'incidències, comentaris i respostes predefinides",
         badge: "Popular",
       },
       backupManager: {
