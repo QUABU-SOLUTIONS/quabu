@@ -3,6 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import RDAccelerator from "@/pages/accelerators/RD";
 
 export const Route = createFileRoute("/accelerators/rd")({
-  head: () => pageHeadAt("/accelerators/rd")('R&D Accelerator | Quabu', 'Manage research and development workflows with Quabu digital accelerators.'),
+  head: ({ match }) => pageHeadAt("/accelerators/rd", match.search.lang)('R&D Accelerator | Quabu', 'Manage research and development workflows with Quabu digital accelerators.'),
   component: RDAccelerator,
 });

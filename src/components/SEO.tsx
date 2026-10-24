@@ -5,6 +5,8 @@ const Helmet =
   helmetNs.Helmet ??
   (helmetNs as unknown as { default: typeof helmetNs }).default.Helmet;
 import { useTranslation } from "react-i18next";
+import { hasTranslatedPage, languagePath, resolveLanguage } from "@/lib/languages";
+import { localizedMetadata } from "@/lib/page-head";
 
 const BASE_URL = "https://www.quabusolutions.com";
 
@@ -46,18 +48,16 @@ export function SEO({
   const { t, i18n } = useTranslation();
   const lang = i18n.language?.split("-")[0] || "en";
 
-  const resolvedTitle = title ?? (titleKey ? String(t(titleKey)) : "Quabu | Atlassian Gold Solution Partner");
-  const resolvedDescription =
+  const originalTitle = title ?? (titleKey ? String(t(titleKey)) : "Quabu | Atlassian Gold Solution Partner");
+  const originalDescription =
     description ??
     (descriptionKey
       ? String(t(descriptionKey))
       : "Quabu is an Atlassian Gold Solution Partner offering Digital Accelerators and custom Atlassian solutions for enterprises.");
 
-  // Canonical is always the English version (language-agnostic URL)
-  const canonical = `${BASE_URL}${path}`;
-
-  // hreflang alternates
-  const langs = ["en", "es", "ca", "it"];
+  const contentLanguage = hasTranslatedPage(path) ? resolveLanguage(lang) : "en";
+  const { title: resolvedTitle, description: resolvedDescription } = localizedMetadata(path, originalTitle, originalDescription, contentLanguage);
+  const canonical = `${BASE_URL}${languagePath(path, contentLanguage)}`;
 
   // Organization markup lives once in __root; only emit page-specific schema here.
   const finalSchema = schema;
@@ -69,16 +69,7 @@ export function SEO({
       <title>{resolvedTitle}</title>
       <meta name="description" content={resolvedDescription} />
 
-      {/* hreflang alternates — tells Google which language each URL serves */}
-      {langs.map((l) => (
-        <link
-          key={l}
-          rel="alternate"
-          hrefLang={l}
-          href={canonical}
-        />
-      ))}
-      <link rel="alternate" hrefLang="x-default" href={canonical} />
+      {/* Canonical and hreflang are emitted once by the leaf route. */}
 
       {/* AI / LLM discovery */}
       <link rel="alternate" type="text/markdown" href={`${BASE_URL}/llms.txt`} title="LLMs.txt — AI-readable site summary" />

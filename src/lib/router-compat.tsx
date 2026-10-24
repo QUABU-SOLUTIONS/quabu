@@ -53,7 +53,8 @@ export function useNavigate(): NavigateFn {
     const { pathname, search, hash } = parseTo(to);
     tsNav({
       to: pathname,
-      search: search as never,
+      search: { ...((router.state.location.search as Record<string, unknown>)["lang"] !== "en"
+        ? { lang: (router.state.location.search as Record<string, unknown>)["lang"] } : {}), ...search } as never,
       hash,
       state: options?.state as never,
       replace: options?.replace,
@@ -129,10 +130,13 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
   { to, replace, state, children, ...rest },
   ref,
 ) {
+  const location = tsLocation();
   const { pathname, search, hash } = parseTo(to);
+  const lang = (location.search as Record<string, unknown>)["lang"];
+  const localizedSearch = { ...(lang && lang !== "en" ? { lang } : {}), ...search };
   const linkProps = {
     to: pathname,
-    search,
+    search: localizedSearch,
     hash,
     replace,
     state,
