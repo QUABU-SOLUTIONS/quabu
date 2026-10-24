@@ -680,7 +680,7 @@ const en = {
       customTemplates: {
         name: "Custom Templates for Jira Cloud",
         description: "Standardize Jira Cloud and JSM workflows with reusable text templates for issue descriptions, comments, and canned responses",
-        badge: "Popular",
+        badge: "RISING STAR",
       },
       backupManager: {
         name: "Backup Manager for Jira Cloud",

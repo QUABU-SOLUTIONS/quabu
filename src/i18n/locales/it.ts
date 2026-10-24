@@ -681,7 +681,7 @@ const it = {
       customTemplates: {
         name: "Custom Templates for Jira Cloud",
         description: "Standardizza i flussi di lavoro di Jira Cloud e JSM con modelli di testo riutilizzabili per descrizioni delle issue, commenti e risposte predefinite",
-        badge: "Popolare",
+        badge: "RISING STAR",
       },
       backupManager: {
         name: "Backup Manager for Jira Cloud",
