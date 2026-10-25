@@ -20,6 +20,7 @@ import partnerNuvolar from "@/assets/partner-nuvolar.png";
 import partnerAws from "@/assets/partner-aws.png";
 import partnerMetafrazo from "@/assets/metafrazo-logo.png.asset.json";
 import partnerAvisiApps from "@/assets/avisi-apps-logo.png.asset.json";
+import partnerGetCodeLess from "@/assets/getcodeless-logo.jpg.asset.json";
 
 const partners = [
   {
@@ -115,6 +116,13 @@ const partners = [
     description: "Apps that turn complex data into seamless productivity.",
     logos: [{ src: partnerAvisiApps.url, alt: "AVISIAPPS Logo" }],
     url: "https://apps.avisi.com/",
+    tier: "technology",
+  },
+  {
+    name: "getCodeLess",
+    description: "Practical Jira and Confluence apps built for real work",
+    logos: [{ src: partnerGetCodeLess.url, alt: "getCodeLess Logo" }],
+    url: "https://www.getcodeless.tech/en",
     tier: "technology",
   },
   {
