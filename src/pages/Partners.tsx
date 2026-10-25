@@ -20,7 +20,7 @@ import partnerNuvolar from "@/assets/partner-nuvolar.png";
 import partnerAws from "@/assets/partner-aws.png";
 import partnerMetafrazo from "@/assets/metafrazo-logo.png.asset.json";
 import partnerAvisiApps from "@/assets/avisi-apps-logo.png.asset.json";
-import partnerGetCodeLess from "@/assets/getcodeless-logo.jpg.asset.json";
+import partnerGetCodeLess from "@/assets/getcodeless-logo.png.asset.json";
 
 const partners = [
   {
