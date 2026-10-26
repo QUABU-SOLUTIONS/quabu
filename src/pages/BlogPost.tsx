@@ -27,6 +27,69 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
   {
+    id: "beyond-jql-atlassian-cloud-analytics-sql-rovo",
+    title: "Beyond JQL: How to Master Analytics in Atlassian Cloud with SQL and Rovo",
+    excerpt: "JQL falling short in Atlassian Cloud? Learn how to use SQL and Rovo AI in Atlassian Analytics, connecting sources like Databricks or Google Sheets. Includes Jira Bro's full course.",
+    content: `
+![Atlassian Analytics with Jira Bro — Quabu](https://quabu.blog/wp-content/uploads/2026/10/AtlassianAnalyticsJiraBroQuabu.jpg)
+
+***Is JQL falling short in Atlassian Cloud? Discover how to use SQL and Rovo AI in Atlassian Insights/Analytics, connecting sources like Databricks or Google Sheets.***
+
+If you manage teams and projects in the Atlassian ecosystem, you know the power of **JQL (Jira Query Language)** very well. It's fast, intuitive and perfect for answering everyday questions about sprints, statuses and assignments.
+
+But there comes a point when your team needs to answer more complex questions:
+
+- *What is the real correlation between resolution time and ticket origin?*
+- *How can we cross-reference engineering progress with billing data or external business metrics?*
+- *Why are we limited when we're on Cloud and don't have direct database access like in the old Data Center environments?*
+
+This is where Atlassian's analytics evolution comes into play: **Insights / Atlassian Analytics**, native **SQL** support, and the AI boost of **Atlassian Rovo**.
+
+### The challenge: how do you do deep analytics in Cloud without direct DB access?
+
+In Data Center or Server deployments, it was common for data engineers to query direct database replicas. In Cloud, the architecture is different for reasons of scalability, security and governance.
+
+To solve this without losing analytical flexibility, Atlassian offers its analytics platform and **Atlassian Data Lake**. You no longer have to settle for basic board views or JQL filters: you can now run deep relational queries.
+
+### Your two paths with SQL: AI-assisted or full control
+
+One of the great advantages of this architecture is that it democratizes data regardless of your technical level:
+
+1. **Rovo as your SQL copilot:** Can't remember the exact syntax or table schema? You can ask **Rovo in natural language** directly inside the editor. For example: *"Show me the average time to close by priority over the last 6 months"*. Rovo will generate the SQL query, ready to power charts and dynamic dashboards.
+2. **Custom SQL queries (Full Custom):** If you're a data analyst, a developer or you just love a challenge, you can open the SQL editor and write your own queries, aggregations, subqueries and joins to build custom metrics without barriers.
+
+### Breaking silos: connect external databases
+
+Jira doesn't live in isolation from the rest of your company. The real power of this analytics environment comes from unifying data. You can connect external sources directly, such as:
+
+- **Google Sheets** (for budgets, OKRs or operational lists)
+- **Databricks** and cloud data warehouses
+- **Microsoft SQL Server**
+- Other relational databases and Data Warehouses
+
+This lets you cross-reference the performance of your Jira workflows with business impact in a single, centralized dashboard.
+
+### Want to master this skill? Check out the course by Jira Bro & Quabu Solutions
+
+To put these capabilities into practice step by step, **[Jira Bro](https://www.youtube.com/watch?v=HtwQNnLBJ7Q)** has launched a full course focused on getting the most out of SQL and Rovo within the Atlassian universe.
+
+[![Atlassian Analytics Full Course (2026)](https://img.youtube.com/vi/HtwQNnLBJ7Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=HtwQNnLBJ7Q)
+
+At **Quabu Solutions**, as an **Atlassian Gold Solution Partner and Marketplace Partner**, we're delighted to support this initiative, which raises the bar for the technical community and helps teams make decisions based on real data.
+
+👉 **Ready to make the jump from JQL to SQL?** Take a look at the course and start transforming the visibility of your projects.
+
+\`#Atlassian\` \`#JiraCloud\` \`#Rovo\` \`#SQL\` \`#Analytics\` \`#DataLake\` \`#QuabuSolutions\`
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 26, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/AtlassianAnalyticsJiraBroQuabu.jpg",
+    author: "Quabu Team",
+    tags: ["Atlassian Analytics", "SQL", "Atlassian Rovo", "Jira Cloud", "Jira Bro"],
+  },
+  {
     id: "rovo-custom-ai-agent-user-stories-jira",
     title: "How to Automate User Story Creation with Rovo's Custom AI Agent in Jira",
     excerpt: "Jira Bro shows how a Rovo Custom AI Agent reads long PRDs and automatically creates well-structured user stories directly in your Jira project.",

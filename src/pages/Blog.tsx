@@ -82,6 +82,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "beyond-jql-atlassian-cloud-analytics-sql-rovo", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 26, 2026", readTime: "3 min", featured: true },
   { id: "rovo-custom-ai-agent-user-stories-jira", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 21, 2026", readTime: "2 min", featured: true },
   { id: "jira-admin-performance-insights-real-data", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 16, 2026", readTime: "2 min", featured: true },
   { id: "atlassian-csm-disconnected-support-developers", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 15, 2026", readTime: "2 min", featured: true },
@@ -145,6 +146,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "beyond-jql-atlassian-cloud-analytics-sql-rovo",
+    title: "Beyond JQL: How to Master Analytics in Atlassian Cloud with SQL and Rovo",
+    excerpt: "JQL falling short in Atlassian Cloud? Learn how to use SQL and Rovo AI in Atlassian Analytics, connecting sources like Databricks or Google Sheets. Includes Jira Bro's full course.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 26, 2026",
+    readTime: "3 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/AtlassianAnalyticsJiraBroQuabu.jpg",
+    featured: true,
+  },
   {
     id: "rovo-custom-ai-agent-user-stories-jira",
     title: "How to Automate User Story Creation with Rovo's Custom AI Agent in Jira",
