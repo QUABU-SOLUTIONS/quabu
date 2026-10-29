@@ -27,6 +27,31 @@ import {
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
   {
+    id: "connect-dev-ops-atlassian-open-devops-jira-bro",
+    title: "Connect Dev and Ops with Atlassian Open DevOps: A Practical Guide with Jira Bro and Quabu",
+    excerpt: "Learn how to optimize every stage of the DevOps lifecycle with Atlassian, from planning in Jira Software to monitoring with Opsgenie, with Jira Bro and Quabu.",
+    content: `
+![Atlassian Open DevOps with Jira Bro — Quabu](https://quabu.blog/wp-content/uploads/2026/10/DevOps.jpg)
+
+Looking to connect Development and Operations with your Atlassian toolset? In this video presented by **Quabu** and **Jira Bro**, you'll be guided step by step to optimize every stage of the DevOps lifecycle, from planning in Jira Software to monitoring with Opsgenie, and how to extend these capabilities with custom solutions.
+
+Whether you use an Atlassian-only platform or a hybrid toolset (**GitHub, GitLab, SonarQube, Datadog**), discover how Open DevOps centralizes visibility, automates continuous integration and delivery (CI/CD), and removes everyday friction for developers.
+
+### Watch: Master the Atlassian DevOps Lifecycle — From Code to Cloud
+
+[![Master the Atlassian DevOps Lifecycle: From Code to Cloud](https://img.youtube.com/vi/lNeiawlft_s/maxresdefault.jpg)](https://www.youtube.com/watch?v=lNeiawlft_s)
+
+\`#DevOps\` \`#Atlassian\` \`#JiraSoftware\` \`#JiraBro\` \`#Quabu\` \`#CICD\` \`#DORAmetrics\` \`#Agile\`
+`,
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 29, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/DevOps.jpg",
+    author: "Quabu Team",
+    tags: ["Open DevOps", "Jira Software", "Opsgenie", "CI/CD", "Jira Bro"],
+  },
+  {
     id: "beyond-jql-atlassian-cloud-analytics-sql-rovo",
     title: "Beyond JQL: How to Master Analytics in Atlassian Cloud with SQL and Rovo",
     excerpt: "JQL falling short in Atlassian Cloud? Learn how to use SQL and Rovo AI in Atlassian Analytics, connecting sources like Databricks or Google Sheets. Includes Jira Bro's full course.",
