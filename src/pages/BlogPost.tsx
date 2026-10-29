@@ -41,7 +41,7 @@ Whether you use an Atlassian-only platform or a hybrid toolset (**GitHub, GitLab
 
 [![Master the Atlassian DevOps Lifecycle: From Code to Cloud](https://img.youtube.com/vi/lNeiawlft_s/maxresdefault.jpg)](https://www.youtube.com/watch?v=lNeiawlft_s)
 
-\\`#DevOps\\` \\`#Atlassian\\` \\`#JiraSoftware\\` \\`#JiraBro\\` \\`#Quabu\\` \\`#CICD\\` \\`#DORAmetrics\\` \\`#Agile\\`
+\`#DevOps\` \`#Atlassian\` \`#JiraSoftware\` \`#JiraBro\` \`#Quabu\` \`#CICD\` \`#DORAmetrics\` \`#Agile\`
 `,
     category: "News",
     categoryIcon: Newspaper,
