@@ -82,6 +82,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { id: "connect-dev-ops-atlassian-open-devops-jira-bro", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 29, 2026", readTime: "2 min", featured: true },
   { id: "beyond-jql-atlassian-cloud-analytics-sql-rovo", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 26, 2026", readTime: "3 min", featured: true },
   { id: "rovo-custom-ai-agent-user-stories-jira", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 21, 2026", readTime: "2 min", featured: true },
   { id: "jira-admin-performance-insights-real-data", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 16, 2026", readTime: "2 min", featured: true },
@@ -146,6 +147,17 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  {
+    id: "connect-dev-ops-atlassian-open-devops-jira-bro",
+    title: "Connect Dev and Ops with Atlassian Open DevOps: A Practical Guide with Jira Bro and Quabu",
+    excerpt: "Learn how to optimize every stage of the DevOps lifecycle with Atlassian, from planning in Jira Software to monitoring with Opsgenie, with Jira Bro and Quabu.",
+    category: "News",
+    categoryIcon: Newspaper,
+    date: "October 29, 2026",
+    readTime: "2 min read",
+    image: "https://quabu.blog/wp-content/uploads/2026/10/DevOps.jpg",
+    featured: true,
+  },
   {
     id: "beyond-jql-atlassian-cloud-analytics-sql-rovo",
     title: "Beyond JQL: How to Master Analytics in Atlassian Cloud with SQL and Rovo",
