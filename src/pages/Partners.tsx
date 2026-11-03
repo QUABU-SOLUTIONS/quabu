@@ -21,6 +21,7 @@ import partnerAws from "@/assets/partner-aws.png";
 import partnerMetafrazo from "@/assets/metafrazo-logo.png.asset.json";
 import partnerAvisiApps from "@/assets/avisi-apps-logo.png.asset.json";
 import partnerGetCodeLess from "@/assets/getcodeless-logo.png.asset.json";
+import partnerHeroCoders from "@/assets/herocoders-logo.png.asset.json";
 
 const partners = [
   {
@@ -60,6 +61,13 @@ const partners = [
     description: "Environment management and booking for Jira",
     logos: [{ src: partnerApwide, alt: "Apwide Logo" }],
     url: "https://www.apwide.com",
+    tier: "technology",
+  },
+  {
+    name: "HeroCoders",
+    description: "Your Teams' Workflow Superhero. Trusted by Over 70,000 Companies Worldwide",
+    logos: [{ src: partnerHeroCoders.url, alt: "HeroCoders Logo" }],
+    url: "https://www.herocoders.com/",
     tier: "technology",
   },
   {
@@ -224,13 +232,13 @@ export default function Partners() {
                 transition={{ delay: i * 0.1 }}
                 className="group flex flex-col items-center gap-4 p-8 rounded-2xl border border-border bg-card hover:shadow-lg hover:border-primary/30 transition-all"
               >
-                <div className="h-20 flex items-center justify-center">
+                <div className="h-20 w-full min-w-0 flex items-center justify-center">
                   {partner.logos.map((logo) => (
                     <img
                       key={logo.alt}
                       src={logo.src}
                       alt={logo.alt}
-                      className="max-h-16 w-auto object-contain"
+                      className="max-h-16 max-w-full w-auto object-contain"
                     />
                   ))}
                 </div>
