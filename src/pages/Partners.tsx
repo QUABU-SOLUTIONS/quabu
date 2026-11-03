@@ -22,6 +22,7 @@ import partnerMetafrazo from "@/assets/metafrazo-logo.png.asset.json";
 import partnerAvisiApps from "@/assets/avisi-apps-logo.png.asset.json";
 import partnerGetCodeLess from "@/assets/getcodeless-logo.png.asset.json";
 import partnerHeroCoders from "@/assets/herocoders-logo.png.asset.json";
+import partnerRevyz from "@/assets/revyz-logo.png.asset.json";
 
 const partners = [
   {
@@ -106,6 +107,13 @@ const partners = [
     tier: "technology",
   },
   {
+    name: "Revyz",
+    description: "Built for Resilience, Designed for Compliance",
+    logos: [{ src: partnerRevyz.url, alt: "Revyz Logo" }],
+    url: "https://www.revyz.io/",
+    tier: "technology",
+  },
+  {
     name: "Nuvolar",
     description: "Cloud-native software development and consulting",
     logos: [{ src: partnerNuvolar, alt: "Nuvolar Logo" }],
@@ -113,17 +121,17 @@ const partners = [
     tier: "technology",
   },
   {
-    name: "MetaFrazo",
-    description: "Workflow, governance and compliance analytics from Jira Cloud event history",
-    logos: [{ src: partnerMetafrazo.url, alt: "MetaFrazo Logo" }],
-    url: "https://marketplace.atlassian.com/vendors/684225822/metafrazo",
-    tier: "technology",
-  },
-  {
     name: "AVISIAPPS",
     description: "Apps that turn complex data into seamless productivity.",
     logos: [{ src: partnerAvisiApps.url, alt: "AVISIAPPS Logo" }],
     url: "https://apps.avisi.com/",
+    tier: "technology",
+  },
+  {
+    name: "MetaFrazo",
+    description: "Workflow, governance and compliance analytics from Jira Cloud event history",
+    logos: [{ src: partnerMetafrazo.url, alt: "MetaFrazo Logo" }],
+    url: "https://marketplace.atlassian.com/vendors/684225822/metafrazo",
     tier: "technology",
   },
   {
