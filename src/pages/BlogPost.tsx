@@ -9,6 +9,7 @@ import remarkGfm from "remark-gfm";
 import jiraTeamManagedPoliciesCover from "@/assets/JiraTeamManagedPoliciesJiraBroquabu.jpg.asset.json";
 import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.jpg.asset.json";
 import { metafrazoTraceabilityContent } from "@/lib/metafrazo-traceability";
+import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -26,6 +27,7 @@ import {
 
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
+  { ...atlassianTeam26Europe, categoryIcon: Newspaper },
   {
     id: "connect-dev-ops-atlassian-open-devops-jira-bro",
     title: "Connect Dev and Ops with Atlassian Open DevOps: A Practical Guide with Jira Bro and Quabu",
@@ -3706,7 +3708,12 @@ export default function BlogPost() {
               transition={{ delay: 0.2 }}
             >
               <div className="prose prose-lg max-w-none min-w-0 break-words prose-img:max-w-full prose-headings:text-foreground prose-headings:mt-10 prose-headings:mb-5 prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-muted-foreground prose-p:mb-5 prose-p:leading-relaxed prose-strong:text-foreground prose-li:text-muted-foreground prose-li:mb-2 prose-li:leading-relaxed prose-ul:my-5 prose-ol:my-5 prose-a:text-primary prose-a:underline prose-blockquote:border-primary prose-blockquote:text-muted-foreground prose-blockquote:my-8 prose-blockquote:py-2 prose-blockquote:italic prose-code:bg-muted prose-code:text-foreground prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-semibold prose-pre:bg-muted prose-pre:text-foreground prose-pre:p-5 prose-pre:rounded-lg prose-pre:my-6 prose-hr:border-border prose-hr:my-10">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  components={post.id === atlassianTeam26Europe.id ? {
+                    table: ({ children }) => <div className="w-full overflow-x-auto"><table>{children}</table></div>,
+                  } : undefined}
+                >
                   {post.content}
                 </ReactMarkdown>
               </div>

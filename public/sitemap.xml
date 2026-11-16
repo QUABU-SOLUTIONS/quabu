@@ -1264,4 +1264,12 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.quabusolutions.com/partners?lang=it" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/partners" />
   </url>
+  <url>
+    <loc>https://www.quabusolutions.com/blog/atlassian-team-26-europe-autonomous-agents-rovo-credits</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quabusolutions.com/blog/atlassian-team-26-europe-autonomous-agents-rovo-credits" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quabusolutions.com/blog/atlassian-team-26-europe-autonomous-agents-rovo-credits" />
+  </url>
 </urlset>

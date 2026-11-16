@@ -1,4 +1,5 @@
 - Keep editorial blog articles as Markdown in `src/lib/` when they include substantial text; this keeps the listing and article page concise while preserving the original author's attribution.
+- New substantial articles use a shared metadata module with a raw Markdown import for listing, article and leaf metadata so their publication details stay consistent.
 - Define route-level metadata with `pageHead` on each content route; leaf routes need discoverable titles and descriptions even before client-side SEO renders.- Leaf routes set head via `pageHeadAt(path)` (or `pageHead(..., path)` for dynamic routes) so canonical and og:url self-reference the page; never put canonical/og:url in `__root.tsx`, since a root value makes every page point to the homepage.
 
 - Locale URLs use bare paths for English and `?lang=es|ca|it` for translations; derive SSR i18next instances from validated route search, never mutate a shared singleton, to isolate concurrent requests.
