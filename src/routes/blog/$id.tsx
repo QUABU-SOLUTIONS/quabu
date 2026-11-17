@@ -3,14 +3,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import BlogPost, { blogPosts } from "@/pages/BlogPost";
 import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.jpg.asset.json";
 import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
+import { masterLoomAI } from "@/lib/master-loom-ai";
 
 export const Route = createFileRoute("/blog/$id")({
   head: ({ params }) => {
+    const isLoom = params.id === masterLoomAI.id;
     const isTeam26Europe = params.id === atlassianTeam26Europe.id;
-    const title = isTeam26Europe ? atlassianTeam26Europe.title : params.id === "traceability-is-not-a-jira-problem"
+    const title = isLoom ? masterLoomAI.title : isTeam26Europe ? atlassianTeam26Europe.title : params.id === "traceability-is-not-a-jira-problem"
       ? "Traceability is not a Jira problem"
       : params.id.split("-").map((word) => word[0]?.toUpperCase() + word.slice(1)).join(" ");
-    const description = isTeam26Europe ? atlassianTeam26Europe.excerpt : params.id === "traceability-is-not-a-jira-problem"
+    const description = isLoom ? masterLoomAI.excerpt : isTeam26Europe ? atlassianTeam26Europe.excerpt : params.id === "traceability-is-not-a-jira-problem"
       ? "MetaFrazo explains why Jira Cloud audit evidence must be recorded as work happens, with insights from Quabu's Raúl Peláez Mendoza."
       : `Read ${title} on the Quabu blog for Atlassian news and insights.`;
     const head = pageHead(title.length > 46 ? title : `${title} | Quabu Blog`, description, "article", `/blog/${params.id}`);
@@ -38,7 +40,7 @@ export const Route = createFileRoute("/blog/$id")({
         publisher: { "@type": "Organization", name: "Quabu", logo: { "@type": "ImageObject", url: "https://www.quabusolutions.com/favicon.png" } },
       }),
     }];
-    return isMetafrazo || isTeam26Europe
+    return isMetafrazo || isTeam26Europe || isLoom
       ? {
           ...head,
           scripts,

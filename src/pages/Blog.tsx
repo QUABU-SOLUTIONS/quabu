@@ -31,6 +31,7 @@ import { toast } from "sonner";
 import jiraTeamManagedPoliciesCover from "@/assets/JiraTeamManagedPoliciesJiraBroquabu.jpg.asset.json";
 import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.jpg.asset.json";
 import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
+import { masterLoomAI } from "@/lib/master-loom-ai";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
 const seeded = (i: number, salt: number) => {
@@ -83,6 +84,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { ...masterLoomAI, categoryIcon: Newspaper, readTime: "1 min" },
   { ...atlassianTeam26Europe, categoryIcon: Newspaper, readTime: "6 min" },
   { id: "connect-dev-ops-atlassian-open-devops-jira-bro", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 29, 2026", readTime: "2 min", featured: true },
   { id: "beyond-jql-atlassian-cloud-analytics-sql-rovo", category: "News", categoryKey: "news", categoryIcon: Newspaper, date: "October 26, 2026", readTime: "3 min", featured: true },
@@ -149,6 +151,7 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  { ...masterLoomAI, categoryIcon: Newspaper },
   { ...atlassianTeam26Europe, categoryIcon: Newspaper },
   {
     id: "connect-dev-ops-atlassian-open-devops-jira-bro",
