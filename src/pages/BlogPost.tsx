@@ -11,6 +11,7 @@ import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.j
 import { metafrazoTraceabilityContent } from "@/lib/metafrazo-traceability";
 import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
 import { masterLoomAI } from "@/lib/master-loom-ai";
+import { atlassianGuardPolicies } from "@/lib/atlassian-guard-policies";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -28,6 +29,7 @@ import {
 
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
+  { ...atlassianGuardPolicies, categoryIcon: Newspaper },
   { ...masterLoomAI, categoryIcon: Newspaper },
   { ...atlassianTeam26Europe, categoryIcon: Newspaper },
   {
