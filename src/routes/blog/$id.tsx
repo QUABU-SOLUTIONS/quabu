@@ -5,16 +5,18 @@ import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.j
 import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
 import { masterLoomAI } from "@/lib/master-loom-ai";
 import { atlassianGuardPolicies } from "@/lib/atlassian-guard-policies";
+import { visualOrganizerHackathon } from "@/lib/visual-organizer-hackathon";
 
 export const Route = createFileRoute("/blog/$id")({
   head: ({ params }) => {
+    const isHackathon = params.id === visualOrganizerHackathon.id;
     const isLoom = params.id === masterLoomAI.id;
     const isTeam26Europe = params.id === atlassianTeam26Europe.id;
     const isGuard = params.id === atlassianGuardPolicies.id;
-    const title = isGuard ? atlassianGuardPolicies.title : isLoom ? masterLoomAI.title : isTeam26Europe ? atlassianTeam26Europe.title : params.id === "traceability-is-not-a-jira-problem"
+    const title = isHackathon ? visualOrganizerHackathon.title : isGuard ? atlassianGuardPolicies.title : isLoom ? masterLoomAI.title : isTeam26Europe ? atlassianTeam26Europe.title : params.id === "traceability-is-not-a-jira-problem"
       ? "Traceability is not a Jira problem"
       : params.id.split("-").map((word) => word[0]?.toUpperCase() + word.slice(1)).join(" ");
-    const description = isGuard ? atlassianGuardPolicies.excerpt : isLoom ? masterLoomAI.excerpt : isTeam26Europe ? atlassianTeam26Europe.excerpt : params.id === "traceability-is-not-a-jira-problem"
+    const description = isHackathon ? visualOrganizerHackathon.excerpt : isGuard ? atlassianGuardPolicies.excerpt : isLoom ? masterLoomAI.excerpt : isTeam26Europe ? atlassianTeam26Europe.excerpt : params.id === "traceability-is-not-a-jira-problem"
       ? "MetaFrazo explains why Jira Cloud audit evidence must be recorded as work happens, with insights from Quabu's Raúl Peláez Mendoza."
       : `Read ${title} on the Quabu blog for Atlassian news and insights.`;
     const head = pageHead(title.length > 46 ? title : `${title} | Quabu Blog`, description, "article", `/blog/${params.id}`);
@@ -42,7 +44,7 @@ export const Route = createFileRoute("/blog/$id")({
         publisher: { "@type": "Organization", name: "Quabu", logo: { "@type": "ImageObject", url: "https://www.quabusolutions.com/favicon.png" } },
       }),
     }];
-    return isMetafrazo || isTeam26Europe || isLoom
+    return isMetafrazo || isTeam26Europe || isLoom || isHackathon
       ? {
           ...head,
           scripts,

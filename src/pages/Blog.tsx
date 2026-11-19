@@ -33,6 +33,7 @@ import metafrazoTraceabilityCover from "@/assets/traceabilityIsNotAJiraProblem.j
 import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
 import { masterLoomAI } from "@/lib/master-loom-ai";
 import { atlassianGuardPolicies } from "@/lib/atlassian-guard-policies";
+import { visualOrganizerHackathon } from "@/lib/visual-organizer-hackathon";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
 const seeded = (i: number, salt: number) => {
@@ -85,6 +86,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { ...visualOrganizerHackathon, categoryIcon: Newspaper, readTime: "2 min" },
   { ...atlassianGuardPolicies, categoryIcon: Newspaper, readTime: "2 min" },
   { ...masterLoomAI, categoryIcon: Newspaper, readTime: "1 min" },
   { ...atlassianTeam26Europe, categoryIcon: Newspaper, readTime: "6 min" },
@@ -153,6 +155,7 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  { ...visualOrganizerHackathon, categoryIcon: Newspaper },
   { ...atlassianGuardPolicies, categoryIcon: Newspaper },
   { ...masterLoomAI, categoryIcon: Newspaper },
   { ...atlassianTeam26Europe, categoryIcon: Newspaper },

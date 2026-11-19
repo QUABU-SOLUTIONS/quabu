@@ -1,4 +1,5 @@
 # Tasks
+- [x] Translate and add the Visual Organizer Atlassian Hackathon article with the original cover and Devpost link; listing, article, cover and dated metadata verified on desktop/mobile.
 - [x] Translate and add the Loom article with its original cover, course link and publication metadata; listing-to-article navigation, translated content, image, metadata and mobile layout verified.
 - [x] Translate and add the Atlassian Team ’26 Europe article with its original cover and webinar; listing, article, dated metadata and mobile table verified.
 - [x] Update Custom Language description in all four languages and display four stars and six installations for Visual Organizer; verified on desktop/mobile and ten tests passed.
