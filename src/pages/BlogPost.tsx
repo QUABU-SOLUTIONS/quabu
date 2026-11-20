@@ -13,6 +13,7 @@ import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
 import { masterLoomAI } from "@/lib/master-loom-ai";
 import { atlassianGuardPolicies } from "@/lib/atlassian-guard-policies";
 import { visualOrganizerHackathon } from "@/lib/visual-organizer-hackathon";
+import { atlassianMcpJsm } from "@/lib/atlassian-mcp-jsm";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -30,6 +31,7 @@ import {
 
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
+  { ...atlassianMcpJsm, categoryIcon: Newspaper },
   { ...visualOrganizerHackathon, categoryIcon: Newspaper },
   { ...atlassianGuardPolicies, categoryIcon: Newspaper },
   { ...masterLoomAI, categoryIcon: Newspaper },

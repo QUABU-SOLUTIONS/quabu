@@ -34,6 +34,7 @@ import { atlassianTeam26Europe } from "@/lib/atlassian-team26-europe";
 import { masterLoomAI } from "@/lib/master-loom-ai";
 import { atlassianGuardPolicies } from "@/lib/atlassian-guard-policies";
 import { visualOrganizerHackathon } from "@/lib/visual-organizer-hackathon";
+import { atlassianMcpJsm } from "@/lib/atlassian-mcp-jsm";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
 const seeded = (i: number, salt: number) => {
@@ -86,6 +87,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { ...atlassianMcpJsm, categoryIcon: Newspaper, readTime: "2 min" },
   { ...visualOrganizerHackathon, categoryIcon: Newspaper, readTime: "2 min" },
   { ...atlassianGuardPolicies, categoryIcon: Newspaper, readTime: "2 min" },
   { ...masterLoomAI, categoryIcon: Newspaper, readTime: "1 min" },
@@ -155,6 +157,7 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  { ...atlassianMcpJsm, categoryIcon: Newspaper },
   { ...visualOrganizerHackathon, categoryIcon: Newspaper },
   { ...atlassianGuardPolicies, categoryIcon: Newspaper },
   { ...masterLoomAI, categoryIcon: Newspaper },
