@@ -23,6 +23,7 @@ import partnerAvisiApps from "@/assets/avisi-apps-logo.png.asset.json";
 import partnerGetCodeLess from "@/assets/getcodeless-logo.png.asset.json";
 import partnerHeroCoders from "@/assets/herocoders-logo.png.asset.json";
 import partnerRevyz from "@/assets/revyz-logo.png.asset.json";
+import partnerHycu from "@/assets/hycu-logo-purple.png.asset.json";
 
 const partners = [
   {
@@ -90,6 +91,13 @@ const partners = [
     description: "Time tracking, resource planning and budgets for Jira",
     logos: [{ src: partnerTempo, alt: "Tempo Logo" }],
     url: "https://www.tempo.io",
+    tier: "technology",
+  },
+  {
+    name: "HYCU",
+    description: "HYCU, Inc. is the #1 AI Resilience Company that protects, uncovers, and recovers the data that runs your business.",
+    logos: [{ src: partnerHycu.url, alt: "HYCU Logo" }],
+    url: "https://www.hycu.com/",
     tier: "technology",
   },
   {
