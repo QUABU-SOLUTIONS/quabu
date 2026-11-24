@@ -36,6 +36,7 @@ import { atlassianGuardPolicies } from "@/lib/atlassian-guard-policies";
 import { visualOrganizerHackathon } from "@/lib/visual-organizer-hackathon";
 import { atlassianMcpJsm } from "@/lib/atlassian-mcp-jsm";
 import { customTemplatesNewFeatures } from "@/lib/custom-templates-new-features";
+import { jsmSlaRovoPortal } from "@/lib/jsm-sla-rovo-portal";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
 const seeded = (i: number, salt: number) => {
@@ -88,6 +89,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { ...jsmSlaRovoPortal, categoryIcon: Newspaper, readTime: "2 min" },
   { ...customTemplatesNewFeatures, categoryIcon: Newspaper, readTime: "3 min" },
   { ...atlassianMcpJsm, categoryIcon: Newspaper, readTime: "2 min" },
   { ...visualOrganizerHackathon, categoryIcon: Newspaper, readTime: "2 min" },
@@ -159,6 +161,7 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  { ...jsmSlaRovoPortal, categoryIcon: Newspaper },
   { ...customTemplatesNewFeatures, categoryIcon: Newspaper },
   { ...atlassianMcpJsm, categoryIcon: Newspaper },
   { ...visualOrganizerHackathon, categoryIcon: Newspaper },
