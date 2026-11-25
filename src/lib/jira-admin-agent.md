@@ -18,4 +18,10 @@ One of the key points of this tool is that it **does not make changes autonomous
 
 If you are already part of Atlassian's open beta program, you can start using Jira Admin Agent directly from the administration settings of your Jira Cloud environment.
 
+## Watch Jira Admin AI Agent Updates
+
+[![Jira Bro — Jira Admin AI Agent Updates](JIRA_ADMIN_AGENT_VIDEO_IMAGE)](https://www.youtube.com/watch?v=xh8SE5xfxX8)
+
+[Watch Jira Bro's video on YouTube](https://www.youtube.com/watch?v=xh8SE5xfxX8)
+
 **Need help auditing, cleaning up or restructuring your Jira instance?** At **Quabu**, we are experts in optimizing and governing Atlassian environments. [Contact our team](https://www.quabusolutions.com/contact?lang=en) and we will help you take your configuration to the next level.
