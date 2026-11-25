@@ -37,6 +37,7 @@ import { visualOrganizerHackathon } from "@/lib/visual-organizer-hackathon";
 import { atlassianMcpJsm } from "@/lib/atlassian-mcp-jsm";
 import { customTemplatesNewFeatures } from "@/lib/custom-templates-new-features";
 import { jsmSlaRovoPortal } from "@/lib/jsm-sla-rovo-portal";
+import { jiraAdminAgent } from "@/lib/jira-admin-agent";
 
 // Deterministic pseudo-random (SSR-safe): identical values on server and client.
 const seeded = (i: number, salt: number) => {
@@ -89,6 +90,7 @@ const AnimatedBlogBackground = () => {
 
 // Blog post data - titles/excerpts kept in English (editorial content)
 const blogPostsMeta = [
+  { ...jiraAdminAgent, categoryIcon: Newspaper, readTime: "2 min" },
   { ...jsmSlaRovoPortal, categoryIcon: Newspaper, readTime: "2 min" },
   { ...customTemplatesNewFeatures, categoryIcon: Newspaper, readTime: "3 min" },
   { ...atlassianMcpJsm, categoryIcon: Newspaper, readTime: "2 min" },
@@ -161,6 +163,7 @@ const blogPostsMeta = [
 ];
 
 const blogPosts = [
+  { ...jiraAdminAgent, categoryIcon: Newspaper },
   { ...jsmSlaRovoPortal, categoryIcon: Newspaper },
   { ...customTemplatesNewFeatures, categoryIcon: Newspaper },
   { ...atlassianMcpJsm, categoryIcon: Newspaper },

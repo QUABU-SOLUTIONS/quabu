@@ -1,4 +1,5 @@
 # Tasks
+- [x] Translate and add the Jira Admin Agent article with the original cover and contact link; listing-to-article navigation, English content, cover and dated metadata verified on desktop/mobile.
 - [x] Translate and add the Jira Service Management SLA article with its original cover, screenshots and tutorial; desktop/mobile listing-to-article navigation, image loading and dated metadata verified.
 - [x] Translate and add the Custom Templates new features article with its original cover, three screenshots, Marketplace link and dated metadata; listing-to-article flow verified on desktop/mobile.
 - [x] Translate and add the Visual Organizer Atlassian Hackathon article with the original cover and Devpost link; listing, article, cover and dated metadata verified on desktop/mobile.
