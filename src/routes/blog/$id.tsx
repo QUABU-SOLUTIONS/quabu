@@ -10,10 +10,12 @@ import { atlassianMcpJsm } from "@/lib/atlassian-mcp-jsm";
 import { customTemplatesNewFeatures } from "@/lib/custom-templates-new-features";
 import { jsmSlaRovoPortal } from "@/lib/jsm-sla-rovo-portal";
 import { jiraAdminAgent } from "@/lib/jira-admin-agent";
+import { customLanguageRebuild } from "@/lib/custom-language-rebuild";
 
 export const Route = createFileRoute("/blog/$id")({
   head: ({ params }) => {
     const isAdminAgent = params.id === jiraAdminAgent.id;
+    const isCustomLanguage = params.id === customLanguageRebuild.id;
     const isSla = params.id === jsmSlaRovoPortal.id;
     const isCustomTemplates = params.id === customTemplatesNewFeatures.id;
     const isMcpJsm = params.id === atlassianMcpJsm.id;
@@ -21,10 +23,10 @@ export const Route = createFileRoute("/blog/$id")({
     const isLoom = params.id === masterLoomAI.id;
     const isTeam26Europe = params.id === atlassianTeam26Europe.id;
     const isGuard = params.id === atlassianGuardPolicies.id;
-    const title = isAdminAgent ? jiraAdminAgent.title : isSla ? jsmSlaRovoPortal.title : isCustomTemplates ? customTemplatesNewFeatures.title : isMcpJsm ? atlassianMcpJsm.title : isHackathon ? visualOrganizerHackathon.title : isGuard ? atlassianGuardPolicies.title : isLoom ? masterLoomAI.title : isTeam26Europe ? atlassianTeam26Europe.title : params.id === "traceability-is-not-a-jira-problem"
+    const title = isCustomLanguage ? customLanguageRebuild.title : isAdminAgent ? jiraAdminAgent.title : isSla ? jsmSlaRovoPortal.title : isCustomTemplates ? customTemplatesNewFeatures.title : isMcpJsm ? atlassianMcpJsm.title : isHackathon ? visualOrganizerHackathon.title : isGuard ? atlassianGuardPolicies.title : isLoom ? masterLoomAI.title : isTeam26Europe ? atlassianTeam26Europe.title : params.id === "traceability-is-not-a-jira-problem"
       ? "Traceability is not a Jira problem"
       : params.id.split("-").map((word) => word[0]?.toUpperCase() + word.slice(1)).join(" ");
-    const description = isAdminAgent ? jiraAdminAgent.excerpt : isSla ? jsmSlaRovoPortal.excerpt : isCustomTemplates ? customTemplatesNewFeatures.excerpt : isMcpJsm ? atlassianMcpJsm.excerpt : isHackathon ? visualOrganizerHackathon.excerpt : isGuard ? atlassianGuardPolicies.excerpt : isLoom ? masterLoomAI.excerpt : isTeam26Europe ? atlassianTeam26Europe.excerpt : params.id === "traceability-is-not-a-jira-problem"
+    const description = isCustomLanguage ? customLanguageRebuild.excerpt : isAdminAgent ? jiraAdminAgent.excerpt : isSla ? jsmSlaRovoPortal.excerpt : isCustomTemplates ? customTemplatesNewFeatures.excerpt : isMcpJsm ? atlassianMcpJsm.excerpt : isHackathon ? visualOrganizerHackathon.excerpt : isGuard ? atlassianGuardPolicies.excerpt : isLoom ? masterLoomAI.excerpt : isTeam26Europe ? atlassianTeam26Europe.excerpt : params.id === "traceability-is-not-a-jira-problem"
       ? "MetaFrazo explains why Jira Cloud audit evidence must be recorded as work happens, with insights from Quabu's Raúl Peláez Mendoza."
       : `Read ${title} on the Quabu blog for Atlassian news and insights.`;
     const head = pageHead(title.length > 46 ? title : `${title} | Quabu Blog`, description, "article", `/blog/${params.id}`);
@@ -52,7 +54,7 @@ export const Route = createFileRoute("/blog/$id")({
         publisher: { "@type": "Organization", name: "Quabu", logo: { "@type": "ImageObject", url: "https://www.quabusolutions.com/favicon.png" } },
       }),
     }];
-    return isAdminAgent || isSla || isCustomTemplates || isMetafrazo || isTeam26Europe || isLoom || isHackathon
+    return isCustomLanguage || isAdminAgent || isSla || isCustomTemplates || isMetafrazo || isTeam26Europe || isLoom || isHackathon
       ? {
           ...head,
           scripts,

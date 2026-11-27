@@ -17,6 +17,7 @@ import { atlassianMcpJsm } from "@/lib/atlassian-mcp-jsm";
 import { customTemplatesNewFeatures } from "@/lib/custom-templates-new-features";
 import { jsmSlaRovoPortal } from "@/lib/jsm-sla-rovo-portal";
 import { jiraAdminAgent } from "@/lib/jira-admin-agent";
+import { customLanguageRebuild } from "@/lib/custom-language-rebuild";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -34,6 +35,7 @@ import {
 
 // Blog post data (same as in Blog.tsx - in a real app, this would be in a shared data file or fetched from an API)
 export const blogPosts = [
+  { ...customLanguageRebuild, categoryIcon: Newspaper },
   { ...jiraAdminAgent, categoryIcon: Newspaper },
   { ...jsmSlaRovoPortal, categoryIcon: Newspaper },
   { ...customTemplatesNewFeatures, categoryIcon: Newspaper },
